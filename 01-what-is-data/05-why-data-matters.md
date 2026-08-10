@@ -53,6 +53,5 @@ That is why this course also covers ethics later. Using data well means using it
 
 | Term | Definition |
 |---|---|
-| **Evidence-based decision** | A decision supported by data and facts |
 | **Competitive advantage** | An edge that helps an organization perform better than others |
 | **Data-driven** | Using data to guide actions and decisions |

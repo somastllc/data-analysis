@@ -88,7 +88,7 @@ For each, decide whether machine learning is needed, or whether simpler analysis
 
 1. **No.** Sorting and summing. A spreadsheet handles this.
 2. **Likely yes.** Fraud patterns shift and are too varied to capture in fixed rules, and the volume is far beyond manual review.
-3. **No.** This is a comparison, and possibly a statistical test. You will meet the tools for it in the Statistics course.
+3. **No.** This is a comparison, and possibly a statistical test. The tools for it come from statistics.
 4. **Likely yes.** Personalizing at that scale cannot be done by hand.
 
 The pattern: machine learning earns its cost when the rules are unknown or constantly changing, *and* the volume is beyond human review. If either half is missing, simpler analysis usually wins. Reaching for a model when a `GROUP BY` would do is one of the most common beginner mistakes.

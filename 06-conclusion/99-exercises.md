@@ -41,9 +41,9 @@ A reasonable version. Yours will differ — check that each step does its own jo
 
 </details>
 
-### Exercise 2 — Map the path ahead
+### Exercise 2 — Which subject does each task belong to?
 
-For each task below, name which upcoming course in the Data Analysis path would teach you to do it.
+Each task below belongs to a different area of data work. Name the area.
 
 1. Pull rush-hour ticket records for three routes out of a database with 200 million rows
 2. Decide whether the difference between two routes is real or just random variation
@@ -55,15 +55,15 @@ For each task below, name which upcoming course in the Data Analysis path would 
 <details>
 <summary>Show answer</summary>
 
-1. **SQL for Data Analysis** (course 4)
-2. **Statistics for Data Analysis** (course 6)
-3. **Python Fundamentals** (course 2), then **Data Analysis with Pandas** (course 7)
-4. **Power BI** (course 10), with **Data Visualization and Storytelling** (course 11) for making it readable
-5. **Data Cleaning and Data Wrangling** (course 8)
-6. **Git and GitHub** (course 3)
+1. **SQL** — the data is in a database and 200 million rows will not open in a spreadsheet
+2. **Statistics** — telling a real difference from random variation is exactly what it is for
+3. **Python** — repeatable automation, so the work is not redone by hand each week
+4. **A dashboard or BI tool**, plus **data visualization** for making it readable
+5. **Data cleaning** — duplicates and inconsistent timestamps are its core business
+6. **Git and GitHub** — version history and review
 
-Every one of the six steps you just worked through has a course behind it. You have now done the whole process once, on paper, with none of the tools.
+Six tasks, six different areas — and you were able to place all of them without touching a tool. That is what this course was for.
 
-That was the point. The tools are the easy part to learn and the fastest part to become outdated. Knowing which question to ask, noticing that an average was hiding the answer, and recognizing when data should not be used at all — those do not expire, and no course later in this path will teach them again.
+The tools are the easy part to learn and the fastest part to become outdated. Knowing which question to ask, noticing that an average was hiding the answer, and recognizing when data should not be used at all — those do not expire.
 
 </details>

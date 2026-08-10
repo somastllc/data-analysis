@@ -64,4 +64,3 @@ Tailor your message to the person making the decision.
 |---|---|
 | **Insight** | A meaningful conclusion, supported by data, that helps guide a decision |
 | **Recommendation** | A suggested action based on analysis |
-| **Stakeholder communication** | Sharing results with people who need them |

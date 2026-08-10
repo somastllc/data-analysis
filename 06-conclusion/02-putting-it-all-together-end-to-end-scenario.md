@@ -119,4 +119,3 @@ That is how data work happens in the real world.
 |---|---|
 | **Churn** | When customers stop using a product or service |
 | **Onboarding** | The first experience new users have with a product |
-| **End-to-end scenario** | A full example from problem to decision |

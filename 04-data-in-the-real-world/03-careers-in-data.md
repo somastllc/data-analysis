@@ -1,18 +1,16 @@
 # Careers in Data
 
 **Chapter:** 4 — Data in the Real World  
-**Lesson:** 2 of 3  
-**By the end:** You can describe the main data roles, and say which one this path is preparing you for.
+**Lesson:** 3 of 4  
+**By the end:** You can describe the main data roles, and explain how people move between them.
 
 ## Overview
 
 Six job titles, heavily overlapping skills, and no agreement between companies about what any of them actually mean. Here is the map.
 
-### Where this path leads
+### How people move between roles
 
-This program is a **Data Analyst** path. Everything it teaches — spreadsheets, SQL, Python, statistics, dashboards, and storytelling — points at that one role.
-
-The other roles are still worth knowing. They are the people you will work alongside, and they are the most common places analysts move to later.
+These are not six sealed careers. People move between them, and most start in the same place.
 
 ```mermaid
 flowchart LR
@@ -23,7 +21,7 @@ flowchart LR
     dsNode --> mleNode["ML Engineer"]
 ```
 
-An analyst who leans toward infrastructure moves right along the top path; one who leans toward statistics and modeling moves along the bottom. Very few people enter the field directly at the right-hand end of this diagram.
+Most people enter through analyst work and move outward from there — toward infrastructure along the top path, toward statistics and modeling along the bottom. Very few enter the field directly at the right-hand end of this diagram; those roles usually come after a few years somewhere else on it.
 
 ### Shared skills across data roles
 

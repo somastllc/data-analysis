@@ -61,4 +61,3 @@ Each source adds a different piece of the story.
 |---|---|
 | **Data collection** | The process of gathering data for analysis |
 | **API** | A way for systems to share data automatically |
-| **Sample** | A subset of data used to represent a larger group |

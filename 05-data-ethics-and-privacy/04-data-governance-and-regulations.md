@@ -36,7 +36,7 @@ You do not need to memorize these laws as a beginner. You do need to know they e
 
 The loan team pauses the launch.
 
-They test the model against customers the old manual process had rejected, and find that repayment among rejected market traders is close to the overall average — the model was not finding risk, it was finding history. They drop district and business-payment history, and use repayment behavior on small existing advances instead: a direct measure rather than a proxy. Then they tell customers plainly which data affects a loan decision.
+They test the model against customers the old manual process had rejected, and find that repayment among rejected market traders is close to the overall average — the model was not finding risk, it was finding history. They drop district and business-payment history, and use repayment behavior on small existing advances instead: a direct measure rather than a proxy. Account age they keep — it genuinely predicts repayment — but they now compare approval rates for newer and older accounts every quarter, rather than assuming the split stays fair on its own. Then they tell customers plainly which data affects a loan decision.
 
 The product launches three months later than planned, and reaches more customers than the original version would have.
 

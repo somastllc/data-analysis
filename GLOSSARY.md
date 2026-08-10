@@ -2,7 +2,7 @@
 
 Every term defined in this course, in one place. The chapter column shows where the term is introduced.
 
-This glossary also serves the later courses in the [Data Analysis Career Path](../../data-analyst.md) — the vocabulary here is assumed knowledge from course 2 onward.
+The vocabulary here is what the rest of data work assumes you already have.
 
 | Term | Definition | Introduced in |
 |---|---|---|
@@ -54,11 +54,8 @@ This glossary also serves the later courses in the [Data Analysis Career Path](.
 | **Decision-making** | Choosing an action based on available evidence | Ch 3 — The Data Analysis Process |
 | **Descriptive analytics** | Summarizes what already happened | Ch 2 — The Data Ecosystem |
 | **Diagnostic analytics** | Explains why something happened | Ch 2 — The Data Ecosystem |
-| **End-to-end scenario** | A full example from problem to decision | Ch 6 — Conclusion |
-| **Evidence-based decision** | A decision supported by data and facts | Ch 1 — What Is Data? |
 | **Fairness** | Avoiding unjust harm in data-driven decisions | Ch 5 — Data Ethics and Privacy |
 | **Feedback loop** | When a system's own decisions become the data that trains its future decisions | Ch 5 — Data Ethics and Privacy |
-| **Foundation** | The basic knowledge needed before advanced study | Ch 6 — Conclusion |
 | **Industry application** | A real-world use of data in a specific sector | Ch 4 — Data in the Real World |
 | **Information** | Data that has been organized to convey meaning | Ch 1 — What Is Data? |
 | **Insight** | A meaningful conclusion, supported by data, that helps guide a decision | Ch 1 — What Is Data? |
@@ -80,14 +77,11 @@ This glossary also serves the later courses in the [Data Analysis Career Path](.
 | **Query** | A request to retrieve data from a database | Ch 4 — Data in the Real World |
 | **Recommendation** | A suggested action based on analysis | Ch 3 — The Data Analysis Process |
 | **Regulation** | A legal rule governing data collection and use | Ch 5 — Data Ethics and Privacy |
-| **Sample** | A subset of data used to represent a larger group | Ch 3 — The Data Analysis Process |
 | **Sampling bias** | When data does not represent the full population fairly | Ch 5 — Data Ethics and Privacy |
 | **Secondary data** | Data collected by others and reused for a new purpose | Ch 1 — What Is Data? |
 | **Semi-structured data** | Data with some organization, such as JSON, but not a fixed table | Ch 1 — What Is Data? |
-| **Specialization** | Focusing on a specific tool, role, or industry | Ch 6 — Conclusion |
 | **Spreadsheet** | A grid-based tool for organizing and calculating data | Ch 4 — Data in the Real World |
 | **Stakeholder** | A person or group affected by, or interested in, the results of the analysis | Ch 2 — The Data Ecosystem |
-| **Stakeholder communication** | Sharing results with people who need them | Ch 3 — The Data Analysis Process |
 | **Standardization** | Making data follow a consistent format | Ch 3 — The Data Analysis Process |
 | **Structured data** | Data organized in rows, columns, or tables | Ch 1 — What Is Data? |
 | **Transferable skills** | Skills that can be used in many jobs or industries | Ch 4 — Data in the Real World |

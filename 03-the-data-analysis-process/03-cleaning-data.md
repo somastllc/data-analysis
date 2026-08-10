@@ -56,7 +56,7 @@ Before analyzing salary by department, you would:
 
 Skipping these steps could produce incorrect averages and rankings.
 
-Cleaning has a course of its own later in this path — **Data Cleaning and Data Wrangling**. What matters now is recognizing that the step exists, and that skipping it invalidates everything after it.
+Cleaning is a large subject in its own right. What matters now is recognizing that the step exists, and that skipping it invalidates everything after it.
 
 ## Key Terms
 

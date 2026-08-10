@@ -1,8 +1,8 @@
 # The Modern Data Toolkit
 
 **Chapter:** 4 — Data in the Real World  
-**Lesson:** 1 of 3  
-**By the end:** You can pick the right tool for a task, and explain why analysts write code at all.
+**Lesson:** 1 of 4  
+**By the end:** You can pick the right tool for a task, and describe how several tools combine in one project.
 
 ## Overview
 
@@ -27,39 +27,6 @@ They also overlap, and most teams use several. As a beginner you do not need to 
 
 Many projects use several tools together. For example, you might use SQL to extract data, Python to clean it, and Power BI to visualize it.
 
-### Why analysts learn to code
-
-Spreadsheets work well until three things happen: the data grows too large, the same report is needed every week, or someone asks you to prove how a number was produced.
-
-Code solves all three. It handles large datasets, it can be re-run on demand, and it leaves a written record of every step you took.
-
-You are not expected to understand the examples coming up. The goal is to see what the work looks like.
-
-**SQL** asks a database a question:
-
-```sql
-SELECT region, SUM(sales) AS total_sales
-FROM orders
-WHERE order_date >= '2024-01-01'
-GROUP BY region;
-```
-
-That is one question — "how much did each region sell this year?" — answered in four lines.
-
-**Python** loads data and works with it step by step:
-
-```python
-import pandas as pd
-
-orders = pd.read_csv("orders.csv")
-average_by_region = orders.groupby("region")["sales"].mean()
-print(average_by_region)
-```
-
-Both examples do something you could also do by hand in a spreadsheet. The difference is that they run in seconds on a million rows, and they run the same way every time.
-
-In this learning path, you will learn the Python language itself first, then return to SQL and to data-specific Python libraries in later courses.
-
 ### Example workflow
 
 A typical project pulls sales data out of a database with SQL, cleans and analyzes it in Python, then sends the results two ways: a quick summary in Excel, and a dashboard in Power BI for managers.
@@ -72,6 +39,8 @@ flowchart LR
 ```
 
 Notice that one analysis feeds two outputs, for two audiences. Tools are not a fixed sequence — you pick them per step. Git and GitHub sit underneath the whole flow, recording what changed at each stage.
+
+Two of the tools in that workflow involve writing code. The next lesson explains why analysts bother.
 
 ## Key Terms
 

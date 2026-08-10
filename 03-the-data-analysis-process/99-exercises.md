@@ -72,7 +72,7 @@ You are analyzing average salary by department. You find these four issues. For 
 3. **Investigate, do not just delete.** `1` might be a placeholder, an hourly rate in the wrong column, or an intern. `999999999` is almost certainly a data entry error. Averages are extremely sensitive to a single huge value — one bad row here can move the whole department's average.
 4. **Standardize to a number.** These are the same value in three formats; left alone, software may treat them as text and silently exclude them from the average.
 
-The pattern across all four: deleting is easy, and understanding *why* the problem exists is what prevents it recurring next month. You will do this work properly in the Data Cleaning and Wrangling course.
+The pattern across all four: deleting is easy, and understanding *why* the problem exists is what prevents it recurring next month. Doing it properly is a subject of its own.
 
 </details>
 
@@ -93,7 +93,7 @@ Match each question to the chart that answers it best.
 3. **Scatter plot** — relationship between two numeric variables.
 4. **Pie chart** — parts of a whole. Only usable because there are few categories; with twenty products a bar chart would be clearer.
 
-A caution on question 3. If the scatter plot shows that frequent visitors do spend more, you have found a **correlation** — the two move together. You have *not* shown that visiting more often causes higher spending. Wealthier customers might simply do both. Correlation is not causation, and confusing them is the most common analytical error there is. You will learn to measure correlation properly in the Statistics course.
+A caution on question 3. If the scatter plot shows that frequent visitors do spend more, you have found a **correlation** — the two move together. You have *not* shown that visiting more often causes higher spending. Wealthier customers might simply do both. Correlation is not causation, and confusing them is the most common analytical error there is. Measuring correlation properly belongs to statistics.
 
 </details>
 

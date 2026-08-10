@@ -49,7 +49,7 @@ Read each description and name the role: **data analyst**, **data engineer**, **
 4. **Business analyst**
 5. **Machine learning engineer**
 
-This learning path trains you for **1**. That is deliberate: it is the most common entry point into data work, and the other five are easier to move into from there than from outside the field.
+This course is the shared starting point for all six. Most people enter the field at **1** — it is the most common way in, and the other five are easier to move into from there than from outside the field entirely.
 
 </details>
 
