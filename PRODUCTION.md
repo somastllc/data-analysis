@@ -122,7 +122,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 # Chapter 2 — The Data Ecosystem
 
-*6 lessons · 27 min*
+*6 lessons · 25 min*
 
 > **Watch the monotony here.** Lessons 2.2, 2.3, 2.4 and 2.6 are structurally identical: ~4.5 min, one 3-row Key Terms table, no diagram, same four-section shape. On the page that consistency is a virtue. Four near-identical videos in a row is where attention goes. Vary pacing, framing, or location deliberately across them — and do not shoot all four in one sitting, or the fatigue will show in the delivery.
 
@@ -190,7 +190,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 # Chapter 3 — The Data Analysis Process
 
-*6 lessons · 31 min*
+*6 lessons · 27 min*
 
 ### 3.1 · Defining the Problem and Asking Questions — 5.5 min
 
