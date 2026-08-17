@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1">
+    <mxGraphModel dx="516" dy="128" grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="516" pageHeight="128" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="g0" value="" style="group;html=1;" vertex="1" connectable="0" parent="1"><mxGeometry x="24" y="24" width="143" height="55" as="geometry"/></mxCell>
+        <mxCell id="s0" value="" style="rounded=1;absoluteArcSize=1;arcSize=16;fillColor=#121212;strokeColor=none;html=1;movable=0;resizable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="g0"><mxGeometry x="3" y="3" width="140" height="52" as="geometry"/></mxCell>
+        <mxCell id="n0" value="Data" style="rounded=1;absoluteArcSize=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#121212;strokeWidth=2;fontFamily=Noto Sans Mono;fontSize=13;fontColor=#121212;align=center;verticalAlign=middle;html=1;" vertex="1" parent="g0"><mxGeometry x="0" y="0" width="140" height="52" as="geometry"/></mxCell>
+        <mxCell id="g1" value="" style="group;html=1;" vertex="1" connectable="0" parent="1"><mxGeometry x="188" y="24" width="143" height="55" as="geometry"/></mxCell>
+        <mxCell id="s1" value="" style="rounded=1;absoluteArcSize=1;arcSize=16;fillColor=#121212;strokeColor=none;html=1;movable=0;resizable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="g1"><mxGeometry x="3" y="3" width="140" height="52" as="geometry"/></mxCell>
+        <mxCell id="n1" value="Information" style="rounded=1;absoluteArcSize=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#121212;strokeWidth=2;fontFamily=Noto Sans Mono;fontSize=13;fontColor=#121212;align=center;verticalAlign=middle;html=1;" vertex="1" parent="g1"><mxGeometry x="0" y="0" width="140" height="52" as="geometry"/></mxCell>
+        <mxCell id="g2" value="" style="group;html=1;" vertex="1" connectable="0" parent="1"><mxGeometry x="352" y="24" width="143" height="55" as="geometry"/></mxCell>
+        <mxCell id="s2" value="" style="rounded=1;absoluteArcSize=1;arcSize=16;fillColor=#121212;strokeColor=none;html=1;movable=0;resizable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="g2"><mxGeometry x="3" y="3" width="140" height="52" as="geometry"/></mxCell>
+        <mxCell id="n2" value="Insight" style="rounded=1;absoluteArcSize=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#121212;strokeWidth=2;fontFamily=Noto Sans Mono;fontSize=13;fontColor=#121212;align=center;verticalAlign=middle;html=1;" vertex="1" parent="g2"><mxGeometry x="0" y="0" width="140" height="52" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#1F7D3D;strokeWidth=2.5;endArrow=block;endFill=1;endSize=5.5;sourcePerimeterSpacing=2;targetPerimeterSpacing=5.2;html=1;" edge="1" parent="1" source="n0" target="n1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#1F7D3D;strokeWidth=2.5;endArrow=block;endFill=1;endSize=5.5;sourcePerimeterSpacing=2;targetPerimeterSpacing=5.2;html=1;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cap" value="raw facts become a conclusion you can act on" style="text;html=1;fillColor=none;strokeColor=none;fontFamily=Noto Sans Mono;fontSize=11;fontColor=#6B7276;align=center;" vertex="1" parent="1"><mxGeometry x="24" y="84" width="468" height="20" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

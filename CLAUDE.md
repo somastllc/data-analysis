@@ -91,6 +91,35 @@ Every lesson file follows this exact shape (confirmed across all 27 files):
 - Each set should include at least one item designed to be gotten wrong (a plausible trap), and it should be the one the answer spends most words on.
 - Chapter 5's exercises extend the loan-scoring case that runs through its four lessons.
 
+## Start here after a restart
+
+`HANDOFF.md` carries the current state and the open questions. Read it before touching visual assets.
+
+**Building a slide deck for a lesson? Read `SLIDES.md` first.** It is the procedure — the rules with their reasons, the step order, the pre-ship checklist, and a table of traps that have already cost a rebuild each. Two decks exist as worked examples; 25 remain.
+
+## Repo layout beyond the lessons
+
+```
+tools/        gen_diagram.py, lesson.css, slides.css, build_slides.py, build_production_page.py
+samples/      worked examples — the reference for what a lesson page and deck look like
+NN-*/diagrams/  generated .drawio + .svg per chapter
+```
+
+The repo was Markdown-only until the design system landed. `tools/` is generation code, not application code: `python3 tools/gen_diagram.py` regenerates every diagram in place from the `REGISTER` at the bottom of that file, and reproduces byte-identical output. `PYTHONPATH=tools python3 tools/build_slides.py [key]` builds the 16:9 decks declared in its `DECKS` table (`--no-pdf` skips WeasyPrint).
+
+The PDF toolchain lives in a `.venv` that is **not** committed — recreate with `python3 -m venv .venv && .venv/bin/pip install weasyprint`.
+
+## Visual assets
+
+`DESIGN.md` is the locked design system for every PDF, slide, and `.drawio` diagram — palette, type scale, spacing scale, page geometry, component set, and diagram styles. **Read it before generating any visual asset, and change it before deviating from it.**
+
+Two constraints from it are load-bearing and easy to get wrong:
+
+- **Mint `#3ACC69` measures 1.97:1 on paper — it may never carry text on a light ground.** Mint-colored text uses `--mint-deep` `#1F7D3D`. Mint is for shapes, fills, rules, and bars.
+- **Pages are top-aligned and never filled.** Empty page bottoms are the intended look; do not pad to reach the margin.
+
+Reference documents for that system: `MCP-field-guide.pdf` (layout and spacing only) and the three brand swatches recorded in `DESIGN.md` §1.
+
 ## Opener and welcome convention
 
 Seven videos have no lesson file behind them, so these files hold the spoken script itself rather than shot notes: six `NN-chapter-slug/00-opener.md` plus `WELCOME.md` at the root. Shape:

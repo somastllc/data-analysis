@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What Is Data? — slides</title>
+<style>
+/* Data Fundamentals — slide deck stylesheet. Implements DESIGN.md §7 (and §1–§3).
+   16:9 at 1920 × 1080.
+
+   ONE SLIDE PIXEL = 1rem. Every length below is in rem, and the root font size is
+   the only thing that changes between the two media:
+
+     screen — min(100vw/1920, 100vh/1080), so the slide scales to fit whichever
+              edge of the viewport runs out first, at any window size, with no JS
+     print  — 1px, which reproduces the design at exactly 1920 × 1080
+
+   Hairlines and borders stay in px on purpose: a 1px rule scaled to 0.6px is a
+   rule that disappears on half the screens it lands on. */
+@page {
+  size: 20in 11.25in;   /* exactly 1920 × 1080 at 96dpi — verify: pdfinfo says 1440 × 810 pts */
+  margin: 0;
+}
+html{font-size:1px}
+
+:root{
+  --ink:#121212; --body:#43494C; --muted:#6B7276; --faint:#9AA1A5;
+  --hairline:#DDE2E2; --panel:#F6F8F8; --panel-2:#EDF1F1;
+  --mint:#3ACC69; --mint-deep:#1F7D3D; --white:#FFFFFF;
+  --serif:"Noto Serif","Liberation Serif",serif;
+  --sans:"Noto Sans","Liberation Sans",sans-serif;
+  --mono:"Noto Sans Mono","Liberation Mono",monospace;
+  /* DESIGN.md §7: the PDF scale multiplied by 2.2 */
+  --t-eyebrow:24rem; --t-h1:70rem; --t-h2:48rem; --t-lead:38rem;
+  --t-body:34rem; --t-plate:29rem; --t-data:29rem; --t-micro:24rem;
+}
+*{box-sizing:border-box}
+html,body{margin:0; padding:0}
+body{
+  background:var(--white); color:var(--body);
+  font-family:var(--sans); font-size:var(--t-body); line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── the slide ───────────────────────────────────────────────
+   Fixed 1920 × 1080 box, 96px safe area, content top-aligned.
+   DESIGN.md §3: slides are not filled to the bottom either. */
+.slide{
+  width:1920rem; height:1080rem; padding:96rem;
+  page-break-after:always; break-after:page;
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+  background:var(--white);
+}
+.slide:last-child{page-break-after:auto; break-after:auto}
+
+/* On screen the deck is a viewer: the slide scales to fit whichever edge of the
+   window runs out first, one slide per screenful, snapped so a scroll or an arrow
+   key advances exactly one frame. The surround is dark enough to show where the
+   white slide ends; recording a 16:9 window fills it edge to edge and the surround
+   never appears at all.
+
+   The scroll container is `html`, declared. Putting `overflow`/`scroll-snap-type`
+   on `body` also works — they propagate to the viewport — but only because `html`
+   has nothing of its own, which is a rule that breaks the moment someone styles it. */
+@media screen{
+  html{
+    font-size:min(100vw / 1920, 100vh / 1080);   /* 1rem = one scaled slide pixel */
+    height:100%; overflow-y:auto;
+    scroll-snap-type:y mandatory;
+    background:#1A1C1C;
+    /* The scrollbar is inside 100vw but outside the usable width, so leaving it
+       visible makes the slide ~15px wider than the space it has whenever width is
+       the binding edge. A snap-paged deck does not need one anyway. */
+    scrollbar-width:none;
+  }
+  html::-webkit-scrollbar{display:none}
+  body{
+    min-height:100%; background:#1A1C1C;
+    display:flex; flex-direction:column; align-items:center;
+  }
+  .slide{scroll-snap-align:center; flex:none}
+}
+
+/* Reserved for the six chapter-opener bumpers. A lesson deck is white
+   throughout — see DESIGN.md §1 and §7. */
+.slide.ink{background:var(--ink); color:var(--panel)}
+.slide.ink .eyebrow{color:var(--faint)}
+.slide.ink h1,.slide.ink h2,.slide.ink strong{color:var(--white)}
+.slide.ink .accent{color:var(--mint)}      /* mint on ink is 8.94:1 — §1 */
+
+/* centred variants for the cold open and the title card */
+.slide.mid{justify-content:center}
+
+/* slide number, bottom right, for calling a frame during the shoot */
+.num{
+  position:absolute; right:96rem; bottom:64rem;
+  font-family:var(--mono); font-size:var(--t-micro); letter-spacing:.08em;
+  color:var(--faint);
+}
+.slide.ink .num{color:#4A5052}
+
+/* ── type ────────────────────────────────────────────────── */
+.eyebrow{
+  font-family:var(--mono); font-size:var(--t-eyebrow); letter-spacing:.15em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 24rem;
+}
+h1{
+  font-family:var(--serif); font-size:var(--t-h1); line-height:1.15; font-weight:700;
+  letter-spacing:-.015em; color:var(--ink); margin:0 0 24rem;
+}
+h2{
+  font-family:var(--serif); font-size:var(--t-h2); line-height:1.25; font-weight:700;
+  letter-spacing:-.01em; color:var(--ink); margin:0 0 32rem;
+}
+h1 .accent,h2 .accent{color:var(--mint-deep)}   /* never --mint on white — §1 */
+/* The reading measure is 44ch, not the page's 68ch. Slide prose is read at a
+   distance in one pass, so the line gets shorter rather than longer. `ch` is
+   font-relative, so it scales with everything else for free. */
+p{margin:0 0 24rem; max-width:44ch}
+p.wide{max-width:56ch}
+.lead{font-size:var(--t-lead); line-height:1.45; color:var(--body)}
+.slide.ink .lead{color:var(--panel)}
+strong{color:var(--ink); font-weight:600}    /* 640 is invalid — see DESIGN.md §9 */
+.mono{font-family:var(--mono); font-variant-numeric:tabular-nums}
+/* inline literals — the lesson sets $25 and 32°C as data, and so does the slide */
+code{
+  font-family:var(--mono); font-size:.88em; background:var(--panel-2);
+  padding:.08em .3em; border-radius:4rem; color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.slide.ink code{background:#222626; color:var(--white)}
+
+/* ── table — DESIGN.md §5.6, scaled ──────────────────────── */
+table{
+  border-collapse:collapse; width:100%; margin:0;
+  font-variant-numeric:tabular-nums;
+}
+th{
+  font-family:var(--mono); font-size:var(--t-micro); letter-spacing:.11em;
+  text-transform:uppercase; color:var(--muted); font-weight:600; text-align:left;
+  padding:0 32rem 16rem 0; border-bottom:1px solid var(--hairline);
+}
+th:last-child, td:last-child{padding-right:0}
+td{
+  padding:24rem 32rem 24rem 0; border-bottom:1px solid var(--hairline);
+  vertical-align:top; font-size:var(--t-body); line-height:1.4;
+}
+tr:last-child td{border-bottom:none}
+td.term{
+  font-family:var(--mono); font-size:var(--t-data); font-weight:500;
+  color:var(--ink); width:22%;
+}
+/* On the ink ground every one of these would otherwise keep its light-ground
+   value: the term column is --ink on --ink and disappears outright, and the
+   hairlines read as bright white rules. Mint text is only legal here — 8.94:1
+   on ink, against 2.10:1 on white (§1). */
+.slide.ink th{color:var(--faint); border-bottom-color:#2E3232}
+.slide.ink td{border-bottom-color:#2E3232}
+.slide.ink td.term{color:var(--mint)}
+
+/* ── plate — DESIGN.md §5.2, scaled ──────────────────────── */
+.plate{background:var(--panel); margin:0}
+/* max-width:none is load-bearing — see DESIGN.md §9. Without it the title
+   inherits the `p` reading measure and wraps mid-phrase. */
+.plate-title{
+  max-width:none;
+  font-family:var(--mono); font-size:var(--t-plate); letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink); font-weight:600;
+  padding:32rem 48rem 0; margin:0;
+}
+.plate-body{padding:40rem 48rem 48rem; text-align:center}
+/* Scaling UP is fine — it is scaling DOWN for print that DESIGN.md §6 rejects,
+   because that is what drops node text to ~9px. At 1400 the 516-wide 3-node
+   diagram lands its 13px node labels at ~35px, one step above slide body. */
+.plate-body svg{width:100%; max-width:1400rem; height:auto}
+.plate-cap{
+  max-width:none; background:var(--panel-2); border-top:1px solid var(--hairline);
+  padding:28rem 48rem; margin:0; font-size:var(--t-plate); color:var(--muted);
+}
+
+/* ── analogy strip — DESIGN.md §5.4-ish, scaled ──────────── */
+.analogy{
+  display:flex; border-top:1px solid var(--hairline);
+  border-bottom:1px solid var(--hairline); margin:0;
+}
+.analogy div{flex:1; padding:32rem 40rem 32rem 0}
+.analogy div + div{border-left:1px solid var(--hairline); padding-left:40rem}
+.analogy .k{
+  font-family:var(--mono); font-size:var(--t-micro); letter-spacing:.12em;
+  text-transform:uppercase; color:var(--mint-deep); margin:0 0 12rem;
+}
+.analogy .v{font-size:var(--t-body); color:var(--body); margin:0; max-width:none}
+
+/* ── two independent columns, each with its own lead ─────── */
+.cols{display:flex; gap:96rem; margin:0}
+.cols > div{flex:1; min-width:0}
+.cols .k{
+  font-family:var(--mono); font-size:var(--t-micro); letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 16rem; max-width:none;
+}
+
+/* ── mono list with › markers — DESIGN.md §5.5, scaled ───── */
+ul.marks{list-style:none; margin:0; padding:0}
+ul.marks li{
+  font-family:var(--mono); font-size:var(--t-data); color:var(--ink);
+  padding:18rem 0 18rem 40rem; position:relative;
+  border-bottom:1px solid var(--hairline); break-inside:avoid;
+}
+ul.marks li:last-child{border-bottom:none}
+ul.marks li::before{content:"›"; position:absolute; left:4rem; color:var(--faint)}
+/* the gloss after a literal, as on the handout: `$25 — a mobile money transfer` */
+ul.marks .what{
+  color:var(--muted); font-family:var(--sans); font-size:var(--t-body);
+  letter-spacing:0;
+}
+/* In two columns the last item is only the bottom of ONE column, so dropping its
+   rule leaves the two columns ending differently. Keep every rule here. */
+ul.two{columns:2; column-gap:96rem}
+ul.two li{padding-top:14rem; padding-bottom:14rem}
+ul.two li:last-child{border-bottom:1px solid var(--hairline)}
+
+ul.plain{margin:0; padding-left:40rem; max-width:44ch}
+ul.plain li{margin-bottom:16rem}
+ul.plain li::marker{color:var(--faint)}
+
+/* ── objective rule — one mint moment, as a shape ────────── */
+.rule{height:8rem; width:180rem; background:var(--mint); margin:0 0 40rem}
+</style>
+</head>
+<body>
+<section class="slide mid">
+  <p class="lead" style="max-width:50ch">You check your phone and see a mobile money
+     transfer of <code>$25</code>, a weather app showing <code>32&deg;C</code>, and a
+     message from school about your attendance. Each of those is a piece of data —
+     a small fact about something that happened. Before you analyze data, build
+     dashboards, or choose a career in data, you need a clear answer to a simple
+     question: <strong>what is data?</strong></p>
+  <p class="num">01 / 12</p>
+</section>
+<section class="slide mid">
+  <p class="eyebrow">Chapter 1 — What Is Data?</p>
+  <h1>What Is Data?</h1>
+  <p class="mono" style="font-size:var(--t-data);color:var(--muted)">Lesson 1 of 5</p>
+  <p class="num">02 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">By the end</p>
+  <div class="rule"></div>
+  <h2 style="max-width:30ch">You can explain what data is, and tell
+      <span class="accent">data</span>, <span class="accent">information</span> and
+      <span class="accent">insight</span> apart.</h2>
+  <p class="num">03 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">1 — Raw facts</p>
+  <h2>Data: raw facts about the world</h2>
+  <p class="lead wide"><strong>Data</strong> is a collection of facts, measurements,
+     or observations about the world. On its own, data usually does not tell a full
+     story. It is the raw material we use to understand what is happening.</p>
+  <p class="num">04 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">1 — Raw facts</p>
+  <h2>Examples of data</h2>
+  <ul class="marks">
+    <li>$25 <span class="what">— a mobile money transfer amount</span></li>
+    <li>$2.50 per kg <span class="what">— the market price of rice</span></li>
+    <li>present <span class="what">— a student&rsquo;s attendance record</span></li>
+    <li>$49.99 <span class="what">— a product price</span></li>
+    <li>32&deg;C <span class="what">— a temperature reading</span></li>
+  </ul>
+  <p style="margin-top:32rem;max-width:56ch">Each example is a single fact. By itself,
+     it may not mean much. But when we collect many facts together, patterns start
+     to appear.</p>
+  <p class="num">05 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">2 — Not the same thing</p>
+  <h2 style="margin-bottom:16rem">Data vs information vs insight</h2>
+  <p style="max-width:56ch">These three terms are related, but they are not
+     the same.</p>
+  <table>
+    <thead><tr><th>Term</th><th>Meaning</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Data</td><td>Raw facts</td><td>Sales were <code>$1,200</code>, <code>$980</code> and <code>$1,450</code> on three days</td></tr>
+      <tr><td class="term">Information</td><td>Data organized to answer a basic question</td><td>Sales increased from Monday to Wednesday</td></tr>
+      <tr><td class="term">Insight</td><td>A useful conclusion that can guide action</td><td>Promotions on Wednesday may be driving higher sales</td></tr>
+    </tbody>
+  </table>
+  <p class="num">06 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">2 — Not the same thing</p>
+  <div class="plate">
+    <p class="plate-title">Plate I — from facts to a decision</p>
+    <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 516 100" width="516" height="100">
+<style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
+<rect x="27" y="27" width="140" height="52" rx="8" fill="#121212"/>
+<rect x="24" y="24" width="140" height="52" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="2"/>
+<text class="n" x="94.0" y="54.5" text-anchor="middle">Data</text>
+</svg></div>
+  </div>
+  <p class="lead" style="margin-top:40rem">Raw facts</p>
+  <p class="num">07 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">2 — Not the same thing</p>
+  <div class="plate">
+    <p class="plate-title">Plate I — from facts to a decision</p>
+    <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 516 100" width="516" height="100">
+<style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
+<line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
+<path d="M180,50.0 L173,45.5 L173,54.5 Z" fill="#1F7D3D"/>
+<rect x="27" y="27" width="140" height="52" rx="8" fill="#121212"/>
+<rect x="24" y="24" width="140" height="52" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="2"/>
+<text class="n" x="94.0" y="54.5" text-anchor="middle">Data</text>
+<rect x="191" y="27" width="140" height="52" rx="8" fill="#121212"/>
+<rect x="188" y="24" width="140" height="52" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="2"/>
+<text class="n" x="258.0" y="54.5" text-anchor="middle">Information</text>
+</svg></div>
+  </div>
+  <p class="lead" style="margin-top:40rem">Data organized to answer a basic question</p>
+  <p class="num">08 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">2 — Not the same thing</p>
+  <div class="plate">
+    <p class="plate-title">Plate I — from facts to a decision</p>
+    <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 516 100" width="516" height="100">
+<style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
+<line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
+<path d="M180,50.0 L173,45.5 L173,54.5 Z" fill="#1F7D3D"/>
+<line x1="330" y1="50.0" x2="344" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
+<path d="M344,50.0 L337,45.5 L337,54.5 Z" fill="#1F7D3D"/>
+<rect x="27" y="27" width="140" height="52" rx="8" fill="#121212"/>
+<rect x="24" y="24" width="140" height="52" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="2"/>
+<text class="n" x="94.0" y="54.5" text-anchor="middle">Data</text>
+<rect x="191" y="27" width="140" height="52" rx="8" fill="#121212"/>
+<rect x="188" y="24" width="140" height="52" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="2"/>
+<text class="n" x="258.0" y="54.5" text-anchor="middle">Information</text>
+<rect x="355" y="27" width="140" height="52" rx="8" fill="#121212"/>
+<rect x="352" y="24" width="140" height="52" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="2"/>
+<text class="n" x="422.0" y="54.5" text-anchor="middle">Insight</text>
+</svg></div>
+    <p class="plate-cap">Each step throws information away and adds meaning. You cannot skip one: an insight with no data underneath it is just an opinion.</p>
+  </div>
+  <p class="lead" style="margin-top:40rem">A useful conclusion that can guide action</p>
+  <p class="num">09 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">2 — Not the same thing</p>
+  <h2>Think of it like cooking</h2>
+  <div class="analogy">
+    <div><p class="k">Data</p><p class="v">The ingredients, before anyone has
+         decided what to make.</p></div>
+    <div><p class="k">Information</p><p class="v">A prepared meal you can actually
+         understand.</p></div>
+    <div><p class="k">Insight</p><p class="v">Knowing what to cook next time, based
+         on what people liked.</p></div>
+  </div>
+  <p class="lead" style="margin-top:48rem">In data work, your goal is to move from raw
+     data toward meaningful insight.</p>
+  <p class="num">10 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">3 — Every day</p>
+  <h2 style="margin-bottom:16rem">Where you see data every day</h2>
+  <p style="max-width:56ch">Data is not only found in spreadsheets or databases.
+     You create and use data constantly:</p>
+  <ul class="marks two">
+    <li>Mobile money transactions and bank transfers</li>
+    <li>School grades and attendance records</li>
+    <li>Market prices at a local shop</li>
+    <li>Likes and comments on social media</li>
+    <li>Steps tracked by a fitness app</li>
+    <li>Weather forecasts</li>
+  </ul>
+  <p style="margin-top:24rem;max-width:64ch">Businesses, schools, hospitals and
+     governments all rely on data to make decisions. That is why data skills are
+     valuable across many industries.</p>
+  <p class="num">11 / 12</p>
+</section>
+<section class="slide">
+  <p class="eyebrow">Key terms</p>
+  <table>
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Data</td><td>Raw facts, measurements, or observations</td></tr>
+      <tr><td class="term">Information</td><td>Data that has been organized to convey meaning</td></tr>
+      <tr><td class="term">Insight</td><td>A meaningful conclusion, supported by data, that helps guide a decision</td></tr>
+    </tbody>
+  </table>
+  <p class="num">12 / 12</p>
+</section>
+</body>
+</html>
