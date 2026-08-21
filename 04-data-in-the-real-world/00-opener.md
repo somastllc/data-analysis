@@ -20,4 +20,4 @@ The second is why analysts write code at all, and it is where you see code for t
 
 The third is careers. Six job titles, what each one is actually paid to answer, and how people move between them.
 
-The fourth is industries — a hospital, an online store, and a school, hiring identical skills for completely different questions.
+The fourth is industries: a hospital, an online store, and a school, hiring identical skills for completely different questions.

@@ -8,7 +8,7 @@
 
 Everyone clicked "agree". Almost nobody read it. That is the starting condition for most personal data held anywhere in the world.
 
-**Privacy** means respecting a person's right to control their personal information — names, phone numbers, location, payment details, health records. **Consent** means they understood and agreed to how it would be used.
+**Privacy** means respecting a person's right to control their personal information: names, phone numbers, location, payment details, health records. **Consent** means they understood and agreed to how it would be used.
 
 ### Case study: consent in the loan project
 
@@ -20,7 +20,7 @@ The company's legal team points out that the sign-up terms permit "use of accoun
 
 So ask the harder question instead: **would the customer be surprised?**
 
-A market trader who tops up her phone twice a week never imagined that this pattern would decide whether she can borrow money to expand her stall. If she would be surprised, the consent is weak — even where it is legal.
+A market trader who tops up her phone twice a week never imagined that this pattern would decide whether she can borrow money to expand her stall. If she would be surprised, the consent is weak, even where it is legal.
 
 That is the gap between **legal consent** and **meaningful consent**. Ethical work aims for the second, because the first only protects the company.
 
@@ -40,11 +40,15 @@ The second stage is the one beginners skip. **Data minimization** means collecti
 
 The loan team planned to pull each customer's full transaction history. Deciding creditworthiness does not require knowing who someone sends money to.
 
-### Why security matters
+### Security in the loan project
 
-**Data security** protects data from unauthorized access, loss, or theft — breaches, hacked accounts, lost devices, weak passwords.
+**Data security** protects data from unauthorized access, loss, or theft: breaches, hacked accounts, lost devices, weak passwords.
 
-A privacy policy means little if the data is not stored securely. Collect only what you need, and restrict access to the people whose work requires it.
+To build the model, the loan team needs transaction histories, so those histories are copied out of the payment system into a working dataset the team can query freely. Nothing about that is unusual, and it is how most models get built.
+
+But that copy is now the least protected version of the most sensitive data the company holds, and every person on the project can read all of it. The market trader consented to the company moving her money. She is now a row in a file that a dozen people can open, including her payments to a clinic, to a school, and to her family.
+
+A privacy policy protects nobody once a copy like that exists. The real question is not whether the company has a policy. It is how many copies there are, who can open each one, and whether anybody is keeping count.
 
 ## Key Terms
 

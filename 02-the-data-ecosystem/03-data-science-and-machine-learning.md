@@ -1,6 +1,6 @@
 # Data Science and Machine Learning
 
-**Chapter:** 2 — The Data Ecosystem  
+**Chapter:** 2 - The Data Ecosystem  
 **Lesson:** 3 of 6  
 **By the end:** You can explain how machine learning fits inside data science, and when a project actually needs it.
 
@@ -36,20 +36,43 @@ Instead of writing every rule manually, the system learns from examples.
 
 ### How they relate
 
-Machine learning is one tool within data science.
+Machine learning is one tool within data science, alongside several others.
 
-- **Data science** is the broader field
-- **Machine learning** is a method data scientists use for prediction and automation
+```mermaid
+flowchart LR
+    subgraph scienceGroup["Data science"]
+        statsNode["Statistics"]
+        programmingNode["Programming"]
+        domainNode["Domain knowledge"]
+        mlNode["Machine learning"]
+    end
+```
 
-Not every data science project requires machine learning. Some problems can be solved with simpler analysis.
+A data scientist reaches for statistics, programming, and knowledge of the business as readily as for a model. Machine learning is the tool that gets the attention, not the tool that gets used most.
+
+### When a project actually needs machine learning
+
+Machine learning earns its place when a rule would be impossible to write by hand. Nobody can list every sentence that makes a message spam, so the system has to learn the pattern from examples.
+
+It is the wrong tool when a rule is easy to write, or when nobody has collected the examples yet:
+
+| Question | What it needs |
+|---|---|
+| Which bundle sold most last month? | Counting. This is descriptive analytics |
+| Flag any transfer above `$500` | One rule, written once |
+| Which customers will stop topping up next month? | A model, trained on customers who already stopped |
+
+The third one is the only machine learning problem, and it is only solvable if the company kept records of who stopped and when. **No examples, no model.** That is the constraint beginners meet first, and it is a data problem long before it is a modelling one.
 
 ### Example
 
-A music app wants to recommend songs.
+A mobile network operator wants to reduce the number of customers who quietly stop topping up.
 
-- A **data analyst** might report which genres are most popular
-- A **data scientist** might build a recommendation model using listening history
-- The **machine learning model** learns user preferences and suggests new songs
+- A **data analyst** reports how many stopped last quarter, and which bundles they had been buying
+- A **data scientist** examines whether the drop-off follows a pattern - a fall in top-up frequency, a switch to smaller amounts
+- A **machine learning model**, trained on customers who already left, flags current customers behaving the same way
+
+Only the last step is machine learning, and it depends entirely on the first two.
 
 ## Key Terms
 

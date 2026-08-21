@@ -20,8 +20,6 @@ This may involve:
 - Connecting to an API
 - Combining data from multiple systems
 
-The goal is to collect data that is **relevant, sufficient, and reliable**.
-
 ### Common collection methods
 
 | Method | Example |
@@ -48,18 +46,16 @@ Same step, very different bar.
 - Is the source trustworthy?
 - Are there privacy or permission issues?
 
-Collecting the wrong data wastes time. Collecting incomplete data can lead to incorrect conclusions.
-
 ### Example
 
-To understand why app users stop subscribing, you might collect:
+To understand why customers stop renewing their data bundle, you might collect:
 
-- Subscription start and end dates
-- User activity before cancellation
-- Support tickets
-- Survey responses from cancelled users
+- When each bundle was bought, and when it lapsed
+- How much the customer used before they stopped
+- Any complaints they made to the call centre
+- Answers from a short survey sent to people who left
 
-Each source adds a different piece of the story.
+The first two say what happened. The last two are the only ones that can say why, and they are also the two most likely to be missing.
 
 ## Key Terms
 

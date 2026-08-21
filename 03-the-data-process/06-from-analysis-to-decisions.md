@@ -6,7 +6,7 @@
 
 ## Overview
 
-Every analysis rests on things you did not check. Naming them is not a weakness — it is the difference between a finding people act on and one they quietly distrust. The final step is turning insights into action.
+Every analysis rests on things you did not check. Naming them is not a weakness. It is the difference between a finding people act on and one they quietly distrust. The final step is turning insights into action.
 
 ### From insight to action
 
@@ -14,13 +14,11 @@ Analysis should lead to a decision or next step.
 
 Examples:
 
-- Insight: "Mobile users abandon checkout more often."
-  - Decision: Simplify the mobile checkout flow
+- Insight: "Customers who pay by mobile money abandon the order form more often than those who pay on delivery."
+  - Decision: Shorten the payment step
 
-- Insight: "Support response time predicts cancellation."
-  - Decision: Hire more weekend support staff
-
-Without action, analysis becomes interesting but useless.
+- Insight: "How long support takes to reply predicts whether a customer leaves."
+  - Decision: Put more staff on the weekend shift
 
 ### Assumptions and limitations
 
@@ -40,8 +38,6 @@ You should also report **limitations**, such as:
 - Short time period
 - Data collected from only one source
 
-Honest reporting makes your work more credible.
-
 ### Putting a model into use is also a decision
 
 Not every result ends in a meeting. Sometimes the output is a system that goes on making the same decision thousands of times, long after everyone involved moved on.
@@ -59,8 +55,6 @@ Managers must consider:
 - Ethics and fairness
 - Risks not captured in the data
 
-The best decisions combine data with experience and responsibility.
-
 ### Example
 
 An analysis shows that a discount increases sales but reduces profit.
@@ -71,7 +65,7 @@ Possible decisions:
 - Reduce the discount to protect profit
 - Test a smaller discount and measure results
 
-The data provides evidence. Leaders choose the strategy.
+The analysis narrows three options to three trade-offs. Choosing between them is not a data question, and pretending it is will only disguise who actually made the decision.
 
 ## Key Terms
 
@@ -79,4 +73,3 @@ The data provides evidence. Leaders choose the strategy.
 |---|---|
 | **Assumption** | Something believed to be true for the analysis to hold |
 | **Limitation** | A weakness or boundary in the data or method |
-| **Decision-making** | Choosing an action based on available evidence |

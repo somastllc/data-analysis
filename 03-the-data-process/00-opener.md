@@ -8,13 +8,13 @@ Read close to as written; this is already at speaking length.
 
 ---
 
-*On screen: the seven-step process diagram from lesson 3.1, building as the steps are named. This is the same asset the lessons reuse as a locator card — build it here first.*
+*On screen: the seven-step process diagram from lesson 3.1, building as the steps are named. This is the same asset the lessons reuse as a locator card. Build it here first.*
 
 Most people picture data work as the analysis. The analysis is one step out of seven, and it is rarely the longest.
 
 Chapter three is the process in order, from somebody asking a vague question to somebody making a decision. Six lessons, one step at a time.
 
-It starts before any data is touched — turning a request like "the numbers look off, can you check?" into a question that actually has an answer.
+It starts before any data is touched, turning a request like "the numbers look off, can you check?" into a question that actually has an answer.
 
 Then collecting data, and noticing when the easiest data to get is not the data that answers anything.
 

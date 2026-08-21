@@ -1,12 +1,12 @@
 # What Is Data?
 
-**Chapter:** 1 — What Is Data?  
+**Chapter:** 1 - What Is Data?  
 **Lesson:** 1 of 5  
 **By the end:** You can explain what data is, and tell data, information, and insight apart.
 
 ## Overview
 
-You check your phone and see a mobile money transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance. Each of those is a piece of data — a small fact about something that happened. Before you analyze data, build dashboards, or choose a career in data, you need a clear answer to a simple question: what is data?
+You check your phone and see a mobile money transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance. Each of those is a piece of data, a small fact about something that happened. Before you analyze data, build dashboards, or choose a career in data, you need a clear answer to a simple question: what is data?
 
 ### Data: raw facts about the world
 
@@ -20,7 +20,7 @@ Examples of data:
 - A product price: `$49.99`
 - A temperature reading: `32°C`
 
-Each example is a single fact. By itself, it may not mean much. But when we collect many facts together, patterns start to appear.
+Each example is a single fact. Collect enough of them and patterns start to appear.
 
 ### Data vs information vs insight
 
@@ -44,8 +44,6 @@ Think of it like cooking:
 - **Information** = a prepared meal you can understand
 - **Insight** = knowing what to cook next time based on what people liked
 
-In data work, your goal is to move from raw data toward meaningful insight.
-
 ### Where you see data every day
 
 Data is not only found in spreadsheets or databases. You create and use data constantly:
@@ -57,7 +55,7 @@ Data is not only found in spreadsheets or databases. You create and use data con
 - Steps tracked by a fitness app
 - Weather forecasts
 
-Businesses, schools, hospitals, and governments all rely on data to make decisions. That is why data skills are valuable across many industries.
+Businesses, schools, hospitals, and governments all rely on data to make decisions.
 
 ## Key Terms
 

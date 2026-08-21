@@ -22,13 +22,13 @@ Common activities include:
 
 Example questions:
 
-- Which region had the highest sales?
-- Did website traffic increase after the campaign?
-- Are older customers more likely to repeat purchases?
+- Which city had the highest sales?
+- Did orders rise after the price change?
+- Do customers who buy in bulk return more often than those who do not?
 
 ### When the output is a model instead of a chart
 
-An analyst asks what the data shows. A data scientist asks what the data predicts, and builds a model to answer it. Both start from the same cleaned data, both answer a question set in step one, and both fail the same way — by producing something correct that nobody asked for.
+An analyst asks what the data shows. A data scientist asks what the data predicts, and builds a model to answer it. Both start from the same cleaned data, both answer a question set in step one, and both fail the same way, by producing something correct that nobody asked for.
 
 The rest of this lesson uses charts, because charts are the version you can read without software.
 
@@ -43,8 +43,6 @@ Visuals help you:
 - Show change over time
 - Explain results to non-technical audiences
 
-A good chart can make an insight obvious in seconds.
-
 ### Common chart types
 
 | Question type | Chart type |
@@ -56,28 +54,44 @@ A good chart can make an insight obvious in seconds.
 
 Choose the chart that best matches your question. For example, use a line chart for monthly trends and a bar chart to compare product categories.
 
+### What analysis cannot prove
+
+Analysis finds patterns. On its own, it does not explain them.
+
+Suppose the shops that stay open latest also sell the most rice. Three explanations fit that pattern equally well:
+
+- The longer hours cause the extra sales
+- Selling well is what lets a shop afford the staff to stay open longer
+- Shops on the busiest streets do both, and the street is the real cause
+
+The data cannot tell you which. All three produce exactly the same table and exactly the same chart.
+
+Two things moving together like this is called **correlation**. It is a real finding and worth reporting, but it is not the same as one thing causing the other, and acting on the wrong one is expensive. A shop that extends its hours because of this chart, when the real cause was its location, has added a wage bill and gained nothing.
+
+So when you find a pattern, call it a pattern. Whether it is a cause is a separate question, and it is usually answered by deliberately changing one thing and measuring what happens.
+
 ### Example
 
-A company analyzes customer support tickets.
+A wholesaler looks at the orders coming in from its shops.
 
 Analysis findings:
 
-- Ticket volume increased 25% in March
-- Most tickets relate to billing issues
-- Response time is slowest on weekends
+- Orders rose 25% in March
+- Rice and oil account for most of the increase
+- The Burco shops order later in the week than the others
 
 Visualizations:
 
-- Line chart of ticket volume by month
-- Bar chart of ticket categories
-- Table of average response time by day
+- Line chart of orders by month
+- Bar chart of orders by product
+- Table of average order day by city
 
-Together, analysis and visualization turn raw data into understandable evidence.
+The chart shows Burco ordering late. It does not show why, and the lesson above is the reason you should not guess.
 
 ## Key Terms
 
 | Term | Definition |
 |---|---|
-| **Data analysis** | The process of examining data to find patterns and answer questions |
 | **Data visualization** | Presenting data using charts and graphs |
+| **Correlation** | Two things moving together, which is not by itself evidence that one causes the other |
 | **Trend** | A general direction of change over time |

@@ -25,7 +25,7 @@ This course covered five major areas:
    You learned about common tools, careers, and industry applications.
 
 5. **Data Ethics and Privacy**  
-   You learned that data must be used responsibly, securely, and fairly.
+   You learned what responsible use, privacy, bias, and governance each ask of you.
 
 ### The full journey
 
@@ -44,7 +44,7 @@ flowchart LR
 
 Behind the scenes, data engineers maintain systems, analysts explore data, dashboards share metrics, and ethical rules protect people.
 
-None of it required software. That was deliberate — every idea in this course is about judgment, and judgment is what stays useful when the tools change.
+None of it required software. That was deliberate. Every idea in this course is about judgment, and judgment is what stays useful when the tools change.
 
 ## Key Terms
 

@@ -111,7 +111,7 @@ One business problem touches every part of the course:
 - Tools and careers
 - Ethics and responsible use
 
-This scenario was answered with charts and a report. The same six steps, run by a data scientist, would have ended in a model that scores each new user's likelihood of cancelling — different output, same problem, same order, same obligation to name what it assumed.
+This scenario was answered with charts and a report. The same six steps, run by a data scientist, would have ended in a model that scores each new user's likelihood of cancelling: different output, same problem, same order, same obligation to name what it assumed.
 
 That is how data work happens in the real world.
 

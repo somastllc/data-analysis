@@ -11,26 +11,27 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Accuracy** | Whether data values are correct | Ch 1 — What Is Data? |
 | **Analytical question** | A clear question that data can help answer | Ch 3 — The Data Process |
 | **Analytics** | The use of data to find patterns and support decisions | Ch 2 — The Data Ecosystem |
+| **Analytics Engineer** | A professional who prepares clean, analysis-ready data for reporting teams | Ch 4 — Data in the Real World |
 | **Anonymization** | Removing details that could identify a specific person | Ch 5 — Data Ethics and Privacy |
 | **API** | A way for systems to share data automatically | Ch 3 — The Data Process |
 | **Assumption** | Something believed to be true for the analysis to hold | Ch 3 — The Data Process |
 | **Bias** | Systematic unfairness in data or analysis | Ch 5 — Data Ethics and Privacy |
+| **Business Analyst** | A professional who works out what an organization needs and how data can help | Ch 4 — Data in the Real World |
 | **Business intelligence (BI)** | Tools and practices for reporting and monitoring business performance | Ch 2 — The Data Ecosystem |
 | **Business problem** | The issue or decision the analysis is meant to support | Ch 3 — The Data Process |
 | **Categorical data** | Data that groups items into labels or categories | Ch 1 — What Is Data? |
 | **Churn** | When customers stop using a product or service | Ch 6 — Conclusion |
-| **Collaboration** | Different roles working together toward a shared goal | Ch 2 — The Data Ecosystem |
 | **Competitive advantage** | An edge that helps an organization perform better than others | Ch 1 — What Is Data? |
 | **Completeness** | Whether required data is present | Ch 1 — What Is Data? |
-| **Compliance** | Following laws and organizational policies | Ch 5 — Data Ethics and Privacy |
 | **Consent** | Permission to collect or use data | Ch 5 — Data Ethics and Privacy |
 | **Consistency** | Whether data follows the same format and rules | Ch 1 — What Is Data? |
+| **Correlation** | Two things moving together, which is not by itself evidence that one causes the other | Ch 3 — The Data Process |
 | **CSV** | A plain-text format for tabular data | Ch 1 — What Is Data? |
 | **Dashboard** | A visual display of key metrics and charts | Ch 4 — Data in the Real World |
 | **Data** | Raw facts, measurements, or observations | Ch 1 — What Is Data? |
 | **Data analysis** | The process of examining data to find patterns and answer questions | Ch 2 — The Data Ecosystem |
 | **Data Analyst** | A professional who analyzes data to answer business questions | Ch 4 — Data in the Real World |
-| **Database** | A structured system for storing and retrieving data | Ch 1 — What Is Data? |
+| **Database** | A structured system for storing and retrieving data | Ch 2 — The Data Ecosystem |
 | **Data cleaning** | The process of fixing errors and improving data quality | Ch 3 — The Data Process |
 | **Data collection** | The process of gathering data for analysis | Ch 3 — The Data Process |
 | **Data-driven** | Using data to guide actions and decisions | Ch 1 — What Is Data? |
@@ -51,17 +52,16 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Data source** | Where data originally comes from | Ch 1 — What Is Data? |
 | **Data visualization** | Presenting data using charts and graphs | Ch 3 — The Data Process |
 | **Data warehouse** | A centralized system designed for analysis and reporting | Ch 2 — The Data Ecosystem |
-| **Decision-making** | Choosing an action based on available evidence | Ch 3 — The Data Process |
 | **Descriptive analytics** | Summarizes what already happened | Ch 2 — The Data Ecosystem |
 | **Diagnostic analytics** | Explains why something happened | Ch 2 — The Data Ecosystem |
 | **Fairness** | Avoiding unjust harm in data-driven decisions | Ch 5 — Data Ethics and Privacy |
 | **Feedback loop** | When a system's own decisions become the data that trains its future decisions | Ch 5 — Data Ethics and Privacy |
-| **Industry application** | A real-world use of data in a specific sector | Ch 4 — Data in the Real World |
 | **Information** | Data that has been organized to convey meaning | Ch 1 — What Is Data? |
 | **Insight** | A meaningful conclusion, supported by data, that helps guide a decision | Ch 1 — What Is Data? |
 | **KPI** | A key performance indicator used to measure success | Ch 2 — The Data Ecosystem |
 | **Limitation** | A weakness or boundary in the data or method | Ch 3 — The Data Process |
 | **Machine learning** | A method where systems learn patterns from data | Ch 2 — The Data Ecosystem |
+| **Machine Learning Engineer** | A professional who puts models into production and keeps them running | Ch 4 — Data in the Real World |
 | **Misleading visualization** | A chart that is factually correct but creates a false impression | Ch 5 — Data Ethics and Privacy |
 | **Missing value** | A blank or unavailable data entry | Ch 3 — The Data Process |
 | **Model** | A system trained to make predictions or decisions from data | Ch 2 — The Data Ecosystem |
@@ -81,7 +81,7 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Secondary data** | Data collected by others and reused for a new purpose | Ch 1 — What Is Data? |
 | **Semi-structured data** | Data with some organization, such as JSON, but not a fixed table | Ch 1 — What Is Data? |
 | **Spreadsheet** | A grid-based tool for organizing and calculating data | Ch 4 — Data in the Real World |
-| **Stakeholder** | A person or group affected by, or interested in, the results of the analysis | Ch 2 — The Data Ecosystem |
+| **Stakeholder** | A person or group affected by, or interested in, the results of the analysis | Ch 3 — The Data Process |
 | **Standardization** | Making data follow a consistent format | Ch 3 — The Data Process |
 | **Structured data** | Data organized in rows, columns, or tables | Ch 1 — What Is Data? |
 | **Transferable skills** | Skills that can be used in many jobs or industries | Ch 4 — Data in the Real World |
@@ -89,5 +89,4 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Transparency** | Openness about data collection and use | Ch 5 — Data Ethics and Privacy |
 | **Trend** | A general direction of change over time | Ch 3 — The Data Process |
 | **Unstructured data** | Data without a fixed format, such as text or images | Ch 1 — What Is Data? |
-| **Use case** | A specific example of how data solves a problem | Ch 4 — Data in the Real World |
 | **Version control** | Tracking changes to files over time | Ch 4 — Data in the Real World |

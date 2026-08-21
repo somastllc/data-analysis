@@ -60,7 +60,7 @@ Chart A contains no false numbers. It is still misleading, because the axis turn
 
 This is the most common dishonesty in data work, and it rarely feels like lying. Nobody edited a number. Someone chose the axis that told the story they wanted.
 
-Two warning signs in your own charts: an axis that does not start at zero without a reason, and a percentage shown without the count behind it — "50% growth" from 2 customers to 3.
+Two warning signs in your own charts: an axis that does not start at zero without a reason, and a percentage shown without the count behind it, like "50% growth" from 2 customers to 3.
 
 ### Principles of responsible data use
 

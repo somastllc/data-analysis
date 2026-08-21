@@ -4,7 +4,7 @@
 **Level:** Beginner  
 **Lessons:** 27  
 **Duration:** ~1.5–2 hours reading  
-**Video:** ~2h 30m across 34 videos  
+**Video:** ~2h 40m across 34 videos  
 
 A foundation course in what data is, how the data field is organized, and how an analysis moves from a question to a decision. No prior experience required, and nothing to install — this course is read-and-think.
 
@@ -19,7 +19,7 @@ A foundation course in what data is, how the data field is organized, and how an
 | 5 | [Data Ethics and Privacy](05-data-ethics-and-privacy/) | 4 |
 | 6 | [Conclusion](06-conclusion/) | 2 |
 
-All 85 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
+All 84 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
 
 ## Outcomes
 

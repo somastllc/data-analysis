@@ -6,51 +6,38 @@
 
 ## Overview
 
-A hospital, an online store, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.
+A clinic, a money transfer service, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.
 
-### Why industry context matters
+### The methods travel; the questions do not
 
-The tools and methods of data work are often similar across industries, but the questions change.
+The steps are the same everywhere. Define the problem, collect, clean, analyse, communicate, decide. What changes between one employer and the next is the question you are pointed at, and how much it costs to get it wrong.
 
-Healthcare teams may ask about patient outcomes.  
-Retail teams may ask about customer purchases.  
-Finance teams may ask about risk and fraud.
+### The three from the cold open
 
-Understanding industry use cases helps you see where your skills can apply.
+**The clinic** wants to know which patients do not come back for a follow-up visit, so it can send a reminder to the right ones. A wrong answer here means somebody's treatment goes unfinished.
 
-### Examples by industry
+**The money transfer service** wants to know which transfers are worth a second look before they complete. A wrong answer costs a customer their money, or costs the company a customer it wrongly blocked.
 
-| Industry | How data is used |
+**The school** wants to know which students are drifting out of attendance early enough to do something about it. A wrong answer means a child is missed.
+
+Same six steps, three completely different definitions of a serious mistake.
+
+### More of the same
+
+| Where | What they ask data |
 |---|---|
-| **Healthcare** | Track patient outcomes, improve treatment plans, manage hospital resources |
-| **Finance** | Detect fraud, assess credit risk, analyze investment performance |
-| **E-commerce** | Recommend products, optimize pricing, reduce cart abandonment |
-| **Marketing** | Measure campaign performance, segment customers, improve targeting |
-| **Education** | Monitor student progress, improve learning programs, allocate resources |
-| **Government** | Plan public services, analyze census data, improve policy decisions |
-
-### Short case examples
-
-**Healthcare:** A hospital analyzes readmission rates to identify which patients need extra follow-up care.
-
-**Finance:** A bank uses transaction patterns to flag suspicious activity. Mobile money providers apply the same idea to detect unusual transfers and protect customers.
-
-**E-commerce:** An online store recommends products based on browsing and purchase history.
-
-**Marketing:** A company compares ad channels to see which one produces the most conversions.
-
-**Education:** A school tracks attendance and exam results to identify students who may need extra support.
-
-**Government:** A city uses traffic data to improve road planning and reduce congestion.
+| **Livestock and export** | Which shipments are rejected at inspection, and what they had in common |
+| **Telecom** | Which customers stop topping up, and how early that becomes visible |
+| **Water and power utilities** | Where losses occur between what is supplied and what is billed |
+| **Wholesale and retail** | Which products earn most per shelf-metre, and which tie up cash |
+| **Aid and public services** | Which districts are underserved, and whether last year's spending changed anything |
 
 ### Key takeaway
 
-Data skills are portable. Once you understand how to ask questions, work with data, and communicate insights, you can apply those skills in many industries.
+The methods are **transferable skills**: learn to ask a question, work with the data, and explain the answer, and the industry becomes a matter of learning what its people care about. That last part is not a small job. It is why analysts who move sector often say the first three months were the hardest.
 
 ## Key Terms
 
 | Term | Definition |
 |---|---|
-| **Industry application** | A real-world use of data in a specific sector |
-| **Use case** | A specific example of how data solves a problem |
 | **Transferable skills** | Skills that can be used in many jobs or industries |

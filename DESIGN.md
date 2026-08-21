@@ -261,6 +261,18 @@ style="rounded=1;absoluteArcSize=1;arcSize=12;fillColor=none;
 
 Edge labels: mono 11px, `--muted`, `labelBackgroundColor=#FFFFFF`.
 
+**A fork edge turns over the target, not inside the column gap.** Where one node feeds two,
+each arm leaves the source's right edge, runs along to the *target's centre line*, turns once
+with a 10px radius, and goes straight into the edge facing the source — up into a target above,
+down into one below. Both arms share the horizontal run, so the picture is a single line
+splitting, which is the claim a fork is making.
+
+This is `orthogonalEdgeStyle`'s own route, and it is used **because** it is: the column gap is
+24px, so a turn inside the gap leaves 4px of run before the arrowhead — less than the corner
+radius, and the path doubles back over itself. Pinning the router with `exitX`/`entryX` and a
+waypoint was tried first and produced exactly that defect in the SVG while draw.io quietly
+shrank its own corner to 0.6px to cope. Let the router route; match it in the SVG.
+
 **Endpoints.** An arrow starts 2px clear of its source and its tip stops 8px short of its
 target — the gap is what keeps a row of boxes from reading as one welded bar. In `.drawio`
 that is `sourcePerimeterSpacing=2;targetPerimeterSpacing=5.2`: draw.io pulls a filled marker

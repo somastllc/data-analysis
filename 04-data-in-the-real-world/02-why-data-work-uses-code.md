@@ -23,13 +23,13 @@ You are not expected to understand the examples coming up. The goal is to see wh
 **SQL** asks a database a question:
 
 ```sql
-SELECT region, SUM(sales) AS total_sales
+SELECT city, SUM(sales) AS total_sales
 FROM orders
 WHERE order_date >= '2024-01-01'
-GROUP BY region;
+GROUP BY city;
 ```
 
-That is one question — "how much did each region sell this year?" — answered in four lines.
+That is one question — "how much did each city sell this year?" — answered in four lines.
 
 ### Working through data step by step
 
@@ -39,8 +39,8 @@ That is one question — "how much did each region sell this year?" — answered
 import pandas as pd
 
 orders = pd.read_csv("orders.csv")
-average_by_region = orders.groupby("region")["sales"].mean()
-print(average_by_region)
+average_by_city = orders.groupby("city")["sales"].mean()
+print(average_by_city)
 ```
 
 Both examples do something you could also do by hand in a spreadsheet. The difference is that they run in seconds on a million rows, and they run the same way every time.

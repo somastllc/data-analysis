@@ -1,6 +1,6 @@
 # Types of Analytics
 
-**Chapter:** 2 — The Data Ecosystem  
+**Chapter:** 2 - The Data Ecosystem  
 **Lesson:** 1 of 6  
 **By the end:** You can tell descriptive, diagnostic, predictive, and prescriptive questions apart.
 
@@ -11,8 +11,6 @@ A manager looks at last month's sales report and asks three questions in one mee
 ### What is analytics?
 
 **Analytics** means using data to understand what happened, why it happened, what may happen next, or what action to take.
-
-Different questions require different types of analytics.
 
 ```mermaid
 flowchart LR
@@ -25,10 +23,10 @@ flowchart LR
 
 | Type | Question | Example |
 |---|---|---|
-| **Descriptive** | What happened? | Sales increased 12% last month |
-| **Diagnostic** | Why did it happen? | Sales rose because of a holiday promotion |
-| **Predictive** | What might happen next? | Sales may increase next month if the campaign continues |
-| **Prescriptive** | What should we do? | Increase ad spend in the top-performing region |
+| **Descriptive** | What happened? | Rice sales rose 12% last month |
+| **Diagnostic** | Why did it happen? | They rose because the Hargeisa shop stayed open through Ramadan |
+| **Predictive** | What might happen next? | Sales may stay high next month if the longer hours continue |
+| **Prescriptive** | What should we do? | Keep the longer hours in Hargeisa, and try them in Muqdisho |
 
 ### Simple way to remember them
 
@@ -41,13 +39,9 @@ Most beginners start with descriptive analytics, such as summaries, totals, and 
 
 ### Why this matters
 
-When someone says they work in "data," they may be doing very different things:
+The four are cumulative, and that is the useful part. You cannot explain why rice sales rose until you know that they rose. You cannot forecast next month without knowing what drove last month. And a recommendation made without the three steps underneath it is just an opinion with a number attached to it.
 
-- A business analyst may focus on descriptive and diagnostic analytics
-- A data scientist may build predictive models
-- A decision team may use prescriptive analytics to choose the best strategy
-
-Understanding analytics types helps you understand the broader data ecosystem.
+So when an organization says it wants prediction, the honest first question is whether it can yet describe what already happened.
 
 ## Key Terms
 

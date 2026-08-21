@@ -1,6 +1,6 @@
 # Why Data Matters
 
-**Chapter:** 1 — What Is Data?  
+**Chapter:** 1 - What Is Data?  
 **Lesson:** 5 of 5  
 **By the end:** You can explain why data skills are valuable across many industries and roles.
 
@@ -18,7 +18,9 @@ Instead of relying only on guesswork or intuition, organizations use data to:
 - Identify problems early
 - Measure performance
 
-For example, a neighborhood shop can track which products sell fastest, when stock runs low, and which items earn the most profit — then reorder based on evidence instead of guesswork. An online store can use the same approach at larger scale to discover which marketing campaigns work and where customers abandon their carts.
+For example, a neighborhood shop can track which products sell fastest, when stock runs low, and which items earn the most profit, then reorder on the evidence. An online store uses the same approach at larger scale to find which marketing campaigns work and where customers abandon their carts.
+
+An organization that works this way is often described as **data-driven**.
 
 ### Data creates competitive advantage
 
@@ -26,11 +28,9 @@ Companies that use data effectively can respond faster and make smarter choices 
 
 Examples:
 
-- A streaming service recommends shows based on viewing history
-- A bank or mobile money provider detects suspicious transactions using patterns in account activity
-- A hospital tracks patient outcomes to improve treatment plans
+Two shops on the same street sell the same goods at the same prices. One knows which items earn most per shelf and reorders on that; the other reorders on memory. Neither has better data than the other. The transactions happened either way.
 
-Data does not replace human judgment, but it provides evidence that makes judgment stronger.
+What separates them is that somebody looked.
 
 ### Data skills are widely valuable
 
@@ -41,13 +41,13 @@ You do not have to become a data scientist to benefit from understanding data. D
 - Healthcare workers reviewing patient trends
 - Students interpreting research and statistics
 
-Because so many industries now depend on data, people who understand how data is collected, analyzed, and used have strong career opportunities.
+None of these people are data professionals. All of them are better at their own job for being able to read a number and ask where it came from.
 
 ### Data also comes with responsibility
 
-The power of data brings responsibility. Poor data can mislead people. Mishandled personal data can harm privacy. Biased data can lead to unfair outcomes.
+Poor data can mislead people. Mishandled personal data can harm privacy. Biased data can lead to unfair outcomes.
 
-That is why this course also covers ethics later. Using data well means using it **accurately, responsibly, and fairly**.
+Chapter five deals with all three, and it comes before you have any tools to do damage with.
 
 ## Key Terms
 

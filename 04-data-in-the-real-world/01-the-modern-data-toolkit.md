@@ -10,9 +10,9 @@ Everyone new to data asks which tool to learn first. The honest answer is that t
 
 ### Why there are many tools
 
-No single tool does everything well. Some tools are best for small datasets, others for large databases, and others for building dashboards or writing code.
+No single tool does everything well. Some are built for small datasets, others for large databases, others for dashboards or for writing code, and they overlap enough that most teams run several at once.
 
-They also overlap, and most teams use several. As a beginner you do not need to master all of them at once. It is enough to know what each one is for.
+You do not need to master all of them. You need to recognise what each one is for, so that when somebody says the word you know roughly what they are about to hand you.
 
 ### Core tools in data work
 
@@ -38,7 +38,7 @@ flowchart LR
     pythonNode --> biNode["Power BI dashboard"]
 ```
 
-Notice that one analysis feeds two outputs, for two audiences. Tools are not a fixed sequence — you pick them per step. Git and GitHub sit underneath the whole flow, recording what changed at each stage.
+Notice that one analysis feeds two outputs, for two audiences. Tools are not a fixed sequence. You pick them per step. Git and GitHub sit underneath the whole flow, recording what changed at each stage.
 
 Two of the tools in that workflow involve writing code. The next lesson explains why the field bothers.
 

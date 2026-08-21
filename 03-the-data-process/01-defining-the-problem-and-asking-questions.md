@@ -31,14 +31,12 @@ Always begin by asking:
 Example:
 
 - Weak question: "Let's analyze the sales data."
-- Strong question: "Why did sales drop in the North region last quarter?"
+- Strong question: "Why did sales drop in Burco last quarter, when Hargeisa and Muqdisho held steady?"
 
 For a local shop, the same idea applies:
 
 - Weak question: "Let's look at the sales spreadsheet."
 - Strong question: "Why did rice sales drop in the last two weeks compared to the month before?"
-
-The stronger questions give analysis a clear direction.
 
 ### Know your stakeholders
 
@@ -67,9 +65,9 @@ Good questions are:
 
 Examples:
 
-- Which product category had the highest return rate last month?
-- Are new customers more likely to cancel within 30 days?
-- Which marketing channel brings the most qualified leads?
+- Which product had the highest return rate last month?
+- Are new customers more likely to stop ordering within their first month?
+- Which of our three cities is slowest to pay its invoices?
 
 ### The same first step, whatever gets built
 
@@ -79,15 +77,15 @@ A question no decision depends on is not worth answering, however impressive the
 
 ### Example
 
-An online course platform notices fewer enrollments.
+A training centre in Hargeisa notices that fewer students are enrolling.
 
-Stakeholders: marketing team and product manager  
-Problem: enrollment decline  
+Stakeholders: the centre manager and the person who runs recruitment  
+Problem: enrolment is falling  
 Questions:
 
-- When did enrollments start dropping?
-- Did the drop affect all courses or only some?
-- Did traffic decrease, or did fewer visitors convert?
+- When did enrolment start dropping?
+- Did it drop across every course, or only some?
+- Are fewer people asking about courses, or are the same people asking and not signing up?
 
 These questions guide every step that follows.
 

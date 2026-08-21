@@ -10,8 +10,6 @@ An analyst spends three weeks on an investigation, presents twelve slides, and n
 
 ### Analysis without communication has limited value
 
-A strong insight that nobody understands will not change anything.
-
 Good communication helps you:
 
 - Explain what you found
@@ -46,9 +44,9 @@ Keep the message focused. Most stakeholders do not need every detail of your pro
 Example:
 
 - Weak: "The regression output indicates a negative coefficient."
-- Strong: "Customers who wait more than 3 days for support are twice as likely to cancel."
+- Strong: "Customers who wait more than 3 days for an answer are twice as likely to leave."
 
-The second version is clearer and more actionable.
+The first sentence describes what you did. The second describes what the listener should care about, which is the only one of the two they can act on.
 
 ### Know your audience
 
@@ -64,5 +62,4 @@ Tailor your message to the person making the decision.
 
 | Term | Definition |
 |---|---|
-| **Insight** | A meaningful conclusion, supported by data, that helps guide a decision |
 | **Recommendation** | A suggested action based on analysis |

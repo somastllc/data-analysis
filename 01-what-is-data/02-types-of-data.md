@@ -1,6 +1,6 @@
 # Types of Data
 
-**Chapter:** 1 — What Is Data?  
+**Chapter:** 1 - What Is Data?  
 **Lesson:** 2 of 5  
 **By the end:** You can classify data as structured, semi-structured, or unstructured, and as quantitative or qualitative.
 
@@ -27,7 +27,7 @@ Examples:
 - Photos and videos
 - Call center recordings
 
-**Semi-structured data** sits between the two. It has some organization, but not a fixed table layout. **JSON** is a common example — it uses labels and nested fields, which makes it useful for apps and APIs but less rigid than a database table.
+**Semi-structured data** sits between the two. It has some organization, but not a fixed table layout. **JSON** is a common example. It uses labels and nested fields, which makes it useful for apps and APIs but less rigid than a database table.
 
 Most real-world projects use a mix of all three. A company might store order details in a structured database, customer reviews as unstructured text, and app event logs as semi-structured JSON.
 
@@ -49,9 +49,7 @@ Examples:
 - Product color: "Blue"
 - Survey response: "Satisfied"
 
-Labels like product color or satisfaction level are often called **categorical data** — they group items into categories rather than measure them with numbers.
-
-Quantitative data is useful for calculations and comparisons. Qualitative and categorical data are useful for understanding opinions, descriptions, and context.
+Labels like product color or satisfaction level are often called **categorical data**. They group items into categories rather than measure them with numbers.
 
 ### Why data types matter
 

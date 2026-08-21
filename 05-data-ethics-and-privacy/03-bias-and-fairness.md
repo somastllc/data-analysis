@@ -6,7 +6,7 @@
 
 ## Overview
 
-A model can sort people by gender using data that contains no gender field anywhere in it. This is not a trick or a rare case — it is the normal outcome.
+A model can sort people by gender using data that contains no gender field anywhere in it. This is not a trick or a rare case. It is the normal outcome.
 
 **Bias** means systematic unfairness that leads to unjust results. Data looks objective, but it usually reflects human choices and past inequalities.
 
@@ -19,7 +19,7 @@ A model can sort people by gender using data that contains no gender field anywh
 
 ### Case study: bias in the loan project
 
-The team trains the loan model on the company's own lending records — every loan issued by hand over the last three years, and whether it was repaid.
+The team trains the loan model on the company's own lending records: every loan issued by hand over the last three years, and whether it was repaid.
 
 That is the most relevant data available. It is also the problem.
 
@@ -36,6 +36,10 @@ Now notice something important: the team never put gender in the dataset. They d
 Each of these is a **proxy variable**: a field that stands in for something you did not measure and did not intend to use. Remove gender from the dataset and the model can still sort by gender, straight through the proxies.
 
 This is why "we did not collect sensitive attributes" is not a defense. It only means nobody checked.
+
+Notice which field is missing from that list. The scoring model also uses how much money moves through the account each month, and that one is not standing in for anything. It measures the business the loan is for. A trader with money moving through her account has a business whether or not she has a formal address, a registered company, or a three-year-old phone number.
+
+That distinction is the whole repair. A proxy answers your question by guessing at something else; a direct measure answers it. When you are handed a field list, the useful question about each field is not "is this allowed?" but "is this the thing, or a shadow of the thing?"
 
 ### How bias repeats itself
 
@@ -59,7 +63,7 @@ Fairness is not treating every case identically. It is avoiding unjust harm, and
 - Compare outcomes across groups, not just overall accuracy
 - Test decisions on a small scale before applying them widely
 
-Bias cannot always be removed, but it must be examined openly.
+Not one of those requires a statistician. They require somebody whose job it is to look, which is what the next lesson is about.
 
 ## Key Terms
 
