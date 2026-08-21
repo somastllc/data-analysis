@@ -86,7 +86,7 @@ def deck_01_01(frames):
     s.append(slide(
         '  <p class="lead" style="max-width:50ch">You check your phone and see a mobile money\n'
         '     transfer of <code>$25</code>, a weather app showing <code>32&deg;C</code>, and a\n'
-        '     message from school about your attendance. Each of those is a piece of data —\n'
+        '     message from school about your attendance. Each of those is a piece of data,\n'
         '     a small fact about something that happened. Before you analyze data, build\n'
         '     dashboards, or choose a career in data, you need a clear answer to a simple\n'
         '     question: <strong>what is data?</strong></p>',
@@ -104,7 +104,7 @@ def deck_01_01(frames):
         '  <p class="eyebrow">By the end</p>\n'
         '  <div class="rule"></div>\n'
         '  <h2 style="max-width:30ch">You can explain what data is, and tell\n'
-        '      <span class="accent">data</span>, <span class="accent">information</span> and\n'
+        '      <span class="accent">data</span>, <span class="accent">information</span>, and\n'
         '      <span class="accent">insight</span> apart.</h2>'))
 
     # 4 - section 1, the definition
@@ -124,9 +124,8 @@ def deck_01_01(frames):
                  ("present", "a student&rsquo;s attendance record"),
                  ("$49.99", "a product price"),
                  ("32&deg;C", "a temperature reading")])
-        + '\n  <p style="margin-top:32rem;max-width:56ch">Each example is a single fact. By itself,\n'
-          '     it may not mean much. But when we collect many facts together, patterns start\n'
-          '     to appear.</p>'))
+        + '\n  <p style="margin-top:32rem;max-width:56ch">Each example is a single fact. Collect\n'
+          '     enough of them and patterns start to appear.</p>'))
 
     # 6 - section 2, heading and table together. Standing rule 6: on screen as
     # written; read a row, then explain it. The heading and its one-line lead do
@@ -173,9 +172,7 @@ def deck_01_01(frames):
         '         understand.</p></div>\n'
         '    <div><p class="k">Insight</p><p class="v">Knowing what to cook next time, based\n'
         '         on what people liked.</p></div>\n'
-        '  </div>\n'
-        '  <p class="lead" style="margin-top:48rem">In data work, your goal is to move from raw\n'
-        '     data toward meaningful insight.</p>'))
+        '  </div>'))
 
     # 11 - section 3, whole. The list and the sentence that draws the conclusion
     # from it are one thought; splitting them puts a beat where the lesson has none.
@@ -190,9 +187,8 @@ def deck_01_01(frames):
                  ("Likes and comments on social media", None),
                  ("Steps tracked by a fitness app", None),
                  ("Weather forecasts", None)], two=True)
-        + '\n  <p style="margin-top:24rem;max-width:64ch">Businesses, schools, hospitals and\n'
-          '     governments all rely on data to make decisions. That is why data skills are\n'
-          '     valuable across many industries.</p>'))
+        + '\n  <p style="margin-top:24rem;max-width:64ch">Businesses, schools, hospitals, and\n'
+          '     governments all rely on data to make decisions.</p>'))
 
     # 12 - end card. Standing rule 4: held on screen, never narrated.
     s.append(slide(
@@ -351,12 +347,23 @@ def numbered(slides):
     return out
 
 
-def verbatim_report(deck_html, sources):
+def verbatim_report(deck_html, sources, allow=()):
     """Every text element on a slide must be the lesson's own words.
 
     The deck is what gets screen-recorded while the lesson is narrated, so a slide
     that paraphrases puts different words on screen and in the presenter's mouth.
-    Only the eyebrows are ours — they are running heads, not content."""
+    Only the eyebrows are ours — they are running heads, not content.
+
+    `sources` is the lesson Markdown, and nothing else. An earlier version also
+    passed the handout, on the grounds that it carries a few lines the Markdown does
+    not. That let a *stale* handout satisfy the check: after the content audit
+    rewrote lesson 1.1, its deck still quoted three sentences the lesson no longer
+    contained — one of them deleted outright — and the build reported 41/41, because
+    the pre-audit handout was still in the corpus and still contained them.
+
+    So handout-only lines are now declared one by one in `allow`. The lesson is the
+    source of truth, as PRODUCTION.md says; anything on a slide that is not in it has
+    to be written down here where it can be seen and re-checked."""
     def norm(t):
         t = html.unescape(re.sub(r"<[^>]+>", " ", t))
         t = t.translate(str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"'}))
@@ -364,7 +371,7 @@ def verbatim_report(deck_html, sources):
         t = re.sub(r"\s+([,.;:?!])", r"\1", t)   # a stripped inline tag leaves a gap
         return re.sub(r"\s+", " ", t).strip()
 
-    corpus = [norm(p.read_text(encoding="utf-8")) for p in sources]
+    corpus = [norm(p.read_text(encoding="utf-8")) for p in sources] + [norm(a) for a in allow]
     body = deck_html.split("</style>", 1)[1]
     chrome = re.compile(r"^(\d+ / \d+|Lesson \d+ of \d+)$")
     # Furniture, not content: the running head and the plate's own label. Both name
@@ -402,8 +409,22 @@ DECKS = {
         out="01-01-what-is-data-slides.html",
         nodes=["Data", "Information", "Insight"],
         diagram="01-01-data-to-insight", caption=None,
-        sources=["01-what-is-data/01-what-is-data.md",
-                 "samples/01-01-what-is-data.html"],
+        sources=["01-what-is-data/01-what-is-data.md"],
+        # Lines the handout added that the lesson does not carry. Declared one by
+        # one so a stale handout can never satisfy the check on the lesson's behalf.
+        allow=[
+            "$25 — a mobile money transfer amount",
+            "$2.50 per kg — the market price of rice",
+            "present — a student's attendance record",
+            "$49.99 — a product price",
+            "32°C — a temperature reading",
+            "Sales were $1,200, $980 and $1,450 on three days",
+            "Each step throws information away and adds meaning. You cannot skip one: "
+            "an insight with no data underneath it is just an opinion.",
+            "The ingredients, before anyone has decided what to make.",
+            "A prepared meal you can actually understand.",
+            "Knowing what to cook next time, based on what people liked.",
+        ],
     ),
     "03-01": dict(
         build=deck_03_01,
@@ -436,7 +457,8 @@ def build_deck(key):
                 for s in slides)
     print(f"{key}: {len(slides)} slides · 1920×1080 · ~{words // len(slides)} words/slide avg")
 
-    checked, strays = verbatim_report(markup, [ROOT / p for p in d["sources"]])
+    checked, strays = verbatim_report(markup, [ROOT / p for p in d["sources"]],
+                                      d.get("allow", ()))
     print(f"  verbatim: {checked - len(strays)}/{checked} text elements "
           f"are the lesson's own words")
     for tag, txt in strays:
