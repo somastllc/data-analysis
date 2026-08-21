@@ -1,7 +1,7 @@
-# Chapter 2 Opener - The Data Ecosystem
+# Chapter 2 Opener — The Data Ecosystem
 
-**Chapter:** 2 - The Data Ecosystem  
-**Type:** Video opener - ~80s, no lesson file behind it  
+**Chapter:** 2 — The Data Ecosystem  
+**Type:** Video opener — ~80s, no lesson file behind it  
 
 Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply - open cold, no greeting.
 Read close to as written; this is already at speaking length.

@@ -398,6 +398,120 @@ def page(title, slides):
             + "\n</body>\n</html>\n")
 
 
+# ── the deck: lesson 2.1, from its PRODUCTION.md shot list ──────────────────
+# Shots: cold open -> title -> objective -> What is analytics? ->
+#        diagram build (4) -> The four types -> table -> Simple way to remember
+#        them -> Why this matters -> end card
+#
+# Every word below is the lesson's own, copied from
+# 02-the-data-ecosystem/01-types-of-analytics.md. This deck has no handout, so
+# there is no `allow` list: every text element must be in the Markdown.
+def deck_02_01(frames):
+    s = []
+
+    # 1 - cold open. Rule 1: the whole `## Overview` paragraph, nothing stacked on
+    # it. The three questions inside it are the lesson's structure, so they are set
+    # in the accent to be pointed at — PRODUCTION's note says to say they map onto
+    # the first three types, and this is the frame that is on screen when you do.
+    s.append(slide(
+        '  <p class="lead" style="max-width:52ch">A manager looks at last month&rsquo;s sales\n'
+        '     report and asks three questions in one meeting:\n'
+        '     <span class="accent">&ldquo;What happened? Why did it happen? What should we do\n'
+        '     next?&rdquo;</span> Each question needs a different kind of analysis.</p>',
+        mid=True))
+
+    # 2 - title card. Rule 3: on screen, never read.
+    s.append(slide(
+        '  <p class="eyebrow">Chapter 2 — The Data Ecosystem</p>\n'
+        '  <h1>Types of Analytics</h1>\n'
+        '  <p class="mono" style="font-size:var(--t-data);color:var(--muted)">Lesson 1 of 6</p>',
+        mid=True))
+
+    # 3 - objective. Rule 2, said at ~0:15.
+    s.append(slide(
+        '  <p class="eyebrow">By the end</p>\n'
+        '  <div class="rule"></div>\n'
+        '  <h2 style="max-width:32ch">You can tell <span class="accent">descriptive</span>,\n'
+        '      <span class="accent">diagnostic</span>, <span class="accent">predictive</span>,\n'
+        '      and <span class="accent">prescriptive</span> questions apart.</h2>'))
+
+    # 4 - section 1: the definition. One sentence, so it carries the frame alone.
+    s.append(slide(
+        '  <p class="eyebrow">1 — What analytics is</p>\n'
+        '  <h2 style="margin-bottom:24rem">What is analytics?</h2>\n'
+        '  <p class="lead wide"><strong>Analytics</strong> means using data to understand what\n'
+        '     happened, why it happened, what may happen next, or what action to take.</p>'))
+
+    # 5-8 - the diagram build, one type per beat (rule 7). The four stages are the
+    # four types, in the order the table then explains them, so the build is the
+    # section's spine rather than an illustration of it.
+    for frame in frames:
+        s.append(slide(
+            '  <p class="eyebrow">The four types</p>\n'
+            + plate("Plate I — the four types of analytics", frame)))
+
+    # 9 - section 2, heading and table together (rule 6: on screen as written).
+    s.append(slide(
+        '  <p class="eyebrow">2 — The four types</p>\n'
+        '  <h2 style="margin-bottom:16rem">The four types of analytics</h2>\n'
+        + table(["Type", "Question", "Example"], [
+            ("Descriptive", "What happened?",
+             "Rice sales rose 12% last month"),
+            ("Diagnostic", "Why did it happen?",
+             "They rose because the Hargeisa shop stayed open through Ramadan"),
+            ("Predictive", "What might happen next?",
+             "Sales may stay high next month if the longer hours continue"),
+            ("Prescriptive", "What should we do?",
+             "Keep the longer hours in Hargeisa, and try them in Muqdisho"),
+        ])))
+
+    # 10 - section 3. The four-line mnemonic and the sentence that follows it are
+    # one thought: the list says what each type is, the sentence says where a
+    # beginner actually starts. Splitting them puts a beat where the lesson has none.
+    s.append(slide(
+        '  <p class="eyebrow">3 — A way to remember</p>\n'
+        '  <h2 style="margin-bottom:16rem">Simple way to remember them</h2>\n'
+        + marks([("<strong>Descriptive</strong> = report the past", None),
+                 ("<strong>Diagnostic</strong> = explain the past", None),
+                 ("<strong>Predictive</strong> = forecast the future", None),
+                 ("<strong>Prescriptive</strong> = recommend action", None)])
+        + '\n  <p style="margin-top:32rem;max-width:60ch">Most beginners start with descriptive\n'
+          '     analytics, such as summaries, totals, and charts. More advanced work adds\n'
+          '     prediction and recommendation.</p>'))
+
+    # 11 - section 4, the argument. This is the lesson's point and the reason the
+    # diagram is a chain rather than four boxes, so it gets the frame to itself.
+    s.append(slide(
+        '  <p class="eyebrow">4 — Why this matters</p>\n'
+        '  <h2 style="margin-bottom:20rem">The four are cumulative</h2>\n'
+        '  <p class="lead wide">You cannot explain why rice sales rose until you know that they\n'
+        '     rose. You cannot forecast next month without knowing what drove last month. And a\n'
+        '     recommendation made without the three steps underneath it is just an opinion with\n'
+        '     a number attached to it.</p>'))
+
+    # 12 - the consequence, alone, because it is the line the viewer should leave
+    # with and it is a question rather than a statement.
+    s.append(slide(
+        '  <p class="eyebrow">4 — Why this matters</p>\n'
+        '  <p class="lead" style="max-width:54ch">So when an organization says it wants\n'
+        '     prediction, the honest first question is whether it can yet\n'
+        '     <span class="accent">describe what already happened</span>.</p>',
+        mid=True))
+
+    # 13 - end card. Rule 4: held on screen, never narrated.
+    s.append(slide(
+        '  <p class="eyebrow">Key terms</p>\n'
+        + table(["Term", "Definition"], [
+            ("Analytics", "The use of data to find patterns and support decisions"),
+            ("Descriptive analytics", "Summarizes what already happened"),
+            ("Diagnostic analytics", "Explains why something happened"),
+            ("Predictive analytics", "Estimates what may happen in the future"),
+            ("Prescriptive analytics", "Recommends actions based on analysis"),
+        ])))
+
+    return s
+
+
 # ── the decks that exist, and what each one is checked against ──────────────
 # `sources` is the corpus verbatim_report matches every slide's text against: the
 # lesson Markdown always, plus the handout where one exists (it carries a few lines
@@ -425,6 +539,15 @@ DECKS = {
             "A prepared meal you can actually understand.",
             "Knowing what to cook next time, based on what people liked.",
         ],
+    ),
+    "02-01": dict(
+        build=deck_02_01,
+        title="Types of Analytics — slides",
+        out="02-01-types-of-analytics-slides.html",
+        nodes=["Descriptive", "Diagnostic", "Predictive", "Prescriptive"],
+        diagram="02-01-types-of-analytics",
+        caption="each question needs the one before it answered",
+        sources=["02-the-data-ecosystem/01-types-of-analytics.md"],
     ),
     "03-01": dict(
         build=deck_03_01,

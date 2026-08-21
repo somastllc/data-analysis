@@ -1,6 +1,6 @@
 # Types of Data
 
-**Chapter:** 1 - What Is Data?  
+**Chapter:** 1 — What Is Data?  
 **Lesson:** 2 of 5  
 **By the end:** You can classify data as structured, semi-structured, or unstructured, and as quantitative or qualitative.
 

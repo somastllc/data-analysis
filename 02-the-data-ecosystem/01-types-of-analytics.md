@@ -1,6 +1,6 @@
 # Types of Analytics
 
-**Chapter:** 2 - The Data Ecosystem  
+**Chapter:** 2 — The Data Ecosystem  
 **Lesson:** 1 of 6  
 **By the end:** You can tell descriptive, diagnostic, predictive, and prescriptive questions apart.
 
