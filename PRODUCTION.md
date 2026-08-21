@@ -1,7 +1,7 @@
 # Production Notes — Recording This Course
 
-**Format:** 27 lesson videos, 6 exercise walkthroughs, 6 chapter openers, 1 welcome
-**Estimated finished runtime:** ~3h 30m
+**Format:** 27 lesson videos, 6 chapter openers, 1 welcome
+**Estimated finished runtime:** ~2h 30m
 **Source of truth:** the lesson Markdown files. This document tells you how to shoot them, not what to say — the words are already in the lessons.
 
 ---
@@ -47,7 +47,7 @@
 
 Six short bumpers, 60–90 seconds, ~8 minutes total, plus a ~2.5 minute course welcome. **Each chapter's script is `00-opener.md` inside that chapter's folder; the course welcome is `WELCOME.md` at the root.** These seven are the only videos with no lesson file behind them, so those files hold the words themselves rather than shot notes. They supply the orientation a reader gets free from the README table and a viewer gets not at all.
 
-The `00-` prefix puts each opener first in its folder, so a chapter folder now reads top to bottom in shooting order: opener, lessons, exercises.
+The `00-` prefix puts each opener first in its folder, so a chapter folder reads top to bottom in shooting order: opener, then lessons.
 
 Each answers three things: what question this chapter settles, why it comes after the last one, and how many lessons it runs.
 
@@ -302,7 +302,7 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 **Shots:** cold open → title → objective → *Why industry context matters* → **table** Industry / How data is used → *Examples by industry* → *Short case examples* → *Key takeaway* → end card
 
-**Note:** Three-panel visual for the cold open — hospital, store, school — held through the lesson and returned to at the takeaway. This lesson pairs with exercise 3 in chapter 4's set, which asks the viewer to write the three questions themselves.
+**Note:** Three-panel visual for the cold open — hospital, store, school — held through the lesson and returned to at the takeaway.
 
 ---
 
@@ -395,35 +395,6 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 ---
 
-# Exercise walkthroughs
-
-*6 videos · 64 min*
-
-## The pause-beat pattern
-
-`<details>` / "Show answer" has no video equivalent. Without a substitute you either read the answer immediately, which teaches nothing, or leave dead air. Use a fixed pattern for all 24 exercises:
-
-1. Read the prompt verbatim, on screen
-2. **Question stays up, 5–10 second countdown, silent**
-3. Answer, with the reasoning — never just the correct choice
-
-**Reveal multi-part questions one part at a time.** Nine of the 24 exercises have 4–6 numbered sub-parts. Showing all six then answering all six overloads working memory in a way the written version does not, because a reader can look back and a viewer cannot.
-
-## The trap in each set
-
-Every set has one item designed to be gotten wrong, and its answer is deliberately the longest. Give these the full countdown and the full explanation — they are why the exercise videos are worth watching rather than reading.
-
-| Set | Runtime | Exercises | Spend the time here |
-|---|---|---|---|
-| Chapter 1 | 10.5 min | 5 | **Ex 3 — Quantitative or qualitative?** ID numbers, postal codes and account numbers look numeric to software but are not quantities. |
-| Chapter 2 | 8.5 min | 4 | **Ex 4 — Does this need machine learning?** Longest answer in the set; the temptation is to say yes. |
-| Chapter 3 | 13 min | 5 | **Ex 3 — Cleaning decisions.** 178-word answer, the longest in the course outside the capstone. Item 3 is the trap. |
-| Chapter 4 | 7.5 min | 3 | **Ex 1, task 2** — reaching for the heavier tool. The right tool is the smallest one that does the job. |
-| Chapter 5 | 15.5 min | 5 | **Ex 2 — Find the proxy.** 176 words, and the hardest idea in the course. |
-| Chapter 6 | 9 min | 2 | **Ex 1 — Run the process yourself.** 331-word answer; effectively a second capstone. |
-
----
-
 # Suggested shooting order
 
 Not lesson order. Group by setup and by what has to exist first.
@@ -436,8 +407,7 @@ Not lesson order. Group by setup and by what has to exist first.
 | 4 | Chapter 3 (6 lessons) | Shoot the 3.1 diagram build first — lessons 3.2–3.6 reuse it as a locator. |
 | 5 | Chapter 4 remainder | |
 | 6 | **Chapter 5, one session, in order** | Continuous case; consistency of delivery matters more here than anywhere else. |
-| 7 | Exercise walkthroughs | After all lessons exist, so callbacks are accurate. |
-| 8 | Chapter openers, welcome, **6.2** | Written last because they summarize what now exists. |
+| 7 | Chapter openers, welcome, **6.2** | Written last because they summarize what now exists. |
 
 ---
 
@@ -446,10 +416,9 @@ Not lesson order. Group by setup and by what has to exist first.
 | Component | Count | Runtime |
 |---|---|---|
 | Lesson videos | 27 | ~140 min |
-| Exercise walkthroughs | 6 | ~64 min |
 | Chapter openers | 6 | ~8 min |
 | Welcome | 1 | ~3 min |
-| **Total** | **40 videos** | **≈ 3h 35m** |
+| **Total** | **34 videos** | **≈ 2h 31m** |
 
 Estimates come from measured prose words at 130–150 wpm with a 1.4–1.9× spoken expansion, plus dwell time per table row, diagram, and code block. Every per-lesson figure already assumes rule 4 — Key Terms shown on the end card, not read aloud — so the numbers here are what you shoot to, and they sum to the total below. Narrating them adds 15–20 minutes and costs you 27 endings.
 

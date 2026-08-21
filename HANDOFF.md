@@ -65,7 +65,7 @@ PYTHONPATH=tools python3 tools/build_slides.py 03-01            # just one
 
 ## What is settled
 
-- **Course content is finished and audited.** 27 lessons, 24 exercises, 85 glossary terms, 7 scripts. Two full audits; the last one found four defects, all fixed
+- **Course content is finished and audited.** 27 lessons, 85 glossary terms, 7 scripts. Two full audits; the last one found four defects, all fixed. The 24 exercises that used to sit in `NN-*/99-exercises.md` were removed — recover them from git history if that decision is ever revisited
 - The course is **track-neutral** — it names no specialization, promises no downstream curriculum, and `CLAUDE.md` carries the no-promise rule
 - **Design system is locked** in `DESIGN.md` and proven on a real lesson in both output forms — the A4 handout and the 16:9 deck, from the same tokens
 - **`.venv` is rebuilt.** WeasyPrint 69.0. It is still not committed and never should be
@@ -75,7 +75,6 @@ PYTHONPATH=tools python3 tools/build_slides.py 03-01            # just one
 
 | Item | Note |
 |---|---|
-| **`<details>` has no print form** | 24 exercises are built around click-to-reveal. On paper: answers overleaf? inverted? a key at the back? A real format decision, not yet made |
 | **~3 pages per lesson** | Measured, not guessed: lesson 1.1 is 2.46 pages of content. Spacing, type size, and keep-together rules were each tested and none change it. ~75 pages for the set. A decision, not a defect — the lever is page geometry, not typography |
 | **Heading/table split** | On sample page 1 an H2 sits near the foot with only its lead paragraph; the table it introduces lands overleaf. Bind heading + intro + table as one block |
 | **6 diagrams still to build** | Three of nine exist, all verified in the editor. `tools/gen_diagram.py` has a `REGISTER` — add the rest there. It now draws straight chains and snake-wrapped ones with two-line labels; **hubs, group boundaries and the 5.3 feedback loop are in `DESIGN.md` §6 but still not in code** |

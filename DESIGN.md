@@ -525,9 +525,8 @@ Seven files. **26% of the course, 100% of its structural features.** Derived by 
 | `06/02-putting-it-all-together` | 6+ sections, 38 bullets — the densest page in the course |
 | `03/01-defining-the-problem` | The 7-node diagram, largest in the course and reused as a locator |
 | `01/01-what-is-data` | 3-column table, inline code spans, 3-node diagram |
-| `05/99-exercises` | `<details>` answers — **no print equivalent exists yet; this is an open format question** |
 
-If all seven render correctly, the remaining 20 lessons contain nothing structurally new.
+If all six render correctly, the remaining 21 lessons contain nothing structurally new.
 
 ### Stage 2 — what each render must be checked for
 

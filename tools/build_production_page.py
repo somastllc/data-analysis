@@ -392,7 +392,7 @@ page = f"""<title>Production Notes — Data Fundamentals for Beginners</title>
   <ul class="meta">
     <li>39 videos</li>
     <li>Finished runtime <b>≈3h 25m</b></li>
-    <li>26 lessons · 6 exercise sets · 6 openers</li>
+    <li>27 lessons · 6 openers</li>
   </ul>
   <nav class="jump"><span class="lbl">Chapters</span>{nav}</nav>
 </div></header>

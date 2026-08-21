@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Beginner course "Data Fundamentals for Beginners" — 27 Markdown lessons plus 6 exercise sets across 6 chapters. No code, no build/lint/test tooling. All work is content writing/editing.
+Beginner course "Data Fundamentals for Beginners" — 27 Markdown lessons across 6 chapters. No code, no build/lint/test tooling. All work is content writing/editing.
 
 ## Position in the curriculum
 
@@ -26,16 +26,15 @@ Learners have **no tools yet** — Python, Git, and SQL all come later. Nothing 
 ```
 NN-chapter-slug/00-opener.md         video opener script (production only, not a lesson)
 NN-chapter-slug/NN-lesson-slug.md    lessons
-NN-chapter-slug/99-exercises.md      one exercise set per chapter
 ```
 
-A chapter folder reads top to bottom in shooting order: opener, lessons, exercises. The numeric prefixes carry that order — `00-` before the lessons, `99-` after them.
+A chapter folder reads top to bottom in shooting order: opener, then lessons. The numeric prefix carries that order — `00-` before the lessons.
 
-**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons, checks `**By the end:**`, or extracts Key Terms **must exclude both `00-*` and `99-*`**, or it will report 33 lessons instead of 27 and flag six files as missing their Overview and Key Terms sections.
+**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons, checks `**By the end:**`, or extracts Key Terms **must exclude `00-*`**, or it will report 33 lessons instead of 27 and flag six files as missing their Overview and Key Terms sections.
 
-Chapter order, lesson counts, and exercise counts are declared in `README.md`'s Chapters table — update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
+Chapter order and lesson counts are declared in `README.md`'s Chapters table — update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
 
-**Renaming a chapter means renaming four things, not one.** The folder slug, the `**Chapter:**` line in every lesson plus the opener and the exercise set, the `Ch N — Name` column in `GLOSSARY.md`, and any generated-asset name under `diagrams/` that carried the old wording. Code holds paths in two places — the `REGISTER` in `tools/gen_diagram.py` and `DECKS` in `tools/build_slides.py` — and both must move with the folder. Chapter 3 was renamed this way in full; use it as the worked example.
+**Renaming a chapter means renaming four things, not one.** The folder slug, the `**Chapter:**` line in every lesson plus the opener, the `Ch N — Name` column in `GLOSSARY.md`, and any generated-asset name under `diagrams/` that carried the old wording. Code holds paths in two places — the `REGISTER` in `tools/gen_diagram.py` and `DECKS` in `tools/build_slides.py` — and both must move with the folder. Chapter 3 was renamed this way in full; use it as the worked example.
 
 ## Lesson file convention
 
@@ -65,33 +64,6 @@ Every lesson file follows this exact shape (confirmed across all 27 files):
 - Some lessons include a `mermaid` `flowchart` block (fenced ` ```mermaid `) to visualize a process (e.g. data → information → insight). Use this sparingly, only where a diagram clarifies a flow better than prose.
 - Tables are used heavily for term definitions and comparisons — keep that style rather than switching to bullet lists.
 - Examples lean on real-world, non-Western-default scenarios (mobile money transfers, market prices in $/kg, school attendance) — keep new examples in that same grounded, everyday register.
-
-## Exercise file convention
-
-`99-exercises.md` in each chapter folder (`99-` keeps it sorted last regardless of lesson count). Shape:
-
-```markdown
-# Chapter N Exercises: Chapter Name
-
-**Chapter:** N — Chapter Name
-**Type:** Practice — no software required
-
-### Exercise N — Title
-
-(prompt)
-
-<details>
-<summary>Show answer</summary>
-
-(answer, with the reasoning — not just the correct choice)
-
-</details>
-```
-
-- Every exercise must be answerable on paper. No CSV to open, no tool to install.
-- Answers teach. Explain *why* the wrong answer is tempting, not just which is right.
-- Each set should include at least one item designed to be gotten wrong (a plausible trap), and it should be the one the answer spends most words on.
-- Chapter 5's exercises extend the loan-scoring case that runs through its four lessons.
 
 ## Start here after a restart
 
@@ -152,6 +124,5 @@ The four ethics lessons follow one continuous scenario — a mobile money compan
 ## Making changes
 
 - Adding/removing/reordering a lesson: renumber the file prefix, fix the in-file `**Lesson:** N of TOTAL` for every lesson in that chapter, and update `README.md`'s table (lesson count and the total of 27).
-- Adding an exercise: update the chapter's count in the README table and the `Exercises:` total in the header.
 - Duration in the README is derived from actual length — recheck it after substantial additions rather than leaving a stale claim.
-- No build, lint, or test commands exist for this repo. Validate by reading the rendered Markdown, and check that code fences are balanced and every `<details>` has a matching `</details>`.
+- No build, lint, or test commands exist for this repo. Validate by reading the rendered Markdown, and check that code fences are balanced.
