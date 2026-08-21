@@ -163,10 +163,16 @@ def svg_arrow(o, p, q):
 
 
 def svg_boundary(o, box, label):
-    """The dashed region — DESIGN.md §6 group boundary. Drawn first, under everything."""
+    """The dashed region — DESIGN.md §6 group boundary. Drawn first, under everything.
+
+    DESIGN.md gives the dash as `dashPattern=6 4`, which is draw.io's own unit: it
+    multiplies the pattern by the stroke width before drawing. At 1.5 that renders as
+    9 on, 6 off, read back off the editor canvas. The SVG states the result directly,
+    because the two renderers have to put ink in the same places."""
     x, y, w, h = box
+    dash = f"{6*1.5:g} {4*1.5:g}"
     o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{BOUND_ARC}" fill="none" '
-             f'stroke="{MINT_DEEP}" stroke-width="1.5" stroke-dasharray="6 4"/>')
+             f'stroke="{MINT_DEEP}" stroke-width="1.5" stroke-dasharray="{dash}"/>')
     o.append(f'<text class="b" x="{x+10}" y="{y+18}">{html.escape(label)}</text>')
 
 

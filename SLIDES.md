@@ -157,6 +157,7 @@ Each of these shipped once and was caught by rendering, not by reading.
 | `--ink` term column on `.slide.ink` | Invisible — the whole first column of the end card | Restate every colour on the ink ground |
 | Visible scrollbar | Sits inside `100vw` but outside usable width; slide ~15px too wide when width binds | `scrollbar-width:none` |
 | Elbow turned mid-gap | SVG and draw.io drew two different pictures from one model; the SVG's 10px corner did not fit the 4px of run left before the arrowhead and the path doubled back | Turn over the target's centre line — `orthogonalEdgeStyle`'s own route. `DESIGN.md` §6 |
+| `dashPattern` is not pixels | draw.io scales a dash pattern by the stroke width before drawing, so `dashPattern=6 4` at width 1.5 renders as `9 6`. The SVG had the literal 6 4 and drew a tighter dash than the editor | State the rendered result in the SVG. `DESIGN.md` §6 keeps the draw.io units, since that is what the style string takes |
 | Editor showed the old diagram | Two `open_drawio_xml` URLs differ only after `#`, so the browser does not reload and the readback is of the *previous* file. Cost one wrong conclusion | `location.reload()` after navigating, and confirm a changed value before reading geometry |
 
 ---

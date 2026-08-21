@@ -419,11 +419,11 @@ Not lesson order. Group by setup and by what has to exist first.
 
 | Session | Shoot | Why |
 |---|---|---|
-| 1 | **2.4** and **4.1** | Calibration. 2.4 is the shortest lesson, 4.1 the longest and the only one with code. Compare actual runtime against the 4.5 and 10.5 estimates; the ratio you get rescales every number in this document. |
+| 1 | **2.1** and **3.4** | Calibration. 2.1 is among the shortest and is diagram-led; 3.4 is among the longest and is table-and-prose. Compare actual runtime against the 4.5 and 7.5 estimates; the ratio you get rescales every number in this document. Chapter 5 holds the three longest lessons but cannot supply a calibration subject, because it must be shot in one session and in order. |
 | 2 | Chapter 1 (5 lessons) | Establishes tone. Most-watched chapter — students who quit, quit here. |
 | 3 | Chapter 2, split across two sittings | Four structurally identical lessons; fatigue will show if shot in one. |
 | 4 | Chapter 3 (6 lessons) | Shoot the 3.1 diagram build first — lessons 3.2–3.6 reuse it as a locator. |
-| 5 | Chapter 4 remainder | |
+| 5 | Chapter 4 remainder | **4.2** needs its own setup for the code slides, and is the only video that does. Shoot it with 4.1, whose handoff sets it up. |
 | 6 | **Chapter 5, one session, in order** | Continuous case; consistency of delivery matters more here than anywhere else. |
 | 7 | Chapter openers, welcome, **6.2** | Written last because they summarize what now exists. |
 

@@ -266,16 +266,14 @@ def deck_03_01(frames):
         '  <div class="cols">\n'
         '    <div><p class="k">Example</p>\n'
         + marks([("Weak question: &ldquo;Let&rsquo;s analyze the sales data.&rdquo;", None),
-                 ("Strong question: &ldquo;Why did sales drop in the North region "
-                  "last quarter?&rdquo;", None)])
+                 ("Strong question: &ldquo;Why did sales drop in Burco last quarter, "
+                  "when Hargeisa and Muqdisho held steady?&rdquo;", None)])
         + '\n    </div>\n'
           '    <div><p class="k">For a local shop, the same idea applies</p>\n'
         + marks([("Weak question: &ldquo;Let&rsquo;s look at the sales spreadsheet.&rdquo;", None),
                  ("Strong question: &ldquo;Why did rice sales drop in the last two weeks "
                   "compared to the month before?&rdquo;", None)])
-        + '\n    </div>\n  </div>\n'
-          '  <p style="margin-top:40rem;max-width:56ch">The stronger questions give analysis\n'
-          '     a clear direction.</p>'))
+        + '\n    </div>\n  </div>'))
 
     # 13 - stakeholders: who they are, and what knowing them buys you
     s.append(slide(
@@ -307,26 +305,28 @@ def deck_03_01(frames):
                  ("Clear", "easy for others to understand")])
         + '\n    </div>\n'
           '    <div><p class="k">Examples</p>\n'
-        + marks([("Which product category had the highest return rate last month?", None),
-                 ("Are new customers more likely to cancel within 30 days?", None),
-                 ("Which marketing channel brings the most qualified leads?", None)])
+        + marks([("Which product had the highest return rate last month?", None),
+                 ("Are new customers more likely to stop ordering within their "
+                  "first month?", None),
+                 ("Which of our three cities is slowest to pay its invoices?", None)])
         + '\n    </div>\n  </div>'))
 
     # 15 - the worked example
     s.append(slide(
         '  <p class="eyebrow">4 — Worked example</p>\n'
-        '  <h2 style="margin-bottom:16rem">An online course platform notices fewer\n'
-        '      enrollments.</h2>\n'
+        '  <h2 style="margin-bottom:16rem">A training centre in Hargeisa notices that\n'
+        '      fewer students are enrolling.</h2>\n'
         '  <div class="cols">\n'
         '    <div><p class="k">Stakeholders</p>\n'
-        '      <p>marketing team and product manager</p>\n'
+        '      <p>the centre manager and the person who runs recruitment</p>\n'
         '      <p class="k" style="margin-top:40rem">Problem</p>\n'
-        '      <p>enrollment decline</p>\n'
+        '      <p>enrolment is falling</p>\n'
         '    </div>\n'
         '    <div><p class="k">Questions</p>\n'
-        + marks([("When did enrollments start dropping?", None),
-                 ("Did the drop affect all courses or only some?", None),
-                 ("Did traffic decrease, or did fewer visitors convert?", None)])
+        + marks([("When did enrolment start dropping?", None),
+                 ("Did it drop across every course, or only some?", None),
+                 ("Are fewer people asking about courses, or are the same people "
+                  "asking and not signing up?", None)])
         + '\n    </div>\n  </div>'))
 
     # 16 - end card. Standing rule 4: held on screen, never narrated.
