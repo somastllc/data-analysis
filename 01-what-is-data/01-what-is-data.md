@@ -1,6 +1,6 @@
 # What Is Data?
 
-**Chapter:** 1 — What Is Data?  
+**Chapter:** 1 - What Is Data?  
 **Lesson:** 1 of 5  
 **By the end:** You can explain what data is, and tell data, information, and insight apart.
 

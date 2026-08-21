@@ -1,6 +1,6 @@
 # Data Governance and Regulations
 
-**Chapter:** 5 — Data Ethics and Privacy  
+**Chapter:** 5 - Data Ethics and Privacy  
 **Lesson:** 4 of 4  
 **By the end:** You can name a governance rule that would have prevented a given data failure.
 
@@ -38,7 +38,7 @@ You do not need to memorize these laws as a beginner. You do need to know they e
 
 The loan team pauses the launch.
 
-They test the model against customers the old manual process had rejected, and find that repayment among rejected market traders is close to the overall average. The model was not finding risk, it was finding history. They go back to the four fields they started with. District and business-payment history are dropped: both were proxies, and both were the ones sorting by gender. Monthly transaction volume stays, because it was never a proxy for anything — it measures the business the loan is for. Account age they keep too, since it genuinely predicts repayment, but they now compare approval rates for newer and older accounts every quarter rather than assuming the split stays fair on its own. In place of the two dropped fields they add repayment behaviour on small existing advances: another direct measure. Then they tell customers plainly which data affects a loan decision.
+They test the model against customers the old manual process had rejected, and find that repayment among rejected market traders is close to the overall average. The model was not finding risk, it was finding history. They go back to the four fields they started with. District and business-payment history are dropped: both were proxies, and both were the ones sorting by gender. Monthly transaction volume stays, because it was never a proxy for anything - it measures the business the loan is for. Account age they keep too, since it genuinely predicts repayment, but they now compare approval rates for newer and older accounts every quarter rather than assuming the split stays fair on its own. In place of the two dropped fields they add repayment behaviour on small existing advances: another direct measure. Then they tell customers plainly which data affects a loan decision.
 
 The product launches three months later than planned, and reaches more customers than the original version would have.
 

@@ -1,6 +1,6 @@
 # Data Science and Machine Learning
 
-**Chapter:** 2 — The Data Ecosystem  
+**Chapter:** 2 - The Data Ecosystem  
 **Lesson:** 3 of 6  
 **By the end:** You can explain how machine learning fits inside data science, and when a project actually needs it.
 

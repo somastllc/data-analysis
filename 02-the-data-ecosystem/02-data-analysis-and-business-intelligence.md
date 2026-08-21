@@ -1,6 +1,6 @@
 # Data Analysis and Business Intelligence
 
-**Chapter:** 2 — The Data Ecosystem  
+**Chapter:** 2 - The Data Ecosystem  
 **Lesson:** 2 of 6  
 **By the end:** You can explain what data analysis and business intelligence each do, and where they overlap.
 

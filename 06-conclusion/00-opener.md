@@ -1,9 +1,9 @@
-# Chapter 6 Opener — Conclusion
+# Chapter 6 Opener - Conclusion
 
-**Chapter:** 6 — Conclusion  
-**Type:** Video opener — ~60s, no lesson file behind it  
+**Chapter:** 6 - Conclusion  
+**Type:** Video opener - ~60s, no lesson file behind it  
 
-Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply — open cold, no greeting.
+Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply - open cold, no greeting.
 Read close to as written; this is already at speaking length.
 
 ---
@@ -12,7 +12,7 @@ Read close to as written; this is already at speaking length.
 
 Two lessons left, and no new ideas in either of them.
 
-Chapter six is assembly. The first lesson walks the whole path in one pass — problem, question, data, cleaning, analysis, visualization, insight, decision — and names where each piece came from.
+Chapter six is assembly. The first lesson walks the whole path in one pass, from problem and question through data, cleaning, analysis, visualization and insight to decision, naming where each piece came from.
 
 The second is the capstone. One business problem, six steps, every idea in this course used once. No new vocabulary.
 

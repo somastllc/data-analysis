@@ -1,6 +1,6 @@
 # Bias and Fairness
 
-**Chapter:** 5 — Data Ethics and Privacy  
+**Chapter:** 5 - Data Ethics and Privacy  
 **Lesson:** 3 of 4  
 **By the end:** You can find proxy variables in a dataset, and explain how a biased system makes itself worse over time.
 
@@ -29,9 +29,9 @@ The model learns from that history. It does not learn *who repays*. It learns *w
 
 Now notice something important: the team never put gender in the dataset. They did not need to. The model uses:
 
-- **District of phone registration** — which tracks urban versus rural
-- **Has received a business payment** — which tracks formal versus informal business
-- **Account age** — which tracks who could afford a phone three years ago
+- **District of phone registration** - which tracks urban versus rural
+- **Has received a business payment** - which tracks formal versus informal business
+- **Account age** - which tracks who could afford a phone three years ago
 
 Each of these is a **proxy variable**: a field that stands in for something you did not measure and did not intend to use. Remove gender from the dataset and the model can still sort by gender, straight through the proxies.
 

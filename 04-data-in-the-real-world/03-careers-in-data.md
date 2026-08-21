@@ -1,6 +1,6 @@
 # Careers in Data
 
-**Chapter:** 4 — Data in the Real World  
+**Chapter:** 4 - Data in the Real World  
 **Lesson:** 3 of 4  
 **By the end:** You can describe the main data roles, and explain how people move between them.
 

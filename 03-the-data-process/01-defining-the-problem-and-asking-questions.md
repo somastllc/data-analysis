@@ -1,6 +1,6 @@
 # Defining the Problem and Asking Questions
 
-**Chapter:** 3 — The Data Process  
+**Chapter:** 3 - The Data Process  
 **Lesson:** 1 of 6  
 **By the end:** You can turn a vague request into a specific analytical question.
 
@@ -58,10 +58,10 @@ Understanding stakeholders helps you:
 
 Good questions are:
 
-- **Specific** — focused on one issue
-- **Measurable** — answerable with data
-- **Relevant** — connected to a real decision
-- **Clear** — easy for others to understand
+- **Specific** - focused on one issue
+- **Measurable** - answerable with data
+- **Relevant** - connected to a real decision
+- **Clear** - easy for others to understand
 
 Examples:
 
@@ -71,7 +71,7 @@ Examples:
 
 ### The same first step, whatever gets built
 
-The fields in Chapter 2 differ in what they produce — a report, a dashboard, a trained model — not in how they start. A data scientist deciding whether a model is worth building asks the same three questions above.
+The fields in Chapter 2 differ in what they produce. A report, a dashboard, a trained model: what they do not differ in is how they start. A data scientist deciding whether a model is worth building asks the same three questions above.
 
 A question no decision depends on is not worth answering, however impressive the method.
 

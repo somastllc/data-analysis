@@ -1,6 +1,6 @@
 # Why Data Matters
 
-**Chapter:** 1 — What Is Data?  
+**Chapter:** 1 - What Is Data?  
 **Lesson:** 5 of 5  
 **By the end:** You can explain why data skills are valuable across many industries and roles.
 

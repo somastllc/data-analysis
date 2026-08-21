@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Defining the Problem and Asking Questions — slides</title>
+<title>Defining the Problem and Asking Questions - slides</title>
 <style>
-/* Data Fundamentals — slide deck stylesheet. Implements DESIGN.md §7 (and §1–§3).
+/* Data Fundamentals - slide deck stylesheet. Implements DESIGN.md §7 (and §1–§3).
    16:9 at 1920 × 1080.
 
    ONE SLIDE PIXEL = 1rem. Every length below is in rem, and the root font size is
    the only thing that changes between the two media:
 
-     screen — min(100vw/1920, 100vh/1080), so the slide scales to fit whichever
+     screen - min(100vw/1920, 100vh/1080), so the slide scales to fit whichever
               edge of the viewport runs out first, at any window size, with no JS
-     print  — 1px, which reproduces the design at exactly 1920 × 1080
+     print  - 1px, which reproduces the design at exactly 1920 × 1080
 
    Hairlines and borders stay in px on purpose: a 1px rule scaled to 0.6px is a
    rule that disappears on half the screens it lands on. */
 @page {
-  size: 20in 11.25in;   /* exactly 1920 × 1080 at 96dpi — verify: pdfinfo says 1440 × 810 pts */
+  size: 20in 11.25in;   /* exactly 1920 × 1080 at 96dpi - verify: pdfinfo says 1440 × 810 pts */
   margin: 0;
 }
 html{font-size:1px}
@@ -60,7 +60,7 @@ body{
    never appears at all.
 
    The scroll container is `html`, declared. Putting `overflow`/`scroll-snap-type`
-   on `body` also works — they propagate to the viewport — but only because `html`
+   on `body` also works - they propagate to the viewport - but only because `html`
    has nothing of its own, which is a rule that breaks the moment someone styles it. */
 @media screen{
   html{
@@ -82,11 +82,11 @@ body{
 }
 
 /* Reserved for the six chapter-opener bumpers. A lesson deck is white
-   throughout — see DESIGN.md §1 and §7. */
+   throughout - see DESIGN.md §1 and §7. */
 .slide.ink{background:var(--ink); color:var(--panel)}
 .slide.ink .eyebrow{color:var(--faint)}
 .slide.ink h1,.slide.ink h2,.slide.ink strong{color:var(--white)}
-.slide.ink .accent{color:var(--mint)}      /* mint on ink is 8.94:1 — §1 */
+.slide.ink .accent{color:var(--mint)}      /* mint on ink is 8.94:1 - §1 */
 
 /* centred variants for the cold open and the title card */
 .slide.mid{justify-content:center}
@@ -112,7 +112,7 @@ h2{
   font-family:var(--serif); font-size:var(--t-h2); line-height:1.25; font-weight:700;
   letter-spacing:-.01em; color:var(--ink); margin:0 0 32rem;
 }
-h1 .accent,h2 .accent,p .accent{color:var(--mint-deep)}  /* never --mint on white — §1 */
+h1 .accent,h2 .accent,p .accent{color:var(--mint-deep)}  /* never --mint on white - §1 */
 /* The reading measure is 44ch, not the page's 68ch. Slide prose is read at a
    distance in one pass, so the line gets shorter rather than longer. `ch` is
    font-relative, so it scales with everything else for free. */
@@ -120,9 +120,9 @@ p{margin:0 0 24rem; max-width:44ch}
 p.wide{max-width:56ch}
 .lead{font-size:var(--t-lead); line-height:1.45; color:var(--body)}
 .slide.ink .lead{color:var(--panel)}
-strong{color:var(--ink); font-weight:600}    /* 640 is invalid — see DESIGN.md §9 */
+strong{color:var(--ink); font-weight:600}    /* 640 is invalid - see DESIGN.md §9 */
 .mono{font-family:var(--mono); font-variant-numeric:tabular-nums}
-/* inline literals — the lesson sets $25 and 32°C as data, and so does the slide */
+/* inline literals - the lesson sets $25 and 32°C as data, and so does the slide */
 code{
   font-family:var(--mono); font-size:.88em; background:var(--panel-2);
   padding:.08em .3em; border-radius:4rem; color:var(--ink);
@@ -130,7 +130,7 @@ code{
 }
 .slide.ink code{background:#222626; color:var(--white)}
 
-/* ── table — DESIGN.md §5.6, scaled ──────────────────────── */
+/* ── table - DESIGN.md §5.6, scaled ──────────────────────── */
 table{
   border-collapse:collapse; width:100%; margin:0;
   font-variant-numeric:tabular-nums;
@@ -152,15 +152,15 @@ td.term{
 }
 /* On the ink ground every one of these would otherwise keep its light-ground
    value: the term column is --ink on --ink and disappears outright, and the
-   hairlines read as bright white rules. Mint text is only legal here — 8.94:1
+   hairlines read as bright white rules. Mint text is only legal here - 8.94:1
    on ink, against 2.10:1 on white (§1). */
 .slide.ink th{color:var(--faint); border-bottom-color:#2E3232}
 .slide.ink td{border-bottom-color:#2E3232}
 .slide.ink td.term{color:var(--mint)}
 
-/* ── plate — DESIGN.md §5.2, scaled ──────────────────────── */
+/* ── plate - DESIGN.md §5.2, scaled ──────────────────────── */
 .plate{background:var(--panel); margin:0}
-/* max-width:none is load-bearing — see DESIGN.md §9. Without it the title
+/* max-width:none is load-bearing - see DESIGN.md §9. Without it the title
    inherits the `p` reading measure and wraps mid-phrase. */
 .plate-title{
   max-width:none;
@@ -169,7 +169,7 @@ td.term{
   padding:32rem 48rem 0; margin:0;
 }
 .plate-body{padding:40rem 48rem 48rem; text-align:center}
-/* Scaling UP is fine — it is scaling DOWN for print that DESIGN.md §6 rejects,
+/* Scaling UP is fine - it is scaling DOWN for print that DESIGN.md §6 rejects,
    because that is what drops node text to ~9px. At 1400 the 516-wide 3-node
    diagram lands its 13px node labels at ~35px, one step above slide body. */
 .plate-body svg{width:100%; max-width:1400rem; height:auto}
@@ -178,7 +178,7 @@ td.term{
   padding:28rem 48rem; margin:0; font-size:var(--t-plate); color:var(--muted);
 }
 
-/* ── analogy strip — DESIGN.md §5.4-ish, scaled ──────────── */
+/* ── analogy strip - DESIGN.md §5.4-ish, scaled ──────────── */
 .analogy{
   display:flex; border-top:1px solid var(--hairline);
   border-bottom:1px solid var(--hairline); margin:0;
@@ -199,7 +199,7 @@ td.term{
   text-transform:uppercase; color:var(--muted); margin:0 0 16rem; max-width:none;
 }
 
-/* ── mono list with › markers — DESIGN.md §5.5, scaled ───── */
+/* ── mono list with › markers - DESIGN.md §5.5, scaled ───── */
 ul.marks{list-style:none; margin:0; padding:0}
 ul.marks li{
   font-family:var(--mono); font-size:var(--t-data); color:var(--ink);
@@ -208,7 +208,7 @@ ul.marks li{
 }
 ul.marks li:last-child{border-bottom:none}
 ul.marks li::before{content:"›"; position:absolute; left:4rem; color:var(--faint)}
-/* the gloss after a literal, as on the handout: `$25 — a mobile money transfer` */
+/* the gloss after a literal, as on the handout: `$25 - a mobile money transfer` */
 ul.marks .what{
   color:var(--muted); font-family:var(--sans); font-size:var(--t-body);
   letter-spacing:0;
@@ -223,7 +223,7 @@ ul.plain{margin:0; padding-left:40rem; max-width:44ch}
 ul.plain li{margin-bottom:16rem}
 ul.plain li::marker{color:var(--faint)}
 
-/* ── objective rule — one mint moment, as a shape ────────── */
+/* ── objective rule - one mint moment, as a shape ────────── */
 .rule{height:8rem; width:180rem; background:var(--mint); margin:0 0 40rem}
 </style>
 </head>
@@ -235,7 +235,7 @@ ul.plain li::marker{color:var(--faint)}
   <p class="num">01 / 16</p>
 </section>
 <section class="slide mid">
-  <p class="eyebrow">Chapter 3 — The Data Process</p>
+  <p class="eyebrow">Chapter 3 - The Data Process</p>
   <h1>Defining the Problem<br>and Asking Questions</h1>
   <p class="mono" style="font-size:var(--t-data);color:var(--muted)">Lesson 1 of 6</p>
   <p class="num">02 / 16</p>
@@ -250,7 +250,7 @@ ul.plain li::marker{color:var(--faint)}
 <section class="slide">
   <p class="eyebrow">The process</p>
   <div class="plate">
-    <p class="plate-title">Plate I — the process, question to decision</p>
+    <p class="plate-title">Plate I - the process, question to decision</p>
     <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 224" width="680" height="224">
 <style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
 <rect x="27" y="27" width="140" height="52" rx="8" fill="#121212"/>
@@ -264,7 +264,7 @@ ul.plain li::marker{color:var(--faint)}
 <section class="slide">
   <p class="eyebrow">The process</p>
   <div class="plate">
-    <p class="plate-title">Plate I — the process, question to decision</p>
+    <p class="plate-title">Plate I - the process, question to decision</p>
     <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 224" width="680" height="224">
 <style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
 <line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
@@ -284,7 +284,7 @@ ul.plain li::marker{color:var(--faint)}
 <section class="slide">
   <p class="eyebrow">The process</p>
   <div class="plate">
-    <p class="plate-title">Plate I — the process, question to decision</p>
+    <p class="plate-title">Plate I - the process, question to decision</p>
     <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 224" width="680" height="224">
 <style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
 <line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
@@ -309,7 +309,7 @@ ul.plain li::marker{color:var(--faint)}
 <section class="slide">
   <p class="eyebrow">The process</p>
   <div class="plate">
-    <p class="plate-title">Plate I — the process, question to decision</p>
+    <p class="plate-title">Plate I - the process, question to decision</p>
     <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 224" width="680" height="224">
 <style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
 <line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
@@ -339,7 +339,7 @@ ul.plain li::marker{color:var(--faint)}
 <section class="slide">
   <p class="eyebrow">The process</p>
   <div class="plate">
-    <p class="plate-title">Plate I — the process, question to decision</p>
+    <p class="plate-title">Plate I - the process, question to decision</p>
     <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 224" width="680" height="224">
 <style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
 <line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
@@ -375,7 +375,7 @@ ul.plain li::marker{color:var(--faint)}
 <section class="slide">
   <p class="eyebrow">The process</p>
   <div class="plate">
-    <p class="plate-title">Plate I — the process, question to decision</p>
+    <p class="plate-title">Plate I - the process, question to decision</p>
     <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 224" width="680" height="224">
 <style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
 <line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
@@ -417,7 +417,7 @@ ul.plain li::marker{color:var(--faint)}
 <section class="slide">
   <p class="eyebrow">The process</p>
   <div class="plate">
-    <p class="plate-title">Plate I — the process, question to decision</p>
+    <p class="plate-title">Plate I - the process, question to decision</p>
     <div class="plate-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 224" width="680" height="224">
 <style>.n{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:13px;font-weight:500;fill:#121212}.u{font-family:'Noto Sans Mono', 'Liberation Mono', monospace;font-size:11px;fill:#6B7276;letter-spacing:.08em}</style>
 <line x1="166" y1="50.0" x2="180" y2="50.0" stroke="#1F7D3D" stroke-width="2.5"/>
@@ -464,7 +464,7 @@ ul.plain li::marker{color:var(--faint)}
   <p class="num">10 / 16</p>
 </section>
 <section class="slide">
-  <p class="eyebrow">1 — The business problem</p>
+  <p class="eyebrow">1 - The business problem</p>
   <h2 style="margin-bottom:16rem">Start with the business problem</h2>
   <p style="max-width:56ch">A common mistake is jumping straight into data
      without knowing what you are trying to solve. Always begin by asking:</p>
@@ -476,7 +476,7 @@ ul.plain li::marker{color:var(--faint)}
   <p class="num">11 / 16</p>
 </section>
 <section class="slide">
-  <p class="eyebrow">1 — The business problem</p>
+  <p class="eyebrow">1 - The business problem</p>
   <h2 style="margin-bottom:32rem">Start with the business problem</h2>
   <div class="cols">
     <div><p class="k">Example</p>
@@ -495,7 +495,7 @@ ul.plain li::marker{color:var(--faint)}
   <p class="num">12 / 16</p>
 </section>
 <section class="slide">
-  <p class="eyebrow">2 — Stakeholders</p>
+  <p class="eyebrow">2 - Stakeholders</p>
   <h2 style="margin-bottom:16rem">Know your stakeholders</h2>
   <p style="max-width:56ch">A <strong>stakeholder</strong> is anyone who needs the
      results of your analysis.</p>
@@ -518,15 +518,15 @@ ul.plain li::marker{color:var(--faint)}
   <p class="num">13 / 16</p>
 </section>
 <section class="slide">
-  <p class="eyebrow">3 — Good questions</p>
+  <p class="eyebrow">3 - Good questions</p>
   <h2 style="margin-bottom:32rem">How to ask good analytical questions</h2>
   <div class="cols">
     <div><p class="k">Good questions are</p>
   <ul class="marks">
-    <li>Specific <span class="what">— focused on one issue</span></li>
-    <li>Measurable <span class="what">— answerable with data</span></li>
-    <li>Relevant <span class="what">— connected to a real decision</span></li>
-    <li>Clear <span class="what">— easy for others to understand</span></li>
+    <li>Specific <span class="what">- focused on one issue</span></li>
+    <li>Measurable <span class="what">- answerable with data</span></li>
+    <li>Relevant <span class="what">- connected to a real decision</span></li>
+    <li>Clear <span class="what">- easy for others to understand</span></li>
   </ul>
     </div>
     <div><p class="k">Examples</p>
@@ -540,7 +540,7 @@ ul.plain li::marker{color:var(--faint)}
   <p class="num">14 / 16</p>
 </section>
 <section class="slide">
-  <p class="eyebrow">4 — Worked example</p>
+  <p class="eyebrow">4 - Worked example</p>
   <h2 style="margin-bottom:16rem">A training centre in Hargeisa notices that
       fewer students are enrolling.</h2>
   <div class="cols">

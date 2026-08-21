@@ -1,6 +1,6 @@
 # Analyzing and Visualizing Data
 
-**Chapter:** 3 — The Data Process  
+**Chapter:** 3 - The Data Process  
 **Lesson:** 4 of 6  
 **By the end:** You can choose a chart that matches your question, and say what analysis can and cannot prove.
 

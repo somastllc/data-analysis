@@ -1,6 +1,6 @@
 # Cleaning Data
 
-**Chapter:** 3 — The Data Process  
+**Chapter:** 3 - The Data Process  
 **Lesson:** 3 of 6  
 **By the end:** You can decide what to do about duplicates, blanks, and impossible values, not just spot them.
 

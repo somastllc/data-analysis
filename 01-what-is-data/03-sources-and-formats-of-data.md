@@ -1,6 +1,6 @@
 # Sources and Formats of Data
 
-**Chapter:** 1 — What Is Data?  
+**Chapter:** 1 - What Is Data?  
 **Lesson:** 3 of 5  
 **By the end:** You can identify where a dataset came from, what format it is in, and whether it is primary or secondary.
 

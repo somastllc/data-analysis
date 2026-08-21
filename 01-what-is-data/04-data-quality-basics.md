@@ -1,6 +1,6 @@
 # Data Quality Basics
 
-**Chapter:** 1 — What Is Data?  
+**Chapter:** 1 - What Is Data?  
 **Lesson:** 4 of 5  
 **By the end:** You can inspect a table and name the quality problems in it.
 

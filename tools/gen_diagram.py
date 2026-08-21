@@ -8,8 +8,8 @@ INK="#121212"; WHITE="#FFFFFF"; MINT_DEEP="#1F7D3D"; MUTED="#6B7276"
 MONO="'Noto Sans Mono', 'Liberation Mono', monospace"   # must match DESIGN.md §2
 
 NODE_W, NODE_H, GAP, MARGIN = 140, 52, 24, 24
-ROW_GAP = 44                         # between wrapped rows — a §3 spacing value
-SHADOW_DX, SHADOW_DY = 3, 3          # hard offset, no blur — DESIGN.md §6
+ROW_GAP = 44                         # between wrapped rows - a §3 spacing value
+SHADOW_DX, SHADOW_DY = 3, 3          # hard offset, no blur - DESIGN.md §6
 ARC = 8                              # corner radius in px, both renderers
 LINE_H = 17                          # leading for a two-line node label
 EDGE_ARC = 10                        # elbow corner radius; draw.io's LINE_ARCSIZE/2
@@ -19,13 +19,13 @@ BOUND_ARC = 6                        # DESIGN.md §6 gives the boundary arcSize=
 def layout(nodes, caption_below=None, per_row=None):
     """Positions for every node, as (x, y).
 
-    per_row wraps the chain into rows and reverses every other one — a snake. The
+    per_row wraps the chain into rows and reverses every other one - a snake. The
     reversal is what keeps the row-to-row connector a plain vertical drop: the first
     node of row 2 sits directly under the last node of row 1. A left-to-right second
     row would need a connector that runs back across the whole diagram.
 
     Seven stages in one straight line is 1592px of artwork. On a 1920-wide slide
-    that leaves the 13px node labels rendering at 13px — see DESIGN.md §7. Wrapped
+    that leaves the 13px node labels rendering at 13px - see DESIGN.md §7. Wrapped
     4 + 3 the same seven stages are 680px, which scales up to ~31px labels."""
     n = len(nodes)
     cols = per_row or n
@@ -60,7 +60,7 @@ def grid_layout(cells, caption_below=None):
 
 
 def boundary_layout(cells, caption_below=None):
-    """Same grid, wrapped in a dashed group boundary — DESIGN.md §6.
+    """Same grid, wrapped in a dashed group boundary - DESIGN.md §6.
 
     This is the one diagram shape in the course that says *contains* rather than
     *flows into*: no arrows, no order, just a labelled region and what is inside it.
@@ -123,7 +123,7 @@ def svg_arrow(o, p, q):
     """Connector between two nodes, in whichever direction the layout put them.
 
     A chain only ever needs three: right, left, or down into the next row. A fork
-    adds a fourth — right and down/up at once — drawn as an orthogonal elbow that
+    adds a fourth - right and down/up at once - drawn as an orthogonal elbow that
     turns in the middle of the column gap, because that is where draw.io's
     orthogonalEdgeStyle turns and the two renderers have to agree."""
     (x1, y1), (x2, y2) = p, q
@@ -132,7 +132,7 @@ def svg_arrow(o, p, q):
         # single turn and straight into the edge facing the source. This is what
         # draw.io's orthogonalEdgeStyle does unprompted, and matching it is not
         # deference: the column gap is 24px, so a turn inside the gap leaves 4px of
-        # run before the arrowhead — less than the corner radius, and the path
+        # run before the arrowhead - less than the corner radius, and the path
         # doubles back on itself. Turning over the target has the whole column.
         cy1 = y1 + NODE_H/2
         ax = x1 + NODE_W + 2
@@ -163,7 +163,7 @@ def svg_arrow(o, p, q):
 
 
 def svg_boundary(o, box, label):
-    """The dashed region — DESIGN.md §6 group boundary. Drawn first, under everything.
+    """The dashed region - DESIGN.md §6 group boundary. Drawn first, under everything.
 
     DESIGN.md gives the dash as `dashPattern=6 4`, which is draw.io's own unit: it
     multiplies the pattern by the stroke width before drawing. At 1.5 that renders as
@@ -204,7 +204,7 @@ def svg(nodes, path, accent_index=None, under=None, background=True, reveal=None
         svg_arrow(o, pts[a], pts[b])
     for i, label in enumerate(nodes[:shown]):
         svg_node(o, pts[i][0], pts[i][1], label, accent=(i == accent_index))
-    # the caption names the whole flow, so it waits for the last node — and on a
+    # the caption names the whole flow, so it waits for the last node - and on a
     # boundary diagram it clears the region, not the bottom row of nodes inside it
     if under and shown == len(nodes):
         cap_y = (boundary[0][1] + boundary[0][3] + 22) if boundary \
@@ -240,7 +240,7 @@ def drawio(nodes, path, accent_index=None, under=None, per_row=None, geom=None, 
     UND  = ("text;html=1;fillColor=none;strokeColor=none;fontFamily=Noto Sans Mono;fontSize=11;"
             "fontColor=%s;align=center;" % MUTED)
     # DESIGN.md §6 group boundary, verbatim. arcSize=12 with absoluteArcSize is a 6px
-    # radius — deliberately tighter than a node's 8, so the region reads as a frame
+    # radius - deliberately tighter than a node's 8, so the region reads as a frame
     # around the nodes rather than as one more, larger node.
     BOUND = ("rounded=1;absoluteArcSize=1;arcSize=%d;fillColor=none;strokeColor=%s;strokeWidth=1.5;"
              "dashed=1;dashPattern=6 4;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;"
@@ -294,7 +294,7 @@ def drawio(nodes, path, accent_index=None, under=None, per_row=None, geom=None, 
            f'\n      </root>\n    </mxGraphModel>\n  </diagram>\n</mxfile>\n')
     # Parse it back before writing. draw.io rejects a malformed file outright with
     # "Not a diagram file", and the first multi-line label shipped a raw `<` inside
-    # an attribute — which only surfaced by opening it in the editor. This is the
+    # an attribute - which only surfaced by opening it in the editor. This is the
     # cheap half of that check; the editor is still the other half.
     ET.fromstring(xml)
     pathlib.Path(path).write_text(xml, encoding="utf-8")
@@ -307,7 +307,7 @@ REGISTER = [
      ["Data", "Information", "Insight"],
      "raw facts become a conclusion you can act on", "raw facts to conclusion", None),
     # PRODUCTION.md 2.1: the four types in order. Each one needs the one before it
-    # answered, which is the whole point of the chain — build it left to right.
+    # answered, which is the whole point of the chain - build it left to right.
     ("02-the-data-ecosystem/diagrams", "02-01-types-of-analytics",
      ["Descriptive", "Diagnostic", "Predictive", "Prescriptive"],
      "each question needs the one before it answered", "what happened to what next", None),
@@ -315,7 +315,7 @@ REGISTER = [
      ["Collect", "Store", "Clean", "Transform", "Analyze", "Share"],
      "the path data follows from source to use", "source to use", None),
     # PRODUCTION.md 3.1: the map for the whole chapter, rebuilt as a locator card at
-    # the top of 3.2–3.6 with the current step accented. Wrapped 4 + 3 — seven boxes
+    # the top of 3.2–3.6 with the current step accented. Wrapped 4 + 3 - seven boxes
     # in one line is unreadable on a slide, see layout().
     ("03-the-data-process/diagrams", "03-01-process-map",
      ["Define\nproblem", "Ask\nquestions", "Collect data", "Clean data",
@@ -333,9 +333,9 @@ REGISTER = [
 # ── diagrams that are not chains ────────────────────────────────────────────
 # (folder, name, cells, edges, caption_h, caption_v) where a cell is
 # (label, col, row) and an edge is a pair of cell indices. Positions are authored
-# rather than derived — see grid_layout().
+# rather than derived - see grid_layout().
 GRAPHS = [
-    # PRODUCTION.md 4.1: "The branch is the point — one analysis, two audiences. Do
+    # PRODUCTION.md 4.1: "The branch is the point - one analysis, two audiences. Do
     # not build the two outputs sequentially." So the two outputs sit level with each
     # other, one above the source row and one below, and the fork is symmetric. A
     # third column stacked top-to-bottom would read as a sequence, which is the one

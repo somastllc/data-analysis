@@ -1,6 +1,6 @@
 # Data Across Industries
 
-**Chapter:** 4 — Data in the Real World  
+**Chapter:** 4 - Data in the Real World  
 **Lesson:** 4 of 4  
 **By the end:** You can explain how the same data skills transfer across very different industries.
 

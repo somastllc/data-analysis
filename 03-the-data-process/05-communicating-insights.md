@@ -1,6 +1,6 @@
 # Communicating Insights
 
-**Chapter:** 3 — The Data Process  
+**Chapter:** 3 - The Data Process  
 **Lesson:** 5 of 6  
 **By the end:** You can present the same finding at the right level of detail for different audiences.
 
@@ -25,11 +25,11 @@ This holds for every output, not just reports. A model whose behavior nobody can
 
 A simple report often includes:
 
-1. **Context** — what problem you investigated
-2. **Method** — what data you used
-3. **Findings** — what the data showed
-4. **Visuals** — charts that support the story
-5. **Recommendation** — what action to consider
+1. **Context** - what problem you investigated
+2. **Method** - what data you used
+3. **Findings** - what the data showed
+4. **Visuals** - charts that support the story
+5. **Recommendation** - what action to consider
 
 Keep the message focused. Most stakeholders do not need every detail of your process.
 

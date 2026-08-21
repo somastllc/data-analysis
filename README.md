@@ -6,7 +6,7 @@
 **Duration:** ~1.5–2 hours reading  
 **Video:** ~2h 40m across 34 videos  
 
-A foundation course in what data is, how the data field is organized, and how an analysis moves from a question to a decision. No prior experience required, and nothing to install — this course is read-and-think.
+A foundation course in what data is, how the data field is organized, and how an analysis moves from a question to a decision. No prior experience required, and nothing to install - this course is read-and-think.
 
 ## Chapters
 

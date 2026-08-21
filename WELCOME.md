@@ -1,9 +1,9 @@
 # Course Welcome
 
-**Type:** Video opener — ~2.5 min, no lesson file behind it  
+**Type:** Video opener - ~2.5 min, no lesson file behind it  
 **Scope:** Whole course, played before Chapter 1  
 
-Standing rules in [PRODUCTION.md](PRODUCTION.md) apply — open cold, no greeting.
+Standing rules in [PRODUCTION.md](PRODUCTION.md) apply - open cold, no greeting.
 Read close to as written; this is already at speaking length.
 
 ---

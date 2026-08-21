@@ -1,6 +1,6 @@
 # Responsible and Ethical Use of Data
 
-**Chapter:** 5 — Data Ethics and Privacy  
+**Chapter:** 5 - Data Ethics and Privacy  
 **Lesson:** 1 of 4  
 **By the end:** You can name the principles of responsible data use, and spot a chart that misleads without stating anything false.
 
@@ -8,7 +8,7 @@
 
 The most damaging data projects are rarely built by bad people. They are built by good teams who never stopped to ask whether they should.
 
-This chapter follows one project — a mobile money company building an automatic loan product — through four lessons: responsible use, privacy, bias, and governance.
+This chapter follows one project, a mobile money company building an automatic loan product, through four lessons: responsible use, privacy, bias, and governance.
 
 ### Case study: the loan scoring project
 
@@ -37,7 +37,7 @@ Before the full launch, the team runs a pilot and reports its repayment rates:
 An analyst who wants the project to look successful can draw this:
 
 ```
-Chart A — vertical axis runs from 90% to 92%
+Chart A - vertical axis runs from 90% to 92%
 
 Jan  ##########
 Feb  ##############
@@ -48,7 +48,7 @@ Apr  ####################
 The same four numbers, with a full axis:
 
 ```
-Chart B — vertical axis runs from 0% to 100%
+Chart B - vertical axis runs from 0% to 100%
 
 Jan  ####################################
 Feb  ####################################
@@ -64,11 +64,11 @@ Two warning signs in your own charts: an axis that does not start at zero withou
 
 ### Principles of responsible data use
 
-- **Transparency** — be clear about what data is collected and why
-- **Purpose limitation** — use data only for the purpose it was collected for
-- **Accuracy** — do not base decisions on flawed or misleading data
-- **Fairness** — avoid harm to individuals or groups
-- **Accountability** — take responsibility for how data is used
+- **Transparency** - be clear about what data is collected and why
+- **Purpose limitation** - use data only for the purpose it was collected for
+- **Accuracy** - do not base decisions on flawed or misleading data
+- **Fairness** - avoid harm to individuals or groups
+- **Accountability** - take responsibility for how data is used
 
 Before starting any data project, ask the question the loan team skipped: could this harm someone, and would we be comfortable explaining it publicly?
 

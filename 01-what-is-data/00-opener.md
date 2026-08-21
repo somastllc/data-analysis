@@ -1,7 +1,7 @@
-# Chapter 1 Opener — What Is Data?
+# Chapter 1 Opener - What Is Data?
 
-**Chapter:** 1 — What Is Data?  
-**Type:** Video opener — ~70s, no lesson file behind it  
+**Chapter:** 1 - What Is Data?  
+**Type:** Video opener - ~70s, no lesson file behind it  
 
 Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply - open cold, no greeting.
 Read close to as written; this is already at speaking length.

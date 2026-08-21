@@ -1,8 +1,8 @@
 # Building a Lesson Deck
 
-How to turn a lesson into the 16:9 deck that gets screen-recorded. Two decks exist —
+How to turn a lesson into the 16:9 deck that gets screen-recorded. Two decks exist -
 `samples/01-01-what-is-data-slides.pdf` (12 slides) and
-`samples/03-01-defining-the-problem-slides.pdf` (16) — and 25 remain.
+`samples/03-01-defining-the-problem-slides.pdf` (16) - and 25 remain.
 
 **Precedence.** `DESIGN.md` owns how it looks, `PRODUCTION.md` owns what gets shot and in
 what order, the lesson Markdown owns every word. This file owns the procedure that joins
@@ -26,7 +26,7 @@ screen and a different set in the presenter's mouth, and the viewer reads the mi
 **Enforced.** Every build prints `verbatim: N/N text elements are the lesson's own words` and
 names anything that drifted. Both decks are at N/N. Treat a stray as a defect, not a warning.
 
-**Exempt as furniture** — they name the frame rather than say anything, like a figure number:
+**Exempt as furniture** - they name the frame rather than say anything, like a figure number:
 the eyebrow, the plate title, a `.k` column label, the slide number.
 
 > This retired an earlier "under 25 words per slide" rule. That rule is right for a deck
@@ -45,7 +45,7 @@ chapter/lesson metadata block, and the numbered section running heads.
 ### 3. Nothing is stacked on the cold open
 
 Carry the whole `## Overview` paragraph, to its last clause. Lesson 1.1's ends on
-*"what is data?"* — which is the question the title card answers, so a heading above it asks
+*"what is data?"* - which is the question the title card answers, so a heading above it asks
 the same question twice.
 
 ### 4. A slide break must be a beat in the lesson
@@ -55,7 +55,7 @@ Split only where the narration actually stops.
 - A heading, its lead sentence, and the table or list it introduces are **one slide**. A
   heading alone is a frame the presenter has nothing to say over.
 - A list and the sentence that draws the conclusion from it are **one slide**.
-- **The diagram build is the exception** — standing rule 7 says one node per beat, so a
+- **The diagram build is the exception** - standing rule 7 says one node per beat, so a
   7-stage diagram is 7 slides. That is a real beat each time.
 
 > Lesson 1.1 first ran 14 slides by giving each heading its own frame. It is 12 now, and the
@@ -66,7 +66,7 @@ Split only where the narration actually stops.
 Every slide in a lesson deck. `.slide.ink` and its colour overrides stay in the stylesheet
 for the six chapter-opener bumpers, which are separate videos.
 
-**Why.** Opening and closing on ink made a single screen recording flash dark, light, dark —
+**Why.** Opening and closing on ink made a single screen recording flash dark, light, dark -
 it reads as three videos cut together.
 
 ### 6. The deck must fit the window
@@ -86,7 +86,7 @@ files; a fourth made draw.io refuse the file outright.
 ## The procedure
 
 1. **Read the lesson's `**Shots:**` line** in `PRODUCTION.md`. That is the slide order. Note
-   any `**Diagram build:**` line — it gives the node list and often says what the diagram is
+   any `**Diagram build:**` line - it gives the node list and often says what the diagram is
    for later in the chapter.
 
 2. **Add the diagram to `REGISTER`** in `tools/gen_diagram.py` if it does not exist:
@@ -95,7 +95,7 @@ files; a fourth made draw.io refuse the file outright.
      13px on a 1920 slide; wrapped 4 + 3 they land at ~31px.
    - Labels wider than ~14 characters → break with `\n`. Two lines is the limit at 140 × 52.
 
-3. **`python3 tools/gen_diagram.py`** — regenerates every diagram in place, byte-identical for
+3. **`python3 tools/gen_diagram.py`** - regenerates every diagram in place, byte-identical for
    unchanged ones. It parses each `.drawio` back before writing, so malformed XML fails here.
 
 4. **Verify the new `.drawio` in the editor.** `open_drawio_xml` with the file's
@@ -113,20 +113,20 @@ files; a fourth made draw.io refuse the file outright.
    `magick montage s-*.png -tile 4x -geometry 400x225+5+5 -background '#888' contact.png`.
    A contact sheet catches overflow and empty frames that per-slide checks miss.
 
-8. **Check the HTML in a browser**, since it is what gets recorded — not the PDF.
+8. **Check the HTML in a browser**, since it is what gets recorded - not the PDF.
 
 ---
 
 ## Before a deck ships
 
-- [ ] `verbatim: N/N` — no strays
+- [ ] `verbatim: N/N` - no strays
 - [ ] No shot name anywhere on screen
 - [ ] Cold open is the whole opening paragraph, nothing stacked on it
 - [ ] No slide is a heading with nothing under it
 - [ ] Every slide on white
 - [ ] `pdfinfo` reports **1440 × 810 pts**, one page per slide
 - [ ] Diagram `.drawio` opened in the editor and its geometry read back
-- [ ] Contact sheet reviewed — nothing overflows the safe area, nothing is a near-empty frame
+- [ ] Contact sheet reviewed - nothing overflows the safe area, nothing is a near-empty frame
 - [ ] `pdffonts` shows every face embedded and subset, all Noto
 
 ---
@@ -135,7 +135,7 @@ files; a fourth made draw.io refuse the file outright.
 
 The stylesheet, the build-frame machinery, and the verbatim check are general. **Which lesson
 sentence lands on which slide is not, and should not be.** That is an editorial judgement per
-lesson, taken from its `**Shots:**` line — a generator that guessed it would produce 25 decks
+lesson, taken from its `**Shots:**` line - a generator that guessed it would produce 25 decks
 nobody would want to shoot. The sentences themselves are copied, never rewritten.
 
 Two components do not exist yet: the **4.1 code slides** with line highlighting, and the
@@ -149,14 +149,14 @@ Each of these shipped once and was caught by rendering, not by reading.
 
 | Trap | Symptom | Fix |
 |---|---|---|
-| `font-weight:640` | WeasyPrint logs `Ignored`, falls back to normal — bold-in-body silently was not bold | Multiples of 100 only |
-| `<br>` in a draw.io `value` | *"Not a diagram file"* — the whole file refused, not one label | `&lt;br&gt;`; escape once over the joined string |
-| `arcSize=12` | 6.24px radius, not 8 — it is a percentage of the shorter side | `absoluteArcSize=1;arcSize=16` |
+| `font-weight:640` | WeasyPrint logs `Ignored`, falls back to normal - bold-in-body silently was not bold | Multiples of 100 only |
+| `<br>` in a draw.io `value` | *"Not a diagram file"* - the whole file refused, not one label | `&lt;br&gt;`; escape once over the joined string |
+| `arcSize=12` | 6.24px radius, not 8 - it is a percentage of the shorter side | `absoluteArcSize=1;arcSize=16` |
 | `shadow=1` | A blurred 25%-black CSS card, the exact thing `DESIGN.md` §6 forbids | Shadow is its own cell, grouped with the node |
 | `.plate-title` without `max-width:none` | Inherits the `p` reading measure, wraps a four-word title | `max-width:none`, as `.plate-cap` already needed |
-| `--ink` term column on `.slide.ink` | Invisible — the whole first column of the end card | Restate every colour on the ink ground |
+| `--ink` term column on `.slide.ink` | Invisible - the whole first column of the end card | Restate every colour on the ink ground |
 | Visible scrollbar | Sits inside `100vw` but outside usable width; slide ~15px too wide when width binds | `scrollbar-width:none` |
-| Elbow turned mid-gap | SVG and draw.io drew two different pictures from one model; the SVG's 10px corner did not fit the 4px of run left before the arrowhead and the path doubled back | Turn over the target's centre line — `orthogonalEdgeStyle`'s own route. `DESIGN.md` §6 |
+| Elbow turned mid-gap | SVG and draw.io drew two different pictures from one model; the SVG's 10px corner did not fit the 4px of run left before the arrowhead and the path doubled back | Turn over the target's centre line - `orthogonalEdgeStyle`'s own route. `DESIGN.md` §6 |
 | `dashPattern` is not pixels | draw.io scales a dash pattern by the stroke width before drawing, so `dashPattern=6 4` at width 1.5 renders as `9 6`. The SVG had the literal 6 4 and drew a tighter dash than the editor | State the rendered result in the SVG. `DESIGN.md` §6 keeps the draw.io units, since that is what the style string takes |
 | Editor showed the old diagram | Two `open_drawio_xml` URLs differ only after `#`, so the browser does not reload and the readback is of the *previous* file. Cost one wrong conclusion | `location.reload()` after navigating, and confirm a changed value before reading geometry |
 
@@ -165,7 +165,7 @@ Each of these shipped once and was caught by rendering, not by reading.
 ## Left open on purpose
 
 - **Content does not fill the frame.** Most slides have empty space below the text. That is
-  `DESIGN.md` §3 — pages are top-aligned and never filled — and it applies to slides too. If
+  `DESIGN.md` §3 - pages are top-aligned and never filled - and it applies to slides too. If
   frames should look fuller the lever is geometry (safe area, type multiplier), not padding.
 - **~50 words per slide** means a viewer can read ahead of the narration. One idea per slide
   is what keeps that bounded. Split a section rather than let one slide grow.

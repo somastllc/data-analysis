@@ -1,6 +1,6 @@
 # From Analysis to Decisions
 
-**Chapter:** 3 — The Data Process  
+**Chapter:** 3 - The Data Process  
 **Lesson:** 6 of 6  
 **By the end:** You can state the assumptions and limitations behind an analysis, and connect a finding to a decision.
 

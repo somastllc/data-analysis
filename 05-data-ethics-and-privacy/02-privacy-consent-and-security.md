@@ -1,6 +1,6 @@
 # Privacy, Consent, and Security
 
-**Chapter:** 5 — Data Ethics and Privacy  
+**Chapter:** 5 - Data Ethics and Privacy  
 **Lesson:** 2 of 4  
 **By the end:** You can tell meaningful consent from merely legal consent.
 

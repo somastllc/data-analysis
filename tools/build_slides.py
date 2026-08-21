@@ -3,7 +3,7 @@
 
 The deck is one slide per chip in that lesson's `**Shots:**` line in PRODUCTION.md,
 with the diagram chip expanded to one slide per node (standing rule 7). The HTML is
-self-contained — stylesheet and diagram SVGs are inlined — so it can be opened or
+self-contained - stylesheet and diagram SVGs are inlined - so it can be opened or
 handed over on its own, the same way `samples/01-01-what-is-data.html` is.
 
     python3 tools/build_slides.py            # writes samples/01-01-what-is-data-slides.{html,pdf}
@@ -47,9 +47,9 @@ def plate(title, inner, cap=None):
 
 
 def marks(items, two=False):
-    """`literal — gloss` rows, the form the handout uses for the example list."""
+    """`literal - gloss` rows, the form the handout uses for the example list."""
     li = "\n".join(
-        f'    <li>{lit}' + (f' <span class="what">— {g}</span>' if g else "") + "</li>"
+        f'    <li>{lit}' + (f' <span class="what">- {g}</span>' if g else "") + "</li>"
         for lit, g in items)
     return f'  <ul class="marks{" two" if two else ""}">\n{li}\n  </ul>'
 
@@ -77,10 +77,10 @@ def deck_01_01(frames):
     # 1 - cold open. Standing rule 1: `## Overview` opens the video, said verbatim
     # before the title card. It is on screen because the deck is the thing being
     # screen-recorded; there is no separate camera to cut to. The whole paragraph
-    # goes here, down to the question it ends on — which is the one the title card
+    # goes here, down to the question it ends on - which is the one the title card
     # answers, so no heading may be stacked on top of it.
     #
-    # No eyebrow. "COLD OPEN" is a shot name — it belongs to PRODUCTION.md, not to
+    # No eyebrow. "COLD OPEN" is a shot name - it belongs to PRODUCTION.md, not to
     # the frame the viewer sees. Rule 1 is that the video opens cold; labelling the
     # slide "cold open" is the on-screen equivalent of saying "hi, welcome back".
     s.append(slide(
@@ -94,7 +94,7 @@ def deck_01_01(frames):
 
     # 2 - title card. Standing rule 3: the metadata block goes on screen, never read.
     s.append(slide(
-        '  <p class="eyebrow">Chapter 1 — What Is Data?</p>\n'
+        '  <p class="eyebrow">Chapter 1 - What Is Data?</p>\n'
         '  <h1>What Is Data?</h1>\n'
         '  <p class="mono" style="font-size:var(--t-data);color:var(--muted)">Lesson 1 of 5</p>',
         mid=True))
@@ -109,15 +109,15 @@ def deck_01_01(frames):
 
     # 4 - section 1, the definition
     s.append(slide(
-        '  <p class="eyebrow">1 — Raw facts</p>\n'
+        '  <p class="eyebrow">1 - Raw facts</p>\n'
         '  <h2>Data: raw facts about the world</h2>\n'
         '  <p class="lead wide"><strong>Data</strong> is a collection of facts, measurements,\n'
         '     or observations about the world. On its own, data usually does not tell a full\n'
         '     story. It is the raw material we use to understand what is happening.</p>'))
 
-    # 5 - the five examples, in the handout's `literal — gloss` form
+    # 5 - the five examples, in the handout's `literal - gloss` form
     s.append(slide(
-        '  <p class="eyebrow">1 — Raw facts</p>\n'
+        '  <p class="eyebrow">1 - Raw facts</p>\n'
         '  <h2>Examples of data</h2>\n'
         + marks([("$25", "a mobile money transfer amount"),
                  ("$2.50 per kg", "the market price of rice"),
@@ -129,9 +129,9 @@ def deck_01_01(frames):
 
     # 6 - section 2, heading and table together. Standing rule 6: on screen as
     # written; read a row, then explain it. The heading and its one-line lead do
-    # not earn a slide of their own — they are how you introduce the table.
+    # not earn a slide of their own - they are how you introduce the table.
     s.append(slide(
-        '  <p class="eyebrow">2 — Not the same thing</p>\n'
+        '  <p class="eyebrow">2 - Not the same thing</p>\n'
         '  <h2 style="margin-bottom:16rem">Data vs information vs insight</h2>\n'
         '  <p style="max-width:56ch">These three terms are related, but they are not\n'
         '     the same.</p>\n'
@@ -147,7 +147,7 @@ def deck_01_01(frames):
 
     # 7-9 - the diagram build. Standing rule 7: one node per beat, spoken as it lands.
     # PRODUCTION.md: build it straight out of the table above. So each beat carries that
-    # row's own Meaning cell, word for word — same three words, same order.
+    # row's own Meaning cell, word for word - same three words, same order.
     beats = ["Raw facts",
              "Data organized to answer a basic question",
              "A useful conclusion that can guide action"]
@@ -157,13 +157,13 @@ def deck_01_01(frames):
     for i, (frame, beat) in enumerate(zip(frames, beats)):
         last = i == len(beats) - 1
         s.append(slide(
-            '  <p class="eyebrow">2 — Not the same thing</p>\n'
-            + plate("Plate I — from facts to a decision", frame, cap=cap if last else None)
+            '  <p class="eyebrow">2 - Not the same thing</p>\n'
+            + plate("Plate I - from facts to a decision", frame, cap=cap if last else None)
             + f'\n  <p class="lead" style="margin-top:40rem">{beat}</p>'))
 
-    # 10 - the cooking analogy. PRODUCTION.md: lands better spoken — give it a beat.
+    # 10 - the cooking analogy. PRODUCTION.md: lands better spoken - give it a beat.
     s.append(slide(
-        '  <p class="eyebrow">2 — Not the same thing</p>\n'
+        '  <p class="eyebrow">2 - Not the same thing</p>\n'
         '  <h2>Think of it like cooking</h2>\n'
         '  <div class="analogy">\n'
         '    <div><p class="k">Data</p><p class="v">The ingredients, before anyone has\n'
@@ -177,7 +177,7 @@ def deck_01_01(frames):
     # 11 - section 3, whole. The list and the sentence that draws the conclusion
     # from it are one thought; splitting them puts a beat where the lesson has none.
     s.append(slide(
-        '  <p class="eyebrow">3 — Every day</p>\n'
+        '  <p class="eyebrow">3 - Every day</p>\n'
         '  <h2 style="margin-bottom:16rem">Where you see data every day</h2>\n'
         '  <p style="max-width:56ch">Data is not only found in spreadsheets or databases.\n'
         '     You create and use data constantly:</p>\n'
@@ -211,7 +211,7 @@ def deck_03_01(frames):
     s = []
 
     # 1 - cold open, whole `## Overview` paragraph. No eyebrow: "cold open" is a
-    # shot name, and the video opens cold — DESIGN.md §7.
+    # shot name, and the video opens cold - DESIGN.md §7.
     s.append(slide(
         '  <p class="lead" style="max-width:50ch">&ldquo;Can you look into the sales\n'
         '     data?&rdquo; is one of the most common requests an analyst receives, and it is\n'
@@ -220,7 +220,7 @@ def deck_03_01(frames):
 
     # 2 - title card
     s.append(slide(
-        '  <p class="eyebrow">Chapter 3 — The Data Process</p>\n'
+        '  <p class="eyebrow">Chapter 3 - The Data Process</p>\n'
         '  <h1>Defining the Problem<br>and Asking Questions</h1>\n'
         '  <p class="mono" style="font-size:var(--t-data);color:var(--muted)">Lesson 1 of 6</p>',
         mid=True))
@@ -233,18 +233,18 @@ def deck_03_01(frames):
         '      <span class="accent">specific analytical question</span>.</h2>'))
 
     # 4-10 - the diagram build, one stage per beat (standing rule 7). PRODUCTION.md:
-    # "This is the map for the whole chapter." No per-beat caption — the lesson
+    # "This is the map for the whole chapter." No per-beat caption - the lesson
     # glosses none of the seven stages, and inventing seven glosses would put words
     # on screen that the narration does not have. The diagram's own caption is baked
     # into the artwork and lands with the last node.
     for frame in frames:
         s.append(slide(
             '  <p class="eyebrow">The process</p>\n'
-            + plate("Plate I — the process, question to decision", frame)))
+            + plate("Plate I - the process, question to decision", frame)))
 
     # 11 - the business problem: the three questions to always ask
     s.append(slide(
-        '  <p class="eyebrow">1 — The business problem</p>\n'
+        '  <p class="eyebrow">1 - The business problem</p>\n'
         '  <h2 style="margin-bottom:16rem">Start with the business problem</h2>\n'
         '  <p style="max-width:56ch">A common mistake is jumping straight into data\n'
         '     without knowing what you are trying to solve. Always begin by asking:</p>\n'
@@ -257,7 +257,7 @@ def deck_03_01(frames):
     # heading ("Weak question, strong question") put words on screen the lesson does
     # not have, and the verbatim check caught it.
     s.append(slide(
-        '  <p class="eyebrow">1 — The business problem</p>\n'
+        '  <p class="eyebrow">1 - The business problem</p>\n'
         '  <h2 style="margin-bottom:32rem">Start with the business problem</h2>\n'
         '  <div class="cols">\n'
         '    <div><p class="k">Example</p>\n'
@@ -273,7 +273,7 @@ def deck_03_01(frames):
 
     # 13 - stakeholders: who they are, and what knowing them buys you
     s.append(slide(
-        '  <p class="eyebrow">2 — Stakeholders</p>\n'
+        '  <p class="eyebrow">2 - Stakeholders</p>\n'
         '  <h2 style="margin-bottom:16rem">Know your stakeholders</h2>\n'
         '  <p style="max-width:56ch">A <strong>stakeholder</strong> is anyone who needs the\n'
         '     results of your analysis.</p>\n'
@@ -291,7 +291,7 @@ def deck_03_01(frames):
 
     # 14 - the four qualities, plus the lesson's own three examples
     s.append(slide(
-        '  <p class="eyebrow">3 — Good questions</p>\n'
+        '  <p class="eyebrow">3 - Good questions</p>\n'
         '  <h2 style="margin-bottom:32rem">How to ask good analytical questions</h2>\n'
         '  <div class="cols">\n'
         '    <div><p class="k">Good questions are</p>\n'
@@ -309,7 +309,7 @@ def deck_03_01(frames):
 
     # 15 - the worked example
     s.append(slide(
-        '  <p class="eyebrow">4 — Worked example</p>\n'
+        '  <p class="eyebrow">4 - Worked example</p>\n'
         '  <h2 style="margin-bottom:16rem">A training centre in Hargeisa notices that\n'
         '      fewer students are enrolling.</h2>\n'
         '  <div class="cols">\n'
@@ -352,13 +352,13 @@ def verbatim_report(deck_html, sources, allow=()):
 
     The deck is what gets screen-recorded while the lesson is narrated, so a slide
     that paraphrases puts different words on screen and in the presenter's mouth.
-    Only the eyebrows are ours — they are running heads, not content.
+    Only the eyebrows are ours - they are running heads, not content.
 
     `sources` is the lesson Markdown, and nothing else. An earlier version also
     passed the handout, on the grounds that it carries a few lines the Markdown does
     not. That let a *stale* handout satisfy the check: after the content audit
     rewrote lesson 1.1, its deck still quoted three sentences the lesson no longer
-    contained — one of them deleted outright — and the build reported 41/41, because
+    contained - one of them deleted outright - and the build reported 41/41, because
     the pre-audit handout was still in the corpus and still contained them.
 
     So handout-only lines are now declared one by one in `allow`. The lesson is the
@@ -411,7 +411,7 @@ def deck_02_01(frames):
 
     # 1 - cold open. Rule 1: the whole `## Overview` paragraph, nothing stacked on
     # it. The three questions inside it are the lesson's structure, so they are set
-    # in the accent to be pointed at — PRODUCTION's note says to say they map onto
+    # in the accent to be pointed at - PRODUCTION's note says to say they map onto
     # the first three types, and this is the frame that is on screen when you do.
     s.append(slide(
         '  <p class="lead" style="max-width:52ch">A manager looks at last month&rsquo;s sales\n'
@@ -422,7 +422,7 @@ def deck_02_01(frames):
 
     # 2 - title card. Rule 3: on screen, never read.
     s.append(slide(
-        '  <p class="eyebrow">Chapter 2 — The Data Ecosystem</p>\n'
+        '  <p class="eyebrow">Chapter 2 - The Data Ecosystem</p>\n'
         '  <h1>Types of Analytics</h1>\n'
         '  <p class="mono" style="font-size:var(--t-data);color:var(--muted)">Lesson 1 of 6</p>',
         mid=True))
@@ -437,7 +437,7 @@ def deck_02_01(frames):
 
     # 4 - section 1: the definition. One sentence, so it carries the frame alone.
     s.append(slide(
-        '  <p class="eyebrow">1 — What analytics is</p>\n'
+        '  <p class="eyebrow">1 - What analytics is</p>\n'
         '  <h2 style="margin-bottom:24rem">What is analytics?</h2>\n'
         '  <p class="lead wide"><strong>Analytics</strong> means using data to understand what\n'
         '     happened, why it happened, what may happen next, or what action to take.</p>'))
@@ -448,11 +448,11 @@ def deck_02_01(frames):
     for frame in frames:
         s.append(slide(
             '  <p class="eyebrow">The four types</p>\n'
-            + plate("Plate I — the four types of analytics", frame)))
+            + plate("Plate I - the four types of analytics", frame)))
 
     # 9 - section 2, heading and table together (rule 6: on screen as written).
     s.append(slide(
-        '  <p class="eyebrow">2 — The four types</p>\n'
+        '  <p class="eyebrow">2 - The four types</p>\n'
         '  <h2 style="margin-bottom:16rem">The four types of analytics</h2>\n'
         + table(["Type", "Question", "Example"], [
             ("Descriptive", "What happened?",
@@ -469,7 +469,7 @@ def deck_02_01(frames):
     # one thought: the list says what each type is, the sentence says where a
     # beginner actually starts. Splitting them puts a beat where the lesson has none.
     s.append(slide(
-        '  <p class="eyebrow">3 — A way to remember</p>\n'
+        '  <p class="eyebrow">3 - A way to remember</p>\n'
         '  <h2 style="margin-bottom:16rem">Simple way to remember them</h2>\n'
         + marks([("<strong>Descriptive</strong> = report the past", None),
                  ("<strong>Diagnostic</strong> = explain the past", None),
@@ -482,7 +482,7 @@ def deck_02_01(frames):
     # 11 - section 4, the argument. This is the lesson's point and the reason the
     # diagram is a chain rather than four boxes, so it gets the frame to itself.
     s.append(slide(
-        '  <p class="eyebrow">4 — Why this matters</p>\n'
+        '  <p class="eyebrow">4 - Why this matters</p>\n'
         '  <h2 style="margin-bottom:20rem">The four are cumulative</h2>\n'
         '  <p class="lead wide">You cannot explain why rice sales rose until you know that they\n'
         '     rose. You cannot forecast next month without knowing what drove last month. And a\n'
@@ -492,7 +492,7 @@ def deck_02_01(frames):
     # 12 - the consequence, alone, because it is the line the viewer should leave
     # with and it is a question rather than a statement.
     s.append(slide(
-        '  <p class="eyebrow">4 — Why this matters</p>\n'
+        '  <p class="eyebrow">4 - Why this matters</p>\n'
         '  <p class="lead" style="max-width:54ch">So when an organization says it wants\n'
         '     prediction, the honest first question is whether it can yet\n'
         '     <span class="accent">describe what already happened</span>.</p>',
@@ -519,7 +519,7 @@ def deck_02_01(frames):
 DECKS = {
     "01-01": dict(
         build=deck_01_01,
-        title="What Is Data? — slides",
+        title="What Is Data? - slides",
         out="01-01-what-is-data-slides.html",
         nodes=["Data", "Information", "Insight"],
         diagram="01-01-data-to-insight", caption=None,
@@ -527,11 +527,11 @@ DECKS = {
         # Lines the handout added that the lesson does not carry. Declared one by
         # one so a stale handout can never satisfy the check on the lesson's behalf.
         allow=[
-            "$25 — a mobile money transfer amount",
-            "$2.50 per kg — the market price of rice",
-            "present — a student's attendance record",
-            "$49.99 — a product price",
-            "32°C — a temperature reading",
+            "$25 - a mobile money transfer amount",
+            "$2.50 per kg - the market price of rice",
+            "present - a student's attendance record",
+            "$49.99 - a product price",
+            "32°C - a temperature reading",
             "Sales were $1,200, $980 and $1,450 on three days",
             "Each step throws information away and adds meaning. You cannot skip one: "
             "an insight with no data underneath it is just an opinion.",
@@ -542,7 +542,7 @@ DECKS = {
     ),
     "02-01": dict(
         build=deck_02_01,
-        title="Types of Analytics — slides",
+        title="Types of Analytics - slides",
         out="02-01-types-of-analytics-slides.html",
         nodes=["Descriptive", "Diagnostic", "Predictive", "Prescriptive"],
         diagram="02-01-types-of-analytics",
@@ -551,7 +551,7 @@ DECKS = {
     ),
     "03-01": dict(
         build=deck_03_01,
-        title="Defining the Problem and Asking Questions — slides",
+        title="Defining the Problem and Asking Questions - slides",
         out="03-01-defining-the-problem-slides.html",
         nodes=["Define\nproblem", "Ask\nquestions", "Collect data", "Clean data",
                "Analyze and\nvisualize", "Communicate\ninsights", "Make\ndecisions"],
@@ -565,7 +565,7 @@ DECKS = {
 
 def build_deck(key):
     d = DECKS[key]
-    # The build frames are inlined into the HTML, so they are intermediate — they
+    # The build frames are inlined into the HTML, so they are intermediate - they
     # do not belong beside the deck in samples/.
     with tempfile.TemporaryDirectory() as tmp:
         frames = build_frames(d["nodes"], pathlib.Path(tmp), d["diagram"],
@@ -590,7 +590,7 @@ def build_deck(key):
 
     if "--no-pdf" not in sys.argv:
         if not WEASY.exists():
-            sys.exit("no .venv — python3 -m venv .venv && .venv/bin/pip install weasyprint")
+            sys.exit("no .venv - python3 -m venv .venv && .venv/bin/pip install weasyprint")
         dst_pdf = dst_html.with_suffix(".pdf")
         subprocess.run([str(WEASY), str(dst_html), str(dst_pdf)], check=True)
         print(f"  {dst_pdf.relative_to(ROOT)}")

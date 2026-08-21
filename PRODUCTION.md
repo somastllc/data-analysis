@@ -1,4 +1,4 @@
-# Production Notes — Recording This Course
+# Production Notes - Recording This Course
 
 **Format:** 27 lesson videos, 6 chapter openers, 1 welcome
 **Estimated finished runtime:** ~2h 40m
@@ -6,13 +6,13 @@
 
 ---
 
-## Standing rules — every video
+## Standing rules - every video
 
 **1. Cold open first, no greeting.** The first sentence of each lesson's `## Overview` is the cold open. Say it verbatim over black, before the title card. Never open with "hi, welcome back to the course". The hook is the retention decision, and a greeting spends it.
 
 **2. Say the objective at ~0:15.** Every lesson has a `**By the end:**` line. Say it right after the cold open, before the first section. This is the only signpost the video gets. The "This lesson covers…" sentences were removed from all 16 lessons that had them, precisely so this one lands alone.
 
-**3. The metadata block is the title card, not narration.** `**Chapter:** N — Name` / `**Lesson:** N of TOTAL` goes on screen. Never read aloud.
+**3. The metadata block is the title card, not narration.** `**Chapter:** N - Name` / `**Lesson:** N of TOTAL` goes on screen. Never read aloud.
 
 **4. Key Terms tables are end cards. Do not narrate them.** Every lesson closes with a Key Terms table. Put it on screen and hold it. Over it, say two things: one sentence calling back to the lesson's main idea, and one sentence teasing the next lesson. Reading 90 glossary rows aloud across the course would cost 15–20 minutes and would put the flattest possible 45 seconds at the end of all 27 videos, which is the exact place you need the click to the next one.
 
@@ -35,9 +35,9 @@
 | Asset | Count | Notes |
 |---|---|---|
 | Animated diagram builds | 11 | One per mermaid block. Build order given per lesson below. |
-| Chart pair, truncated vs full axis | 2 | **5.1** — highest-value visual in the course. Currently ASCII in the Markdown. |
-| Repayment data table | 1 | **5.1** — must appear *before* either chart. |
-| Code slides with line highlighting | 2 | **4.2** — SQL and Python. Only code in the course. |
+| Chart pair, truncated vs full axis | 2 | **5.1** - highest-value visual in the course. Currently ASCII in the Markdown. |
+| Repayment data table | 1 | **5.1** - must appear *before* either chart. |
+| Code slides with line highlighting | 2 | **4.2** - SQL and Python. Only code in the course. |
 | Content table slides | 16 | Excludes the 26 Key Terms end cards. |
 | Key Terms end card template | 1 | Reusable; table content differs per lesson. |
 | Title card template | 1 | Lesson name + chapter/lesson position. |
@@ -55,22 +55,22 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 | Chapter | The question it settles | Lessons |
 |---|---|---|
-| 1 — What Is Data? | What am I actually working with? | 5 |
-| 2 — The Data Ecosystem | Who does what, and what are all these job titles? | 6 |
-| 3 — The Data Process | What are the steps, in order, from question to decision? | 6 |
-| 4 — Data in the Real World | What tools and jobs does this turn into? | 4 |
-| 5 — Data Ethics and Privacy | When should we *not* do the thing we can do? | 4 |
-| 6 — Conclusion | Can I do all of it in one pass? | 2 |
+| 1 - What Is Data? | What am I actually working with? | 5 |
+| 2 - The Data Ecosystem | Who does what, and what are all these job titles? | 6 |
+| 3 - The Data Process | What are the steps, in order, from question to decision? | 6 |
+| 4 - Data in the Real World | What tools and jobs does this turn into? | 4 |
+| 5 - Data Ethics and Privacy | When should we *not* do the thing we can do? | 4 |
+| 6 - Conclusion | Can I do all of it in one pass? | 2 |
 
 **Chapter 5's opener is mandatory, not optional.** Its four lessons are one continuous case: a mobile money company building automatic small-business loans. A viewer landing on lesson 5.3 without the opener has no idea a loan company has been running for two lessons. State the case up front: the company, the product, and that it will go wrong four different ways.
 
 ---
 
-# Chapter 1 — What Is Data?
+# Chapter 1 - What Is Data?
 
 *5 lessons · 27 min*
 
-### 1.1 · What Is Data? — 5.5 min
+### 1.1 · What Is Data? - 5.5 min
 
 **Cold open:** *You check your phone and see a mobile money transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance.*
 
@@ -82,7 +82,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 ---
 
-### 1.2 · Types of Data — 5 min
+### 1.2 · Types of Data - 5 min
 
 **Cold open:** *A shop owner opens a spreadsheet of last week's sales and sees numbers, product names, and customer comments all mixed together.*
 
@@ -92,17 +92,17 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 ---
 
-### 1.3 · Sources and Formats of Data — 5.5 min
+### 1.3 · Sources and Formats of Data - 5.5 min
 
 **Cold open:** *You receive a file from a colleague and need to decide whether you can trust it and how to open it.*
 
 **Shots:** cold open → title → objective → *Common sources of data* → *Primary vs secondary data* → *Common data formats* → **table** Format / Common use → *Why source and format matter* → end card
 
-**Note:** The two questions in the last section — "Where did this come from?" and "What format is it in?" — are the takeaway. Put them on screen as a two-line card.
+**Note:** The two questions in the last section - "Where did this come from?" and "What format is it in?" - are the takeaway. Put them on screen as a two-line card.
 
 ---
 
-### 1.4 · Data Quality Basics — 6.5 min
+### 1.4 · Data Quality Basics - 6.5 min
 
 **Cold open:** *A manager forwards you a customer list and asks for the average age.*
 
@@ -118,7 +118,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 1.5 · Why Data Matters — 4.5 min
+### 1.5 · Why Data Matters - 4.5 min
 
 **Cold open:** *Two shop owners sell the same products at the same prices.*
 
@@ -128,13 +128,13 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-# Chapter 2 — The Data Ecosystem
+# Chapter 2 - The Data Ecosystem
 
 *6 lessons · 30 min*
 
 > **Watch the monotony here.** 2.2 and 2.4 are still structurally identical: same length, same four-section shape, no diagram. 2.3 and 2.6 used to be too, and each has since gained a diagram, which is most of what separates them now. Shoot 2.2 and 2.4 in different sittings and vary framing between them.
 
-### 2.1 · Types of Analytics — 4.5 min
+### 2.1 · Types of Analytics - 4.5 min
 
 **Cold open:** *A manager looks at last month's sales report and asks three questions in one meeting: "What happened? Why did it happen? What should we do next?"*
 
@@ -146,7 +146,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 2.2 · Data Analysis and Business Intelligence — 4.5 min
+### 2.2 · Data Analysis and Business Intelligence - 4.5 min
 
 **Cold open:** *A shop owner notices that one product sells out every week while another sits on the shelf.*
 
@@ -156,7 +156,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 2.3 · Data Science and Machine Learning — 6 min
+### 2.3 · Data Science and Machine Learning - 6 min
 
 **Cold open:** *Your inbox quietly moved a message to spam this morning.*
 
@@ -168,9 +168,9 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 2.4 · Data Engineering — 4.5 min
+### 2.4 · Data Engineering - 4.5 min
 
-**Cold open:** *An analyst opens a report and finds three different versions of the same sales numbers — one outdated, one incomplete, one in the wrong format.*
+**Cold open:** *An analyst opens a report and finds three different versions of the same sales numbers - one outdated, one incomplete, one in the wrong format.*
 
 **Shots:** cold open → title → objective → *What is data engineering?* → *What data engineers do* → *Why data engineering matters* → *Example* → end card
 
@@ -178,7 +178,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 2.5 · Where Data Lives and the Data Pipeline — 5.5 min
+### 2.5 · Where Data Lives and the Data Pipeline - 5.5 min
 
 **Cold open:** *The sales figure on a manager's dashboard this morning began three weeks ago as a mobile money payment for a sack of rice.*
 
@@ -188,7 +188,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 2.6 · How These Fields Work Together — 5 min
+### 2.6 · How These Fields Work Together - 5 min
 
 **Cold open:** *One customer cancels a subscription.*
 
@@ -200,13 +200,13 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-# Chapter 3 — The Data Process
+# Chapter 3 - The Data Process
 
 *6 lessons · 32.5 min*
 
 > **The chapter is field-neutral, and the delivery has to be too.** Every lesson carries one short beat naming the same step as a data scientist, or ML, would run it. Those beats are the reason this chapter is not "the analyst chapter". Do not cut them for time, and do not let the analyst examples around them set the tone for the whole chapter.
 
-### 3.1 · Defining the Problem and Asking Questions — 6 min
+### 3.1 · Defining the Problem and Asking Questions - 6 min
 
 **Cold open:** *"Can you look into the sales data?" is one of the most common requests an analyst receives, and it is not yet a question.*
 
@@ -216,7 +216,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 3.2 · Collecting Data — 5 min
+### 3.2 · Collecting Data - 5 min
 
 **Cold open:** *The easiest data to obtain is rarely the data that answers your question.*
 
@@ -224,7 +224,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 3.3 · Cleaning Data — 5 min
+### 3.3 · Cleaning Data - 5 min
 
 **Cold open:** *Ask working analysts what takes up most of their time and the answer is rarely "analysis".*
 
@@ -234,7 +234,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 3.4 · Analyzing and Visualizing Data — 7.5 min
+### 3.4 · Analyzing and Visualizing Data - 7.5 min
 
 **Cold open:** *The same table of numbers can hide a trend completely or make it obvious in one second.*
 
@@ -244,11 +244,11 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 Chart choice is named and dropped on purpose. Do not promise where it gets taught.
 
-**The correlation section is the most valuable ninety seconds in chapter 3.** The lesson's objective always promised the viewer could "say what analysis can and cannot prove"; until now the lesson never addressed it. Put the three explanations on screen **one at a time, over the same unchanged chart** — longer hours cause the sales, the sales pay for the longer hours, the busy street causes both. The chart never changes, and that is the entire point: three different worlds, one identical picture. Chapter 5's misleading-charts and bias lessons both assume the viewer has this.
+**The correlation section is the most valuable ninety seconds in chapter 3.** The lesson's objective always promised the viewer could "say what analysis can and cannot prove"; until now the lesson never addressed it. Put the three explanations on screen **one at a time, over the same unchanged chart** - longer hours cause the sales, the sales pay for the longer hours, the busy street causes both. The chart never changes, and that is the entire point: three different worlds, one identical picture. Chapter 5's misleading-charts and bias lessons both assume the viewer has this.
 
 ---
 
-### 3.5 · Communicating Insights — 4.5 min
+### 3.5 · Communicating Insights - 4.5 min
 
 **Cold open:** *An analyst spends three weeks on an investigation, presents twelve slides, and nothing changes.*
 
@@ -258,7 +258,7 @@ Chart choice is named and dropped on purpose. Do not promise where it gets taugh
 
 ---
 
-### 3.6 · From Analysis to Decisions — 4.5 min
+### 3.6 · From Analysis to Decisions - 4.5 min
 
 **Cold open:** *Every analysis rests on things you did not check.*
 
@@ -270,13 +270,13 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 ---
 
-# Chapter 4 — Data in the Real World
+# Chapter 4 - Data in the Real World
 
 *4 lessons · 21.5 min*
 
 > **This chapter names no destination.** The rule already stated for 4.3 applies to all four lessons: the course trains for no single role, so the delivery must not imply one. The cold opens of 4.1 and 4.4 were rewritten to drop "analyst", and 4.2 was retitled for the same reason: the tooling and the industries belong to the whole field, not to one job title in it.
 
-### 4.1 · The Modern Data Toolkit — 5.5 min
+### 4.1 · The Modern Data Toolkit - 5.5 min
 
 **Cold open:** *Everyone new to data asks which tool to learn first.*
 
@@ -288,19 +288,19 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 ---
 
-### 4.2 · Why Data Work Uses Code — 6 min
+### 4.2 · Why Data Work Uses Code - 6 min
 
 **Cold open:** *Spreadsheets work well until three things happen: the data grows too large, the same report is needed every week, or someone asks you to prove how a number was produced.*
 
 **Shots:** cold open → title → objective → *What code solves* → *Asking a database a question* → **code slide: SQL** → *Working through data step by step* → **code slide: Python** → end card
 
-**Code slides:** the only code in the entire course, and a different shooting setup from every other video. Highlight line by line. Say the framing sentence first, *"You are not expected to understand the examples coming up"* — before either slide appears, or beginners will disengage on sight of the SQL.
+**Code slides:** the only code in the entire course, and a different shooting setup from every other video. Highlight line by line. Say the framing sentence first, *"You are not expected to understand the examples coming up"* - before either slide appears, or beginners will disengage on sight of the SQL.
 
 **Note:** this lesson was split out of 4.1, which ran 10.5 minutes, nearly double the course median. Shoot it in the same session as 4.1 since the setup is shared, but keep it a separate video: the code is a different mode of attention from the tool comparison, and a viewer who only wants the toolkit can stop after 4.1.
 
 ---
 
-### 4.3 · Careers in Data — 5.5 min
+### 4.3 · Careers in Data - 5.5 min
 
 **Cold open:** *Six job titles, heavily overlapping skills, and no agreement between companies about what any of them actually mean. Here is the map.*
 
@@ -310,25 +310,25 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 ---
 
-### 4.4 · Data Across Industries — 4.5 min
+### 4.4 · Data Across Industries - 4.5 min
 
 **Cold open:** *A clinic, a money transfer service, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.*
 
 **Shots:** cold open → title → objective → *The methods travel; the questions do not* → *The three from the cold open* → *More of the same* → **table** Where / What they ask data → *Key takeaway* → end card
 
-**Note:** Three-panel visual for the cold open — clinic, money transfer, school — held through the lesson and returned to at the takeaway. The lesson used to name six industries in a table and then narrate the same six again; it now delivers the three the cold open promises, in depth, and lists the rest once.
+**Note:** Three-panel visual for the cold open - clinic, money transfer, school - held through the lesson and returned to at the takeaway. The lesson used to name six industries in a table and then narrate the same six again; it now delivers the three the cold open promises, in depth, and lists the rest once.
 
 Each of the three closes on what a *wrong* answer costs: an unfinished treatment, a blocked customer, a missed child. That is the beat, not the industry list.
 
 ---
 
-# Chapter 5 — Data Ethics and Privacy
+# Chapter 5 - Data Ethics and Privacy
 
 *4 lessons · 29 min*
 
 > **One continuous case.** All four lessons follow a mobile money company building automatic small-business loans. Shoot them in one session so the delivery stays consistent, and shoot them in order, since lesson 5.4 resolves a decision set up in 5.1. The chapter opener must establish the case before 5.1 starts.
 
-### 5.1 · Responsible and Ethical Use of Data — 8 min
+### 5.1 · Responsible and Ethical Use of Data - 8 min
 
 **Cold open:** *The most damaging data projects are rarely built by bad people. They are built by good teams who never stopped to ask whether they should.*
 
@@ -338,7 +338,7 @@ Each of the three closes on what a *wrong* answer costs: an unfinished treatment
 
 Sequence it precisely:
 1. Show the four repayment numbers as a table. Hold. Let the viewer own them.
-2. Reveal Chart A — truncated 90–92% axis. Let it look like a success story. Say nothing about the axis.
+2. Reveal Chart A - truncated 90–92% axis. Let it look like a success story. Say nothing about the axis.
 3. Ask: is this chart lying?
 4. **Animate the axis expanding from 90–92% to 0–100%.** Same bars, same data, morphing into four near-identical columns.
 5. Then the line: *"Chart A contains no false numbers."*
@@ -347,7 +347,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 ---
 
-### 5.2 · Privacy, Consent, and Security — 5.5 min
+### 5.2 · Privacy, Consent, and Security - 5.5 min
 
 **Cold open:** *Everyone clicked "agree". Almost nobody read it.*
 
@@ -359,7 +359,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 ---
 
-### 5.3 · Bias and Fairness — 7.5 min
+### 5.3 · Bias and Fairness - 7.5 min
 
 **Cold open:** *A model can sort people by gender using data that contains no gender field anywhere in it.*
 
@@ -371,7 +371,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 ---
 
-### 5.4 · Data Governance and Regulations — 8 min
+### 5.4 · Data Governance and Regulations - 8 min
 
 **Cold open:** *Every failure in this chapter had someone who could have raised a concern.*
 
@@ -383,11 +383,11 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 ---
 
-# Chapter 6 — Conclusion
+# Chapter 6 - Conclusion
 
 *2 lessons · 10.5 min*
 
-### 6.1 · Course Recap: From Data to Decision — 4 min
+### 6.1 · Course Recap: From Data to Decision - 4 min
 
 **Cold open:** *You have completed the core lessons of this course, and you now have the vocabulary this field runs on.*
 
@@ -399,7 +399,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 ---
 
-### 6.2 · Putting It All Together: End-to-End Scenario — 6.5 min
+### 6.2 · Putting It All Together: End-to-End Scenario - 6.5 min
 
 **Cold open:** *One business problem. Six steps. Every idea in this course, used once.*
 
@@ -420,9 +420,9 @@ Not lesson order. Group by setup and by what has to exist first.
 | Session | Shoot | Why |
 |---|---|---|
 | 1 | **2.1** and **3.4** | Calibration. 2.1 is among the shortest and is diagram-led; 3.4 is among the longest and is table-and-prose. Compare actual runtime against the 4.5 and 7.5 estimates; the ratio you get rescales every number in this document. Chapter 5 holds the three longest lessons but cannot supply a calibration subject, because it must be shot in one session and in order. |
-| 2 | Chapter 1 (5 lessons) | Establishes tone. Most-watched chapter — students who quit, quit here. |
+| 2 | Chapter 1 (5 lessons) | Establishes tone. Most-watched chapter - students who quit, quit here. |
 | 3 | Chapter 2, split across two sittings | Four structurally identical lessons; fatigue will show if shot in one. |
-| 4 | Chapter 3 (6 lessons) | Shoot the 3.1 diagram build first — lessons 3.2–3.6 reuse it as a locator. |
+| 4 | Chapter 3 (6 lessons) | Shoot the 3.1 diagram build first - lessons 3.2–3.6 reuse it as a locator. |
 | 5 | Chapter 4 remainder | **4.2** needs its own setup for the code slides, and is the only video that does. Shoot it with 4.1, whose handoff sets it up. |
 | 6 | **Chapter 5, one session, in order** | Continuous case; consistency of delivery matters more here than anywhere else. |
 | 7 | Chapter openers, welcome, **6.2** | Written last because they summarize what now exists. |

@@ -1,9 +1,9 @@
-# Chapter 3 Opener — The Data Process
+# Chapter 3 Opener - The Data Process
 
-**Chapter:** 3 — The Data Process  
-**Type:** Video opener — ~90s, no lesson file behind it  
+**Chapter:** 3 - The Data Process  
+**Type:** Video opener - ~90s, no lesson file behind it  
 
-Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply — open cold, no greeting.
+Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply - open cold, no greeting.
 Read close to as written; this is already at speaking length.
 
 ---
@@ -22,6 +22,6 @@ Then cleaning, which is where most of this field spends most of its time and alm
 
 And finally the step people skip: naming what you assumed, and what your analysis cannot prove.
 
-Every field in the last chapter runs these same steps. What changes is what comes out the end — a report, a dashboard, a model — not the order.
+Every field in the last chapter runs these same steps. What changes is what comes out the end. A report, a dashboard, a model. What does not change is the order.
 
 You know what data is, and who works with it. This is how the work actually runs.

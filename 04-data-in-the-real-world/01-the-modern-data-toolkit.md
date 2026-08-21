@@ -1,6 +1,6 @@
 # The Modern Data Toolkit
 
-**Chapter:** 4 — Data in the Real World  
+**Chapter:** 4 - Data in the Real World  
 **Lesson:** 1 of 4  
 **By the end:** You can pick the right tool for a task, and describe how several tools combine in one project.
 

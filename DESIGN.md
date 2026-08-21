@@ -2,7 +2,7 @@
 
 The single source of truth for every visual asset in this course: PDF handouts, lesson slides, and `.drawio` diagrams. Nothing gets generated until it conforms to this file, and nothing here changes without changing this file first.
 
-**Reference for layout and spacing:** `MCP-field-guide.pdf` in this folder — its restraint, its generous margins, and its habit of leaving the bottom of a page empty rather than filling it.
+**Reference for layout and spacing:** `MCP-field-guide.pdf` in this folder - its restraint, its generous margins, and its habit of leaving the bottom of a page empty rather than filling it.
 **Reference for color:** the three brand swatches below. Nothing else.
 **Deliberately simpler than the reference:** one accent instead of two, no illustration, no emoji, fewer component types.
 
@@ -24,7 +24,7 @@ Three brand colors. Everything else is a neutral derived from them.
 
 > **Mint is a shape color, never a text color on a light ground.**
 > For mint-colored *text* on white or paper, use **`--mint-deep` `#1F7D3D`** (5.17:1 on white, 4.85:1 on paper).
-> On an ink ground, mint text is fine — `#3ACC69` on `#121212` is 8.94:1.
+> On an ink ground, mint text is fine - `#3ACC69` on `#121212` is 8.94:1.
 
 ### Full ramp
 
@@ -35,13 +35,13 @@ The page ground is **white**, and `--paper` is the panel fill sitting on it. Thi
 | `--ink` | `#121212` | 18.73:1 | 17.57:1 | Headings, strong text, diagram strokes |
 | `--body` | `#43494C` | 9.15:1 | 8.58:1 | Body copy |
 | `--muted` | `#6B7276` | 4.89:1 | 4.59:1 | Eyebrows, captions, axis labels |
-| `--faint` | `#9AA1A5` | 2.62:1 | — | Non-text only: tick marks, dividers |
-| `--hairline` | `#DDE2E2` | 1.31:1 | — | Rules, panel borders, gridlines |
-| `--panel` | `#F6F8F8` | 1.07:1 | — | Plate and card fill |
-| `--panel-2` | `#EDF1F1` | 1.14:1 | — | Caption strip under a plate |
+| `--faint` | `#9AA1A5` | 2.62:1 | - | Non-text only: tick marks, dividers |
+| `--hairline` | `#DDE2E2` | 1.31:1 | - | Rules, panel borders, gridlines |
+| `--panel` | `#F6F8F8` | 1.07:1 | - | Plate and card fill |
+| `--panel-2` | `#EDF1F1` | 1.14:1 | - | Caption strip under a plate |
 | `--mint` | `#3ACC69` | 2.10:1 | 1.97:1 | **Shapes only.** Fills, bars, rules, borders |
 | `--mint-deep` | `#1F7D3D` | 5.17:1 | 4.85:1 | **Mint-colored text**, small mint marks |
-| `--white` | `#FFFFFF` | — | — | Page ground, node fill in diagrams |
+| `--white` | `#FFFFFF` | - | - | Page ground, node fill in diagrams |
 
 ### Semantic color
 
@@ -49,7 +49,7 @@ Semantic states are separate from the accent and never borrow it.
 
 | Token | Hex | Meaning |
 |---|---|---|
-| `--warn` | `#A8452F` | A dishonest or broken thing — the truncated axis, a bias source |
+| `--warn` | `#A8452F` | A dishonest or broken thing - the truncated axis, a bias source |
 | `--good` | `#1F7D3D` | The corrected version. Same value as `--mint-deep`; that is intentional |
 
 Chapter 5 is the only place `--warn` appears. Everywhere else the palette is mint, ink, paper.
@@ -58,9 +58,9 @@ Chapter 5 is the only place `--warn` appears. Everywhere else the palette is min
 
 The inverted ground is `#121212`, text `#F6F8F8`, accent `#3ACC69` at full strength. It belongs to the six chapter-opener bumpers, which are their own videos.
 
-**A lesson deck never uses it** — not even for its first and last slide. Inverting the ends makes one screen recording flash dark, light, dark, which reads as three videos cut together. See §7.
+**A lesson deck never uses it** - not even for its first and last slide. Inverting the ends makes one screen recording flash dark, light, dark, which reads as three videos cut together. See §7.
 
-Never invert PDF or `.drawio` — they get printed.
+Never invert PDF or `.drawio` - they get printed.
 
 ---
 
@@ -74,9 +74,9 @@ Three roles, matching the reference's structure.
 | **Body** | **Noto Sans**, Liberation Sans, sans-serif | All running text, node labels in diagrams |
 | **Data** | **Noto Sans Mono**, Liberation Mono, monospace | Eyebrows, plate titles, numbers, code, axis ticks, diagram labels |
 
-> **These three are named because they are installed and verified**, each with 6 weight variants. An earlier draft specified Charter, Segoe UI, and Menlo — **none of which exist on this machine.** The pages still rendered, because CSS fell through to the generic `serif` / `sans-serif` keyword, so the document's actual typefaces were chosen by fontconfig rather than by design, and would change on any other machine.
+> **These three are named because they are installed and verified**, each with 6 weight variants. An earlier draft specified Charter, Segoe UI, and Menlo - **none of which exist on this machine.** The pages still rendered, because CSS fell through to the generic `serif` / `sans-serif` keyword, so the document's actual typefaces were chosen by fontconfig rather than by design, and would change on any other machine.
 >
-> **The same stack must be used in HTML/CSS and inside every generated SVG.** They were different in the first test — the page set in Liberation Mono while the embedded diagram set in Noto Sans Mono, putting two monospace faces on one page.
+> **The same stack must be used in HTML/CSS and inside every generated SVG.** They were different in the first test - the page set in Liberation Mono while the embedded diagram set in Noto Sans Mono, putting two monospace faces on one page.
 >
 > WeasyPrint embeds and subsets every face into the PDF (verified with `pdffonts`), so output is portable once the stack is deterministic.
 
@@ -94,7 +94,7 @@ The serif display against a sans body is the reference's defining move and the r
 | Plate title | 13 / 1.3 | 600 | `.12em` | Mono, uppercase, `--ink` |
 | Caption | 13.5 / 1.55 | 400 | 0 | Sans, `--muted` |
 | Data / node label | 13 / 1.4 | 500 | 0 | Mono, `--ink` |
-| Micro | 11 / 1.4 | 500 | `.08em` | Mono, `--muted` — under-node labels |
+| Micro | 11 / 1.4 | 500 | `.08em` | Mono, `--muted` - under-node labels |
 
 Numerals in any table, axis, or step marker use `font-variant-numeric: tabular-nums`. Running text stays at or under **68 characters** per line.
 
@@ -102,7 +102,7 @@ Numerals in any table, axis, or step marker use `font-variant-numeric: tabular-n
 
 ## 3. Spacing
 
-One scale. Every gap is a member of it — no arbitrary values.
+One scale. Every gap is a member of it - no arbitrary values.
 
 ```
 4  ·  8  ·  12  ·  16  ·  24  ·  32  ·  48  ·  64  ·  96
@@ -121,11 +121,11 @@ One scale. Every gap is a member of it — no arbitrary values.
 
 ### The rule that carries the reference's feel
 
-**Pages are top-aligned and never filled.** Content ends where it ends; the bottom of the page stays empty. Do not pad, stretch, or add filler to reach the bottom margin. Half-empty pages are the intended look — that emptiness is what makes the pages feel considered rather than crammed.
+**Pages are top-aligned and never filled.** Content ends where it ends; the bottom of the page stays empty. Do not pad, stretch, or add filler to reach the bottom margin. Half-empty pages are the intended look - that emptiness is what makes the pages feel considered rather than crammed.
 
 ---
 
-## 4. Page geometry — PDF
+## 4. Page geometry - PDF
 
 | Property | Value |
 |---|---|
@@ -137,7 +137,7 @@ One scale. Every gap is a member of it — no arbitrary values.
 
 **Footer** on every page except the first: hairline rule, then descriptive text left in sans `--muted` 11px, page marker right in mono `--muted`.
 
-**Build path:** HTML + CSS → **WeasyPrint**. See §9 — this was tested against the alternatives and is the only path that renders this design faithfully.
+**Build path:** HTML + CSS → **WeasyPrint**. See §9 - this was tested against the alternatives and is the only path that renders this design faithfully.
 
 > **Do not use `soffice --headless --convert-to pdf` for designed pages.** It produces a valid PDF, but it drops embedded SVG to bare text, discards panel background fills, ignores flex layout, and inflates line-height. It is fine for plain prose, useless for this system. This was found by testing, after the path had already been written into an earlier draft of this file.
 
@@ -165,7 +165,7 @@ The workhorse. A figure with its explanation attached.
 └──────────────────────────────────────────┘
 ```
 
-No border on the outer panel — the fill alone separates it from the white page.
+No border on the outer panel - the fill alone separates it from the white page.
 
 ### 5.3 Callout
 For a single sentence that must not be missed. Left bar 4px `--mint`, fill `--panel`, mono uppercase label in a 96px left gutter, body right.
@@ -179,22 +179,22 @@ Large mono numeral (`--mint-deep`, 26px) · bold sans title · body · optional 
 Two columns. Serif H2, optional outlined pill label (mono uppercase, 1px `--mint-deep` border, transparent fill), body, optional mono list with `›` markers in `--faint`.
 
 ### 5.6 Term table
-Two columns — term in mono `--ink`, definition in sans `--body`. Rows separated by hairlines, no outer border, no zebra striping. This is how `GLOSSARY.md` and every `## Key Terms` table renders.
+Two columns - term in mono `--ink`, definition in sans `--body`. Rows separated by hairlines, no outer border, no zebra striping. This is how `GLOSSARY.md` and every `## Key Terms` table renders.
 
 **Not carried over from the reference:** illustration/robot art, emoji, dual accent colors, roman-numeral index grids, the colored top-bar card variant.
 
 ---
 
-## 6. Diagrams — `.drawio`
+## 6. Diagrams - `.drawio`
 
-All 9 course diagrams become `.drawio` files so they stay editable, and export to SVG for slides and PDF for print. `.drawio` is XML and is written directly — no tooling needed.
+All 9 course diagrams become `.drawio` files so they stay editable, and export to SVG for slides and PDF for print. `.drawio` is XML and is written directly - no tooling needed.
 
 ### Canvas
 Page background white. Grid off. No page shadow. Export with a 12px margin.
 
-### Node — standard
+### Node - standard
 
-The reference's defining diagram move is a **hard offset shadow, no blur** — it reads as a sticker rather than a CSS card, and it survives being printed in black and white.
+The reference's defining diagram move is a **hard offset shadow, no blur** - it reads as a sticker rather than a CSS card, and it survives being printed in black and white.
 
 ```
 style="rounded=1;absoluteArcSize=1;arcSize=16;
@@ -211,7 +211,7 @@ node and a different radius on every other node size. `absoluteArcSize=1;arcSize
 everywhere, which is what the SVG draws.
 
 **The shadow is its own cell, not `shadow=1`.** Verified in the draw.io editor: `shadow=1`
-renders as CSS `drop-shadow(… 2px 3px 2px)` at 25% black — offset by 2/3, blurred by 2, and
+renders as CSS `drop-shadow(… 2px 3px 2px)` at 25% black - offset by 2/3, blurred by 2, and
 translucent. That is the CSS card this section exists to avoid. The hard shadow is a second
 rounded rect behind the node, same size, offset **+3/+3**, filled `--ink`, no stroke:
 
@@ -226,18 +226,18 @@ shadow behind. Edges still attach to the node cell inside the group.
 
 **A line break in a node label is `&lt;br&gt;`, not `<br>`.** A raw `<` inside an XML attribute
 is illegal, and draw.io refuses the entire file with *"Not a diagram file (Unescaped '<' not
-allowed in attributes values)"* — not the one label, the whole diagram. Escape once over the
+allowed in attributes values)"* - not the one label, the whole diagram. Escape once over the
 joined string; draw.io un-escapes the attribute and then parses the result as HTML, which is
 why `html=1` on the node style is required for the break to take. `gen_diagram.py` now parses
 each `.drawio` back with ElementTree before writing it, which catches this class of defect
 without opening a browser.
 
-`align=left;spacingLeft=12` is for nodes carrying a label *and* a value. **Single-word nodes are centered** (`align=center`) — left-aligning one word in a 140px box looks like a mistake.
+`align=left;spacingLeft=12` is for nodes carrying a label *and* a value. **Single-word nodes are centered** (`align=center`) - left-aligning one word in a 140px box looks like a mistake.
 
-### Node — accent
+### Node - accent
 The node the diagram is *about*. Same as standard, plus `strokeColor=#1F7D3D;strokeWidth=2.5`. Never fill a node with `#3ACC69` and put text on it unless the text is `--ink`.
 
-### Node — hub
+### Node - hub
 Where several paths converge: `shape=hexagon`, `strokeColor=#1F7D3D`, fill `#FFFFFF`.
 
 ### Group boundary
@@ -250,7 +250,7 @@ style="rounded=1;absoluteArcSize=1;arcSize=12;fillColor=none;
 
 ### Edges
 
-**Flow arrows carry the accent.** Nodes are ink on white; the movement between them is mint-deep. Without this, a plain process diagram — which is most of this course — contains no brand color at all. Found by rendering the first one and seeing a monochrome picture.
+**Flow arrows carry the accent.** Nodes are ink on white; the movement between them is mint-deep. Without this, a plain process diagram - which is most of this course - contains no brand color at all. Found by rendering the first one and seeing a monochrome picture.
 
 | Meaning | Style |
 |---|---|
@@ -263,31 +263,31 @@ Edge labels: mono 11px, `--muted`, `labelBackgroundColor=#FFFFFF`.
 
 **A fork edge turns over the target, not inside the column gap.** Where one node feeds two,
 each arm leaves the source's right edge, runs along to the *target's centre line*, turns once
-with a 10px radius, and goes straight into the edge facing the source — up into a target above,
+with a 10px radius, and goes straight into the edge facing the source - up into a target above,
 down into one below. Both arms share the horizontal run, so the picture is a single line
 splitting, which is the claim a fork is making.
 
 This is `orthogonalEdgeStyle`'s own route, and it is used **because** it is: the column gap is
-24px, so a turn inside the gap leaves 4px of run before the arrowhead — less than the corner
+24px, so a turn inside the gap leaves 4px of run before the arrowhead - less than the corner
 radius, and the path doubles back over itself. Pinning the router with `exitX`/`entryX` and a
 waypoint was tried first and produced exactly that defect in the SVG while draw.io quietly
 shrank its own corner to 0.6px to cope. Let the router route; match it in the SVG.
 
 **Endpoints.** An arrow starts 2px clear of its source and its tip stops 8px short of its
-target — the gap is what keeps a row of boxes from reading as one welded bar. In `.drawio`
+target - the gap is what keeps a row of boxes from reading as one welded bar. In `.drawio`
 that is `sourcePerimeterSpacing=2;targetPerimeterSpacing=5.2`: draw.io pulls a filled marker
 back by `strokeWidth × 1.118` (2.795 at 2.5), and the target spacing carries that back out.
-`endSize=5.5` gives an 8px head — draw.io's block marker is always as wide as it is long, so
+`endSize=5.5` gives an 8px head - draw.io's block marker is always as wide as it is long, so
 8 is the closest single number to the SVG's 7-long, 9-wide head.
 
 ### Under-node caption
-A borderless text cell below the node — mono 11px `--muted`, e.g. `the model`, `one protocol`. Used sparingly, to name a thing the node itself cannot.
+A borderless text cell below the node - mono 11px `--muted`, e.g. `the model`, `one protocol`. Used sparingly, to name a thing the node itself cannot.
 
 ### Long chains wrap into a snake
 
 **Four stages is the most that fits one row.** Seven boxes in a straight line is 1592px of
 artwork; displayed in a 1632px slide plate that is a scale of 1.02, so the 13px node labels
-render at 13px on a 1920-wide slide — unreadable. Wrapped 4 + 3 the same seven stages are
+render at 13px on a 1920-wide slide - unreadable. Wrapped 4 + 3 the same seven stages are
 680px, which scales up to ~31px.
 
 `gen_diagram.py`'s `per_row` wraps the chain and **reverses every other row**. The reversal is
@@ -308,14 +308,14 @@ lessons 3.2–3.6 to place each one inside the chapter's process.
 ### Orientation
 Every diagram is generated in **two layouts from one model**:
 
-- **Horizontal** — for 16:9 slides. A 6-node flow lands near 1008px wide.
-- **Vertical** — for A4 portrait pages. The same 6 nodes come to 188 × 496, which drops into a plate at **full size with no scaling**, so node text stays at its specified 13px. Scaling a horizontal diagram down to the 700px content width would render that text at ~9px, which is unreadable in print.
+- **Horizontal** - for 16:9 slides. A 6-node flow lands near 1008px wide.
+- **Vertical** - for A4 portrait pages. The same 6 nodes come to 188 × 496, which drops into a plate at **full size with no scaling**, so node text stays at its specified 13px. Scaling a horizontal diagram down to the 700px content width would render that text at ~9px, which is unreadable in print.
 
 ### Background
 Diagram SVGs ship in two variants:
 
-- **Standalone** (`*.svg`) — paints its own white background. For opening on its own or handing to someone.
-- **Embedded** (`*-embed.svg`) — **no background rect.** Required inside a plate; a self-painted white box on a `--panel` fill shows as an obvious lighter rectangle.
+- **Standalone** (`*.svg`) - paints its own white background. For opening on its own or handing to someone.
+- **Embedded** (`*-embed.svg`) - **no background rect.** Required inside a plate; a self-painted white box on a `--panel` fill shows as an obvious lighter rectangle.
 
 ### Naming
 `NN-chapter-slug/diagrams/NN-slug.drawio`, plus `.svg`, `-embed.svg`, `-vertical.svg` and `.pdf` alongside. The `.drawio` is the editable source; every export is generated from the same model and never hand-edited.
@@ -326,7 +326,7 @@ Diagram SVGs ship in two variants:
 
 HTML, built from the shot sequences already in `PRODUCTION.md`.
 
-> This section is the **look**. `SLIDES.md` is the **procedure** — how to turn a given lesson
+> This section is the **look**. `SLIDES.md` is the **procedure** - how to turn a given lesson
 > into a deck, in what order, and what to check before it ships. Read that one when building.
 
 | Property | Value |
@@ -334,16 +334,16 @@ HTML, built from the shot sequences already in `PRODUCTION.md`.
 | Aspect | 16:9, 1920 × 1080 |
 | Safe area | 96px all sides |
 | Ground | **White, for every slide of a lesson deck.** Ink `#121212` is reserved for the six chapter-opener bumpers |
-| Type scale | Multiply the PDF scale by **2.2** — slide body ≈ 34px |
-| Words per slide | **One idea per slide, in the lesson's own words** — see below. ~45 in practice. |
+| Type scale | Multiply the PDF scale by **2.2** - slide body ≈ 34px |
+| Words per slide | **One idea per slide, in the lesson's own words** - see below. ~45 in practice. |
 | Reading measure | 44ch, not the page's 68ch. Slide prose is read at a distance in one pass. |
 | Accent | Mint, on shapes and rules. One accent moment per slide. |
 
-**Build order per lesson** comes from that lesson's `**Shots:**` line in `PRODUCTION.md` — one slide per chip. Diagram slides reveal one node per beat, per standing rule 7. Key Terms is an end card and is **never narrated** (rule 4).
+**Build order per lesson** comes from that lesson's `**Shots:**` line in `PRODUCTION.md` - one slide per chip. Diagram slides reveal one node per beat, per standing rule 7. Key Terms is an end card and is **never narrated** (rule 4).
 
 ### A slide break must be a beat in the lesson
 
-Split a chip across slides **only where the narration actually stops** — the diagram build is three slides because rule 7 says one node per beat. Everything else stays whole:
+Split a chip across slides **only where the narration actually stops** - the diagram build is three slides because rule 7 says one node per beat. Everything else stays whole:
 
 - A heading, its lead sentence, and the table or list it introduces are **one slide**. The heading is how you introduce the thing; on its own it is a slide the presenter has nothing to say over.
 - A list and the sentence that draws the conclusion from it are **one slide**.
@@ -357,7 +357,7 @@ A first draft ran 14 slides for lesson 1.1 by giving each heading its own frame.
 
 ### No shot names on screen
 
-The deck carries the lesson, not the production notes. **"Cold open" is a shot name and never appears on a slide** — the video opens cold, and labelling the frame "cold open" is the on-screen equivalent of the greeting standing rule 1 exists to forbid. The first slide is the opening paragraph and nothing else.
+The deck carries the lesson, not the production notes. **"Cold open" is a shot name and never appears on a slide** - the video opens cold, and labelling the frame "cold open" is the on-screen equivalent of the greeting standing rule 1 exists to forbid. The first slide is the opening paragraph and nothing else.
 
 Eyebrows that *are* the lesson's own labels stay: `By the end`, `Key terms`, the chapter/lesson metadata block, and the numbered section running heads.
 
@@ -365,18 +365,18 @@ Eyebrows that *are* the lesson's own labels stay: `By the end`, `Key terms`, the
 
 **Every text element on a slide is copied from the lesson Markdown, or from the handout where the handout already added a line.** Not paraphrased, not compressed into a headline. The only words that are ours are the eyebrows, which are running heads rather than content.
 
-An earlier draft of the deck did the conventional thing — invented short headlines and put three data chips where the cold open should be — and it was wrong for this format. These decks are *screen-recorded while the lesson is narrated*, and the lesson Markdown **is** the script. A paraphrased slide therefore puts one set of words on screen and a different set in the presenter's mouth, and the viewer reads the mismatch.
+An earlier draft of the deck did the conventional thing - invented short headlines and put three data chips where the cold open should be - and it was wrong for this format. These decks are *screen-recorded while the lesson is narrated*, and the lesson Markdown **is** the script. A paraphrased slide therefore puts one set of words on screen and a different set in the presenter's mouth, and the viewer reads the mismatch.
 
 That is what retires the old "under 25 words" rule. It is the right rule for a slide backing a live talk, where the speaker improvises around the deck. It is the wrong rule here, and following it cost the cold open its actual content.
 
 `tools/build_slides.py` enforces this: every build prints
 `verbatim: N/N text elements are the lesson's own words` and names any element that drifted. Lesson 1.1 is 44/44.
 
-The cost is real and accepted: slides run ~50 words, so a viewer can read ahead of the narration. One idea per slide is what keeps that bounded — split a section across slides rather than letting one slide grow.
+The cost is real and accepted: slides run ~50 words, so a viewer can read ahead of the narration. One idea per slide is what keeps that bounded - split a section across slides rather than letting one slide grow.
 
 ### Build path
 
-Same as the PDF — HTML + CSS → WeasyPrint — with the page redeclared:
+Same as the PDF - HTML + CSS → WeasyPrint - with the page redeclared:
 
 ```css
 @page { size: 20in 11.25in; margin: 0; }   /* exactly 1920 × 1080 at 96dpi */
@@ -397,12 +397,12 @@ html            { font-size: 1px }                              /* print: 1rem =
 ```
 
 On screen that makes the whole slide scale to fit whichever edge of the window runs out
-first, at any size, **with no JavaScript** — `min()` of two lengths, and `ch`-based measures
+first, at any size, **with no JavaScript** - `min()` of two lengths, and `ch`-based measures
 come along for free because `ch` is font-relative. In print the same stylesheet reproduces
 the design at exactly 1920 × 1080. The two renderings were diffed pixel by pixel across all
 12 slides after the conversion: identical.
 
-The HTML matters because it, not the PDF, is what gets screen-recorded — a browser gives you
+The HTML matters because it, not the PDF, is what gets screen-recorded - a browser gives you
 a chrome-free 16:9 surface and arrow-key paging. Before this it laid out a fixed 1920px box
 and overflowed every window narrower than that.
 
@@ -411,11 +411,11 @@ Two things stay in `px` on purpose:
 - **Hairlines and borders.** A 1px rule scaled to 0.6px is a rule that disappears on half the screens it lands on.
 - **Nothing else.** Inline styles in `build_slides.py` are slide pixels too, so they are `rem` as well.
 
-Screen mode also makes the deck a viewer: `scroll-snap-type:y mandatory` on `html`, `scroll-snap-align:center` on the slide, so one scroll or arrow key advances exactly one frame — verified as `scrollHeight == slides × viewportHeight`. The scroll container is declared on `html`, not left to propagate up from `body`. The surround is `#1A1C1C`; recording a 16:9 window fills it edge to edge and the surround never appears.
+Screen mode also makes the deck a viewer: `scroll-snap-type:y mandatory` on `html`, `scroll-snap-align:center` on the slide, so one scroll or arrow key advances exactly one frame - verified as `scrollHeight == slides × viewportHeight`. The scroll container is declared on `html`, not left to propagate up from `body`. The surround is `#1A1C1C`; recording a 16:9 window fills it edge to edge and the surround never appears.
 
-**The scrollbar is hidden** (`scrollbar-width:none`). This is not cosmetic: a visible scrollbar sits inside `100vw` but outside the usable width, so on any window narrower than 16:9 — where width is the binding edge — the slide came out ~15px wider than the space it had. Measured before and after at 1360px: usable width 1345 → 1360.
+**The scrollbar is hidden** (`scrollbar-width:none`). This is not cosmetic: a visible scrollbar sits inside `100vw` but outside the usable width, so on any window narrower than 16:9 - where width is the binding edge - the slide came out ~15px wider than the space it had. Measured before and after at 1360px: usable width 1345 → 1360.
 
-**What "fits" means here.** The slide *box* fits the viewport exactly on the binding edge — measured `heightGap=0`, ratio 1.778, and the letterboxing appears on the other axis. What does *not* fill the frame is the **content**, and that is deliberate: §3's rule that pages are top-aligned and never filled applies to slides too. If a slide should look fuller, the lever is page geometry — a smaller safe area or a larger type scale — not padding the content out.
+**What "fits" means here.** The slide *box* fits the viewport exactly on the binding edge - measured `heightGap=0`, ratio 1.778, and the letterboxing appears on the other axis. What does *not* fill the frame is the **content**, and that is deliberate: §3's rule that pages are top-aligned and never filled applies to slides too. If a slide should look fuller, the lever is page geometry - a smaller safe area or a larger type scale - not padding the content out.
 
 Reference implementation: `tools/slides.css` + `tools/build_slides.py`, proven on lesson 1.1
 in `samples/01-01-what-is-data-slides.pdf` (12 slides).
@@ -424,7 +424,7 @@ in `samples/01-01-what-is-data-slides.pdf` (12 slides).
 
 `gen_diagram.py`'s `svg(..., reveal=n)` paints the first *n* nodes on the **full-size canvas**,
 so a node lands in its final position the moment it appears and nothing reflows between beats.
-Frames are inlined into the HTML, not written beside the deck — they are intermediate.
+Frames are inlined into the HTML, not written beside the deck - they are intermediate.
 
 Diagrams are scaled **up** on slides (516px artwork to 1400px, node labels 13px → ~35px).
 That is the opposite of the print case and it is fine: §6 rejects scaling *down*, which is
@@ -436,15 +436,15 @@ what drops node text to ~9px.
 
 | Element | Light-ground value | On ink |
 |---|---|---|
-| Term column | `--ink` — **invisible on `--ink`** | `--mint` (8.94:1; the only ground where mint may carry text) |
-| Table rules | `--hairline` — reads as bright white | `#2E3232` |
-| Column heads | `--muted` — 3.4:1 | `--faint` |
+| Term column | `--ink` - **invisible on `--ink`** | `--mint` (8.94:1; the only ground where mint may carry text) |
+| Table rules | `--hairline` - reads as bright white | `#2E3232` |
+| Column heads | `--muted` - 3.4:1 | `--faint` |
 
 Found by rendering the Key Terms end card and seeing a table with an empty first column.
 
 ### The `max-width` trap, again
 
-`.plate-title` needs `max-width:none` for the same reason `.plate-cap` does (§9) — otherwise it
+`.plate-title` needs `max-width:none` for the same reason `.plate-cap` does (§9) - otherwise it
 inherits the `p` reading measure and wraps a four-word title onto two lines. Any new block-level
 `<p>` that is a label rather than prose needs the same override.
 
@@ -454,14 +454,14 @@ inherits the `p` reading measure and wraps a four-word title onto two lines. Any
 
 Before any asset ships:
 
-- [ ] Every color is a token from §1 — no one-off hex values
+- [ ] Every color is a token from §1 - no one-off hex values
 - [ ] `#3ACC69` carries no text on a light ground anywhere
 - [ ] Every gap is a member of the §3 scale
-- [ ] Serif for headings, sans for body, mono for data — no substitutions
+- [ ] Serif for headings, sans for body, mono for data - no substitutions
 - [ ] Running text at or under 68 characters
 - [ ] Numerals in tables and axes are tabular
 - [ ] Page bottoms left empty rather than padded
-- [ ] Diagrams legible in pure black and white — color never the only signal
+- [ ] Diagrams legible in pure black and white - color never the only signal
 - [ ] `.drawio` source committed alongside every exported `.svg`/`.pdf`
 
 ### Precedence
@@ -495,17 +495,17 @@ python3 -m venv .venv && .venv/bin/pip install weasyprint
 rsvg-convert -f pdf -o diagram.pdf diagram.svg
 ```
 
-**On the MCP server.** It *opens* diagrams in the draw.io editor and searches its shape libraries — it does **not** generate the course's files. `.drawio` files are authored directly as XML from the same generator that emits the SVG, which is what keeps the two from diverging. The MCP is for previewing the result and for finding shapes.
+**On the MCP server.** It *opens* diagrams in the draw.io editor and searches its shape libraries - it does **not** generate the course's files. `.drawio` files are authored directly as XML from the same generator that emits the SVG, which is what keeps the two from diverging. The MCP is for previewing the result and for finding shapes.
 
 **Previewing is not verifying.** `open_drawio_xml` hands the diagram to the browser; nothing
 comes back. To actually check what draw.io drew, open the returned URL in a tab with
 `&dark=0` (dark mode inverts the canvas and hides a black shadow on white) and `&ui=min`, then
 read the rendered `rect` and `path` attributes out of the canvas SVG. That is how the three
-defects in §6 were found — every one of them produced valid XML and a wrong picture.
+defects in §6 were found - every one of them produced valid XML and a wrong picture.
 
 ### Two CSS rules that are easy to get wrong
 
-- `.plate-cap` needs `max-width:none`. It inherits the `p { max-width:68ch }` reading measure otherwise and stops short of the plate edge — visible as a caption strip that does not reach the right side. `.plate-title` has the same problem on slides — see §7.
+- `.plate-cap` needs `max-width:none`. It inherits the `p { max-width:68ch }` reading measure otherwise and stops short of the plate edge - visible as a caption strip that does not reach the right side. `.plate-title` has the same problem on slides - see §7.
 - Embedded diagram SVGs need `style="width:100%;height:auto"` and a `viewBox`, or they render at intrinsic size and overflow the plate.
 - **`font-weight` must be a multiple of 100.** An earlier draft used `640` for `strong` in `lesson.css`; WeasyPrint logs `Ignored font-weight:640, invalid value` and falls back to normal, so bold-in-body was silently not bold in the first sample PDF. It is `600` now in both stylesheets.
 
@@ -517,46 +517,46 @@ Generating 27 lessons × (page + slides + diagram) is ~40 assets. A defect in th
 
 ### The mistake to avoid
 
-The first test used lesson 2.5 — short prose, one table, one diagram. It proved almost nothing, because it is an easy page. **Test the worst cases, not the average one.**
+The first test used lesson 2.5 - short prose, one table, one diagram. It proved almost nothing, because it is an easy page. **Test the worst cases, not the average one.**
 
-### Stage 0 — determinism (do this first, it invalidates everything else)
+### Stage 0 - determinism (do this first, it invalidates everything else)
 
-- [x] Every font family in §2 is actually installed — verified with an exact-name `fc-list` check, not `fc-match`, which always returns a best guess and never reports "missing"
-- [x] The HTML/CSS stack and the SVG generator stack are the **same** — otherwise one page carries two different monospace faces
+- [x] Every font family in §2 is actually installed - verified with an exact-name `fc-list` check, not `fc-match`, which always returns a best guess and never reports "missing"
+- [x] The HTML/CSS stack and the SVG generator stack are the **same** - otherwise one page carries two different monospace faces
 - [x] `pdffonts` shows every face embedded and subset, so output is portable
 
-### Stage 1 — the stress set
+### Stage 1 - the stress set
 
 Seven files. **26% of the course, 100% of its structural features.** Derived by inventorying every lesson, not chosen by feel.
 
 | File | What it is the only test of |
 |---|---|
-| `04/02-why-data-work-uses-code` | The only code blocks in the course — SQL and Python |
+| `04/02-why-data-work-uses-code` | The only code blocks in the course - SQL and Python |
 | `05/01-responsible-and-ethical-use` | The ASCII chart pair, which must become a real custom visual |
 | `05/04-data-governance-and-regulations` | A 12-row narrative table |
-| `06/02-putting-it-all-together` | 6+ sections, 38 bullets — the densest page in the course |
+| `06/02-putting-it-all-together` | 6+ sections, 38 bullets - the densest page in the course |
 | `03/01-defining-the-problem` | The 7-node diagram, largest in the course and reused as a locator |
 | `01/01-what-is-data` | 3-column table, inline code spans, 3-node diagram |
 
 If all six render correctly, the remaining 21 lessons contain nothing structurally new.
 
-### Stage 2 — what each render must be checked for
+### Stage 2 - what each render must be checked for
 
 Things a single easy page never exercises:
 
-- [ ] **No plate splits across a page break** — needs `break-inside: avoid`
-- [ ] **No heading orphaned** at the foot of a page — needs `break-after: avoid`
+- [ ] **No plate splits across a page break** - needs `break-inside: avoid`
+- [ ] **No heading orphaned** at the foot of a page - needs `break-after: avoid`
 - [ ] **No table splits** mid-row, and a header repeats if one must
 - [ ] **Long titles wrap without a one-word last line**
 - [ ] **Greyscale**: convert the PDF to grey and confirm mint arrows still read. Color is never the only signal
-- [ ] **Page count per lesson is deliberate** — a 3-page lesson means the page model is wrong, not that the lesson is long
+- [ ] **Page count per lesson is deliberate** - a 3-page lesson means the page model is wrong, not that the lesson is long
 - [ ] Bottom margins are empty, per §3, and were not padded to look full
 
-### Stage 3 — print one page
+### Stage 3 - print one page
 
 Screen tests cannot tell you whether an 11px mono eyebrow is legible on paper, whether `--hairline #DDE2E2` survives a laser printer, or whether the plate fill turns into a grey smear. **Print one page of the stress set at actual size on the actual printer** before committing to 40 assets.
 
-### Stage 4 — only then, generate
+### Stage 4 - only then, generate
 
 Run the full set. Re-run Stage 2's checklist on a random three lessons as a regression check.
 

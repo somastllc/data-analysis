@@ -15,7 +15,7 @@ def inline(s):
     return s
 
 def chip_class(raw):
-    """Shot chips encode what kind of shot it is — asset, script section, or boilerplate."""
+    """Shot chips encode what kind of shot it is - asset, script section, or boilerplate."""
     if raw.startswith('**'):
         return 'asset'
     if raw.startswith('*'):
@@ -103,11 +103,11 @@ while i < len(lines):
         i += 1
         continue
 
-    # lesson card heading:  ### 1.1 · Title — 6.5 min
+    # lesson card heading:  ### 1.1 · Title - 6.5 min
     if ln.startswith('### '):
         close_card()
         t = ln[4:].strip()
-        m = re.match(r'^(\d+\.\d+[a-z]?) · (.+?) — ([\d.]+ min)(.*)$', t)
+        m = re.match(r'^(\d+\.\d+[a-z]?) · (.+?) - ([\d.]+ min)(.*)$', t)
         if m:
             num, name, run, flag = m.groups()
             warn = ' warn' if '⚠' in flag else ''
@@ -135,7 +135,7 @@ while i < len(lines):
     # labelled paragraphs
     m = re.match(r'^\*\*Cold open:\*\* \*(.+)\*$', ln)
     if m:
-        out.append(f'<div class="cold-open"><span class="co-label">Cold open — verbatim</span>'
+        out.append(f'<div class="cold-open"><span class="co-label">Cold open - verbatim</span>'
                    f'<p>{inline(m.group(1))}</p></div>')
         i += 1
         continue
@@ -299,7 +299,7 @@ a{color:var(--accent)}
   padding:1px 7px; border-radius:var(--radius); white-space:nowrap;
 }
 
-/* cold open — the line read to camera, set in the monospace of a shooting script */
+/* cold open - the line read to camera, set in the monospace of a shooting script */
 .cold-open{
   background:var(--surface-2); border-left:3px solid var(--accent);
   border-radius:0 var(--radius) var(--radius) 0;
@@ -383,12 +383,12 @@ td:first-child{color:var(--ink); font-weight:520}
 }
 """
 
-page = f"""<title>Production Notes — Data Fundamentals for Beginners</title>
+page = f"""<title>Production Notes - Data Fundamentals for Beginners</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>{CSS}</style>
 <header class="masthead"><div class="wrap">
   <p class="eyebrow">Shooting reference · Shared foundation course</p>
-  <h1>Production Notes — Recording This Course</h1>
+  <h1>Production Notes - Recording This Course</h1>
   <ul class="meta">
     <li>39 videos</li>
     <li>Finished runtime <b>≈3h 25m</b></li>

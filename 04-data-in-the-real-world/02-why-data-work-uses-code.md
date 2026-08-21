@@ -1,6 +1,6 @@
 # Why Data Work Uses Code
 
-**Chapter:** 4 — Data in the Real World  
+**Chapter:** 4 - Data in the Real World  
 **Lesson:** 2 of 4  
 **By the end:** You can explain why data work moves to code instead of staying in spreadsheets.
 
@@ -29,7 +29,7 @@ WHERE order_date >= '2024-01-01'
 GROUP BY city;
 ```
 
-That is one question — "how much did each city sell this year?" — answered in four lines.
+That is one question, "how much did each city sell this year?", answered in four lines.
 
 ### Working through data step by step
 
