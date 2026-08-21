@@ -200,7 +200,7 @@ REGISTER = [
     # PRODUCTION.md 3.1: the map for the whole chapter, rebuilt as a locator card at
     # the top of 3.2–3.6 with the current step accented. Wrapped 4 + 3 — seven boxes
     # in one line is unreadable on a slide, see layout().
-    ("03-the-data-analysis-process/diagrams", "03-01-analysis-process",
+    ("03-the-data-process/diagrams", "03-01-process-map",
      ["Define\nproblem", "Ask\nquestions", "Collect data", "Clean data",
       "Analyze and\nvisualize", "Communicate\ninsights", "Make\ndecisions"],
      "every stage depends on the question you asked first", "question first", 4),

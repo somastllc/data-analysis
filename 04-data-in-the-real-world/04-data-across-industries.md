@@ -6,7 +6,7 @@
 
 ## Overview
 
-A hospital, an online store, and a school each hire an analyst with identical skills. Within a month, all three are asking completely different questions.
+A hospital, an online store, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.
 
 ### Why industry context matters
 

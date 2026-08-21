@@ -18,7 +18,7 @@ This course covered five major areas:
 2. **The Data Ecosystem**  
    You learned how analytics, data analysis, BI, data science, machine learning, and data engineering fit together.
 
-3. **The Data Analysis Process**  
+3. **The Data Process**  
    You learned the steps from defining a problem to communicating insights and making decisions.
 
 4. **Data in the Real World**  

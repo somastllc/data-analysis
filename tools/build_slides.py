@@ -224,7 +224,7 @@ def deck_03_01(frames):
 
     # 2 - title card
     s.append(slide(
-        '  <p class="eyebrow">Chapter 3 — The Data Analysis Process</p>\n'
+        '  <p class="eyebrow">Chapter 3 — The Data Process</p>\n'
         '  <h1>Defining the Problem<br>and Asking Questions</h1>\n'
         '  <p class="mono" style="font-size:var(--t-data);color:var(--muted)">Lesson 1 of 6</p>',
         mid=True))
@@ -244,7 +244,7 @@ def deck_03_01(frames):
     for frame in frames:
         s.append(slide(
             '  <p class="eyebrow">The process</p>\n'
-            + plate("Plate I — the data analysis process", frame)))
+            + plate("Plate I — the process, question to decision", frame)))
 
     # 11 - the business problem: the three questions to always ask
     s.append(slide(
@@ -411,9 +411,9 @@ DECKS = {
         out="03-01-defining-the-problem-slides.html",
         nodes=["Define\nproblem", "Ask\nquestions", "Collect data", "Clean data",
                "Analyze and\nvisualize", "Communicate\ninsights", "Make\ndecisions"],
-        diagram="03-01-analysis-process", per_row=4,
+        diagram="03-01-process-map", per_row=4,
         caption="every stage depends on the question you asked first",
-        sources=["03-the-data-analysis-process/"
+        sources=["03-the-data-process/"
                  "01-defining-the-problem-and-asking-questions.md"],
     ),
 }

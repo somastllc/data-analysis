@@ -11,7 +11,7 @@ These two exercises cover the whole course. Work through the first one on paper 
 
 **The situation.** A bus company operating twelve routes in a growing city has a problem. Passenger numbers are flat overall, but drivers on three routes complain that buses are overcrowded, while managers see reports showing plenty of spare capacity.
 
-Work through all six steps of the analysis process. For each step, write two or three lines.
+Work through all six steps of the process. For each step, write two or three lines.
 
 1. Define the problem and ask questions
 2. Collect data

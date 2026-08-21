@@ -1,6 +1,6 @@
 # Defining the Problem and Asking Questions
 
-**Chapter:** 3 — The Data Analysis Process  
+**Chapter:** 3 — The Data Process  
 **Lesson:** 1 of 6  
 **By the end:** You can turn a vague request into a specific analytical question.
 
@@ -71,6 +71,12 @@ Examples:
 - Are new customers more likely to cancel within 30 days?
 - Which marketing channel brings the most qualified leads?
 
+### The same first step, whatever gets built
+
+The fields in Chapter 2 differ in what they produce — a report, a dashboard, a trained model — not in how they start. A data scientist deciding whether a model is worth building asks the same three questions above.
+
+A question no decision depends on is not worth answering, however impressive the method.
+
 ### Example
 
 An online course platform notices fewer enrollments.
@@ -83,7 +89,7 @@ Questions:
 - Did the drop affect all courses or only some?
 - Did traffic decrease, or did fewer visitors convert?
 
-These questions guide the rest of the analysis process.
+These questions guide every step that follows.
 
 ## Key Terms
 

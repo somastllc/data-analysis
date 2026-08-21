@@ -1,7 +1,7 @@
 # Production Notes — Recording This Course
 
 **Format:** 27 lesson videos, 6 exercise walkthroughs, 6 chapter openers, 1 welcome
-**Estimated finished runtime:** ~3h 25m
+**Estimated finished runtime:** ~3h 30m
 **Source of truth:** the lesson Markdown files. This document tells you how to shoot them, not what to say — the words are already in the lessons.
 
 ---
@@ -16,7 +16,7 @@
 
 **4. Key Terms tables are end cards. Do not narrate them.** Every lesson closes with a Key Terms table. Put it on screen and hold it. Over it, say two things: one sentence calling back to the lesson's main idea, and one sentence teasing the next lesson. Reading 90 glossary rows aloud across the course would cost 15–20 minutes and would put the flattest possible 45 seconds at the end of all 27 videos — the exact place you need the click to the next one.
 
-**4b. One lesson has no Key Terms table.** `4.2 Why Analysts Write Code` introduces no new vocabulary — it demonstrates. End it on the Python output instead, holding the last code slide while you say the callback and the tease. Every other lesson uses its table.
+**4b. One lesson has no Key Terms table.** `4.2 Why Data Work Uses Code` introduces no new vocabulary — it demonstrates. End it on the Python output instead, holding the last code slide while you say the callback and the tease. Every other lesson uses its table.
 
 **5. Every `###` heading is a segment boundary.** Cut, change the slide, or move on camera. The lessons average 3–4 sections, which is your shot count.
 
@@ -55,7 +55,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 |---|---|---|
 | 1 — What Is Data? | What am I actually working with? | 5 |
 | 2 — The Data Ecosystem | Who does what, and what are all these job titles? | 6 |
-| 3 — The Data Analysis Process | What are the steps, in order, from question to decision? | 6 |
+| 3 — The Data Process | What are the steps, in order, from question to decision? | 6 |
 | 4 — Data in the Real World | What tools and jobs does this turn into? | 4 |
 | 5 — Data Ethics and Privacy | When should we *not* do the thing we can do? | 4 |
 | 6 — Conclusion | Can I do all of it in one pass? | 2 |
@@ -188,25 +188,27 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 ---
 
-# Chapter 3 — The Data Analysis Process
+# Chapter 3 — The Data Process
 
-*6 lessons · 27 min*
+*6 lessons · 30.5 min*
 
-### 3.1 · Defining the Problem and Asking Questions — 5.5 min
+> **The chapter is field-neutral, and the delivery has to be too.** Every lesson carries one short beat naming the same step as a data scientist, or ML, would run it. Those beats are the reason this chapter is not "the analyst chapter" — do not cut them for time, and do not let the analyst examples around them set the tone for the whole chapter.
+
+### 3.1 · Defining the Problem and Asking Questions — 6 min
 
 **Cold open:** *"Can you look into the sales data?" is one of the most common requests an analyst receives, and it is not yet a question.*
 
-**Shots:** cold open → title → objective → **diagram build (7)** → *Start with the business problem* → *Know your stakeholders* → *How to ask good analytical questions* → *Example* → end card
+**Shots:** cold open → title → objective → **diagram build (7)** → *Start with the business problem* → *Know your stakeholders* → *How to ask good analytical questions* → *The same first step, whatever gets built* → *Example* → end card
 
 **Diagram build:** `Define problem` → `Ask questions` → `Collect data` → `Clean data` → `Analyze and visualize` → `Communicate insights` → `Make decisions`. **This is the map for the whole chapter.** Build all seven here, then bring it back as a static locator card at the top of lessons 3.2–3.6 with the current step highlighted. Cheapest continuity device in the course.
 
 ---
 
-### 3.2 · Collecting Data — 4.5 min
+### 3.2 · Collecting Data — 5 min
 
 **Cold open:** *The easiest data to obtain is rarely the data that answers your question.*
 
-**Shots:** cold open → title → **locator: step 3** → objective → *What is data collection?* → **table** Method / Example → *Questions to ask before using data* → *Example* → end card
+**Shots:** cold open → title → **locator: step 3** → objective → *What is data collection?* → **table** Method / Example → *How much is enough depends on what gets built* → *Questions to ask before using data* → *Example* → end card
 
 ---
 
@@ -220,11 +222,11 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 ---
 
-### 3.4 · Analyzing and Visualizing Data — 4.5 min
+### 3.4 · Analyzing and Visualizing Data — 5.5 min
 
 **Cold open:** *The same table of numbers can hide a trend completely or make it obvious in one second.*
 
-**Shots:** cold open → title → **locator: step 5** → objective → *What happens during analysis?* → *Why visualize data?* → **table** Question type / Chart type → *Common chart types* → *Example* → end card
+**Shots:** cold open → title → **locator: step 5** → objective → *What happens during analysis?* → *When the output is a model instead of a chart* → *Why visualize data?* → **table** Question type / Chart type → *Common chart types* → *Example* → end card
 
 **Note:** The cold open is a promise of a visual. Deliver it in the first 20 seconds — same numbers as a table, then as a chart, side by side. Do not let this lesson be the one where you *talk about* visualization.
 
@@ -232,7 +234,7 @@ Chart choice is named and dropped on purpose — do not promise where it gets ta
 
 ---
 
-### 3.5 · Communicating Insights — 4 min
+### 3.5 · Communicating Insights — 4.5 min
 
 **Cold open:** *An analyst spends three weeks on an investigation, presents twelve slides, and nothing changes.*
 
@@ -242,23 +244,27 @@ Chart choice is named and dropped on purpose — do not promise where it gets ta
 
 ---
 
-### 3.6 · From Analysis to Decisions — 3.5 min
+### 3.6 · From Analysis to Decisions — 4.5 min
 
 **Cold open:** *Every analysis rests on things you did not check.*
 
-**Shots:** cold open → title → **locator: step 7, completing the map** → objective → *From insight to action* → *Assumptions and limitations* → *Why decisions still need judgment* → *Example* → end card
+**Shots:** cold open → title → **locator: step 7, completing the map** → objective → *From insight to action* → *Assumptions and limitations* → *Putting a model into use is also a decision* → *Why decisions still need judgment* → *Example* → end card
 
 **Note:** Complete the locator diagram on screen here — the chapter closes as the map fills in.
+
+The model section is the chapter's last field-neutral beat and the setup for chapter 5 — an unexamined assumption running unattended is what chapter 5 spends four lessons on. Say it plainly and move on; do not name what is coming.
 
 ---
 
 # Chapter 4 — Data in the Real World
 
-*4 lessons · 20.5 min*
+*4 lessons · 21 min*
+
+> **This chapter names no destination.** The rule already stated for 4.3 applies to all four lessons: the course trains for no single role, so the delivery must not imply one. The cold opens of 4.1 and 4.4 were rewritten to drop "analyst", and 4.2 was retitled for the same reason — the tooling and the industries belong to the whole field, not to one job title in it.
 
 ### 4.1 · The Modern Data Toolkit — 5.5 min
 
-**Cold open:** *Every new analyst asks which tool to learn first.*
+**Cold open:** *Everyone new to data asks which tool to learn first.*
 
 **Shots:** cold open → title → objective → *Why there are many tools* → **table** Tool / What it is / When you reach for it → *Example workflow* → **diagram build (4)** → end card
 
@@ -268,7 +274,7 @@ Chart choice is named and dropped on purpose — do not promise where it gets ta
 
 ---
 
-### 4.2 · Why Analysts Write Code — 5.5 min
+### 4.2 · Why Data Work Uses Code — 6 min
 
 **Cold open:** *Spreadsheets work well until three things happen: the data grows too large, the same report is needed every week, or someone asks you to prove how a number was produced.*
 
@@ -292,7 +298,7 @@ Chart choice is named and dropped on purpose — do not promise where it gets ta
 
 ### 4.4 · Data Across Industries — 4 min
 
-**Cold open:** *A hospital, an online store, and a school each hire an analyst with identical skills. Within a month, all three are asking completely different questions.*
+**Cold open:** *A hospital, an online store, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.*
 
 **Shots:** cold open → title → objective → *Why industry context matters* → **table** Industry / How data is used → *Examples by industry* → *Short case examples* → *Key takeaway* → end card
 
@@ -363,7 +369,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 # Chapter 6 — Conclusion
 
-*2 lessons · 10 min*
+*2 lessons · 10.5 min*
 
 ### 6.1 · Course Recap: From Data to Decision — 4 min
 
@@ -377,7 +383,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 ---
 
-### 6.2 · Putting It All Together: End-to-End Scenario — 6 min
+### 6.2 · Putting It All Together: End-to-End Scenario — 6.5 min
 
 **Cold open:** *One business problem. Six steps. Every idea in this course, used once.*
 
@@ -439,11 +445,11 @@ Not lesson order. Group by setup and by what has to exist first.
 
 | Component | Count | Runtime |
 |---|---|---|
-| Lesson videos | 27 | ~135.5 min |
+| Lesson videos | 27 | ~140 min |
 | Exercise walkthroughs | 6 | ~64 min |
 | Chapter openers | 6 | ~8 min |
 | Welcome | 1 | ~3 min |
-| **Total** | **40 videos** | **≈ 3h 30m** |
+| **Total** | **40 videos** | **≈ 3h 35m** |
 
 Estimates come from measured prose words at 130–150 wpm with a 1.4–1.9× spoken expansion, plus dwell time per table row, diagram, and code block. Every per-lesson figure already assumes rule 4 — Key Terms shown on the end card, not read aloud — so the numbers here are what you shoot to, and they sum to the total below. Narrating them adds 15–20 minutes and costs you 27 endings.
 

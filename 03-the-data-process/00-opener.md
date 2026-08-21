@@ -1,7 +1,7 @@
-# Chapter 3 Opener — The Data Analysis Process
+# Chapter 3 Opener — The Data Process
 
-**Chapter:** 3 — The Data Analysis Process  
-**Type:** Video opener — ~80s, no lesson file behind it  
+**Chapter:** 3 — The Data Process  
+**Type:** Video opener — ~90s, no lesson file behind it  
 
 Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply — open cold, no greeting.
 Read close to as written; this is already at speaking length.
@@ -18,8 +18,10 @@ It starts before any data is touched — turning a request like "the numbers loo
 
 Then collecting data, and noticing when the easiest data to get is not the data that answers anything.
 
-Then cleaning, which is where working analysts spend most of their time and almost none of their enthusiasm. Then analysis and visualization. Then communicating the result, which is where correct findings go to die if you get it wrong.
+Then cleaning, which is where most of this field spends most of its time and almost none of its enthusiasm. Then analysis and visualization. Then communicating the result, which is where correct findings go to die if you get it wrong.
 
 And finally the step people skip: naming what you assumed, and what your analysis cannot prove.
+
+Every field in the last chapter runs these same steps. What changes is what comes out the end — a report, a dashboard, a model — not the order.
 
 You know what data is, and who works with it. This is how the work actually runs.

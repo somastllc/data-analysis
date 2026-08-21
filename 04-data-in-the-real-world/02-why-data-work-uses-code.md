@@ -1,8 +1,8 @@
-# Why Analysts Write Code
+# Why Data Work Uses Code
 
 **Chapter:** 4 — Data in the Real World  
 **Lesson:** 2 of 4  
-**By the end:** You can explain why analysts write code instead of working only in spreadsheets.
+**By the end:** You can explain why data work moves to code instead of staying in spreadsheets.
 
 ## Overview
 
@@ -13,6 +13,8 @@ Spreadsheets work well until three things happen: the data grows too large, the 
 Code solves all three. It handles large datasets, it can be re-run on demand, and it leaves a written record of every step you took.
 
 That last one matters more than beginners expect. A spreadsheet shows you a number. Code shows you how the number was made, which is the difference between a result someone trusts and one they merely accept.
+
+This gets less optional the further you go. An analyst can do useful work with no code at all. Training a model, or building the pipeline that feeds one, cannot be done any other way.
 
 You are not expected to understand the examples coming up. The goal is to see what the work looks like.
 

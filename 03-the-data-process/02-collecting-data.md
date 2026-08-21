@@ -1,6 +1,6 @@
 # Collecting Data
 
-**Chapter:** 3 — The Data Analysis Process  
+**Chapter:** 3 — The Data Process  
 **Lesson:** 2 of 6  
 **By the end:** You can decide which data would answer a question, and which data would quietly mislead you.
 
@@ -33,6 +33,12 @@ The goal is to collect data that is **relevant, sufficient, and reliable**.
 | **Public datasets** | Government or research data |
 
 The best method depends on your question. If you want to understand customer satisfaction, survey data may help. If you want to analyze sales, transaction records are better.
+
+### How much is enough depends on what gets built
+
+A shop owner asking which product sold best last month needs one clean month of records. A model trained to predict which customers will leave needs thousands of past cases, each one recording what that customer actually went on to do.
+
+Same step, very different bar.
 
 ### Questions to ask before using data
 

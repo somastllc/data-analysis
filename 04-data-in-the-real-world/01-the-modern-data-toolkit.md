@@ -6,7 +6,7 @@
 
 ## Overview
 
-Every new analyst asks which tool to learn first. The honest answer is that the question is backwards: you choose the tool after you know the task, and the right one is usually the smallest that does the job.
+Everyone new to data asks which tool to learn first. The honest answer is that the question is backwards: you choose the tool after you know the task, and the right one is usually the smallest that does the job.
 
 ### Why there are many tools
 
@@ -40,7 +40,7 @@ flowchart LR
 
 Notice that one analysis feeds two outputs, for two audiences. Tools are not a fixed sequence — you pick them per step. Git and GitHub sit underneath the whole flow, recording what changed at each stage.
 
-Two of the tools in that workflow involve writing code. The next lesson explains why analysts bother.
+Two of the tools in that workflow involve writing code. The next lesson explains why the field bothers.
 
 ## Key Terms
 

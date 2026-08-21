@@ -1,6 +1,6 @@
 # Communicating Insights
 
-**Chapter:** 3 — The Data Analysis Process  
+**Chapter:** 3 — The Data Process  
 **Lesson:** 5 of 6  
 **By the end:** You can present the same finding at the right level of detail for different audiences.
 
@@ -20,6 +20,8 @@ Good communication helps you:
 - Build trust in your analysis
 
 Data professionals must be clear thinkers and clear communicators.
+
+This holds for every output, not just reports. A model whose behavior nobody can explain gets overruled by the person who has to approve it, in exactly the same way a correct report goes unread.
 
 ### What to include in a data report
 

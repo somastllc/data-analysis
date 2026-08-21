@@ -35,6 +35,8 @@ A chapter folder reads top to bottom in shooting order: opener, lessons, exercis
 
 Chapter order, lesson counts, and exercise counts are declared in `README.md`'s Chapters table — update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
 
+**Renaming a chapter means renaming four things, not one.** The folder slug, the `**Chapter:**` line in every lesson plus the opener and the exercise set, the `Ch N — Name` column in `GLOSSARY.md`, and any generated-asset name under `diagrams/` that carried the old wording. Code holds paths in two places — the `REGISTER` in `tools/gen_diagram.py` and `DECKS` in `tools/build_slides.py` — and both must move with the folder. Chapter 3 was renamed this way in full; use it as the worked example.
+
 ## Lesson file convention
 
 Every lesson file follows this exact shape (confirmed across all 27 files):
@@ -57,7 +59,7 @@ Every lesson file follows this exact shape (confirmed across all 27 files):
 |---|---|
 ```
 
-- `## Overview` is mandatory on every lesson. `## Key Terms` is expected but **not mandatory** — include it only where the lesson genuinely introduces vocabulary, and omit it rather than padding the table to a minimum count. A term whose word never appears in the lesson body is a term the lesson did not teach. Demonstration lessons that reuse already-defined vocabulary (e.g. `04/02-why-analysts-write-code.md`) correctly have no table.
+- `## Overview` is mandatory on every lesson. `## Key Terms` is expected but **not mandatory** — include it only where the lesson genuinely introduces vocabulary, and omit it rather than padding the table to a minimum count. A term whose word never appears in the lesson body is a term the lesson did not teach. Demonstration lessons that reuse already-defined vocabulary (e.g. `04/02-why-data-work-uses-code.md`) correctly have no table.
 - A Key Term may still be a *label* for a concept the lesson teaches without naming — "Misleading visualization" and "Feedback loop" both qualify. The test is whether the concept is taught, not whether the exact phrase appears.
 - `**Chapter:**` / `**Lesson:**` header block must match the lesson's actual position and the README's per-chapter lesson count.
 - Some lessons include a `mermaid` `flowchart` block (fenced ` ```mermaid `) to visualize a process (e.g. data → information → insight). Use this sparingly, only where a diagram clarifies a flow better than prose.

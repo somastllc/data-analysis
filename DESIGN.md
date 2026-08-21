@@ -519,7 +519,7 @@ Seven files. **26% of the course, 100% of its structural features.** Derived by 
 
 | File | What it is the only test of |
 |---|---|
-| `04/02-why-analysts-write-code` | The only code blocks in the course — SQL and Python |
+| `04/02-why-data-work-uses-code` | The only code blocks in the course — SQL and Python |
 | `05/01-responsible-and-ethical-use` | The ASCII chart pair, which must become a real custom visual |
 | `05/04-data-governance-and-regulations` | A 12-row narrative table |
 | `06/02-putting-it-all-together` | 6+ sections, 38 bullets — the densest page in the course |

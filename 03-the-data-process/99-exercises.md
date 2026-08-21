@@ -1,6 +1,6 @@
-# Chapter 3 Exercises: The Data Analysis Process
+# Chapter 3 Exercises: The Data Process
 
-**Chapter:** 3 — The Data Analysis Process  
+**Chapter:** 3 — The Data Process  
 **Type:** Practice — no software required
 
 ## How to use these

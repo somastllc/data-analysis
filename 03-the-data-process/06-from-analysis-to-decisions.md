@@ -1,12 +1,12 @@
 # From Analysis to Decisions
 
-**Chapter:** 3 — The Data Analysis Process  
+**Chapter:** 3 — The Data Process  
 **Lesson:** 6 of 6  
 **By the end:** You can state the assumptions and limitations behind an analysis, and connect a finding to a decision.
 
 ## Overview
 
-Every analysis rests on things you did not check. Naming them is not a weakness — it is the difference between a finding people act on and one they quietly distrust. The final step in the analysis process is turning insights into action.
+Every analysis rests on things you did not check. Naming them is not a weakness — it is the difference between a finding people act on and one they quietly distrust. The final step is turning insights into action.
 
 ### From insight to action
 
@@ -41,6 +41,12 @@ You should also report **limitations**, such as:
 - Data collected from only one source
 
 Honest reporting makes your work more credible.
+
+### Putting a model into use is also a decision
+
+Not every result ends in a meeting. Sometimes the output is a system that goes on making the same decision thousands of times, long after everyone involved moved on.
+
+That raises the stakes on the assumptions above rather than removing them: one nobody wrote down is now running unattended, on people who never saw the analysis.
 
 ### Why decisions still need judgment
 

@@ -1,6 +1,6 @@
 # Analyzing and Visualizing Data
 
-**Chapter:** 3 — The Data Analysis Process  
+**Chapter:** 3 — The Data Process  
 **Lesson:** 4 of 6  
 **By the end:** You can choose a chart that matches your question, and say what analysis can and cannot prove.
 
@@ -25,6 +25,12 @@ Example questions:
 - Which region had the highest sales?
 - Did website traffic increase after the campaign?
 - Are older customers more likely to repeat purchases?
+
+### When the output is a model instead of a chart
+
+An analyst asks what the data shows. A data scientist asks what the data predicts, and builds a model to answer it. Both start from the same cleaned data, both answer a question set in step one, and both fail the same way — by producing something correct that nobody asked for.
+
+The rest of this lesson uses charts, because charts are the version you can read without software.
 
 ### Why visualize data?
 
