@@ -1,6 +1,64 @@
-# Handoff - state after the draw.io verification
+# Handoff - state after the content audit
 
-Written 2026-08-10. Read this plus `CLAUDE.md` and `DESIGN.md` and you have the whole picture.
+Written 2026-08-21. Read this plus `CLAUDE.md`, `DESIGN.md` and `SLIDES.md` and you have the
+whole picture. The section below is the current state; everything under "Earlier" is history
+that is still true but no longer the thing to read first.
+
+---
+
+## Where the work is
+
+**Content is locked.** All five teaching chapters have been audited lesson by lesson and every
+finding fixed. Chapter 6 was deliberately deferred and has *not* been audited.
+
+**Decks are the bottleneck.** 3 of 27 exist. The deck is the video, so 24 lessons cannot be
+recorded at all until their deck is built.
+
+| | State |
+|---|---|
+| Lessons | 27, content locked, 13,352 words |
+| Decks built | **3** - `01-01`, `02-01`, `03-01`, all at N/N verbatim |
+| Decks remaining | **24** |
+| Diagrams | 7 of 11 built, all verified against the draw.io editor |
+| Glossary | 84 terms, agrees exactly with the lessons |
+| Runtime | ~150.5 min of lessons, ~2h 41m across 34 videos |
+
+### Do this next
+
+1. **Build `3.4`'s deck.** It completes the calibration pair with `2.1`. Follow `SLIDES.md`
+   step by step; it is eight steps and the contact sheet catches what per-slide checks miss.
+2. **Shoot the calibration pair** and compare actual runtime to the 4.5 and 7.5 min estimates.
+   That ratio rescales every number in `PRODUCTION.md`, so it is worth doing before the other
+   22 decks are built against numbers that may be wrong.
+3. Then the remaining decks, one at a time.
+
+### Two rules learned the hard way this session
+
+- **Never trust a deck that was built before its lesson changed.** The audit rewrote 3.1 and
+  its deck went to 30/41 without anyone noticing until the next build. Rebuild every deck
+  after touching a lesson.
+- **The verbatim gate only checks against the lesson now.** It used to also accept the
+  handout, and a *stale* handout let 1.1's deck quote three sentences the lesson no longer
+  had while still reporting 41/41. Handout-only lines are declared one by one in `allow` on
+  the deck's `DECKS` entry.
+
+### What the audit changed, in case it surprises you
+
+- Every worked example is Somali. Chapters 2 and 3 ran on a retail chain, a music app and an
+  e-commerce site; they now run on one wholesaler supplying Hargeisa, Burco and Muqdisho, and
+  a mobile network operator, carried across both chapters.
+- **There are no em dashes anywhere in the repo.** `grep -r` for the character must return
+  nothing. See `CLAUDE.md`. A global replace attempted from outside a session corrupted 15
+  files by eating real characters; that tree is in a git stash, not merged.
+- Six Key Terms were cut for being dictionary entries rather than course vocabulary;
+  `Correlation` and three role definitions were added.
+- 2.3, 3.4 and 4.3 each promised something in their objective that the lesson never
+  delivered. All three now deliver it. 3.4's addition, correlation versus causation, is the
+  single most important thing the course gained.
+
+---
+
+## Earlier: the draw.io verification
 
 ---
 
@@ -65,7 +123,7 @@ PYTHONPATH=tools python3 tools/build_slides.py 03-01            # just one
 
 ## What is settled
 
-- **Course content is finished and audited.** 27 lessons, 85 glossary terms, 7 scripts. Two full audits; the last one found four defects, all fixed. The 24 exercises that used to sit in `NN-*/99-exercises.md` were removed - recover them from git history if that decision is ever revisited
+- **Course content is finished and audited.** 27 lessons, 84 glossary terms, 7 scripts. Three full audits; the third went chapter by chapter through all five teaching chapters and is described at the top of this file. The 24 exercises that used to sit in `NN-*/99-exercises.md` were removed - recover them from git history if that decision is ever revisited
 - The course is **track-neutral** - it names no specialization, promises no downstream curriculum, and `CLAUDE.md` carries the no-promise rule
 - **Design system is locked** in `DESIGN.md` and proven on a real lesson in both output forms - the A4 handout and the 16:9 deck, from the same tokens
 - **`.venv` is rebuilt.** WeasyPrint 69.0. It is still not committed and never should be
@@ -77,11 +135,11 @@ PYTHONPATH=tools python3 tools/build_slides.py 03-01            # just one
 |---|---|
 | **~3 pages per lesson** | Measured, not guessed: lesson 1.1 is 2.46 pages of content. Spacing, type size, and keep-together rules were each tested and none change it. ~75 pages for the set. A decision, not a defect - the lever is page geometry, not typography |
 | **Heading/table split** | On sample page 1 an H2 sits near the foot with only its lead paragraph; the table it introduces lands overleaf. Bind heading + intro + table as one block |
-| **6 diagrams still to build** | Three of nine exist, all verified in the editor. `tools/gen_diagram.py` has a `REGISTER` - add the rest there. It now draws straight chains and snake-wrapped ones with two-line labels; **hubs, group boundaries and the 5.3 feedback loop are in `DESIGN.md` §6 but still not in code** |
+| **4 diagrams still to build** | Seven of eleven exist, all verified in the editor. `tools/gen_diagram.py` now draws straight chains, snake-wrapped chains, forks (`GRAPHS`) and dashed group boundaries (`NESTS`). **The 5.3 feedback loop is still not in code**: it needs a closing edge back to the first node, `curved=1`, and a `repeats` label - `DESIGN.md` §6 |
 | **Locator cards for 3.2–3.6** | `PRODUCTION.md` 3.1 asks for the process diagram to reappear at the top of each later lesson in the chapter with the current step accented. `svg(..., accent_index=N, under='step N of 7', per_row=4)` already produces it - verified by rendering step 3 - but the five files are not in the `REGISTER` yet |
-| **Calibration shoot** | Not started. Record `2.3` (3.5 min, shortest) and `5.1` (8 min, longest) and compare to the estimates. Every runtime in `PRODUCTION.md` rescales off that ratio |
+| **Calibration shoot** | Not started. The pair is now `2.1` and `3.4`, not the one this file used to name - 2.3 and 5.1 are no longer the shortest and longest, and chapter 5 cannot supply a subject because it must be shot in one session and in order |
 | **Stress test** | `DESIGN.md` §10 names the 7 files that cover 100% of the course's structural features. Not yet run |
-| **25 decks still to build** | `tools/build_slides.py` has two hand-written deck functions, `deck_01_01` and `deck_03_01`, declared in a `DECKS` table; `python3 tools/build_slides.py 03-01` builds just one. The stylesheet and the build-frame machinery are general; what stays per-lesson is only *which lesson sentence lands on which slide* - the sentences themselves are copied, never rewritten (`DESIGN.md` §7). Point `verbatim_report` at each new lesson and keep it at N/N. The 4.1 code slides and the 5.1 chart pair have no component yet |
+| **24 decks still to build** | `tools/build_slides.py` has two hand-written deck functions, three hand-written deck functions declared in a `DECKS` table; `python3 tools/build_slides.py 03-01` builds just one. The stylesheet and the build-frame machinery are general; what stays per-lesson is only *which lesson sentence lands on which slide* - the sentences themselves are copied, never rewritten (`DESIGN.md` §7). Point `verbatim_report` at each new lesson and keep it at N/N. The **4.2** code slides and the 5.1 chart pair have no component yet |
 
 ## Not mine to touch
 
@@ -89,6 +147,6 @@ Three PDFs sit in the repo root. `MCP-field-guide.pdf` is the **design reference
 
 ## Repo notes
 
-- Git repo on `master`, three commits, last is `58dd6fd`. **Everything from the design-system session is still untracked** - `DESIGN.md`, `HANDOFF.md`, `tools/`, `samples/`, and all three `diagrams/` folders. Until they are committed there is no undo for them, so check before overwriting or deleting
+- Git repo on `main`. Everything is committed; the branch is several commits ahead of `origin/main` and has not been pushed. One stash exists, holding the corrupted global em-dash replace described above - do not merge it
 - Was Markdown-only until this session; `tools/`, `samples/` and `NN-*/diagrams/` are new
 - **Counting gotcha:** any script counting lessons must exclude `00-*` and `99-*`, or it reports 33 instead of 27. See `CLAUDE.md`
