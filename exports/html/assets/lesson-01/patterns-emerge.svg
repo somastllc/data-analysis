@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" role="img" aria-labelledby="title desc">
+  <title id="title">Individual data points revealing an upward pattern</title>
+  <desc id="desc">A hand-drawn chart shows seven separate sales facts joining into a rising trend.</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.6" fill="#AEEBC5" opacity=".55"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="640" height="340" rx="18" fill="url(#dots)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 42 C67 108 72 185 68 281 C210 285 367 278 582 282" stroke="#121212" stroke-width="4"/>
+    <path d="M75 43 C71 124 76 211 73 276 C222 279 386 275 584 278" stroke="#121212" stroke-width="1.6" opacity=".38"/>
+    <path d="M70 220 C214 217 365 221 570 218 M70 159 C216 163 373 157 570 160 M70 98 C223 102 385 96 570 99" stroke="#8B9494" stroke-width="1.5" stroke-dasharray="7 10" opacity=".55"/>
+    <path d="M88 247 C142 226 166 236 215 205 S286 187 328 163 S397 151 441 113 S506 92 555 66" stroke="#AEEBC5" stroke-width="12" opacity=".85"/>
+    <path d="M88 247 C141 225 169 238 215 205 S286 185 328 163 S395 153 441 113 S505 94 555 66" stroke="#121212" stroke-width="4"/>
+    <path d="M318 55 C366 23 437 28 486 66" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M101 234 C74 202 39 205 30 231" stroke="#1A733A" stroke-width="2.5" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#3ACC69" stroke="#121212" stroke-width="3">
+    <circle cx="88" cy="247" r="10"/><circle cx="151" cy="226" r="10"/><circle cx="215" cy="205" r="10"/>
+    <circle cx="278" cy="183" r="10"/><circle cx="328" cy="163" r="10"/><circle cx="391" cy="145" r="10"/>
+    <circle cx="441" cy="113" r="10"/><circle cx="499" cy="91" r="10"/><circle cx="555" cy="66" r="10"/>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive">
+    <text x="307" y="34" font-size="27">a pattern appears!</text>
+    <text x="24" y="260" font-size="22" fill="#1A733A" transform="rotate(-7 24 260)">one fact</text>
+    <text x="78" y="314" font-size="19">Mon</text><text x="200" y="314" font-size="19">Tue</text>
+    <text x="322" y="314" font-size="19">Wed</text><text x="444" y="314" font-size="19">Thu</text>
+    <text x="548" y="314" font-size="19">Fri</text>
+  </g>
+</svg>

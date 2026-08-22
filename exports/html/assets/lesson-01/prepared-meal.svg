@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" role="img" aria-labelledby="title desc">
+  <title id="title">A prepared meal as a metaphor for information</title>
+  <desc id="desc">The separate ingredients are organized into a steaming meal that is easy to understand.</desc>
+  <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.4" fill="#AEEBC5" opacity=".55"/></pattern></defs>
+  <rect width="420" height="250" fill="url(#dots)"/>
+  <g fill="none" stroke="#121212" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 169 Q100 222 210 225 Q322 220 325 169" fill="#F6F8F8"/>
+    <ellipse cx="210" cy="167" rx="119" ry="35" fill="#FFFDF8"/>
+    <path d="M126 161 Q137 104 209 103 Q278 106 294 164" fill="#fff3bf"/>
+    <path d="M143 143 Q170 128 195 142 M176 118 Q204 132 228 116 M218 145 Q250 125 274 143" stroke="#8B6F32" stroke-width="2"/>
+    <path d="M129 161 Q138 132 164 137 Q184 143 179 166 M234 162 Q241 128 268 136 Q286 144 284 165" fill="#AEEBC5" stroke="#1A733A"/>
+    <circle cx="197" cy="157" r="11" fill="#3ACC69" stroke="#1A733A"/>
+    <path d="M168 79 Q145 59 164 36 Q180 17 165 2 M211 77 Q188 56 208 32 Q224 15 210 0 M254 80 Q232 59 250 39 Q267 21 254 5" stroke="#1A733A"/>
+    <path d="M80 201 Q42 198 34 177 M340 199 Q376 193 384 168" stroke="#1A733A" stroke-width="2.4"/>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive">
+    <text x="14" y="226" font-size="23" fill="#1A733A" transform="rotate(-5 14 226)">organized</text>
+    <text x="326" y="226" font-size="23" fill="#1A733A" transform="rotate(5 326 226)">clear</text>
+  </g>
+</svg>
