@@ -8,6 +8,8 @@
 
 The most damaging data projects are rarely built by bad people. They are built by good teams who never stopped to ask whether they should.
 
+**Data ethics** means applying principles that help us use data responsibly and fairly.
+
 This chapter follows one project, a mobile money company building an automatic loan product, through four lessons: responsible use, privacy, bias, and governance.
 
 ### Case study: the loan scoring project
@@ -56,7 +58,7 @@ Mar  ####################################
 Apr  ####################################
 ```
 
-Chart A contains no false numbers. It is still misleading, because the axis turns a one-point change into what looks like a doubling.
+Chart A contains no false numbers. It is still a **misleading visualization**: a factually correct chart that creates a false impression by turning a one-point change into what looks like a doubling.
 
 This is the most common dishonesty in data work, and it rarely feels like lying. Nobody edited a number. Someone chose the axis that told the story they wanted.
 
@@ -71,13 +73,3 @@ Two warning signs in your own charts: an axis that does not start at zero withou
 - **Accountability** - take responsibility for how data is used
 
 Before starting any data project, ask the question the loan team skipped: could this harm someone, and would we be comfortable explaining it publicly?
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data ethics** | Principles for using data responsibly and fairly |
-| **Transparency** | Openness about data collection and use |
-| **Accountability** | Responsibility for the outcomes of data use |
-| **Purpose limitation** | Using data only for the purpose it was collected for |
-| **Misleading visualization** | A chart that is factually correct but creates a false impression |

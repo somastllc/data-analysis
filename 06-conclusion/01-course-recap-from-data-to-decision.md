@@ -29,7 +29,7 @@ This course covered five major areas:
 
 ### The full journey
 
-A complete data journey looks like this:
+A **data journey** is the full path from a problem to a decision using data:
 
 ```mermaid
 flowchart LR
@@ -45,9 +45,3 @@ flowchart LR
 Behind the scenes, data engineers maintain systems, analysts explore data, dashboards share metrics, and ethical rules protect people.
 
 None of it required software. That was deliberate. Every idea in this course is about judgment, and judgment is what stays useful when the tools change.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data journey** | The full path from problem to decision using data |

@@ -10,7 +10,7 @@ You receive a file from a colleague and need to decide whether you can trust it 
 
 ### Common sources of data
 
-Data can be collected in many ways:
+A **data source** is where data originally comes from. Data can be collected in many ways:
 
 - **Manual entry** - someone types data into a form or spreadsheet
 - **Business systems** - sales, inventory, or HR software
@@ -31,7 +31,7 @@ Primary data is often more relevant to your exact question. Secondary data can s
 
 ### Common data formats
 
-A **format** is how data is stored or shared.
+A **data format** is how data is stored or shared.
 
 | Format | Common use |
 |---|---|
@@ -52,13 +52,3 @@ The two answers are independent, which is what makes both questions worth asking
 - Sales data from a company database usually answers both well - trusted source, easy to open
 - A PDF report can be entirely trustworthy and still cost you a day to get the numbers out of
 - Survey responses can arrive in a clean spreadsheet and still be full of missing answers
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data source** | Where data originally comes from |
-| **Primary data** | Data collected firsthand for a specific purpose |
-| **Secondary data** | Data collected by others and reused for a new purpose |
-| **Data format** | The way data is stored or shared |
-| **CSV** | A plain-text format for tabular data |

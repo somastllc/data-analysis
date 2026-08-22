@@ -17,7 +17,7 @@ This may involve:
 - Exporting data from a database
 - Downloading a CSV file
 - Using a survey or form
-- Connecting to an API
+- Connecting to an **API**, which lets systems share data automatically
 - Combining data from multiple systems
 
 ### Common collection methods
@@ -56,10 +56,3 @@ To understand why customers stop renewing their data bundle, you might collect:
 - Answers from a short survey sent to people who left
 
 The first two say what happened. The last two are the only ones that can say why, and they are also the two most likely to be missing.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data collection** | The process of gathering data for analysis |
-| **API** | A way for systems to share data automatically |

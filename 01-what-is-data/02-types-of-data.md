@@ -61,14 +61,3 @@ Knowing the type of data helps you answer questions like:
 - Is this data ready to use, or does it need cleaning?
 
 For example, you can average quantitative sales numbers, but you cannot average qualitative comments like "good" and "excellent" in a meaningful way without extra processing.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Structured data** | Data organized in rows, columns, or tables |
-| **Unstructured data** | Data without a fixed format, such as text or images |
-| **Semi-structured data** | Data with some organization, such as JSON, but not a fixed table |
-| **Quantitative data** | Numeric data that can be measured or counted |
-| **Qualitative data** | Descriptive data, often in words or categories |
-| **Categorical data** | Data that groups items into labels or categories |

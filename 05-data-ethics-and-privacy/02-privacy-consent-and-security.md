@@ -49,13 +49,3 @@ To build the model, the loan team needs transaction histories, so those historie
 But that copy is now the least protected version of the most sensitive data the company holds, and every person on the project can read all of it. The market trader consented to the company moving her money. She is now a row in a file that a dozen people can open, including her payments to a clinic, to a school, and to her family.
 
 A privacy policy protects nobody once a copy like that exists. The real question is not whether the company has a policy. It is how many copies there are, who can open each one, and whether anybody is keeping count.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Privacy** | The right to control personal information |
-| **Consent** | Permission to collect or use data |
-| **Data security** | Protecting data from unauthorized access or loss |
-| **Data minimization** | Collecting only the data a stated purpose actually requires |
-| **Anonymization** | Removing details that could identify a specific person |

@@ -35,9 +35,3 @@ Same six steps, three completely different definitions of a serious mistake.
 ### Key takeaway
 
 The methods are **transferable skills**: learn to ask a question, work with the data, and explain the answer, and the industry becomes a matter of learning what its people care about. That last part is not a small job. It is why analysts who move sector often say the first three months were the hardest.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Transferable skills** | Skills that can be used in many jobs or industries |

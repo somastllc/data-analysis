@@ -28,4 +28,3 @@ All 84 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
 - Outline the end-to-end process from question to decision
 - Recognize common data tools, career paths, and industry applications
 - Understand core principles of data ethics and privacy
-# data-analysis

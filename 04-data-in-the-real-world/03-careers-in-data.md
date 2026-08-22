@@ -46,21 +46,10 @@ The clearest way to tell these roles apart is by the question each one is paid t
 | **Data Engineer** | "How do we collect and store data reliably?" |
 | **Data Scientist** | "What patterns and predictions can we find?" |
 | **Analytics Engineer** | "How do we create clean, analysis-ready data models?" |
-| **Machine Learning Engineer** | "How do we get a model running in production?" |
+| **Machine Learning Engineer** | "How do we put a model into production and keep it running?" |
 
 ### The title is not the job
 
 The cold open said there is no agreement between companies about what these titles mean, and that is the practical problem with the map above. One company's Data Analyst writes SQL against a warehouse all day. Another company's Data Analyst never writes a line of it and spends the week in dashboards. A third calls that same dashboard work Business Intelligence, and a fourth calls it Data Science.
 
 So read the description, not the title. The table above is the useful instrument here: whatever a job is called, work out which of those six questions it is actually paid to answer, and you will know what the work is.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data Analyst** | A professional who analyzes data to answer business questions |
-| **Business Analyst** | A professional who works out what an organization needs and how data can help |
-| **Data Engineer** | A professional who builds data systems and pipelines |
-| **Data Scientist** | A professional who uses advanced methods to extract insights and build models |
-| **Analytics Engineer** | A professional who prepares clean, analysis-ready data for reporting teams |
-| **Machine Learning Engineer** | A professional who puts models into production and keeps them running |

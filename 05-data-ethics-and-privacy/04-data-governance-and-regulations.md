@@ -22,13 +22,15 @@ Every problem in this chapter was preventable. None would have been caught by on
 | Proxy variables nobody examined | A documented field list noting what each field may stand in for |
 | Repayment chart with a truncated axis | Review of any visual going to leadership |
 | Analysts able to read any customer's transactions | Access control: analysts see only what their work requires |
-| Loan records kept indefinitely | Retention policy: a stated deletion date for every dataset |
+| Loan records kept indefinitely | **Data retention**: a rule stating how long each dataset is kept and when it must be deleted |
 
 Six of those seven went wrong in front of you over the last three lessons. The last one did not: nobody in this case ever asked how long the loan records would be kept, and nothing in the story forced them to.
 
 That is the argument for governance in one line. The rules are not written from the failures you have had. They are written from the failures other people have had, which is the only way to be protected from the one you have not thought of yet.
 
 ### Regulations
+
+A **regulation** is a legal rule governing how data is collected and used.
 
 Many countries have laws protecting personal data. Details vary, but the goals are the same: require consent, give people rights over their own data, set rules for secure storage, and require organizations to report breaches. GDPR in the European Union is the most widely discussed example, and for most people reading this it is also the one that does not apply. The law that governs your work is the one where your organization operates and where your customers live. Find out which that is before you need it, not during the week you need it.
 
@@ -43,12 +45,3 @@ They test the model against customers the old manual process had rejected, and f
 The product launches three months later than planned, and reaches more customers than the original version would have.
 
 That is the honest outcome of ethical data work. It is usually slower. It is not usually worse.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data governance** | Policies and processes for managing data responsibly |
-| **Regulation** | A legal rule governing data collection and use |
-| **Data retention** | How long data is kept before it is deleted |
-| **Access control** | Limiting who can see or use specific data |

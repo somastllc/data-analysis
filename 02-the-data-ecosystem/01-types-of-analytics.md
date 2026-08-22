@@ -23,10 +23,10 @@ flowchart LR
 
 | Type | Question | Example |
 |---|---|---|
-| **Descriptive** | What happened? | Rice sales rose 12% last month |
-| **Diagnostic** | Why did it happen? | They rose because the Hargeisa shop stayed open through Ramadan |
-| **Predictive** | What might happen next? | Sales may stay high next month if the longer hours continue |
-| **Prescriptive** | What should we do? | Keep the longer hours in Hargeisa, and try them in Muqdisho |
+| **Descriptive analytics** | What happened? | Rice sales rose 12% last month |
+| **Diagnostic analytics** | Why did it happen? | They rose because the Hargeisa shop stayed open through Ramadan |
+| **Predictive analytics** | What might happen next? | Sales may stay high next month if the longer hours continue |
+| **Prescriptive analytics** | What should we do? | Keep the longer hours in Hargeisa, and try them in Muqdisho |
 
 ### Simple way to remember them
 
@@ -42,13 +42,3 @@ Most beginners start with descriptive analytics, such as summaries, totals, and 
 The four are cumulative, and that is the useful part. You cannot explain why rice sales rose until you know that they rose. You cannot forecast next month without knowing what drove last month. And a recommendation made without the three steps underneath it is just an opinion with a number attached to it.
 
 So when an organization says it wants prediction, the honest first question is whether it can yet describe what already happened.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Analytics** | The use of data to find patterns and support decisions |
-| **Descriptive analytics** | Summarizes what already happened |
-| **Diagnostic analytics** | Explains why something happened |
-| **Predictive analytics** | Estimates what may happen in the future |
-| **Prescriptive analytics** | Recommends actions based on analysis |

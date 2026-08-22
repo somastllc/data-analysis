@@ -34,6 +34,8 @@ Examples:
 
 Instead of writing every rule manually, the system learns from examples.
 
+The trained system is called a **model**. It uses learned patterns to make predictions or decisions about new data.
+
 ### How they relate
 
 Machine learning is one tool within data science, alongside several others.
@@ -73,11 +75,3 @@ A mobile network operator wants to reduce the number of customers who quietly st
 - A **machine learning model**, trained on customers who already left, flags current customers behaving the same way
 
 Only the last step is machine learning, and it depends entirely on the first two.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data science** | A field that uses data, statistics, and programming to solve complex problems |
-| **Machine learning** | A method where systems learn patterns from data |
-| **Model** | A system trained to make predictions or decisions from data |

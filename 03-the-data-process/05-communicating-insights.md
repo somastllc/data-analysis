@@ -29,7 +29,7 @@ A simple report often includes:
 2. **Method** - what data you used
 3. **Findings** - what the data showed
 4. **Visuals** - charts that support the story
-5. **Recommendation** - what action to consider
+5. **Recommendation** - a suggested action based on the analysis
 
 Keep the message focused. Most stakeholders do not need every detail of your process.
 
@@ -57,9 +57,3 @@ Different audiences need different levels of detail.
 - Product teams may want specific user behavior insights
 
 Tailor your message to the person making the decision.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Recommendation** | A suggested action based on analysis |

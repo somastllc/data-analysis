@@ -20,6 +20,8 @@ flowchart LR
 
 ### Start with the business problem
 
+A **business problem** is the issue or decision the analysis is meant to support.
+
 A common mistake is jumping straight into data without knowing what you are trying to solve.
 
 Always begin by asking:
@@ -40,7 +42,7 @@ For a local shop, the same idea applies:
 
 ### Know your stakeholders
 
-A **stakeholder** is anyone who needs the results of your analysis.
+A **stakeholder** is a person or group affected by, or interested in, the results of your analysis.
 
 Examples:
 
@@ -56,7 +58,7 @@ Understanding stakeholders helps you:
 
 ### How to ask good analytical questions
 
-Good questions are:
+An **analytical question** is a clear question that data can help answer. Good analytical questions are:
 
 - **Specific** - focused on one issue
 - **Measurable** - answerable with data
@@ -88,11 +90,3 @@ Questions:
 - Are fewer people asking about courses, or are the same people asking and not signing up?
 
 These questions guide every step that follows.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Business problem** | The issue or decision the analysis is meant to support |
-| **Stakeholder** | A person or group affected by, or interested in, the results of the analysis |
-| **Analytical question** | A clear question that data can help answer |

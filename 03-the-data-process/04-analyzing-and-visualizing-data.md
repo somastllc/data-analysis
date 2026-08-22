@@ -16,7 +16,7 @@ Common activities include:
 
 - Calculating totals and averages
 - Comparing groups
-- Finding trends over time
+- Finding a **trend**, or general direction of change over time
 - Identifying top or bottom performers
 - Looking for relationships between variables
 
@@ -87,11 +87,3 @@ Visualizations:
 - Table of average order day by city
 
 The chart shows Burco ordering late. It does not show why, and the lesson above is the reason you should not guess.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data visualization** | Presenting data using charts and graphs |
-| **Correlation** | Two things moving together, which is not by itself evidence that one causes the other |
-| **Trend** | A general direction of change over time |

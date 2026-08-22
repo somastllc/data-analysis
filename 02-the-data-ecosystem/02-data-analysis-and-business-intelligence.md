@@ -31,7 +31,7 @@ Data analysis often answers questions like:
 
 BI often emphasizes:
 
-- Key performance indicators (KPIs)
+- **KPI (key performance indicator)** - a metric used to measure progress toward a goal
 - Interactive dashboards
 - Regular reporting
 - Accessible insights for business teams
@@ -55,11 +55,3 @@ A wholesaler supplies shops in Hargeisa, Burco, and Muqdisho, and wants to know 
 - A **BI dashboard** shows each city's weekly orders, returns, and top products, so the manager can see next month's version without asking anyone
 
 The analyst answered a question. The dashboard made sure nobody has to ask it again.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data analysis** | The process of examining data to find patterns and answer questions |
-| **Business intelligence (BI)** | Tools and practices for reporting and monitoring business performance |
-| **KPI** | A key performance indicator used to measure success |

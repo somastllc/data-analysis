@@ -18,6 +18,8 @@ That difference matters more than it sounds. Spotting a problem takes a few minu
 
 ### Common cleaning tasks
 
+A **missing value** is a blank or unavailable data entry.
+
 | Task | Example |
 |---|---|
 | **Removing duplicates** | Same customer listed twice |
@@ -55,11 +57,3 @@ Before comparing pay across branches, you would:
 Skipping these steps could produce incorrect averages and rankings.
 
 Cleaning is a large subject in its own right. What matters now is recognizing that the step exists, and that skipping it invalidates everything after it.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data cleaning** | The process of fixing errors and improving data quality |
-| **Missing value** | A blank or unavailable data entry |
-| **Standardization** | Making data follow a consistent format |

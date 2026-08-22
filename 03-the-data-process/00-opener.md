@@ -8,7 +8,7 @@ Read close to as written; this is already at speaking length.
 
 ---
 
-*On screen: the seven-step process diagram from lesson 3.1, building as the steps are named. This is the same asset the lessons reuse as a locator card. Build it here first.*
+*On screen: the seven-step process diagram from lesson 3.1, building as the steps are named. This is the same diagram the lessons reuse as a locator card. Establish it here first.*
 
 Most people picture data work as the analysis. The analysis is one step out of seven, and it is rarely the longest.
 

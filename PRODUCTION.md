@@ -14,9 +14,9 @@
 
 **3. The metadata block is the title card, not narration.** `**Chapter:** N - Name` / `**Lesson:** N of TOTAL` goes on screen. Never read aloud.
 
-**4. Key Terms tables are end cards. Do not narrate them.** Every lesson closes with a Key Terms table. Put it on screen and hold it. Over it, say two things: one sentence calling back to the lesson's main idea, and one sentence teasing the next lesson. Reading 90 glossary rows aloud across the course would cost 15–20 minutes and would put the flattest possible 45 seconds at the end of all 27 videos, which is the exact place you need the click to the next one.
+**4. Close on lesson content, not repeated vocabulary.** No lesson has a Key Terms end card. Hold the final meaningful teaching slide while you close: one sentence calling back to the lesson's main idea and, where the script provides it, one sentence teasing the next lesson. On the final lesson, land the written closing line and stop.
 
-**4b. One lesson has no Key Terms table.** `4.2 Why Data Work Uses Code` introduces no new vocabulary; it demonstrates. End it on the Python output instead, holding the last code slide while you say the callback and the tease. Every other lesson uses its table.
+**4b. Lesson 4.2 ends on the Python output.** `4.2 Why Data Work Uses Code` introduces no new vocabulary; it demonstrates. Hold the last code slide while you say the callback and the tease.
 
 **5. Every `###` heading is a segment boundary.** Cut, change the slide, or move on camera. The lessons average 3–4 sections, which is your shot count.
 
@@ -30,16 +30,17 @@
 
 ---
 
-## Build these assets before you shoot
+## Visuals required for recording
 
-| Asset | Count | Notes |
+This is a production checklist only. The repository contains no generated visual files or build tooling. Create these visuals after the new visual reference is supplied.
+
+| Visual | Count | Notes |
 |---|---|---|
 | Animated diagram builds | 11 | One per mermaid block. Build order given per lesson below. |
 | Chart pair, truncated vs full axis | 2 | **5.1** - highest-value visual in the course. Currently ASCII in the Markdown. |
 | Repayment data table | 1 | **5.1** - must appear *before* either chart. |
 | Code slides with line highlighting | 2 | **4.2** - SQL and Python. Only code in the course. |
-| Content table slides | 16 | Excludes the 26 Key Terms end cards. |
-| Key Terms end card template | 1 | Reusable; table content differs per lesson. |
+| Content table slides | 16 | Teaching tables only; Key Terms cards have been removed from every lesson. |
 | Title card template | 1 | Lesson name + chapter/lesson position. |
 | Chapter opener bumper | 6 | 60–90s each. **Script lives in each chapter's `00-opener.md`.** |
 
@@ -74,7 +75,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 **Cold open:** *You check your phone and see a mobile money transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance.*
 
-**Shots:** cold open → title → objective → *Data: raw facts about the world* → *Data vs information vs insight* → **table** Term / Meaning / Example → **diagram build (3)** → *Where you see data every day* → end card
+**Shots:** cold open → title → objective → *Data: raw facts about the world* → *Data vs information vs insight* → **table** Term / Meaning / Example → **diagram build (3)** → *Where you see data every day*
 
 **Diagram build:** `Data` → `Information` → `Insight`. Build it directly out of the table you just showed, in the same three words and the same order. The table is the definition, the diagram is the motion.
 
@@ -86,7 +87,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 **Cold open:** *A shop owner opens a spreadsheet of last week's sales and sees numbers, product names, and customer comments all mixed together.*
 
-**Shots:** cold open → title → objective → *Structured vs unstructured data* → *Quantitative vs qualitative data* → *Why data types matter* → end card
+**Shots:** cold open → title → objective → *Structured vs unstructured data* → *Quantitative vs qualitative data* → *Why data types matter*
 
 **Note:** Two independent classifications, not four categories. Say that explicitly. It is the single most common beginner confusion and the text leaves it implicit. Show them as two axes if you can.
 
@@ -96,7 +97,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 **Cold open:** *You receive a file from a colleague and need to decide whether you can trust it and how to open it.*
 
-**Shots:** cold open → title → objective → *Common sources of data* → *Primary vs secondary data* → *Common data formats* → **table** Format / Common use → *Why source and format matter* → end card
+**Shots:** cold open → title → objective → *Common sources of data* → *Primary vs secondary data* → *Common data formats* → **table** Format / Common use → *Why source and format matter*
 
 **Note:** The two questions in the last section - "Where did this come from?" and "What format is it in?" - are the takeaway. Put them on screen as a two-line card.
 
@@ -106,7 +107,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 **Cold open:** *A manager forwards you a customer list and asks for the average age.*
 
-**Shots:** cold open → title → objective → *Why data quality matters* → *Common data quality problems* → *Key quality dimensions* → **table** Dimension / Question it answers → *Example* → **defective table, held silent** → the three faults, one at a time → the fourth fault → end card
+**Shots:** cold open → title → objective → *Why data quality matters* → *Common data quality problems* → *Key quality dimensions* → **table** Dimension / Question it answers → *Example* → **defective table, held silent** → the three faults, one at a time → the fourth fault
 
 **Note:** The Example section is the customer list from the cold open, with four planted faults. **Put it up and say nothing for five seconds.** The lesson's text tells the viewer to read it before going on, so honour that on screen. This is the one lesson in chapter 1 with a built-in pause beat.
 
@@ -122,7 +123,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *Two shop owners sell the same products at the same prices.*
 
-**Shots:** cold open → title → objective → *Data helps organizations make better decisions* → *Data creates competitive advantage* → *Data skills are widely valuable* → *Data also comes with responsibility* → end card
+**Shots:** cold open → title → objective → *Data helps organizations make better decisions* → *Data creates competitive advantage* → *Data skills are widely valuable* → *Data also comes with responsibility*
 
 **Note:** Four short sections and no diagram, which makes it the flattest-shaped lesson in chapter 1. Carry it on delivery, and let the two-shop-owners story run through all four sections rather than dropping it after the cold open. Last section is the setup for chapter 5; point forward.
 
@@ -138,7 +139,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *A manager looks at last month's sales report and asks three questions in one meeting: "What happened? Why did it happen? What should we do next?"*
 
-**Shots:** cold open → title → objective → *What is analytics?* → **diagram build (4)** → *The four types of analytics* → **table** Type / Question / Example → *Simple way to remember them* → *Why this matters* → end card
+**Shots:** cold open → title → objective → *What is analytics?* → **diagram build (4)** → *The four types of analytics* → **table** Type / Question / Example → *Simple way to remember them* → *Why this matters*
 
 **Diagram build:** `Descriptive` → `Diagnostic` → `Predictive` → `Prescriptive`. Build one per type as you introduce it, so the diagram completes exactly as the section ends.
 
@@ -150,7 +151,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *A shop owner notices that one product sells out every week while another sits on the shelf.*
 
-**Shots:** cold open → title → objective → *What is data analysis?* → *What is business intelligence?* → *How they relate* → *Example* → end card
+**Shots:** cold open → title → objective → *What is data analysis?* → *What is business intelligence?* → *How they relate* → *Example*
 
 **Note:** The shop owner wants two different things: to understand *why*, and to check it monthly without digging. That is the analysis/BI split in one sentence. Hold on it.
 
@@ -160,7 +161,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *Your inbox quietly moved a message to spam this morning.*
 
-**Shots:** cold open → title → objective → *What is data science?* → *What is machine learning?* → *How they relate* → **diagram build (nest)** → *When a project actually needs machine learning* → **table** Question / What it needs → *Example* → end card
+**Shots:** cold open → title → objective → *What is data science?* → *What is machine learning?* → *How they relate* → **diagram build (nest)** → *When a project actually needs machine learning* → **table** Question / What it needs → *Example*
 
 **Diagram build:** the containment picture; see standing rule 7b. Boundary labelled `Data science` first, then `Statistics`, `Programming`, `Domain knowledge`, and `Machine learning` last and accented.
 
@@ -172,7 +173,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *An analyst opens a report and finds three different versions of the same sales numbers - one outdated, one incomplete, one in the wrong format.*
 
-**Shots:** cold open → title → objective → *What is data engineering?* → *What data engineers do* → *Why data engineering matters* → *Example* → end card
+**Shots:** cold open → title → objective → *What is data engineering?* → *What data engineers do* → *Why data engineering matters* → *Example*
 
 **Note:** Three conflicting numbers is a screen graphic, not a spoken list. Show the three versions side by side during the cold open.
 
@@ -182,7 +183,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *The sales figure on a manager's dashboard this morning began three weeks ago as a mobile money payment for a sack of rice.*
 
-**Shots:** cold open → title → objective → *Where data lives* → **table** System / Purpose → *What is a data pipeline?* → **diagram build (6)** → *Example* → end card
+**Shots:** cold open → title → objective → *Where data lives* → **table** System / Purpose → *What is a data pipeline?* → **diagram build (6)** → *Example*
 
 **Diagram build:** `Collect` → `Store` → `Clean` → `Transform` → `Analyze` → `Share`. Six beats, the longest build in chapter 2. Consider running it in reverse first, from the dashboard back to the mobile money payment, matching the cold open, then forward.
 
@@ -192,7 +193,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *One customer cancels a subscription.*
 
-**Shots:** cold open → title → objective → *One ecosystem, many roles* → *How they work together* → **diagram build (5)** → *Where analytics types fit* → *Key takeaway* → end card
+**Shots:** cold open → title → objective → *One ecosystem, many roles* → *How they work together* → **diagram build (5)** → *Where analytics types fit* → *Key takeaway*
 
 **Diagram build:** `Data engineer` → `Data analyst` → `BI dashboard` → `Data scientist` → `Business team`, one per numbered step as you read it. This is the chapter's payoff and the only frame that holds all five roles at once.
 
@@ -210,7 +211,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *"Can you look into the sales data?" is one of the most common requests an analyst receives, and it is not yet a question.*
 
-**Shots:** cold open → title → objective → **diagram build (7)** → *Start with the business problem* → *Know your stakeholders* → *How to ask good analytical questions* → *The same first step, whatever gets built* → *Example* → end card
+**Shots:** cold open → title → objective → **diagram build (7)** → *Start with the business problem* → *Know your stakeholders* → *How to ask good analytical questions* → *The same first step, whatever gets built* → *Example*
 
 **Diagram build:** `Define problem` → `Ask questions` → `Collect data` → `Clean data` → `Analyze and visualize` → `Communicate insights` → `Make decisions`. **This is the map for the whole chapter.** Build all seven here, then bring it back as a static locator card at the top of lessons 3.2–3.6 with the current step highlighted. Cheapest continuity device in the course.
 
@@ -220,7 +221,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *The easiest data to obtain is rarely the data that answers your question.*
 
-**Shots:** cold open → title → **locator: step 3** → objective → *What is data collection?* → *Common collection methods* → **table** Method / Example → *How much is enough depends on what gets built* → *Questions to ask before using data* → *Example* → end card
+**Shots:** cold open → title → **locator: step 3** → objective → *What is data collection?* → *Common collection methods* → **table** Method / Example → *How much is enough depends on what gets built* → *Questions to ask before using data* → *Example*
 
 ---
 
@@ -228,7 +229,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *Ask working analysts what takes up most of their time and the answer is rarely "analysis".*
 
-**Shots:** cold open → title → **locator: step 4** → objective → *Why clean data?* → **table** Task / Example → *Common cleaning tasks* → *How much cleaning is enough?* → *Example* → end card
+**Shots:** cold open → title → **locator: step 4** → objective → *Why clean data?* → **table** Task / Example → *Common cleaning tasks* → *How much cleaning is enough?* → *Example*
 
 **Note:** the lesson calls cleaning "a large subject in its own right" and stops there. Deliver it that way, and do not promise a later course, here or anywhere else in the shoot.
 
@@ -238,7 +239,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Cold open:** *The same table of numbers can hide a trend completely or make it obvious in one second.*
 
-**Shots:** cold open → title → **locator: step 5** → objective → *What happens during analysis?* → *When the output is a model instead of a chart* → *Why visualize data?* → **table** Question type / Chart type → *Common chart types* → *What analysis cannot prove* → **the three explanations, one at a time** → *Example* → end card
+**Shots:** cold open over **the lesson's opening table-and-chart comparison** → title → **locator: step 5** → objective → *What happens during analysis?* → *When the output is a model instead of a chart* → *Why visualize data?* → **table** Question type / Chart type → *Common chart types* → *What analysis cannot prove* → **the three explanations, one at a time, over a correlation scatter plot** → *Example*
 
 **Note:** The cold open is a promise of a visual. Deliver it in the first 20 seconds: same numbers as a table, then as a chart, side by side. Do not let this lesson be the one where you *talk about* visualization.
 
@@ -252,7 +253,7 @@ Chart choice is named and dropped on purpose. Do not promise where it gets taugh
 
 **Cold open:** *An analyst spends three weeks on an investigation, presents twelve slides, and nothing changes.*
 
-**Shots:** cold open → title → **locator: step 6** → objective → *Analysis without communication has limited value* → *What to include in a data report* → *Tips for clear communication* → *Know your audience* → end card
+**Shots:** cold open → title → **locator: step 6** → objective → *Analysis without communication has limited value* → *What to include in a data report* → *Tips for clear communication* → *Know your audience*
 
 **Note:** "It was also the fourth thing mentioned, on slide nine." Land that line, then pause. It is the best-written sentence in chapter 3.
 
@@ -262,7 +263,7 @@ Chart choice is named and dropped on purpose. Do not promise where it gets taugh
 
 **Cold open:** *Every analysis rests on things you did not check.*
 
-**Shots:** cold open → title → **locator: step 7, completing the map** → objective → *From insight to action* → *Assumptions and limitations* → *Putting a model into use is also a decision* → *Why decisions still need judgment* → *Example* → end card
+**Shots:** cold open → title → **locator: step 7, completing the map** → objective → *From insight to action* → *Assumptions and limitations* → *Putting a model into use is also a decision* → *Why decisions still need judgment* → *Example*
 
 **Note:** Complete the locator diagram on screen here. The chapter closes as the map fills in.
 
@@ -280,7 +281,7 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 **Cold open:** *Everyone new to data asks which tool to learn first.*
 
-**Shots:** cold open → title → objective → *Why there are many tools* → *Core tools in data work* → **table** Tool / What it is / When you reach for it → *Example workflow* → **diagram build (4)** → end card
+**Shots:** cold open → title → objective → *Why there are many tools* → *Core tools in data work* → **table** Tool / What it is / When you reach for it → *Example workflow* → **diagram build (4)**
 
 **Diagram build:** `SQL` → `Python`, then **branch** to `Excel report` and `Power BI dashboard` simultaneously. The branch is the point: one analysis, two audiences. Do not build the two outputs sequentially.
 
@@ -292,7 +293,7 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 **Cold open:** *Spreadsheets work well until three things happen: the data grows too large, the same report is needed every week, or someone asks you to prove how a number was produced.*
 
-**Shots:** cold open → title → objective → *What code solves* → *Asking a database a question* → **code slide: SQL** → *Working through data step by step* → **code slide: Python** → end card
+**Shots:** cold open → title → objective → *What code solves* → *Asking a database a question* → **code slide: SQL** → *Working through data step by step* → **code slide: Python**
 
 **Code slides:** the only code in the entire course, and a different shooting setup from every other video. Highlight line by line. Say the framing sentence first, *"You are not expected to understand the examples coming up"* - before either slide appears, or beginners will disengage on sight of the SQL.
 
@@ -304,7 +305,7 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 **Cold open:** *Six job titles, heavily overlapping skills, and no agreement between companies about what any of them actually mean. Here is the map.*
 
-**Shots:** cold open → title → objective → *How people move between roles* → **diagram build (6)** → *Shared skills across data roles* → *Common data careers* → **table** Role / The question they answer → *The title is not the job* → end card
+**Shots:** cold open → title → objective → *How people move between roles* → **diagram build (6)** → *Shared skills across data roles* → *Common data careers* → **table** Role / The question they answer → *The title is not the job*
 
 **Diagram build:** start with `Data Analyst` alone and hold. It is the most common way into the field, and the pause makes the point. Then branch: `Business Analyst`, `Analytics Engineer`, `Data Scientist`, then `Data Engineer` and `ML Engineer` on the outside. Say the caption as the last two land: very few people enter the field at the right-hand end. Do not let the delivery imply the course trains for one specific role. It names no destination. **The lesson used to end with a five-branch "which role fits you" quiz, which did exactly that; it has been replaced.** The closing section now delivers the cold open's actual claim, that titles are inconsistent between companies, and sends the viewer to the job description instead.
 
@@ -314,7 +315,7 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 **Cold open:** *A clinic, a money transfer service, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.*
 
-**Shots:** cold open → title → objective → *The methods travel; the questions do not* → *The three from the cold open* → *More of the same* → **table** Where / What they ask data → *Key takeaway* → end card
+**Shots:** cold open → title → objective → *The methods travel; the questions do not* → *The three from the cold open* → *More of the same* → **table** Where / What they ask data → *Key takeaway*
 
 **Note:** Three-panel visual for the cold open - clinic, money transfer, school - held through the lesson and returned to at the takeaway. The lesson used to name six industries in a table and then narrate the same six again; it now delivers the three the cold open promises, in depth, and lists the rest once.
 
@@ -332,9 +333,9 @@ Each of the three closes on what a *wrong* answer costs: an unfinished treatment
 
 **Cold open:** *The most damaging data projects are rarely built by bad people. They are built by good teams who never stopped to ask whether they should.*
 
-**Shots:** cold open → title → objective → *Case study: the loan scoring project* → *When the numbers are true but the chart lies* → **table** Month / Repayment rate → **chart A (truncated axis)** → **chart B (full axis)** → *Principles of responsible data use* → end card
+**Shots:** cold open → title → objective → **definition:** Data ethics → *Case study: the loan scoring project* → *When the numbers are true but the chart lies* → **table** Month / Repayment rate → **chart A (truncated axis)** → **chart B (full axis)** → *Principles of responsible data use*
 
-**The chart pair is the most important asset in the course.** Currently drawn in ASCII hash marks because Markdown has no graphics. Video does.
+**The chart pair is the most important visual in the course.** Currently drawn in ASCII hash marks because Markdown has no graphics. Video does.
 
 Sequence it precisely:
 1. Show the four repayment numbers as a table. Hold. Let the viewer own them.
@@ -351,7 +352,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 **Cold open:** *Everyone clicked "agree". Almost nobody read it.*
 
-**Shots:** cold open → title → objective → *Case study: consent in the loan project* → *The life of a piece of personal data* → **diagram build (5)** → *Security in the loan project* → end card
+**Shots:** cold open → title → objective → **definitions:** Privacy / Consent → *Case study: consent in the loan project* → *The life of a piece of personal data* → **diagram build (5)** → *Security in the loan project*
 
 **Diagram build:** `Ask consent` → `Collect only what is needed` → `Store securely` → `Use for the stated purpose` → `Delete when no longer needed`. Five beats. The last node is the one organizations skip. Hold on it.
 
@@ -363,7 +364,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 **Cold open:** *A model can sort people by gender using data that contains no gender field anywhere in it.*
 
-**Shots:** cold open → title → objective → *Case study: bias in the loan project* → **table** Source of bias / Example → *How bias repeats itself* → **diagram build (4, looping)** → *What fairness means* → end card
+**Shots:** cold open → title → objective → **definition:** Bias → **table** Source of bias / Example → *Case study: bias in the loan project* → *How bias repeats itself* → **diagram build (4, looping)** → *What fairness means*
 
 **Diagram build:** `Past decisions` → `Training data` → `Model` → `New decisions` → **and back to `Past decisions`**. This is the only cyclic diagram in the course. Build the four nodes, pause, then draw the closing edge, and let it loop two or three times on screen while you explain that the system is now teaching itself its own history.
 
@@ -375,11 +376,11 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 **Cold open:** *Every failure in this chapter had someone who could have raised a concern.*
 
-**Shots:** cold open → title → objective → *Case study: governance in the loan project* → **table** Problem from earlier lessons / The rule that catches it → *Regulations* → *How the case ends* → end card
+**Shots:** cold open → title → objective → **definition:** Data governance → *Case study: governance in the loan project* → **table** Problem from earlier lessons / The rule that catches it → *Regulations* → *How the case ends*
 
 **The 7-row table is the chapter's payoff.** Six of the seven rows are callbacks to something the viewer watched go wrong. Reveal those one at a time and name which lesson each came from. The seventh, retention, never happened in the case, and the lesson says so on purpose: the point is that rules are written from other people's failures, not only your own as it lands. This is the only place in the course where a table is a narrative rather than a reference. Shoot it that way, ~15s per row.
 
-**Note:** end on the case resolution, not the regulations. *"It is usually slower. It is not usually worse."* is the last line of chapter 5. Hold, then end card.
+**Note:** end on the case resolution, not the regulations. *"It is usually slower. It is not usually worse."* is the last line of chapter 5. Hold on that final line while you close the chapter.
 
 ---
 
@@ -391,11 +392,11 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 **Cold open:** *You have completed the core lessons of this course, and you now have the vocabulary this field runs on.*
 
-**Shots:** cold open → title → objective → *What you learned* → *The full journey* → **diagram build (8)** → end card
+**Shots:** cold open → title → objective → *What you learned* → *The full journey* → **diagram build (8)**
 
 **Diagram build:** `Problem` → `Question` → `Data` → `Cleaning` → `Analysis` → `Visualization` → `Insight` → `Decision`. Longest build in the course, eight beats. Speak each stage as it lands and name the chapter it came from. This is the recap doing its job.
 
-**Note:** this lesson deliberately does **not** say what comes next, because the course promises no curriculum. End on the closing line about judgment outlasting tools, over the diagram. Do not ad-lib a "next course" tease here or in the end card.
+**Note:** this lesson deliberately does **not** say what comes next, because the course promises no curriculum. End on the closing line about judgment outlasting tools, over the diagram. Do not ad-lib a "next course" tease.
 
 ---
 
@@ -403,7 +404,7 @@ Do not cut between two static charts. The morph is what makes it undeniable, and
 
 **Cold open:** *One business problem. Six steps. Every idea in this course, used once.*
 
-**Shots:** cold open → title → objective → *Scenario* → step 1 → step 2 → step 3 → step 4 → step 5 → step 6 → *Final decision* → *What this scenario shows* → end card
+**Shots:** cold open → title → objective → *Scenario* → step 1 → step 2 → step 3 → step 4 → step 5 → step 6 → *Final decision* → *What this scenario shows*
 
 **Shot-list note:** this is the one lesson whose shots are numbered rather than named. Its `###` headings *are* `Step 1` … `Step 6`, so the shorthand above is the heading list, not a summary of it.
 
@@ -438,6 +439,6 @@ Not lesson order. Group by setup and by what has to exist first.
 | Welcome | 1 | ~3 min |
 | **Total** | **34 videos** | **≈ 2h 41m** |
 
-Estimates come from measured prose words at 130–150 wpm with a 1.4–1.9× spoken expansion, plus dwell time per table row, diagram, and code block. Every per-lesson figure already assumes rule 4, with Key Terms shown on the end card rather than read aloud, so the numbers here are what you shoot to, and they sum to the total below. Narrating them adds 15–20 minutes and costs you 27 endings.
+Estimates come from measured prose words at 130–150 wpm with a 1.4–1.9× spoken expansion, plus dwell time per table row, diagram, and code block. Every lesson holds its final teaching slide during the close; no Key Terms cards remain. The closing narration is unchanged, so this does not materially change the estimates.
 
-Line count is not a proxy for runtime and should not be used as one: lesson 4.1 is 83 lines and 674 words, lesson 6.2 is 122 lines and 558 words.
+Line count is not a proxy for runtime and should not be used as one: lesson 4.1 is 83 lines and 674 words, lesson 6.2 is 118 lines and 558 words.

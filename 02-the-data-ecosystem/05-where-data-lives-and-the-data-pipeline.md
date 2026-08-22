@@ -14,7 +14,7 @@ Organizations store data in different systems depending on purpose and scale.
 
 | System | Purpose |
 |---|---|
-| **Database** | Stores structured business data for daily operations |
+| **Database** | Stores and retrieves structured business data for daily operations |
 | **Data warehouse** | Stores large amounts of historical data for analysis |
 | **Data lake** | Stores raw data in many formats, often at large scale |
 | **Spreadsheets / files** | Useful for small datasets and quick work |
@@ -55,11 +55,3 @@ Follow the payment from the top of the lesson.
 6. The manager sees the result in a **dashboard**, three weeks later
 
 Six stages, and the number on the dashboard is the only one anybody in that meeting will ever see.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Database** | A structured system for storing and retrieving data |
-| **Data pipeline** | A workflow that moves data from its source to its final use |
-| **Transform** | Reshaping or preparing data for analysis |

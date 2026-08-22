@@ -56,11 +56,3 @@ Data is not only found in spreadsheets or databases. You create and use data con
 - Weather forecasts
 
 Businesses, schools, hospitals, and governments all rely on data to make decisions.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data** | Raw facts, measurements, or observations |
-| **Information** | Data that has been organized to convey meaning |
-| **Insight** | A meaningful conclusion, supported by data, that helps guide a decision |

@@ -24,6 +24,8 @@ Examples:
 
 Every analysis depends on assumptions.
 
+An **assumption** is something believed to be true for the analysis to hold.
+
 Examples:
 
 - The data is accurate enough to trust
@@ -31,7 +33,7 @@ Examples:
 - Past patterns will continue in the future
 - No important variables were left out
 
-You should also report **limitations**, such as:
+A **limitation** is a weakness or boundary in the data or method. Common limitations include:
 
 - Missing data
 - Small sample size
@@ -66,10 +68,3 @@ Possible decisions:
 - Test a smaller discount and measure results
 
 The analysis narrows three options to three trade-offs. Choosing between them is not a data question, and pretending it is will only disguise who actually made the decision.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Assumption** | Something believed to be true for the analysis to hold |
-| **Limitation** | A weakness or boundary in the data or method |

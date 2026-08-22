@@ -30,15 +30,15 @@ NN-chapter-slug/NN-lesson-slug.md    lessons
 
 A chapter folder reads top to bottom in shooting order: opener, then lessons. The numeric prefix carries that order, with `00-` before the lessons.
 
-**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons, checks `**By the end:**`, or extracts Key Terms **must exclude `00-*`**, or it will report 33 lessons instead of 27 and flag six files as missing their Overview and Key Terms sections.
+**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons or checks `**By the end:**` **must exclude `00-*`**, or it will report 33 lessons instead of 27. A Key Terms audit must also account for all 27 lessons, which intentionally have no closing tables.
 
 Chapter order and lesson counts are declared in `README.md`'s Chapters table. Update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
 
-**Renaming a chapter means renaming four things, not one.** The folder slug, the `**Chapter:**` line in every lesson plus the opener, the `Ch N - Name` column in `GLOSSARY.md`, and any generated-asset name under `diagrams/` that carried the old wording. Code holds paths in two places - the `REGISTER` in `tools/gen_diagram.py` and `DECKS` in `tools/build_slides.py` - and both must move with the folder. Chapter 3 was renamed this way in full; use it as the worked example.
+**Renaming a chapter means renaming four things, not one.** Change the folder slug, the `**Chapter:**` line in every lesson plus the opener, the `Ch N - Name` column in `GLOSSARY.md`, and the chapter link in `README.md`. Chapter 3 was renamed this way in full; use it as the worked example.
 
 ## Lesson file convention
 
-Every lesson file follows this exact shape (confirmed across all 27 files):
+Every lesson file begins with this shape:
 
 ```markdown
 # Lesson Title
@@ -51,50 +51,23 @@ Every lesson file follows this exact shape (confirmed across all 27 files):
 (intro paragraph)
 
 ### Subsection headings...
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
 ```
 
-- `## Overview` is mandatory on every lesson. `## Key Terms` is expected but **not mandatory** - include it only where the lesson genuinely introduces vocabulary, and omit it rather than padding the table to a minimum count. A term whose word never appears in the lesson body is a term the lesson did not teach. Demonstration lessons that reuse already-defined vocabulary (e.g. `04/02-why-data-work-uses-code.md`) correctly have no table.
+- `## Overview` is mandatory on every lesson. All learner-facing `## Key Terms` tables have been removed: vocabulary is defined at the point of teaching and collected once in `GLOSSARY.md`. Lesson 4.2 already followed this pattern because it demonstrates previously defined vocabulary.
+- Vocabulary must still be taught before it appears in the glossary. Removing a table is not permission to leave a term defined only in `GLOSSARY.md`.
 - A Key Term may still be a *label* for a concept the lesson teaches without naming - "Misleading visualization" and "Feedback loop" both qualify. The test is whether the concept is taught, not whether the exact phrase appears.
 - `**Chapter:**` / `**Lesson:**` header block must match the lesson's actual position and the README's per-chapter lesson count.
 - Some lessons include a `mermaid` `flowchart` block (fenced ` ```mermaid `) to visualize a process (e.g. data → information → insight). Use this sparingly, only where a diagram clarifies a flow better than prose.
 - Tables are used heavily for term definitions and comparisons - keep that style rather than switching to bullet lists.
-- **There are no em dashes in this repo, anywhere.** Not in prose, not in the `**Chapter:** N - Name` metadata block, not in the `Ch N - Name` column of `GLOSSARY.md`, not in `- **Term** - definition` rows, not in the deck eyebrows or the diagram plate titles, and not in the internal documents either. Use a **comma** where the aside is light, a **full stop** where it is a separate thought, a **colon** where the second half specifies the first, and a plain **hyphen** where a template needs a separator. A pair of em dashes around a phrase is rewritten, not swapped: "differ in what they produce - a report, a dashboard - not in how they start" is worse than the dashes were, so recast the sentence instead. `grep -r "\u2014" .` must return nothing.
+- **There are no em dashes in this repo, anywhere.** Not in prose, not in the `**Chapter:** N - Name` metadata block, not in the `Ch N - Name` column of `GLOSSARY.md`, and not in `- **Term** - definition rows. Use a **comma** where the aside is light, a **full stop** where it is a separate thought, a **colon** where the second half specifies the first, and a plain **hyphen** where a template needs a separator. A pair of em dashes around a phrase is rewritten, not swapped: "differ in what they produce - a report, a dashboard - not in how they start" is worse than the dashes were, so recast the sentence instead. `grep -r "\u2014" .` must return nothing.
 - **Other tells to stay clear of**, all currently at zero: the adverb tricolon ("accurately, responsibly, and fairly"), `Note that` / `It is worth noting` / `It is important to`, and the vocabulary set *delve, leverage, robust, seamless, ever-growing, in today's world*. A closing sentence that only restates the paragraph above it is the same failure in a different costume.
 - **Examples are Somali.** Scenarios are grounded and everyday - mobile money transfers, market prices in $/kg, school attendance. Where a person is named, the name is Somali (Hodan Warsame, Farah Guled, Sagal Ibrahim); where a place is named, it is Somali (Hargeisa, Muqdisho). This is a Somali course and a generically "international" example is still the wrong example. Note that most lessons name nobody at all - "a shop owner", "a market trader", "a manager" - so prefer an unnamed actor and reach for a name only when the example genuinely needs one, as a table of customer records does.
 
-## Start here after a restart
+## Repository scope
 
-`HANDOFF.md` carries the current state and the open questions. Read it before touching visual assets.
+This repository intentionally contains the source Markdown only. The previous PDF, slide, diagram-generation, sample-output, and visual-reference files were removed. Do not recreate or infer that retired visual system; a new visual reference will be supplied separately.
 
-**Building a slide deck for a lesson? Read `SLIDES.md` first.** It is the procedure: the rules with their reasons, the step order, the pre-ship checklist, and a table of traps that have already cost a rebuild each. Two decks exist as worked examples; 25 remain.
-
-## Repo layout beyond the lessons
-
-```
-tools/        gen_diagram.py, lesson.css, slides.css, build_slides.py, build_production_page.py
-samples/      worked examples - the reference for what a lesson page and deck look like
-NN-*/diagrams/  generated .drawio + .svg per chapter
-```
-
-The repo was Markdown-only until the design system landed. `tools/` is generation code, not application code: `python3 tools/gen_diagram.py` regenerates every diagram in place from the `REGISTER` at the bottom of that file, and reproduces byte-identical output. `PYTHONPATH=tools python3 tools/build_slides.py [key]` builds the 16:9 decks declared in its `DECKS` table (`--no-pdf` skips WeasyPrint).
-
-The PDF toolchain lives in a `.venv` that is **not** committed. Recreate it with `python3 -m venv .venv && .venv/bin/pip install weasyprint`.
-
-## Visual assets
-
-`DESIGN.md` is the locked design system for every PDF, slide, and `.drawio` diagram: palette, type scale, spacing scale, page geometry, component set, and diagram styles. **Read it before generating any visual asset, and change it before deviating from it.**
-
-Two constraints from it are load-bearing and easy to get wrong:
-
-- **Mint `#3ACC69` measures 1.97:1 on paper - it may never carry text on a light ground.** Mint-colored text uses `--mint-deep` `#1F7D3D`. Mint is for shapes, fills, rules, and bars.
-- **Pages are top-aligned and never filled.** Empty page bottoms are the intended look; do not pad to reach the margin.
-
-Reference documents for that system: `MCP-field-guide.pdf` (layout and spacing only) and the three brand swatches recorded in `DESIGN.md` §1.
+`PRODUCTION.md` remains the recording plan. It describes shot order and required teaching visuals without prescribing a visual style.
 
 ## Opener and welcome convention
 

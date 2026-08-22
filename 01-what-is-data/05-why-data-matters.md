@@ -48,10 +48,3 @@ None of these people are data professionals. All of them are better at their own
 Poor data can mislead people. Mishandled personal data can harm privacy. Biased data can lead to unfair outcomes.
 
 Chapter five deals with all three, and it comes before you have any tools to do damage with.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Competitive advantage** | An edge that helps an organization perform better than others |
-| **Data-driven** | Using data to guide actions and decisions |

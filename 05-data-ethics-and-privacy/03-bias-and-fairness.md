@@ -12,7 +12,7 @@ A model can sort people by gender using data that contains no gender field anywh
 
 | Source of bias | Example |
 |---|---|
-| **Sampling bias** | Data comes from only one group |
+| **Sampling bias** | Data does not represent the full population fairly |
 | **Measurement bias** | Data is collected differently across groups |
 | **Historical bias** | Past discrimination is embedded in the data |
 | **Reporting bias** | Some events are recorded more than others |
@@ -51,7 +51,7 @@ flowchart LR
     decisionNode --> pastNode
 ```
 
-The model rejects market traders because the training data contains few approved market traders. Those rejections become next year's training data, which contains even fewer. The model grows more confident each cycle, and that confidence proves nothing except that it agrees with itself.
+This creates a **feedback loop**: the model's decisions become data that trains its future decisions. The model rejects market traders because the training data contains few approved market traders. Those rejections become next year's training data, which contains even fewer. The model grows more confident each cycle, and that confidence proves nothing except that it agrees with itself.
 
 A biased system does not stay as wrong as it started. Left alone, it gets worse.
 
@@ -64,13 +64,3 @@ Fairness is not treating every case identically. It is avoiding unjust harm, and
 - Test decisions on a small scale before applying them widely
 
 Not one of those requires a statistician. They require somebody whose job it is to look, which is what the next lesson is about.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Bias** | Systematic unfairness in data or analysis |
-| **Fairness** | Avoiding unjust harm in data-driven decisions |
-| **Sampling bias** | When data does not represent the full population fairly |
-| **Proxy variable** | A field that indirectly stands in for information you did not measure |
-| **Feedback loop** | When a system's own decisions become the data that trains its future decisions |

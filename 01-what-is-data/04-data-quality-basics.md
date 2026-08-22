@@ -10,7 +10,7 @@ A manager forwards you a customer list and asks for the average age. Two minutes
 
 ### Why data quality matters
 
-A decision built on missing, duplicated, or mistyped numbers can look completely logical and still be wrong, because nothing in the reasoning shows the fault. It is in the inputs. That is why data professionals spend significant time checking data before analyzing it.
+**Data quality** tells you whether a dataset is fit for the job you need it to do. A decision built on missing, duplicated, or mistyped numbers can look completely logical and still be wrong, because nothing in the reasoning shows the fault. It is in the inputs. That is why data professionals spend significant time checking data before analyzing it.
 
 ### Common data quality problems
 
@@ -57,12 +57,3 @@ Three of the four break the average age, and each one breaks it differently:
 Average the ages exactly as the table gives them and you get **72**. Remove the impossible value, count Farah once, and set Sagal's blank aside, and you get **30.5**. Same file, same question, same arithmetic, and an answer that would have sent the manager looking for a customer base that does not exist.
 
 The fourth does not touch the average at all. `Hargeisa` and `hargeisa` are **inconsistent**, and it would matter enormously if the question were about cities. But the manager asked about age. Which faults matter depends on the question you were asked.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data quality** | How fit data is for its intended use |
-| **Accuracy** | Whether data values are correct |
-| **Completeness** | Whether required data is present |
-| **Consistency** | Whether data follows the same format and rules |

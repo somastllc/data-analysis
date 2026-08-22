@@ -6,7 +6,7 @@
 
 ## Overview
 
-One customer cancels a subscription. Five different people end up touching that single event, and not one of them could have handled it alone. Data analysis, business intelligence, data science, machine learning, and data engineering are separate fields, but they work as one ecosystem.
+One customer cancels a subscription. Five different people end up touching that single event, and not one of them could have handled it alone. Data analysis, business intelligence, data science, machine learning, and data engineering are separate fields. Together, their connected roles, tools, and processes form a **data ecosystem**.
 
 ### One ecosystem, many roles
 
@@ -54,9 +54,3 @@ Chapter 2's four types were not four separate jobs after all. They were four sta
 Nobody in that chain did the whole thing, and nobody needed to. What each of them needed was to know what the person before them had done, and what the person after them was going to do with it.
 
 That is the practical value of knowing the ecosystem: not that you will work in all of it, but that you will be handed something by someone and expected to know what it is.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data ecosystem** | The connected roles, tools, and processes around data |

@@ -17,7 +17,7 @@ An analyst opens a report and finds three different versions of the same sales n
 Common responsibilities include:
 
 - Building **data pipelines** that collect data from different sources
-- Storing data in **databases**, **data warehouses**, or **data lakes**
+- Storing data in databases, data lakes, or a **data warehouse** - a centralized system designed for analysis and reporting
 - Cleaning and transforming data at scale
 - Ensuring data is available, secure, and efficient to access
 - Working with cloud platforms and automation tools
@@ -45,10 +45,3 @@ The wholesaler from the previous lesson has data arriving from four places at on
 - Phone orders, written into a notebook and typed up at the end of the day
 
 None of these agree on how a product is named, and two of them arrive late. A data engineer builds the pipelines that pull all four together, reconcile the product names, and deliver one clean table that an analyst can actually use, every morning, without anyone being asked.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Data engineering** | Building systems to collect, store, and prepare data |
-| **Data warehouse** | A centralized system designed for analysis and reporting |

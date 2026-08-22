@@ -14,6 +14,8 @@ A subscription-based fitness app notices that many users cancel after the first 
 
 **"Why are new users cancelling, and what should we do about it?"**
 
+When customers stop using a product or service, that loss is called **churn**.
+
 Let's walk through the project using this course's framework.
 
 ### Step 1: Define the problem and ask questions
@@ -55,7 +57,7 @@ Findings:
 - 40% of cancellations happen within the first 14 days
 - Users who complete fewer than 3 workouts are more likely to cancel
 - Support response times are slower on weekends
-- Survey responses mention "confusing onboarding"
+- Survey responses describe **onboarding**, the first experience new users have with the product, as confusing
 
 Visuals include:
 
@@ -114,10 +116,3 @@ One business problem touches every part of the course:
 This scenario was answered with charts and a report. The same six steps, run by a data scientist, would have ended in a model that scores each new user's likelihood of cancelling: different output, same problem, same order, same obligation to name what it assumed.
 
 That is how data work happens in the real world.
-
-## Key Terms
-
-| Term | Definition |
-|---|---|
-| **Churn** | When customers stop using a product or service |
-| **Onboarding** | The first experience new users have with a product |
