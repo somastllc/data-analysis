@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Beginner course "Data Fundamentals for Beginners": 27 Markdown lessons across 6 chapters. No code, no build/lint/test tooling. All work is content writing/editing.
+Beginner course "Data Fundamentals for Beginners": 27 Markdown lessons across 6 chapters. The Markdown files remain the curriculum source. Visual lesson exports are now being added as self-contained HTML presentations with SVG assets and print-ready PDFs. There is no conventional application build, lint, or test suite.
 
 ## Position in the curriculum
 
@@ -26,6 +26,9 @@ Learners have **no tools yet**. Python, Git, and SQL all come later. Nothing in 
 ```
 NN-chapter-slug/00-opener.md         video opener script (production only, not a lesson)
 NN-chapter-slug/NN-lesson-slug.md    lessons
+exports/html/                        self-contained visual lesson HTML packages
+exports/pdf/                         final print-ready lesson PDFs
+references/                          user-supplied visual references
 ```
 
 A chapter folder reads top to bottom in shooting order: opener, then lessons. The numeric prefix carries that order, with `00-` before the lessons.
@@ -63,11 +66,87 @@ Every lesson file begins with this shape:
 - **Other tells to stay clear of**, all currently at zero: the adverb tricolon ("accurately, responsibly, and fairly"), `Note that` / `It is worth noting` / `It is important to`, and the vocabulary set *delve, leverage, robust, seamless, ever-growing, in today's world*. A closing sentence that only restates the paragraph above it is the same failure in a different costume.
 - **Examples are Somali.** Scenarios are grounded and everyday - mobile money transfers, market prices in $/kg, school attendance. Where a person is named, the name is Somali (Hodan Warsame, Farah Guled, Sagal Ibrahim); where a place is named, it is Somali (Hargeisa, Muqdisho). This is a Somali course and a generically "international" example is still the wrong example. Note that most lessons name nobody at all - "a shop owner", "a market trader", "a manager" - so prefer an unnamed actor and reach for a name only when the example genuinely needs one, as a table of customer records does.
 
-## Repository scope
+## Visual lesson exports
 
-This repository intentionally contains the source Markdown only. The previous PDF, slide, diagram-generation, sample-output, and visual-reference files were removed. Do not recreate or infer that retired visual system; a new visual reference will be supplied separately.
+The retired visual system is no longer the reference. A new reference has been supplied at `references/Data Fundamentals Lesson.pdf`, and Lesson 1.1 is the first completed export using the new workflow.
 
-`PRODUCTION.md` remains the recording plan. It describes shot order and required teaching visuals without prescribing a visual style.
+Current structure:
+
+```text
+exports/
+├── html/
+│   ├── Lesson 01 - What Is Data.html
+│   └── assets/lesson-01/
+│       ├── data-to-clue.excalidraw
+│       ├── data-to-clue.excalidraw.svg
+│       ├── patterns-emerge.svg
+│       ├── raw-ingredients.svg
+│       ├── prepared-meal.svg
+│       └── next-decision.svg
+└── pdf/
+    └── Lesson 01 - What Is Data.pdf
+
+references/
+└── Data Fundamentals Lesson.pdf
+```
+
+Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual sources and rendered SVGs belong under a lesson-specific assets folder. Final PDFs belong in `exports/pdf/`. User-supplied examples belong in `references/` and should not be overwritten when regenerating an export.
+
+`PRODUCTION.md` remains the recording plan. It describes shot order and required teaching visuals. The supplied PDF and completed Lesson 1.1 export now provide the practical visual baseline.
+
+### Current visual production progress
+
+- Lesson 1.1, "What Is Data?", is complete as an eight-slide HTML presentation and an eight-page PDF.
+- The PDF uses a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
+- The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
+- The main data-to-pattern diagram has both an editable `.excalidraw` source and an exported SVG.
+- Four supporting illustrations are editable standalone SVGs.
+- All five SVG exports pass the SVG validator and XML parsing.
+- No other lesson has been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
+
+### HTML and PDF conventions
+
+- Each slide is a direct `section` child of `x-import` and is designed at 1920 x 1080.
+- Print CSS sets `@page` to `10in 5.625in`, scales each slide with `zoom: .5`, and forces one section per page.
+- The normal browser deck and printed PDF share the same HTML. Do not maintain a second hand-edited PDF-only document.
+- HTML asset paths are relative to `exports/html/`. Lesson 1.1 uses `assets/lesson-01/...`.
+- Keep informative `alt` text on every SVG image.
+- Excalidraw SVG backgrounds should be transparent unless the illustration genuinely needs a filled panel.
+- Avoid fixed tall wrappers around wide diagrams. They create large empty blocks when a shallow SVG uses `object-fit: contain`.
+- A normal browser `load` listener initializes Lucide icons for PDF export. The custom deck lifecycle alone does not run when Chrome prints the raw HTML.
+
+### Re-exporting a lesson PDF
+
+Run headless Chrome against the HTML package and write the result to `exports/pdf/`. For Lesson 1.1:
+
+```bash
+google-chrome-stable \
+  --headless=new \
+  --no-sandbox \
+  --disable-gpu \
+  --allow-file-access-from-files \
+  --run-all-compositor-stages-before-draw \
+  --virtual-time-budget=10000 \
+  --no-pdf-header-footer \
+  --print-to-pdf-no-header \
+  --print-to-pdf="$(pwd)/exports/pdf/Lesson 01 - What Is Data.pdf" \
+  "file://$(pwd)/exports/html/Lesson%2001%20-%20What%20Is%20Data.html"
+```
+
+After export, verify the page count and dimensions:
+
+```bash
+pdfinfo "exports/pdf/Lesson 01 - What Is Data.pdf"
+```
+
+Expected result for Lesson 1.1: 8 pages at 720 x 404.88 points.
+
+Validate SVG assets with:
+
+```bash
+bash /home/sharafdin/.agents/skills/svg-skill/scripts/validate.sh exports/html/assets/lesson-01
+xmllint --noout exports/html/assets/lesson-01/*.svg
+```
 
 ## Opener and welcome convention
 
@@ -100,4 +179,5 @@ The four ethics lessons follow one continuous scenario - a mobile money company 
 
 - Adding/removing/reordering a lesson: renumber the file prefix, fix the in-file `**Lesson:** N of TOTAL` for every lesson in that chapter, and update `README.md`'s table (lesson count and the total of 27).
 - Duration in the README is derived from actual length - recheck it after substantial additions rather than leaving a stale claim.
-- No build, lint, or test commands exist for this repo. Validate by reading the rendered Markdown, and check that code fences are balanced.
+- Markdown has no build, lint, or test command. Validate it by reading the rendered files and checking that code fences are balanced.
+- For visual exports, inspect the rendered PDF pages in addition to running the SVG and PDF checks documented above. A successful command is not enough if text is clipped, icons are missing, arrows cross labels, or a diagram leaves excessive empty space.
