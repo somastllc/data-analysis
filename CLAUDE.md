@@ -76,15 +76,39 @@ Current structure:
 exports/
 ├── html/
 │   ├── Lesson 01 - What Is Data.html
-│   └── assets/lesson-01/
-│       ├── data-to-clue.excalidraw
-│       ├── data-to-clue.excalidraw.svg
-│       ├── patterns-emerge.svg
-│       ├── raw-ingredients.svg
-│       ├── prepared-meal.svg
-│       └── next-decision.svg
+│   ├── Lesson 02 - Types of Data.html
+│   ├── Lesson 03 - Sources and Formats of Data.html
+│   ├── Lesson 04 - Data Quality Basics.html
+│   ├── Lesson 05 - Why Data Matters.html
+│   ├── assets/lesson-01/
+│   │   ├── data-to-clue.excalidraw
+│   │   ├── data-to-clue.excalidraw.svg
+│   │   ├── patterns-emerge.svg
+│   │   ├── raw-ingredients.svg
+│   │   ├── prepared-meal.svg
+│   │   └── next-decision.svg
+│   ├── assets/lesson-02/
+│   │   ├── structured-table.svg
+│   │   ├── unstructured-media.svg
+│   │   ├── semi-structured-json.svg
+│   │   ├── quantitative-measures.svg
+│   │   └── qualitative-categories.svg
+│   ├── assets/lesson-03/
+│   │   ├── primary-firsthand.svg
+│   │   ├── secondary-reused.svg
+│   │   └── source-format-checks.svg
+│   ├── assets/lesson-04/
+│   │   ├── garbage-in-garbage-out.svg
+│   │   └── same-data-different-average.svg
+│   └── assets/lesson-05/
+│       ├── evidence-vs-memory.svg
+│       └── data-responsibility.svg
 └── pdf/
-    └── Lesson 01 - What Is Data.pdf
+    ├── Lesson 01 - What Is Data.pdf
+    ├── Lesson 02 - Types of Data.pdf
+    ├── Lesson 03 - Sources and Formats of Data.pdf
+    ├── Lesson 04 - Data Quality Basics.pdf
+    └── Lesson 05 - Why Data Matters.pdf
 
 references/
 └── Data Fundamentals Lesson.pdf
@@ -94,15 +118,21 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 
 `PRODUCTION.md` remains the recording plan. It describes shot order and required teaching visuals. The supplied PDF and completed Lesson 1.1 export now provide the practical visual baseline.
 
+**Page and asset counts are content-driven.** Lesson 1.1 having eight slides and five SVGs is a reference result, not a fixed template or quota. Plan every lesson from its exact Markdown content and give each idea enough room to remain clear and readable. A lesson may use eight pages, fewer than eight, or more than eight. The SVG count may also be lower, equal, or higher depending on which concepts genuinely benefit from a custom visual. Do not add filler pages or unnecessary SVGs to match Lesson 1.1, and do not compress content merely to stay at eight pages. Eight pages is fully acceptable when it naturally fits the lesson.
+
 ### Current visual production progress
 
 - Lesson 1.1, "What Is Data?", is complete as an eight-slide HTML presentation and an eight-page PDF.
-- The PDF uses a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
+- Lesson 1.2, "Types of Data", is complete as a seven-slide HTML presentation and a seven-page PDF with five standalone SVG illustrations.
+- Lesson 1.3, "Sources and Formats of Data", is complete as a seven-slide HTML presentation and a seven-page PDF with three standalone SVG illustrations.
+- Lesson 1.4, "Data Quality Basics", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone SVG illustrations.
+- Lesson 1.5, "Why Data Matters", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone SVG illustrations.
+- All five PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
 - The main data-to-pattern diagram has both an editable `.excalidraw` source and an exported SVG.
 - Four supporting illustrations are editable standalone SVGs.
-- All five SVG exports pass the SVG validator and XML parsing.
-- No other lesson has been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
+- All seventeen SVG exports across the five completed lessons pass the SVG validator and XML parsing.
+- All five Chapter 1 lessons are converted. No Chapter 2 lesson has been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
 
 ### HTML and PDF conventions
 

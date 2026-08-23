@@ -10,7 +10,7 @@ A manager forwards you a customer list and asks for the average age. Two minutes
 
 ### Why data quality matters
 
-**Data quality** tells you whether a dataset is fit for the job you need it to do. A decision built on missing, duplicated, or mistyped numbers can look completely logical and still be wrong, because nothing in the reasoning shows the fault. It is in the inputs. That is why data professionals spend significant time checking data before analyzing it.
+**Data quality** tells you whether a dataset is fit for the job you need it to do. A decision built on missing, duplicated, or mistyped numbers can look completely logical and still be wrong, because nothing in the reasoning shows the fault. It is in the inputs. This idea is often summarized as **garbage in, garbage out (GIGO)**: poor input data produces poor output, even when the calculation or tool works correctly. That is why data professionals spend significant time checking data before analyzing it.
 
 ### Common data quality problems
 

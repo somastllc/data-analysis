@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">One dataset checked for source and format independently</title>
+  <desc id="desc">A central dataset branches into two separate questions. Its source affects trust, while its format affects the effort required to open it.</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#AEEBC5" opacity=".58"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="760" height="360" rx="20" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <g>
+      <path d="M316 61 Q318 49 330 50 H442 L484 93 V258 Q484 271 471 271 H329 Q316 270 317 257Z" fill="#FFFFFF" stroke-width="4"/>
+      <path d="M442 51 V94 H483" fill="#EDFBF2" stroke-width="3"/>
+      <path d="M349 126 H453 M349 157 H453 M349 188 H432 M349 219 H445" fill="none" stroke="#8B9494" stroke-width="2.5"/>
+      <circle cx="400" cy="235" r="12" fill="#3ACC69" stroke-width="3"/>
+    </g>
+    <path d="M307 139 C258 113 231 103 185 110" fill="none" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M493 139 C541 113 571 104 619 111" fill="none" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow)"/>
+    <g>
+      <circle cx="123" cy="143" r="64" fill="#EDFBF2" stroke-width="3.5"/>
+      <circle cx="112" cy="132" r="27" fill="#FFFFFF" stroke-width="3"/>
+      <path d="M132 153 158 180" fill="none" stroke-width="5"/>
+      <path d="M101 132 Q111 121 124 132" fill="none" stroke="#1A733A" stroke-width="3"/>
+    </g>
+    <g>
+      <circle cx="637" cy="143" r="64" fill="#FFFFFF" stroke-width="3.5"/>
+      <path d="M599 116 H662 L678 132 V179 H599Z" fill="#EDFBF2" stroke-width="3"/>
+      <path d="M662 117 V133 H677" fill="#D5F5E1" stroke-width="2.2"/>
+      <path d="M613 146 H661 M613 162 H651" fill="none" stroke="#6E7676" stroke-width="2.2"/>
+      <path d="M612 102 H626 M635 102 H649 M658 102 H671" fill="none" stroke="#1A733A" stroke-width="3"/>
+    </g>
+    <path d="M123 210 V251 Q123 263 136 263 H275" fill="none" stroke="#121212" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <path d="M637 210 V251 Q637 263 624 263 H488" fill="none" stroke="#121212" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="273" y="239" width="214" height="70" rx="16" fill="#EDFBF2" stroke-width="3.2"/>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive" text-anchor="middle">
+    <text x="400" y="35" font-size="28">one dataset</text>
+    <text x="123" y="237" font-size="25">Where from?</text>
+    <text x="637" y="237" font-size="25">What format?</text>
+    <text x="123" y="337" font-size="24" fill="#1A733A">trust</text>
+    <text x="637" y="337" font-size="24" fill="#1A733A">effort to open</text>
+    <text x="380" y="282" font-size="27">two separate answers</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Unstructured data in many different forms</title>
+  <desc id="desc">Hand-drawn email, social post, photo, video, and call recording objects sit in different shapes without a common layout.</desc>
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#DDE2E2" opacity=".72"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="300" rx="18" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-5 130 91)">
+      <rect x="47" y="40" width="169" height="104" rx="11" fill="#FFFFFF" stroke-width="3"/>
+      <path d="M49 51 131 107 214 52" fill="none" stroke-width="3"/>
+      <path d="M50 132 104 87 M213 132 158 87" fill="none" stroke-width="2" opacity=".5"/>
+    </g>
+    <g transform="rotate(4 361 82)">
+      <path d="M278 35 H461 Q472 35 472 46 V117 Q472 128 461 128 H376 L345 151 351 128 H278 Q267 128 267 117 V46 Q267 35 278 35Z" fill="#EDFBF2" stroke-width="3"/>
+      <path d="M292 63 Q351 59 433 63 M293 85 Q357 89 425 84 M293 107 Q332 104 382 107" fill="none" stroke="#6E7676" stroke-width="2.4"/>
+    </g>
+    <g transform="rotate(-3 169 219)">
+      <rect x="73" y="170" width="194" height="104" rx="10" fill="#FFFFFF" stroke-width="3"/>
+      <circle cx="220" cy="197" r="13" fill="#D5F5E1" stroke-width="2.5"/>
+      <path d="M90 251 139 207 171 232 198 214 248 258" fill="#D5F5E1" stroke-width="3"/>
+      <path d="m150 205 13 9-13 9Z" fill="#3ACC69" stroke-width="2"/>
+    </g>
+    <g transform="rotate(5 451 218)">
+      <rect x="325" y="172" width="249" height="96" rx="16" fill="#FFFFFF" stroke-width="3"/>
+      <path d="M348 220 H360 M370 208 V235 M383 198 V245 M397 213 V230 M411 189 V252 M426 205 V237 M441 196 V246 M458 212 V231 M474 192 V249 M491 204 V238 M508 214 V228 M524 199 V244 M539 211 V232 M551 220 H559" fill="none" stroke="#1A733A" stroke-width="3.2"/>
+    </g>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive" font-size="22">
+    <text x="66" y="29" transform="rotate(-5 66 29)">email</text>
+    <text x="397" y="27" transform="rotate(4 397 27)">social post</text>
+    <text x="77" y="291" transform="rotate(-3 77 291)">photo + video</text>
+    <text x="456" y="291" transform="rotate(4 456 291)">recording</text>
+  </g>
+</svg>

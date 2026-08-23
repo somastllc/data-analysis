@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" role="img" aria-labelledby="title desc">
+  <title id="title">The same customer file producing averages of 72 and 30.5</title>
+  <desc id="desc">The unchecked ages produce 72. Removing the impossible age, counting the duplicate once, and setting the blank aside produces 30.5.</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#DDE2E2" opacity=".72"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="920" height="380" rx="20" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <g>
+      <rect x="40" y="62" width="332" height="264" rx="18" fill="#FFFFFF" stroke-width="3.5"/>
+      <path d="M72 135 H338 M72 193 H338" fill="none" stroke="#DDE2E2" stroke-width="2"/>
+      <rect x="225" y="95" width="94" height="46" rx="9" fill="#FCEBEC" stroke="#A33A3A" stroke-width="2.5"/>
+    </g>
+    <path d="M394 194 C432 172 461 172 493 194" fill="none" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="511" y="62" width="369" height="264" rx="18" fill="#EDFBF2" stroke-width="3.5"/>
+      <path d="M542 135 H848 M542 193 H848" fill="none" stroke="#AEEBC5" stroke-width="2"/>
+      <path d="M561 106 H690" fill="none" stroke="#A33A3A" stroke-width="3"/>
+      <path d="M561 164 H690" fill="none" stroke="#A33A3A" stroke-width="3"/>
+      <path d="M561 222 H690" fill="none" stroke="#A33A3A" stroke-width="3"/>
+      <path d="m813 91 11 11 21-28" fill="none" stroke="#1A733A" stroke-width="4"/>
+    </g>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive">
+    <text x="68" y="44" font-size="29" fill="#A33A3A">average as given</text>
+    <text x="72" y="113" font-size="26">ages</text>
+    <text x="141" y="113" font-size="27">34, 27, blank, 200, 27</text>
+    <text x="72" y="172" font-size="26">calculation</text>
+    <text x="210" y="172" font-size="27">÷ 5</text>
+    <text x="72" y="244" font-size="30">result</text>
+    <text x="218" y="274" font-size="78" font-weight="700" fill="#A33A3A">72</text>
+    <text x="403" y="153" font-size="24" fill="#1A733A" transform="rotate(-4 403 153)">check first</text>
+    <text x="541" y="44" font-size="29" fill="#1A733A">average after review</text>
+    <text x="542" y="113" font-size="25" fill="#A33A3A">remove 200</text>
+    <text x="542" y="172" font-size="25" fill="#A33A3A">count Farah once</text>
+    <text x="542" y="231" font-size="25" fill="#A33A3A">set blank aside</text>
+    <text x="542" y="292" font-size="26">(34 + 27) ÷ 2</text>
+    <text x="733" y="291" font-size="68" font-weight="700" fill="#1A733A">30.5</text>
+    <text x="267" y="357" font-size="28">same file · same question · same arithmetic</text>
+  </g>
+</svg>

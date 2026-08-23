@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence versus memory</title>
+  <desc id="desc">Two shops have the same transactions. One records and reviews sales before reordering, while the other relies on memory.</desc>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#D7DDDD"/>
+    </pattern>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1A733A"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6E7676"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" rx="26" fill="#F6F8F8"/>
+  <path d="M480 46 C475 150 486 272 478 474" fill="none" stroke="#DDE2E2" stroke-width="3" stroke-dasharray="8 11"/>
+
+  <g transform="translate(34 30)">
+    <rect x="0" y="0" width="412" height="458" rx="22" fill="#FFFFFF" stroke="#AEEBC5" stroke-width="3"/>
+    <rect x="18" y="18" width="376" height="56" rx="13" fill="#EDFBF2"/>
+    <circle cx="50" cy="46" r="17" fill="#1A733A"/>
+    <path d="M42 46 l6 6 11 -13" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="55" font-family="Geist, Arial, sans-serif" font-size="27" font-weight="600" fill="#121212">Shop records sales</text>
+
+    <g transform="translate(44 99)" stroke="#121212" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 55 L28 9 L250 10 L273 55" fill="#F6F8F8"/>
+      <path d="M4 55 C24 62 43 47 63 56 C82 64 102 48 122 56 C143 65 161 48 183 56 C204 64 223 48 244 56 C258 62 269 59 279 54" fill="#D9F5E3"/>
+      <rect x="20" y="56" width="244" height="100" rx="5" fill="#FFFFFF"/>
+      <path d="M76 91 h34 v33 H76z M130 82 h34 v42 h-34z M185 97 h34 v27 h-34z" fill="#D9F5E3"/>
+      <path d="M20 132 h244"/>
+      <path d="M38 156 v34 h208 v-34" fill="#EDF0F0"/>
+    </g>
+
+    <g transform="translate(42 296)">
+      <rect x="-3" y="-18" width="184" height="25" rx="5" fill="#FFFFFF"/>
+      <text x="0" y="0" font-family="Geist Mono, monospace" font-size="17" letter-spacing="1" fill="#1A733A">SAME TRANSACTIONS</text>
+      <g transform="translate(0 21)">
+        <rect x="0" y="0" width="96" height="76" rx="8" fill="url(#dots)" stroke="#BFC7C7" stroke-width="2"/>
+        <path d="M18 21 h60 M18 37 h43 M18 53 h54" stroke="#6E7676" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <path d="M115 59 C148 59 150 59 180 59" fill="none" stroke="#1A733A" stroke-width="4" marker-end="url(#arrow-green)"/>
+      <g transform="translate(198 21)">
+        <rect x="0" y="0" width="126" height="76" rx="8" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="2"/>
+        <path d="M20 57 L43 40 L64 46 L88 18 L106 27" fill="none" stroke="#1A733A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="88" cy="18" r="5" fill="#1A733A"/>
+      </g>
+    </g>
+
+    <path d="M54 423 C139 439 265 437 351 420" fill="none" stroke="#1A733A" stroke-width="3" stroke-linecap="round"/>
+    <text x="82" y="422" font-family="Geist, Arial, sans-serif" font-size="25" font-weight="600" fill="#121212">Reorder on evidence</text>
+  </g>
+
+  <g transform="translate(514 30)">
+    <rect x="0" y="0" width="412" height="458" rx="22" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <rect x="18" y="18" width="376" height="56" rx="13" fill="#EDF0F0"/>
+    <circle cx="50" cy="46" r="17" fill="#6E7676"/>
+    <path d="M44 40 C55 34 61 47 50 52 C42 56 43 62 43 62 M43 69 h.1" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="78" y="55" font-family="Geist, Arial, sans-serif" font-size="27" font-weight="600" fill="#121212">Shop records nothing</text>
+
+    <g transform="translate(44 99)" stroke="#121212" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 55 L28 9 L250 10 L273 55" fill="#F6F8F8"/>
+      <path d="M4 55 C24 62 43 47 63 56 C82 64 102 48 122 56 C143 65 161 48 183 56 C204 64 223 48 244 56 C258 62 269 59 279 54" fill="#DDE2E2"/>
+      <rect x="20" y="56" width="244" height="100" rx="5" fill="#FFFFFF"/>
+      <path d="M76 91 h34 v33 H76z M130 82 h34 v42 h-34z M185 97 h34 v27 h-34z" fill="#EDF0F0"/>
+      <path d="M20 132 h244"/>
+      <path d="M38 156 v34 h208 v-34" fill="#EDF0F0"/>
+    </g>
+
+    <g transform="translate(42 296)">
+      <rect x="-3" y="-18" width="184" height="25" rx="5" fill="#FFFFFF"/>
+      <text x="0" y="0" font-family="Geist Mono, monospace" font-size="17" letter-spacing="1" fill="#6E7676">SAME TRANSACTIONS</text>
+      <g transform="translate(0 21)">
+        <rect x="0" y="0" width="96" height="76" rx="8" fill="url(#dots)" stroke="#BFC7C7" stroke-width="2"/>
+        <path d="M18 21 h60 M18 37 h43 M18 53 h54" stroke="#6E7676" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <path d="M115 59 C147 59 154 59 180 59" fill="none" stroke="#6E7676" stroke-width="4" marker-end="url(#arrow-gray)"/>
+      <g transform="translate(198 21)">
+        <path d="M63 4 C100 4 126 24 126 49 C126 72 99 88 66 86 C52 86 40 82 30 77 L8 88 L16 67 C7 59 2 49 2 39 C2 19 28 4 63 4z" fill="#EDF0F0" stroke="#BFC7C7" stroke-width="2"/>
+        <text x="42" y="58" font-family="Patrick Hand, cursive" font-size="43" fill="#6E7676">?</text>
+      </g>
+    </g>
+
+    <path d="M63 423 C141 436 270 438 349 419" fill="none" stroke="#6E7676" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8"/>
+    <text x="82" y="422" font-family="Geist, Arial, sans-serif" font-size="25" font-weight="600" fill="#121212">Reorder on memory</text>
+  </g>
+</svg>

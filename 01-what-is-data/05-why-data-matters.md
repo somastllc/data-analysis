@@ -47,4 +47,4 @@ None of these people are data professionals. All of them are better at their own
 
 Poor data can mislead people. Mishandled personal data can harm privacy. Biased data can lead to unfair outcomes.
 
-Chapter five deals with all three, and it comes before you have any tools to do damage with.
+Responsibility begins before any analysis: question the data, protect personal information, and consider who could be harmed by the result.

@@ -56,6 +56,7 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Diagnostic analytics** | Explains why something happened | Ch 2 - The Data Ecosystem |
 | **Fairness** | Avoiding unjust harm in data-driven decisions | Ch 5 - Data Ethics and Privacy |
 | **Feedback loop** | When a system's own decisions become the data that trains its future decisions | Ch 5 - Data Ethics and Privacy |
+| **Garbage in, garbage out (GIGO)** | Poor input data produces poor output, even when the calculation or tool works correctly | Ch 1 - What Is Data? |
 | **Information** | Data that has been organized to convey meaning | Ch 1 - What Is Data? |
 | **Insight** | A meaningful conclusion, supported by data, that helps guide a decision | Ch 1 - What Is Data? |
 | **KPI** | A key performance indicator used to measure success | Ch 2 - The Data Ecosystem |
