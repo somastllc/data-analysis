@@ -1,7 +1,7 @@
 # Production Notes - Recording This Course
 
-**Format:** 27 lesson videos, 6 chapter openers, 1 welcome
-**Estimated finished runtime:** ~2h 40m
+**Format:** 28 lesson videos, 6 chapter openers, 1 welcome
+**Estimated finished runtime:** ~2h 50m
 **Source of truth:** the lesson Markdown files. This document tells you how to shoot them, not what to say. The words are already in the lessons.
 
 ---
@@ -22,9 +22,7 @@
 
 **6. Tables go on screen as written.** Read the row, then explain it. Do not paraphrase the cells. The wording is deliberate and the viewer is reading along. Budget 10–14 seconds per row.
 
-**7. Diagrams build, never appear complete.** Ten of the 11 mermaid diagrams are sequences. Reveal one node per beat, speaking each as it lands. A completed flowchart dropped on screen is read in one second and then ignored for the remaining 40.
-
-**7b. The exception is 2.3, which is not a sequence.** Machine learning sitting inside data science is a containment picture: no arrows, no order. Build it by drawing the boundary first and dropping the four contents into it, ending on `Machine learning`, the accented one and the reason the diagram exists. Do not imply a flow between the four.
+**7. Diagrams build, never appear complete.** All 11 mermaid diagrams are sequences. Reveal one node per beat, speaking each as it lands. A completed flowchart dropped on screen is read in one second and then ignored for the remaining 40.
 
 **8. Numbers and places are spoken exactly as written.** `$2.50 per kg`, `32°C`, `91.4%`, Hargeisa, Burco, Muqdisho. The examples are deliberately Somali and grounded, so don't round the numbers off, and don't substitute a city or a name for one you find easier to say.
 
@@ -40,7 +38,7 @@ This is a production checklist only. The repository contains no generated visual
 | Chart pair, truncated vs full axis | 2 | **5.1** - highest-value visual in the course. Currently ASCII in the Markdown. |
 | Repayment data table | 1 | **5.1** - must appear *before* either chart. |
 | Code slides with line highlighting | 2 | **4.2** - SQL and Python. Only code in the course. |
-| Content table slides | 16 | Teaching tables only; Key Terms cards have been removed from every lesson. |
+| Content table slides | 17 | Teaching tables only; Key Terms cards have been removed from every lesson. |
 | Title card template | 1 | Lesson name + chapter/lesson position. |
 | Chapter opener bumper | 6 | 60–90s each. **Script lives in each chapter's `00-opener.md`.** |
 
@@ -57,7 +55,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 | Chapter | The question it settles | Lessons |
 |---|---|---|
 | 1 - What Is Data? | What am I actually working with? | 5 |
-| 2 - The Data Ecosystem | Who does what, and what are all these job titles? | 6 |
+| 2 - The Data Ecosystem | Who does what, and what are all these job titles? | 7 |
 | 3 - The Data Process | What are the steps, in order, from question to decision? | 6 |
 | 4 - Data in the Real World | What tools and jobs does this turn into? | 4 |
 | 5 - Data Ethics and Privacy | When should we *not* do the thing we can do? | 4 |
@@ -131,9 +129,9 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 # Chapter 2 - The Data Ecosystem
 
-*6 lessons · 30 min*
+*7 lessons · 37 min*
 
-> **Watch the monotony here.** 2.2 and 2.4 are still structurally identical: same length, same four-section shape, no diagram. 2.3 and 2.6 used to be too, and each has since gained a diagram, which is most of what separates them now. Shoot 2.2 and 2.4 in different sittings and vary framing between them.
+> **Watch the density here.** This is the course's most vocabulary-heavy chapter. Lessons 2.3 and 2.4 deliberately separate data science from machine learning; keep their examples connected, but do not let either lesson borrow the other's definition. Shoot 2.2 and 2.6 in different sittings because both are prose-led role explanations with similar pacing.
 
 ### 2.1 · Types of Analytics - 4.5 min
 
@@ -157,25 +155,25 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 2.3 · Data Science and Machine Learning - 6 min
+### 2.3 · Data Science - 5.5 min
 
-**Cold open:** *Your inbox quietly moved a message to spam this morning.*
+**Cold open:** *A mobile network sees that thousands of customers have stopped renewing their monthly bundles.*
 
-**Shots:** cold open → title → objective → *What is data science?* → *What is machine learning?* → *How they relate* → **diagram build (nest)** → *When a project actually needs machine learning* → **table** Question / What it needs → *Example*
+**Shots:** cold open → title → objective → *What is data science?* → **table** Part / What it contributes → *What data scientists do* → *Not every data science project uses machine learning* → *Example*
 
-**Diagram build:** the containment picture; see standing rule 7b. Boundary labelled `Data science` first, then `Statistics`, `Programming`, `Domain knowledge`, and `Machine learning` last and accented.
-
-**Note:** This was the shortest lesson in the course and the one with the least visual support, on the subject students are most curious about. It now carries the nesting diagram and a three-row table of what does and does not need a model. **The line to land is "no examples, no model".** It is the constraint every beginner meets first, and it reframes machine learning as a data problem rather than a clever-algorithm problem.
+**Note:** The important correction to the usual beginner explanation is that data science does not mean machine learning. Keep the falling-renewals example focused on framing, investigation, hypothesis testing, and evidence. Land the final change of question—from *why did customers leave?* to *which customers may leave next?*—as the handoff to 2.4.
 
 ---
 
-### 2.4 · Data Engineering - 4.5 min
+### 2.4 · Machine Learning - 6 min
 
-**Cold open:** *An analyst opens a report and finds three different versions of the same sales numbers - one outdated, one incomplete, one in the wrong format.*
+**Cold open:** *Your inbox quietly moved a message to spam this morning.*
 
-**Shots:** cold open → title → objective → *What is data engineering?* → *What data engineers do* → *Why data engineering matters* → *Example*
+**Shots:** cold open → title → objective → *What is machine learning?* → **diagram build (5)** → *How machine learning relates to data science* → *When a project actually needs machine learning* → **table** Question / What it needs → *Example*
 
-**Note:** Three conflicting numbers is a screen graphic, not a spoken list. Show the three versions side by side during the cold open.
+**Diagram build:** `Past examples` → `Training` → `Trained model` → `Apply to new data` → `Prediction`. The transition from the training side to the use side is the conceptual hinge; pause on the trained model before introducing new data.
+
+**Note:** **The line to land is "no examples, no model".** It is the constraint every beginner meets first, and it reframes machine learning as a data problem rather than a clever-algorithm problem. The final paragraph also limits the model correctly: it predicts, but does not automatically explain or decide.
 
 ---
 
@@ -189,15 +187,25 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ---
 
-### 2.6 · How These Fields Work Together - 5 min
+### 2.6 · Data Engineering - 4.5 min
+
+**Cold open:** *An analyst opens a report and finds three different versions of the same sales numbers - one outdated, one incomplete, one in the wrong format.*
+
+**Shots:** cold open → title → objective → *What is data engineering?* → *What data engineers do* → *Why data engineering matters* → *Example*
+
+**Note:** Three conflicting numbers is a screen graphic, not a spoken list. Show the three versions side by side during the cold open.
+
+---
+
+### 2.7 · How These Fields Work Together - 6.5 min
 
 **Cold open:** *One customer cancels a subscription.*
 
-**Shots:** cold open → title → objective → *One ecosystem, many roles* → *How they work together* → **diagram build (5)** → *Where analytics types fit* → *Key takeaway*
+**Shots:** cold open → title → objective → *One ecosystem, many roles* → *How they work together* → **diagram build (6)** → *Where analytics types fit* → *Key takeaway*
 
-**Diagram build:** `Data engineer` → `Data analyst` → `BI dashboard` → `Data scientist` → `Business team`, one per numbered step as you read it. This is the chapter's payoff and the only frame that holds all five roles at once.
+**Diagram build:** `Data engineer` → `Data analyst` → `BI professional` → `Data scientist` → `ML engineer` → `Business team`, one per numbered step as you read it. This is the chapter's payoff and the only frame that holds all six contributors at once.
 
-**Note:** The lesson now closes on the point that the four analytics types from 2.1 were four stages of one job spread across five people. That callback is the end of the chapter. Land it on the completed diagram.
+**Note:** The fifth step is conditional: a model enters only if individual prediction helps the decision. The callback to the four analytics types from 2.1 now presents them as kinds of questions shared across the ecosystem, not four rigid stages or four job descriptions. Land the close on the completed diagram.
 
 ---
 
@@ -422,7 +430,7 @@ Not lesson order. Group by setup and by what has to exist first.
 |---|---|---|
 | 1 | **2.1** and **3.4** | Calibration. 2.1 is among the shortest and is diagram-led; 3.4 is among the longest and is table-and-prose. Compare actual runtime against the 4.5 and 7.5 estimates; the ratio you get rescales every number in this document. Chapter 5 holds the three longest lessons but cannot supply a calibration subject, because it must be shot in one session and in order. |
 | 2 | Chapter 1 (5 lessons) | Establishes tone. Most-watched chapter - students who quit, quit here. |
-| 3 | Chapter 2, split across two sittings | Four structurally identical lessons; fatigue will show if shot in one. |
+| 3 | Chapter 2, split across two sittings | Seven concept-heavy lessons; fatigue will show if shot in one. Keep 2.3 and 2.4 in the same sitting so their distinction and handoff remain clear. |
 | 4 | Chapter 3 (6 lessons) | Shoot the 3.1 diagram build first - lessons 3.2–3.6 reuse it as a locator. |
 | 5 | Chapter 4 remainder | **4.2** needs its own setup for the code slides, and is the only video that does. Shoot it with 4.1, whose handoff sets it up. |
 | 6 | **Chapter 5, one session, in order** | Continuous case; consistency of delivery matters more here than anywhere else. |
@@ -434,10 +442,10 @@ Not lesson order. Group by setup and by what has to exist first.
 
 | Component | Count | Runtime |
 |---|---|---|
-| Lesson videos | 27 | ~150.5 min |
+| Lesson videos | 28 | ~157.5 min |
 | Chapter openers | 6 | ~8 min |
 | Welcome | 1 | ~3 min |
-| **Total** | **34 videos** | **≈ 2h 41m** |
+| **Total** | **35 videos** | **≈ 2h 49m** |
 
 Estimates come from measured prose words at 130–150 wpm with a 1.4–1.9× spoken expansion, plus dwell time per table row, diagram, and code block. Every lesson holds its final teaching slide during the close; no Key Terms cards remain. The closing narration is unchanged, so this does not materially change the estimates.
 

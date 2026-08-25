@@ -20,7 +20,7 @@ That is deliberate. Before Python, before SQL, before spreadsheets and dashboard
 
 *On screen: six-chapter map, building as each is named.*
 
-Six chapters, twenty-seven lessons.
+Six chapters, twenty-eight lessons.
 
 Chapter one answers what data actually is. Chapter two maps the field: analytics, business intelligence, data science, machine learning, engineering, and how they fit together. Chapter three walks the process, from a vague request to a decision somebody acts on. Chapter four covers the tools and the jobs. Chapter five is ethics. Chapter six puts all of it through one business problem, start to finish.
 

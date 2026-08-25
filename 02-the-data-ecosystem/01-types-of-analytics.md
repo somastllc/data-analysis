@@ -1,7 +1,7 @@
 # Types of Analytics
 
 **Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 1 of 6  
+**Lesson:** 1 of 7  
 **By the end:** You can tell descriptive, diagnostic, predictive, and prescriptive questions apart.
 
 ## Overview
@@ -39,6 +39,6 @@ Most beginners start with descriptive analytics, such as summaries, totals, and 
 
 ### Why this matters
 
-The four are cumulative, and that is the useful part. You cannot explain why rice sales rose until you know that they rose. You cannot forecast next month without knowing what drove last month. And a recommendation made without the three steps underneath it is just an opinion with a number attached to it.
+The four often build on one another, and that is the useful part. You cannot explain why rice sales rose until you know that they rose. Understanding what drove last month can strengthen a forecast of next month. And a recommendation is more trustworthy when the earlier questions have supplied evidence for it.
 
 So when an organization says it wants prediction, the honest first question is whether it can yet describe what already happened.

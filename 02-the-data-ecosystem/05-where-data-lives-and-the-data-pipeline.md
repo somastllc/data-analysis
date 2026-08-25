@@ -1,7 +1,7 @@
 # Where Data Lives and the Data Pipeline
 
 **Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 5 of 6  
+**Lesson:** 5 of 7  
 **By the end:** You can name the stages a dataset passes through, and where it is stored at each one.
 
 ## Overview

@@ -1,7 +1,7 @@
 # Data Engineering
 
 **Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 4 of 6  
+**Lesson:** 6 of 7  
 **By the end:** You can describe what data engineers build, and why every other data role depends on it.
 
 ## Overview
@@ -37,7 +37,7 @@ Every item on that list is somebody else's problem to suffer. Data engineering i
 
 ### Example
 
-The wholesaler from the previous lesson has data arriving from four places at once:
+The wholesaler from lesson 2 has data arriving from four places at once:
 
 - A till in each shop, recording sales as they happen
 - Delivery drivers logging what was dropped off, and where

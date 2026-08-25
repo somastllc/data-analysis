@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Beginner course "Data Fundamentals for Beginners": 27 Markdown lessons across 6 chapters. The Markdown files remain the curriculum source. Visual lesson exports are now being added as self-contained HTML presentations with SVG assets and print-ready PDFs. There is no conventional application build, lint, or test suite.
+Beginner course "Data Fundamentals for Beginners": 28 Markdown lessons across 6 chapters. The Markdown files remain the curriculum source. Visual lesson exports are now being added as self-contained HTML presentations with SVG assets and print-ready PDFs. There is no conventional application build, lint, or test suite.
 
 ## Position in the curriculum
 
@@ -26,6 +26,8 @@ Learners have **no tools yet**. Python, Git, and SQL all come later. Nothing in 
 ```
 NN-chapter-slug/00-opener.md         video opener script (production only, not a lesson)
 NN-chapter-slug/NN-lesson-slug.md    lessons
+00-soomaali/NN-chapter-slug/NN-lesson.md  reviewed Somali source lessons
+somali.md                            Somali rewriting and language guide
 exports/html/                        self-contained visual lesson HTML packages
 exports/pdf/                         final print-ready lesson PDFs
 references/                          user-supplied visual references
@@ -33,7 +35,7 @@ references/                          user-supplied visual references
 
 A chapter folder reads top to bottom in shooting order: opener, then lessons. The numeric prefix carries that order, with `00-` before the lessons.
 
-**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons or checks `**By the end:**` **must exclude `00-*`**, or it will report 33 lessons instead of 27. A Key Terms audit must also account for all 27 lessons, which intentionally have no closing tables.
+**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons or checks `**By the end:**` **must exclude `00-*`**, or it will report 34 files instead of 28 lessons. A Key Terms audit must also account for all 28 lessons, which intentionally have no closing tables.
 
 Chapter order and lesson counts are declared in `README.md`'s Chapters table. Update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
 
@@ -99,18 +101,28 @@ exports/
 │   └── assets/lesson-05/
 │       ├── evidence-vs-memory.svg
 │       └── data-responsibility.svg
-└── pdf/
-    ├── Lesson 01 - What Is Data.pdf
-    ├── Lesson 02 - Types of Data.pdf
-    ├── Lesson 03 - Sources and Formats of Data.pdf
-    ├── Lesson 04 - Data Quality Basics.pdf
-    └── Lesson 05 - Why Data Matters.pdf
+├── pdf/
+│   ├── Lesson 01 - What Is Data.pdf
+│   ├── Lesson 02 - Types of Data.pdf
+│   ├── Lesson 03 - Sources and Formats of Data.pdf
+│   ├── Lesson 04 - Data Quality Basics.pdf
+│   └── Lesson 05 - Why Data Matters.pdf
+└── somali/
+    ├── html/
+    │   ├── Casharka 01 - Waa Maxay Data.html
+    │   └── assets/casharka-01/
+    │       ├── iibka-afarta-maalmood.svg
+    │       └── tusaalaha-cunto-karinta.svg
+    └── pdf/
+        └── Casharka 01 - Waa Maxay Data.pdf
 
 references/
 └── Data Fundamentals Lesson.pdf
 ```
 
 Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual sources and rendered SVGs belong under a lesson-specific assets folder. Final PDFs belong in `exports/pdf/`. User-supplied examples belong in `references/` and should not be overwritten when regenerating an export.
+
+Somali source lessons are governed by [`somali.md`](somali.md). Read that guide before creating, auditing, or editing Somali curriculum content. The required workflow is rewrite first, user review, Markdown lock-in, and only then visual production. Do not treat Somali work as sentence-by-sentence translation, and do not update its export while the Markdown is still under review unless the user explicitly requests it. Somali HTML, lesson assets, and PDFs live under `exports/somali/` so they remain separate from the earlier English packages. The Lesson 1 wording `Xogtu badanaa sheekadoo dhan ma sheegto` is intentional and must remain unchanged in its export.
 
 `PRODUCTION.md` remains the recording plan. It describes shot order and required teaching visuals. The supplied PDF and completed Lesson 1.1 export now provide the practical visual baseline.
 
@@ -129,12 +141,19 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - All fourteen SVG exports across the five completed lessons pass the SVG validator and XML parsing.
 - All five Chapter 1 lessons are converted. No Chapter 2 lesson has been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
 
+### Somali visual production progress
+
+- Somali Casharka 1, "Waa maxay Data?", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations.
+- The Somali PDF uses the same 16:9 page size of 720 x 404.88 points.
+- Both Somali SVG exports pass the SVG validator and XML parsing. All sixteen SVGs across the English and Somali export packages currently pass.
+- The earlier English exports remain available as references. New production should begin from the reviewed Somali Markdown, not by translating the English slides.
+
 ### HTML and PDF conventions
 
-- Each slide is a direct `section` child of `x-import` and is designed at 1920 x 1080.
+- Each English slide is a direct `section` child of `x-import` and is designed at 1920 x 1080. Somali exports may use direct `section.slide` children of `main` without the retired deck runtime, while keeping the same dimensions and print behavior.
 - Print CSS sets `@page` to `10in 5.625in`, scales each slide with `zoom: .5`, and forces one section per page.
 - The normal browser deck and printed PDF share the same HTML. Do not maintain a second hand-edited PDF-only document.
-- HTML asset paths are relative to `exports/html/`. Lesson 1.1 uses `assets/lesson-01/...`.
+- HTML asset paths are relative to their HTML package. English Lesson 1.1 uses `assets/lesson-01/...`; Somali Casharka 1 uses `assets/casharka-01/...`.
 - Keep informative `alt` text on every SVG image.
 - Excalidraw SVG backgrounds should be transparent unless the illustration genuinely needs a filled panel.
 - Avoid fixed tall wrappers around wide diagrams. They create large empty blocks when a shallow SVG uses `object-fit: contain`.
@@ -202,7 +221,7 @@ The four ethics lessons follow one continuous scenario - a mobile money company 
 
 ## Making changes
 
-- Adding/removing/reordering a lesson: renumber the file prefix, fix the in-file `**Lesson:** N of TOTAL` for every lesson in that chapter, and update `README.md`'s table (lesson count and the total of 27).
+- Adding/removing/reordering a lesson: renumber the file prefix, fix the in-file `**Lesson:** N of TOTAL` for every lesson in that chapter, and update `README.md`'s table (lesson count and the total of 28).
 - Duration in the README is derived from actual length - recheck it after substantial additions rather than leaving a stale claim.
 - Markdown has no build, lint, or test command. Validate it by reading the rendered files and checking that code fences are balanced.
 - For visual exports, inspect the rendered PDF pages in addition to running the SVG and PDF checks documented above. A successful command is not enough if text is clipped, icons are missing, arrows cross labels, or a diagram leaves excessive empty space.

@@ -85,6 +85,7 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Stakeholder** | A person or group affected by, or interested in, the results of the analysis | Ch 3 - The Data Process |
 | **Standardization** | Making data follow a consistent format | Ch 3 - The Data Process |
 | **Structured data** | Data organized in rows, columns, or tables | Ch 1 - What Is Data? |
+| **Training** | The process through which a machine-learning system learns patterns from past examples | Ch 2 - The Data Ecosystem |
 | **Transferable skills** | Skills that can be used in many jobs or industries | Ch 4 - Data in the Real World |
 | **Transform** | Reshaping or preparing data for analysis | Ch 2 - The Data Ecosystem |
 | **Transparency** | Openness about data collection and use | Ch 5 - Data Ethics and Privacy |
