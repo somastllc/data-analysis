@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Machine Learning waa hal hab, mana aha waxa qeexaya Data Science</title>
+  <desc id="desc">Data Science wuxuu isticmaali karaa falanqayn tirakoob, tijaabooyin, baaritaan taxaddar leh, ama Machine Learning si uu natiijo ugu gaaro.</desc>
+  <defs>
+    <marker id="arrow-ds" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#6E7676"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="500" rx="26" fill="#F6F8F8"/>
+
+  <g transform="translate(650 20)">
+    <rect width="300" height="80" rx="16" fill="#121212"/>
+    <text x="150" y="48" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="27" font-weight="600" fill="#FFFFFF">Data Science</text>
+  </g>
+
+  <path d="M760 100 C700 128 640 140 210 158" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+  <path d="M790 100 C740 120 680 135 603 158" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+  <path d="M810 100 C860 120 930 135 996 158" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+  <path d="M840 100 C900 128 1000 140 1389 158" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+
+  <g transform="translate(40 160)">
+    <rect width="340" height="140" rx="18" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <g transform="translate(28 26)" stroke="#4D5353" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 34 L14 18 L24 26 L38 4"/>
+      <path d="M28 4 h10 v10"/>
+    </g>
+    <text x="28" y="98" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">Falanqayn</text>
+    <text x="28" y="124" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">tirakoob</text>
+  </g>
+
+  <g transform="translate(433 160)">
+    <rect width="340" height="140" rx="18" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <g transform="translate(28 22)" stroke="#4D5353" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="18" r="16"/>
+      <path d="M18 10 v8 l7 4"/>
+    </g>
+    <text x="28" y="98" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">Tijaabooyin</text>
+    <text x="28" y="124" font-family="Geist, Arial, sans-serif" font-size="19" fill="#6E7676">(experiments)</text>
+  </g>
+
+  <g transform="translate(826 160)">
+    <rect width="340" height="140" rx="18" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <g transform="translate(28 22)" stroke="#4D5353" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="17" cy="17" r="15"/>
+      <path d="M27 27 L38 38" stroke-linecap="round"/>
+    </g>
+    <text x="28" y="98" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">Baaritaan</text>
+    <text x="28" y="124" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">taxaddar leh</text>
+  </g>
+
+  <g transform="translate(1219 160)">
+    <rect width="340" height="140" rx="18" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <g transform="translate(28 22)" stroke="#4D5353" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="18" r="16"/>
+      <circle cx="18" cy="18" r="6"/>
+    </g>
+    <text x="28" y="98" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">Machine</text>
+    <text x="28" y="124" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">Learning</text>
+  </g>
+
+  <path d="M210 300 C400 345 650 358 780 378" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+  <path d="M603 300 C680 330 730 350 790 378" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+  <path d="M996 300 C920 330 870 350 810 378" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+  <path d="M1389 300 C1200 345 950 358 820 378" fill="none" stroke="#6E7676" stroke-width="3" marker-end="url(#arrow-ds)"/>
+
+  <g transform="translate(650 380)">
+    <rect width="300" height="80" rx="16" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="3"/>
+    <text x="150" y="48" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="27" font-weight="600" fill="#1A733A">Natiijo</text>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">JSON oo u dhexeeya miis goʼan iyo qoraal xor ah</title>
+  <desc id="desc">Sawir gacan lagu sameeyay oo dukumeenti JSON ah oo isticmaalaya magacyo iyo qaybo isku dhex jira, oo u dhexaysa miis goʼan iyo qoraallo xor ah.</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#AEEBC5" opacity=".58"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="760" height="430" rx="20" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <g opacity=".78">
+      <rect x="28" y="141" width="154" height="143" rx="9" fill="#FFFFFF" stroke-width="3"/>
+      <path d="M29 181 H181 M29 222 H181 M80 142 V283 M130 142 V283" fill="none" stroke-width="2.2"/>
+    </g>
+    <path d="M195 213 C222 196 243 195 268 210" fill="none" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow)"/>
+    <g>
+      <path d="M282 45 Q282 34 294 34 H537 L589 88 V380 Q589 393 576 393 H294 Q281 393 281 380Z" fill="#EDFBF2" stroke-width="4"/>
+      <path d="M537 35 V88 H588" fill="#D5F5E1" stroke-width="3"/>
+      <path d="M321 112 Q306 130 321 149 M321 308 Q307 326 321 344" fill="none" stroke="#1A733A" stroke-width="4"/>
+      <path d="M547 112 Q562 130 547 149 M547 308 Q562 326 547 344" fill="none" stroke="#1A733A" stroke-width="4"/>
+      <path d="M367 214 Q352 232 367 251 M500 214 Q515 232 500 251" fill="none" stroke="#1A733A" stroke-width="3"/>
+    </g>
+    <path d="M602 210 C628 194 649 197 674 214" fill="none" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow)"/>
+    <g opacity=".78">
+      <rect x="653" y="115" width="80" height="104" rx="8" fill="#FFFFFF" stroke-width="3" transform="rotate(6 693 167)"/>
+      <rect x="634" y="207" width="96" height="108" rx="8" fill="#FFFFFF" stroke-width="3" transform="rotate(-6 682 261)"/>
+      <path d="M650 240 Q679 229 712 244 M648 265 Q674 276 713 263 M648 288 Q681 280 707 291" fill="none" stroke="#6E7676" stroke-width="2.4"/>
+      <circle cx="693" cy="158" r="17" fill="#D5F5E1" stroke-width="2.5"/>
+      <path d="M663 199 683 174 704 193 721 178" fill="none" stroke="#1A733A" stroke-width="2.5"/>
+    </g>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive">
+    <text x="34" y="124" font-size="24">miis goʼan</text>
+    <text x="595" y="98" font-size="21">qoraal xor ah</text>
+    <text x="378" y="73" font-size="28" fill="#1A733A">JSON</text>
+    <text x="340" y="143" font-size="25">"label": "value",</text>
+    <text x="340" y="190" font-size="25">"nested":</text>
+    <text x="388" y="241" font-size="24">"field": 320</text>
+    <text x="340" y="291" font-size="25">"event": "sale"</text>
+    <text x="300" y="420" font-size="22" fill="#1A733A" transform="rotate(-2 300 420)">qaybo habaysan, qaab dabacsan</text>
+  </g>
+</svg>

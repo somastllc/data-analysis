@@ -33,6 +33,18 @@ Hybrid forms such as `website-yada`, `apps-ka`, `sensors-ka`, and `devices-ka` a
 
 There is no fixed Somali-to-English ratio. Keep only the English that improves recognition or technical understanding.
 
+## Terms that must remain distinct
+
+Do not use `data process` and `data processing` as though they mean the same thing.
+
+| English term | Approved Somali term | Meaning |
+|---|---|---|
+| **Data process** | **hab-socodka xogta** | The ordered work from defining a problem through collecting, cleaning, analyzing, communicating, and making a decision |
+| **Data processing** | **farsamaynta xogta** | Operations that calculate, transform, organize, or otherwise process data |
+| **Data pipeline** | Keep **data pipeline** and explain it in Somali | The system that moves data from its source through storage and preparation to use |
+
+Use `habka xogta loo maareeyo` only as a plain-language explanation when the context needs it, not as the canonical course term for `data process`. Avoid using `habaynta xogta` for `data processing` when it could be confused with formatting, organization, or structured data.
+
 ## Titles and headings
 
 The main title is Somali first, followed by the useful English title or term in parentheses.

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Xog habaysan oo ku jirta safaf iyo tiirar la saadaalin karo</title>
+  <desc id="desc">Sawir gacan lagu sameeyay oo miis ardayda ah oo isku qaab ah ku celceliya safaf kasta.</desc>
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#AEEBC5" opacity=".58"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="640" height="300" rx="18" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M99 63 Q99 53 110 53 L529 53 Q540 53 541 64 L538 245 Q538 255 527 255 L110 255 Q98 254 99 243Z" fill="#FFFFFF" stroke-width="3.5"/>
+    <path d="M101 64 Q101 54 111 54 H529 Q539 55 539 65 L539 100 H100Z" fill="#D5F5E1" stroke-width="2.4"/>
+    <path d="M100 101 Q318 98 539 101 M99 151 Q318 154 538 151 M100 203 Q319 199 539 202" fill="none" stroke-width="2.4"/>
+    <path d="M349 54 Q346 154 350 254" fill="none" stroke-width="2.4"/>
+    <path d="M74 88 Q49 113 73 139" fill="none" stroke="#1A733A" stroke-width="2.5" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive">
+    <text x="129" y="87" font-size="26">arday</text>
+    <text x="389" y="87" font-size="26">darajo</text>
+    <text x="129" y="136" font-size="25">Hodan</text>
+    <text x="389" y="136" font-size="25">88</text>
+    <text x="129" y="188" font-size="25">Farah</text>
+    <text x="389" y="188" font-size="25">91</text>
+    <text x="129" y="239" font-size="25">Sagal</text>
+    <text x="389" y="239" font-size="25">84</text>
+    <text x="22" y="46" font-size="22" fill="#1A733A" transform="rotate(-4 22 46)">isku qaab</text>
+    <text x="424" y="284" font-size="21" fill="#1A733A" transform="rotate(2 424 284)">si fudud ayaa loo eegaa</text>
+  </g>
+</svg>

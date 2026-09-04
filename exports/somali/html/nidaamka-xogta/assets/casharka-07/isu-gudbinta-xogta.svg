@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Isu gudbinta xogta iyo natiijooyinka</title>
+  <desc id="desc">Qofna silsiladdan shaqada oo dhan ma qaban. Qof walba wuxuu u baahnaa inuu ogaado wixii ka horreeyey shaqadiisa, waxa ay shaqadiisu ku dartay, iyo sida qofka xiga u isticmaali doono.</desc>
+
+  <rect width="900" height="420" rx="26" fill="#F6F8F8"/>
+
+  <g stroke="#4D5353" stroke-width="10" fill="none" stroke-linecap="round">
+    <path d="M120 320 C170 280 220 250 300 220"/>
+  </g>
+  <circle cx="120" cy="320" r="26" fill="#EDF0F0" stroke="#4D5353" stroke-width="4"/>
+
+  <g stroke="#1A733A" stroke-width="10" fill="none" stroke-linecap="round">
+    <path d="M780 320 C730 280 680 250 600 220"/>
+  </g>
+  <circle cx="780" cy="320" r="26" fill="#EDFBF2" stroke="#1A733A" stroke-width="4"/>
+
+  <g transform="translate(300 195)">
+    <rect width="300" height="50" rx="25" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="4"/>
+    <rect x="8" y="8" width="70" height="34" rx="17" fill="#4D5353"/>
+    <rect x="222" y="8" width="70" height="34" rx="17" fill="#1A733A"/>
+  </g>
+
+  <text x="450" y="160" text-anchor="middle" font-family="Geist Mono, monospace" font-size="16" letter-spacing=".04em" fill="#6E7676">XOGTA IYO NATIIJOOYINKA</text>
+
+  <g transform="translate(60 60)">
+    <rect width="240" height="70" rx="14" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="24" y="30" font-family="Geist Mono, monospace" font-size="14" letter-spacing=".03em" fill="#6E7676">WIXII KA HORREEYEY</text>
+    <text x="24" y="54" font-family="Geist, Arial, sans-serif" font-size="19" font-weight="600" fill="#121212">Waa maxay?</text>
+  </g>
+
+  <g transform="translate(600 60)">
+    <rect width="240" height="70" rx="14" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="2.5"/>
+    <text x="24" y="30" font-family="Geist Mono, monospace" font-size="14" letter-spacing=".03em" fill="#1A733A">QOFKA XIGA</text>
+    <text x="24" y="54" font-family="Geist, Arial, sans-serif" font-size="19" font-weight="600" fill="#121212">Sidee u isticmaali?</text>
+  </g>
+</svg>

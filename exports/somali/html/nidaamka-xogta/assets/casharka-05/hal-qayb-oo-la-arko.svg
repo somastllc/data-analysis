@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Lix marxaladood, hal qayb oo la arko</title>
+  <desc id="desc">Xogtu waxay martay lix marxaladood, laakiin tirada dashboard-ka ku jirta ayaa ah qaybta keliya ee ay dadka shirka jooga arkaan.</desc>
+
+  <rect width="900" height="560" rx="26" fill="#F6F8F8"/>
+
+  <rect x="300" y="34" width="300" height="150" rx="18" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="3"/>
+  <text x="450" y="70" text-anchor="middle" font-family="Geist Mono, monospace" font-size="15" letter-spacing=".05em" fill="#1A733A">DASHBOARD-KA MAAMULAHA</text>
+  <text x="450" y="128" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="52" font-weight="600" fill="#121212">Iibka</text>
+  <path d="M328 156 L352 138 L372 148 L400 118" fill="none" stroke="#1A733A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M60 220 h780" stroke="#BFC7C7" stroke-width="2.5" stroke-dasharray="10 8"/>
+  <text x="60" y="212" font-family="Geist Mono, monospace" font-size="14" letter-spacing=".04em" fill="#6E7676">WAXA AY DADKU ARKAAN</text>
+  <text x="60" y="248" font-family="Geist Mono, monospace" font-size="14" letter-spacing=".04em" fill="#6E7676">LIXDA MARXALADOOD EE HOOSTA KU QARSOON</text>
+
+  <g transform="translate(60 268)">
+    <rect width="240" height="86" rx="14" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="24" y="36" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#343838">Ururi</text>
+    <text x="24" y="62" font-family="Geist, Arial, sans-serif" font-size="15" fill="#6E7676">(Collect)</text>
+  </g>
+  <g transform="translate(330 268)">
+    <rect width="240" height="86" rx="14" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="24" y="36" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#343838">Kaydi</text>
+    <text x="24" y="62" font-family="Geist, Arial, sans-serif" font-size="15" fill="#6E7676">(Store)</text>
+  </g>
+  <g transform="translate(600 268)">
+    <rect width="240" height="86" rx="14" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="24" y="36" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#343838">Nadiifi</text>
+    <text x="24" y="62" font-family="Geist, Arial, sans-serif" font-size="15" fill="#6E7676">(Clean)</text>
+  </g>
+  <g transform="translate(60 370)">
+    <rect width="240" height="86" rx="14" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="24" y="36" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#343838">Qaab-beddel</text>
+    <text x="24" y="62" font-family="Geist, Arial, sans-serif" font-size="15" fill="#6E7676">(Transform)</text>
+  </g>
+  <g transform="translate(330 370)">
+    <rect width="240" height="86" rx="14" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="24" y="36" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#343838">Falanqee</text>
+    <text x="24" y="62" font-family="Geist, Arial, sans-serif" font-size="15" fill="#6E7676">(Analyze)</text>
+  </g>
+  <g transform="translate(600 370)">
+    <rect width="240" height="86" rx="14" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="24" y="36" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#343838">Wadaag</text>
+    <text x="24" y="62" font-family="Geist, Arial, sans-serif" font-size="15" fill="#6E7676">(Share)</text>
+  </g>
+</svg>

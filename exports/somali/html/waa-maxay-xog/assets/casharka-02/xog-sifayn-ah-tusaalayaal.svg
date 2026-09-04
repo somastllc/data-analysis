@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-labelledby="title desc">
+  <title id="title">Xog sifayn ah oo u muuqata sharraxaad iyo kooxo</title>
+  <desc id="desc">Sawir gacan lagu sameeyay oo muujinaya faallada macmiilka Adeeggu aad buu u fiicnaa, midabka alaabta buluug, iyo jawaabta sahanka waan ku qanacsanahay.</desc>
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#DDE2E2" opacity=".75"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="280" rx="18" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-3 126 128)">
+      <path d="M35 62 H216 Q228 62 228 74 V166 Q228 178 216 178 H136 L101 207 108 178 H35 Q23 178 23 166 V74 Q23 62 35 62Z" fill="#FFFFFF" stroke-width="3.2"/>
+      <path d="M55 98 Q127 93 198 99 M55 127 Q123 132 195 126" fill="none" stroke="#6E7676" stroke-width="2.3"/>
+    </g>
+    <g transform="rotate(3 338 137)">
+      <path d="M274 61 Q269 50 280 45 L397 45 Q408 49 404 61 L390 206 Q389 217 377 217 H296 Q284 216 283 205Z" fill="#FFFFFF" stroke-width="3.2"/>
+      <path d="M287 77 H391 L382 163 Q380 176 368 176 H310 Q298 175 296 163Z" fill="#76A9EA" stroke-width="3"/>
+      <path d="M317 196 Q337 185 360 196" fill="none" stroke="#1A733A" stroke-width="2.5"/>
+    </g>
+    <g transform="rotate(-2 526 136)">
+      <rect x="435" y="51" width="181" height="172" rx="13" fill="#EDFBF2" stroke-width="3.2"/>
+      <rect x="459" y="83" width="31" height="31" rx="5" fill="#FFFFFF" stroke-width="2.7"/>
+      <path d="m466 98 8 8 14-18" fill="none" stroke="#1A733A" stroke-width="3.2"/>
+      <path d="M504 97 H584 M459 141 H584 M459 169 H570 M459 197 H548" fill="none" stroke="#6E7676" stroke-width="2.4"/>
+    </g>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive" text-anchor="middle">
+    <text x="125" y="238" font-size="19">&#8220;Adeeggu aad buu u fiicnaa&#8221;</text>
+    <text x="339" y="249" font-size="27">&#8220;buluug&#8221;</text>
+    <text x="525" y="251" font-size="19">&#8220;waan ku qanacsanahay&#8221;</text>
+  </g>
+</svg>

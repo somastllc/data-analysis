@@ -16,13 +16,13 @@ Ka hor inta aanay falanqeeyayaasha iyo Data Scientist-yadu xogta ku shaqayn, waa
 
 ### Waxa uu Qabto Data Engineer-ku
 
-Shaqooyinka caadiga ah waxaa ka mid ah:
+Shaqooyinka caamka ah waxaa ka mid ah:
 
 - Dhisidda data pipelines
 - Ku kaydinta xogta databases, data lakes, ama data warehouse.
 - Nadiifinta iyo qaab-beddelidda xog badan
 - Hubinta in xogtu diyaar tahay, ammaan tahay, oo si fudud loo heli karo
-- La shaqaynta cloud platforms iyo qalabyada shaqooyinka si toos ah u qabta (automation tools)
+- La shaqaynta cloud platforms iyo qalabyada shaqooyinka si toos ah (automation tools) u qabta
 
 Haddii falanqaynta xogtu ku saabsan tahay helidda faham muhiim ah, Data Engineering wuxuu ku saabsan yahay suurtagelinta helidda fahamkaas.
 
@@ -39,7 +39,7 @@ Dhibaato kasta oo liiskaas ku jirta waxay ku dhacaysaa qofka xogta u baahan. Sha
 
 ### Tusaale
 
-Ganacsadihii jumlada ahaa ee casharka 2aad wuxuu xog ka helayaa afar meelood isku mar:
+Ganacsadihii jumlo iibiye ahaa ee casharka 2aad wuxuu xog ka helayaa afar meelood markiiba:
 
 - Nidaamka iibka ee dukaan kasta, kaas oo diiwaangeliya iibka marka uu dhaco
 - Darawallada gaarsiinta alaabta (delivery) oo diiwaangeliya alaabta ay geeyeen iyo meesha ay geeyeen

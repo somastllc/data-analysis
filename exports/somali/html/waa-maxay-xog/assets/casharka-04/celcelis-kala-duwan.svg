@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" role="img" aria-labelledby="title desc">
+  <title id="title">Isla faylka macaamiisha oo soo saaraya celceliska 72 iyo 30.5</title>
+  <desc id="desc">Da'aha aan la hubin waxay soo saaraan 72. Ka saarista qiimaha aan macquulka ahayn, Farah hal mar tirinta, iyo banaanka dhinac gelinta waxay soo saartaa 30.5.</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#DDE2E2" opacity=".72"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="920" height="380" rx="20" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <g>
+      <rect x="40" y="62" width="332" height="264" rx="18" fill="#FFFFFF" stroke-width="3.5"/>
+      <path d="M72 135 H338 M72 193 H338" fill="none" stroke="#DDE2E2" stroke-width="2"/>
+      <rect x="225" y="95" width="94" height="46" rx="9" fill="#FCEBEC" stroke="#A33A3A" stroke-width="2.5"/>
+    </g>
+    <path d="M394 194 C432 172 461 172 493 194" fill="none" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="511" y="62" width="369" height="264" rx="18" fill="#EDFBF2" stroke-width="3.5"/>
+      <path d="M542 135 H848 M542 193 H848" fill="none" stroke="#AEEBC5" stroke-width="2"/>
+      <path d="M561 106 H690" fill="none" stroke="#A33A3A" stroke-width="3"/>
+      <path d="M561 164 H690" fill="none" stroke="#A33A3A" stroke-width="3"/>
+      <path d="M561 222 H690" fill="none" stroke="#A33A3A" stroke-width="3"/>
+      <path d="m813 91 11 11 21-28" fill="none" stroke="#1A733A" stroke-width="4"/>
+    </g>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive">
+    <text x="55" y="44" font-size="24" fill="#A33A3A">celceliska sida la siiyay</text>
+    <text x="72" y="113" font-size="22">da&#700;aha</text>
+    <text x="141" y="113" font-size="22">34, 27, bannaan, 200, 27</text>
+    <text x="72" y="172" font-size="23">xisaabinta</text>
+    <text x="220" y="172" font-size="24">&#247; 5</text>
+    <text x="72" y="244" font-size="26">natiijada</text>
+    <text x="218" y="274" font-size="78" font-weight="700" fill="#A33A3A">72</text>
+    <text x="400" y="153" font-size="19" fill="#1A733A" transform="rotate(-4 400 153)">marka hore hubi</text>
+    <text x="527" y="44" font-size="24" fill="#1A733A">celceliska dib loo eegay</text>
+    <text x="542" y="113" font-size="21" fill="#A33A3A">ka saar 200</text>
+    <text x="542" y="172" font-size="21" fill="#A33A3A">Farah hal mar tiri</text>
+    <text x="542" y="231" font-size="21" fill="#A33A3A">banaanka dhinac gee</text>
+    <text x="542" y="292" font-size="24">(34 + 27) &#247; 2</text>
+    <text x="733" y="291" font-size="68" font-weight="700" fill="#1A733A">30.5</text>
+    <text x="205" y="357" font-size="22">isla faylkii &#183; isla su&#700;aashii &#183; isla xisaabintii</text>
+  </g>
+</svg>

@@ -12,7 +12,7 @@ Xogtu hal meel oo keliya kuma jirto. Waxay martaa nidaamyo iyo marxalado kala du
 
 ### Halka Xogtu Ku Kaydsan Tahay
 
-Hayʼaduhu waxay xogta ku kaydiyaan nidaamyo kala duwan marka loo eego ujeeddada iyo baaxadda xogta.
+Shirkaduhu waxay xogta ku kaydiyaan nidaamyo kala duwan marka loo eego ujeeddada iyo baaxadda xogta.
 
 | Nidaamka | Ujeeddada |
 |---|---|

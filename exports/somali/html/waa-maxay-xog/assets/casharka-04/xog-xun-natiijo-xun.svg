@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Xog xun oo la geliyo waxay keentaa natiijo xun</title>
+  <desc id="desc">Kaararka xog xun oo la calaamadiyey maqan, soo noqnoqday, iyo khaldan ayaa gasha mashiin falanqayn oo si sax ah u shaqeeya, waxayna soo saartaa natiijo qurux badan laakiin khaldan.</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#DDE2E2" opacity=".72"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="900" height="420" rx="20" fill="url(#dots)"/>
+  <g stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-5 128 130)">
+      <path d="M45 91 Q45 80 56 80 H204 Q215 80 215 91 V156 Q215 167 204 167 H56 Q45 167 45 156Z" fill="#FCEBEC" stroke-width="3"/>
+      <path d="M67 112 H190 M67 136 H158" fill="none" stroke="#A33A3A" stroke-width="2.4" stroke-dasharray="8 7"/>
+    </g>
+    <g transform="rotate(4 146 217)">
+      <path d="M64 178 Q64 167 75 167 H221 Q232 167 232 178 V244 Q232 255 221 255 H75 Q64 255 64 244Z" fill="#FCEBEC" stroke-width="3"/>
+      <path d="M87 201 H210 M87 226 H183" fill="none" stroke="#A33A3A" stroke-width="2.4"/>
+      <path d="M92 194 204 234" fill="none" stroke="#A33A3A" stroke-width="3"/>
+    </g>
+    <g transform="rotate(-3 139 302)">
+      <path d="M49 267 Q49 256 60 256 H213 Q224 256 224 267 V334 Q224 345 213 345 H60 Q49 345 49 334Z" fill="#FCEBEC" stroke-width="3"/>
+      <path d="M73 289 H201 M73 315 H174" fill="none" stroke="#A33A3A" stroke-width="2.4"/>
+      <circle cx="192" cy="315" r="9" fill="#FFFFFF" stroke="#A33A3A" stroke-width="2.5"/>
+      <path d="M192 310 V316 M192 322 V323" fill="none" stroke="#A33A3A" stroke-width="2.5"/>
+    </g>
+    <path d="M253 213 C286 193 307 193 335 211" fill="none" stroke="#1A733A" stroke-width="3.2" marker-end="url(#arrow)"/>
+    <g>
+      <path d="M351 89 Q351 75 365 75 H605 Q619 75 619 89 V331 Q619 345 605 345 H365 Q351 345 351 331Z" fill="#FFFFFF" stroke-width="4"/>
+      <path d="M351 126 H619" fill="none" stroke-width="3"/>
+      <circle cx="418" cy="104" r="10" fill="#D5F5E1" stroke-width="2.5"/>
+      <circle cx="455" cy="104" r="10" fill="#D5F5E1" stroke-width="2.5"/>
+      <path d="M502 104 H587" fill="none" stroke="#6E7676" stroke-width="3"/>
+      <g fill="#EDFBF2" stroke-width="3">
+        <circle cx="433" cy="218" r="52"/>
+        <circle cx="536" cy="234" r="42"/>
+      </g>
+      <path d="M433 181 V255 M396 218 H470 M407 192 459 244 M407 244 459 192" fill="none" stroke="#1A733A" stroke-width="4"/>
+      <path d="M536 204 V264 M506 234 H566 M515 213 557 255 M515 255 557 213" fill="none" stroke="#1A733A" stroke-width="3.5"/>
+      <path d="m553 78 10 10 20-26" fill="none" stroke="#1A733A" stroke-width="4"/>
+      <path d="M385 307 H584" fill="none" stroke="#8B9494" stroke-width="2.5" stroke-dasharray="8 8"/>
+    </g>
+    <path d="M641 213 C674 193 696 193 724 211" fill="none" stroke="#1A733A" stroke-width="3.2" marker-end="url(#arrow)"/>
+    <g>
+      <path d="M742 85 Q742 73 754 73 H844 Q856 73 856 85 V337 Q856 349 844 349 H754 Q742 349 742 337Z" fill="#FFFFFF" stroke-width="4"/>
+      <path d="M766 307 V251 M798 307 V188 M830 307 V120" fill="none" stroke="#A33A3A" stroke-width="18"/>
+      <path d="M760 312 H840" fill="none" stroke-width="3"/>
+      <circle cx="830" cy="120" r="13" fill="#FCEBEC" stroke="#A33A3A" stroke-width="3"/>
+      <path d="M830 114 V121 M830 128 V129" fill="none" stroke="#A33A3A" stroke-width="3"/>
+    </g>
+  </g>
+  <g fill="#121212" font-family="'Patrick Hand','Comic Sans MS',cursive">
+    <text x="42" y="48" font-size="24" fill="#A33A3A">XOG XUN OO GALAY</text>
+    <text x="378" y="48" font-size="28">FALANQAYN</text>
+    <text x="799" y="48" font-size="23" fill="#A33A3A" text-anchor="middle">NATIIJO XUN</text>
+    <text x="77" y="130" font-size="22" fill="#A33A3A">maqan</text>
+    <text x="96" y="220" font-size="22" fill="#A33A3A">soo noqnoqday</text>
+    <text x="77" y="309" font-size="22" fill="#A33A3A">khaldan</text>
+    <text x="378" y="326" font-size="20" fill="#1A733A">si sax ah ayey u shaqaynaysaa</text>
+    <text x="743" y="380" font-size="22" fill="#A33A3A">natiijo xun</text>
+    <text x="180" y="392" font-size="21">xog xun oo la geliyo waxay keentaa natiijo xun</text>
+  </g>
+</svg>

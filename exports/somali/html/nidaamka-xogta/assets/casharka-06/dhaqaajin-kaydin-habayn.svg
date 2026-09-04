@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" role="img" aria-labelledby="title desc">
+  <title id="title">Dhisidda iyo dayactirka nidaamyada dhaqaajiya, kaydiya, oo habeeya xogta</title>
+  <desc id="desc">Data Engineering wuxuu diiradda saaraa dhisidda iyo dayactirka nidaamyada dhaqaajiya, kaydiya, oo habeeya xogta si ay u noqoto mid lagu kalsoonaan karo oo diyaar u ah isticmaalka.</desc>
+
+  <rect width="900" height="480" rx="26" fill="#F6F8F8"/>
+
+  <rect x="120" y="60" width="660" height="90" rx="16" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="3"/>
+  <path d="M148 118 L166 100 L184 108 L206 82" fill="none" stroke="#1A733A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="230" y="98" font-family="Geist, Arial, sans-serif" font-size="24" font-weight="600" fill="#121212">Xog lagu kalsoonaan karo</text>
+  <text x="230" y="128" font-family="Geist, Arial, sans-serif" font-size="19" fill="#4D5353">oo diyaar u ah isticmaalka</text>
+
+  <path d="M215 150 L215 200" stroke="#DDE2E2" stroke-width="4"/>
+  <path d="M450 150 L450 200" stroke="#DDE2E2" stroke-width="4"/>
+  <path d="M685 150 L685 200" stroke="#DDE2E2" stroke-width="4"/>
+
+  <g transform="translate(90 200)">
+    <rect width="250" height="220" rx="16" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <g transform="translate(24 26)" stroke="#4D5353" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 18 h60 M46 6 l14 12 -14 12"/>
+    </g>
+    <text x="24" y="120" font-family="Geist, Arial, sans-serif" font-size="24" font-weight="600" fill="#121212">Dhaqaajin</text>
+    <text x="24" y="150" font-family="Geist, Arial, sans-serif" font-size="18" fill="#6E7676">xogta u soo qaad</text>
+    <text x="24" y="174" font-family="Geist, Arial, sans-serif" font-size="18" fill="#6E7676">isha ilaa isticmaalka</text>
+  </g>
+
+  <g transform="translate(360 200)">
+    <rect width="180" height="220" rx="16" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <g transform="translate(24 20)" stroke="#4D5353" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="16" cy="8" rx="16" ry="6"/>
+      <path d="M0 8 v20 a16 6 0 0 0 32 0 V8"/>
+      <path d="M0 18 a16 6 0 0 0 32 0"/>
+    </g>
+    <text x="24" y="120" font-family="Geist, Arial, sans-serif" font-size="24" font-weight="600" fill="#121212">Kaydin</text>
+    <text x="24" y="150" font-family="Geist, Arial, sans-serif" font-size="18" fill="#6E7676">databases, lakes,</text>
+    <text x="24" y="174" font-family="Geist, Arial, sans-serif" font-size="18" fill="#6E7676">warehouses</text>
+  </g>
+
+  <g transform="translate(560 200)">
+    <rect width="250" height="220" rx="16" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <g transform="translate(24 20)" stroke="#4D5353" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="0" width="15" height="15" rx="3"/>
+      <rect x="21" y="0" width="15" height="15" rx="3"/>
+      <rect x="0" y="21" width="15" height="15" rx="3"/>
+      <rect x="21" y="21" width="15" height="15" rx="3"/>
+    </g>
+    <text x="24" y="120" font-family="Geist, Arial, sans-serif" font-size="24" font-weight="600" fill="#121212">Habayn</text>
+    <text x="24" y="150" font-family="Geist, Arial, sans-serif" font-size="18" fill="#6E7676">nadiifin iyo</text>
+    <text x="24" y="174" font-family="Geist, Arial, sans-serif" font-size="18" fill="#6E7676">qaab-beddelid</text>
+  </g>
+</svg>

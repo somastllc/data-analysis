@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casharka 06 - Data Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #F6F8F8; }
+  a { color: #1A733A; text-decoration: none; }
+  [data-lucide] { width: 40px; height: 40px; stroke-width: 2; }
+  .lesson-sketch { width: 100%; height: 100%; display: block; object-fit: contain; }
+  main { display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 40px 0; }
+  section.slide {
+    width: 1920px;
+    height: 1080px;
+    background: #F6F8F8;
+    color: #343838;
+    font-family: Geist, system-ui, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  @page { size: 10in 5.625in; margin: 0; }
+  @media print {
+    html, body { width: 960px; background: #F6F8F8; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    main { display: block; padding: 0; gap: 0; }
+    section.slide {
+      width: 1920px !important;
+      height: 1080px !important;
+      zoom: .5;
+      break-after: page;
+      page-break-after: always;
+    }
+    section.slide:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <section class="slide" data-label="Title" data-screen-label="01" style="padding:100px 110px 80px;display:flex;flex-direction:column;justify-content:center">
+    <div style="display:flex;flex-direction:column;gap:36px;max-width:1700px">
+      <div style="font-family:'Geist Mono',monospace;font-size:26px;letter-spacing:.09em;text-transform:uppercase;color:#1A733A">Cutubka 2aad &middot; Casharka 6aad ee 7-da cashar</div>
+      <h1 style="margin:0;font-size:118px;font-weight:600;letter-spacing:-.03em;line-height:1;color:#121212">Data Engineering</h1>
+    </div>
+  </section>
+
+  <section class="slide" data-label="Objective" data-screen-label="02" style="padding:100px 110px 80px;display:flex;flex-direction:column;gap:56px;justify-content:center">
+    <div style="font-family:'Geist Mono',monospace;font-size:24px;letter-spacing:.09em;text-transform:uppercase;color:#1A733A">Dhammaadka casharkan</div>
+    <h2 style="margin:0;font-size:62px;font-weight:600;letter-spacing:-.025em;line-height:1.25;color:#121212;max-width:1700px;text-wrap:pretty">Waxaad awoodi doontaa inaad sharaxdo waxa Data Engineer-ku dhiso iyo sababta shaqooyinka kale ee xogta la xiriira ay ugu tiirsan yihiin.</h2>
+  </section>
+
+  <section class="slide" data-label="Dulmar" data-screen-label="03" style="padding:66px 104px 60px;display:flex;flex-direction:column;gap:30px;justify-content:center">
+    <h2 style="margin:0;font-size:56px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Dulmar</h2>
+    <p style="margin:0;font-size:28px;line-height:1.48;color:#121212;max-width:1700px;text-wrap:pretty">Falanqeeye (analyst) ayaa furay warbixin, wuxuuna helay saddex nuqul oo kala duwan oo isla tirooyinka iibka ah: mid duugoobay, mid aan dhammaystirnayn, iyo mid qaab khaldan ku jira. Xogtu way jirtaa, laakiin weli laguma kalsoonaan karo.</p>
+    <p style="margin:0;font-size:26px;line-height:1.46;color:#4D5353;max-width:1700px;text-wrap:pretty">Ka hor inta aanay falanqeeyayaasha iyo Data Scientist-yadu xogta ku shaqayn, waa in si la isku halayn karo loo ururiyaa, loo kaydiyaa, loona diyaariyaa. Taasi waa shaqada <strong style="color:#121212">Data Engineering</strong>.</p>
+  </section>
+
+  <section class="slide" data-label="Waa maxay Data Engineering" data-screen-label="04" style="padding:64px 100px 56px;display:flex;flex-direction:column;gap:36px;justify-content:center">
+    <h2 style="margin:0;font-size:52px;font-weight:600;letter-spacing:-.02em;line-height:1.2;color:#121212">Waa maxay Data Engineering?</h2>
+    <p style="margin:0;font-size:29px;line-height:1.5;color:#121212;max-width:1700px;text-wrap:pretty"><strong style="color:#121212">Data Engineering</strong> wuxuu diiradda saaraa dhisidda iyo dayactirka nidaamyada dhaqaajiya, kaydiya, oo habeeya xogta si ay u noqoto mid lagu kalsoonaan karo oo diyaar u ah isticmaalka.</p>
+    <div style="display:flex;align-items:center;justify-content:center">
+      <img class="lesson-sketch" src="assets/casharka-06/dhaqaajin-kaydin-habayn.svg" alt="Sawir gacan lagu sameeyay oo muujinaya dhaqaajinta, kaydinta, iyo habaynta xogta oo taageeraya xog lagu kalsoonaan karo" style="width:100%;height:auto;max-height:420px">
+    </div>
+  </section>
+
+  <section class="slide" data-label="Waxa uu Qabto Data Engineer-ku" data-screen-label="05" style="padding:58px 96px 52px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+    <h2 style="margin:0;font-size:46px;font-weight:600;letter-spacing:-.02em;line-height:1.2;color:#121212">Waxa uu Qabto Data Engineer-ku</h2>
+    <p style="margin:0;font-size:25px;line-height:1.4;color:#4D5353">Shaqooyinka caamka ah waxaa ka mid ah:</p>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="height:66px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:12px;padding:0 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#1A733A;display:flex;flex-shrink:0"><i data-lucide="check" style="width:24px;height:24px"></i></span>
+        <span style="font-size:22px;color:#343838">Dhisidda data pipelines</span>
+      </div>
+      <div style="height:66px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:12px;padding:0 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#1A733A;display:flex;flex-shrink:0"><i data-lucide="check" style="width:24px;height:24px"></i></span>
+        <span style="font-size:22px;color:#343838">Ku kaydinta xogta databases, data lakes, ama data warehouse.</span>
+      </div>
+      <div style="height:66px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:12px;padding:0 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#1A733A;display:flex;flex-shrink:0"><i data-lucide="check" style="width:24px;height:24px"></i></span>
+        <span style="font-size:22px;color:#343838">Nadiifinta iyo qaab-beddelidda xog badan</span>
+      </div>
+      <div style="height:66px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:12px;padding:0 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#1A733A;display:flex;flex-shrink:0"><i data-lucide="check" style="width:24px;height:24px"></i></span>
+        <span style="font-size:22px;color:#343838">Hubinta in xogtu diyaar tahay, ammaan tahay, oo si fudud loo heli karo</span>
+      </div>
+      <div style="height:66px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:12px;padding:0 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#1A733A;display:flex;flex-shrink:0"><i data-lucide="check" style="width:24px;height:24px"></i></span>
+        <span style="font-size:22px;color:#343838">La shaqaynta cloud platforms iyo qalabyada shaqooyinka si toos ah (automation tools) u qabta</span>
+      </div>
+    </div>
+    <p style="margin:0;font-size:24px;line-height:1.42;color:#121212;max-width:1750px;text-wrap:pretty">Haddii falanqaynta xogtu ku saabsan tahay helidda faham muhiim ah, Data Engineering wuxuu ku saabsan yahay suurtagelinta helidda fahamkaas.</p>
+  </section>
+
+  <section class="slide" data-label="Maxay Muhiim u Tahay" data-screen-label="06" style="padding:58px 96px 52px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+    <h2 style="margin:0;font-size:46px;font-weight:600;letter-spacing:-.02em;line-height:1.2;color:#121212">Maxay Data Engineering Muhiim u Tahay?</h2>
+    <p style="margin:0;font-size:25px;line-height:1.4;color:#4D5353">Haddii kaabayaasha xogtu (data infrastructure) daciif yihiin:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="height:96px;background:#FCEBEC;border:1px solid #E8CCCC;border-radius:12px;padding:18px 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#A33A3A;display:flex;flex-shrink:0"><i data-lucide="split" style="width:24px;height:24px"></i></span>
+        <span style="font-size:21px;line-height:1.32;color:#343838">Xogtu waxay ku kala firdhi kartaa nidaamyo kala duwan</span>
+      </div>
+      <div style="height:96px;background:#FCEBEC;border:1px solid #E8CCCC;border-radius:12px;padding:18px 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#A33A3A;display:flex;flex-shrink:0"><i data-lucide="file-clock" style="width:24px;height:24px"></i></span>
+        <span style="font-size:21px;line-height:1.32;color:#343838">Warbixinnadu waxay isticmaali karaan tirooyin duugoobay</span>
+      </div>
+      <div style="height:96px;background:#FCEBEC;border:1px solid #E8CCCC;border-radius:12px;padding:18px 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#A33A3A;display:flex;flex-shrink:0"><i data-lucide="hourglass" style="width:24px;height:24px"></i></span>
+        <span style="font-size:21px;line-height:1.32;color:#343838">Falanqeeyayaashu waqti badan ayay ku lumin karaan raadinta xogta</span>
+      </div>
+      <div style="height:96px;background:#FCEBEC;border:1px solid #E8CCCC;border-radius:12px;padding:18px 24px;display:flex;align-items:center;gap:16px">
+        <span style="color:#A33A3A;display:flex;flex-shrink:0"><i data-lucide="cpu" style="width:24px;height:24px"></i></span>
+        <span style="font-size:21px;line-height:1.32;color:#343838">Adeegsiga Machine Learning ee xog aad u badan wuu adkaan karaa</span>
+      </div>
+    </div>
+    <p style="margin:0;font-size:24px;line-height:1.42;color:#121212;max-width:1750px;text-wrap:pretty">Dhibaato kasta oo liiskaas ku jirta waxay ku dhacaysaa qofka xogta u baahan. Shaqada Data Engineering badanaa lama dareemo marka ay si fiican u socoto, laakiin qof walba ayaa isla markiiba dareema marka ay shaqayn waydo.</p>
+  </section>
+
+  <section class="slide" data-label="Tusaale" data-screen-label="07" style="padding:52px 92px 46px;display:flex;flex-direction:column;gap:18px;justify-content:center">
+    <h2 style="margin:0;font-size:44px;font-weight:600;letter-spacing:-.02em;line-height:1.2;color:#121212">Tusaale</h2>
+    <p style="margin:0;font-size:22px;line-height:1.36;color:#4D5353;max-width:1780px">Ganacsadihii jumlo iibiye ahaa ee casharka 2aad wuxuu xog ka helayaa afar meelood markiiba:</p>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="height:56px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:10px;padding:0 22px;display:flex;align-items:center;gap:14px">
+        <span style="color:#4D5353;display:flex;flex-shrink:0"><i data-lucide="circle-dot" style="width:18px;height:18px"></i></span>
+        <span style="font-size:19px;line-height:1.3;color:#343838">Nidaamka iibka ee dukaan kasta, kaas oo diiwaangeliya iibka marka uu dhaco</span>
+      </div>
+      <div style="height:56px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:10px;padding:0 22px;display:flex;align-items:center;gap:14px">
+        <span style="color:#4D5353;display:flex;flex-shrink:0"><i data-lucide="circle-dot" style="width:18px;height:18px"></i></span>
+        <span style="font-size:19px;line-height:1.3;color:#343838">Darawallada gaarsiinta alaabta (delivery) oo diiwaangeliya alaabta ay geeyeen iyo meesha ay geeyeen</span>
+      </div>
+      <div style="height:56px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:10px;padding:0 22px;display:flex;align-items:center;gap:14px">
+        <span style="color:#4D5353;display:flex;flex-shrink:0"><i data-lucide="circle-dot" style="width:18px;height:18px"></i></span>
+        <span style="font-size:19px;line-height:1.3;color:#343838">Biilasha ay alaab-qeybiyeyaashu (suppliers) PDF ahaan email-ka ku soo diraan</span>
+      </div>
+      <div style="height:56px;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:10px;padding:0 22px;display:flex;align-items:center;gap:14px">
+        <span style="color:#4D5353;display:flex;flex-shrink:0"><i data-lucide="circle-dot" style="width:18px;height:18px"></i></span>
+        <span style="font-size:19px;line-height:1.3;color:#343838">Dalabaadka telefoonka oo buug lagu qoro, kadibna dhammaadka maalinta nidaamka la geliyo</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center">
+      <img class="lesson-sketch" src="assets/casharka-06/afar-il-hal-jadwal.svg" alt="Sawir gacan lagu sameeyay oo muujinaya afarta il ee xogta oo gasha Data Engineer, oo soo saarta hal jadwal xogeed oo nadiif ah" style="width:100%;height:auto;max-height:340px">
+    </div>
+    <p style="margin:0;font-size:20px;line-height:1.34;color:#343838;max-width:1780px;text-wrap:pretty">Afartaas meelood isku magac uma isticmaalaan alaabta, xogta laba ka mid ahna way soo daahdaa. Data Engineer-ku wuxuu dhisaa data pipelines isku keena afarta ilood, mideeya magacyada alaabta, isla markaana subax kasta diyaariya hal jadwal (spreadsheet) xogeed oo nadiif ah oo falanqeeyuhu isticmaali karo, iyada oo aan qofna looga baahnayn inuu maalin kasta gacanta ku qabto shaqadaas.</p>
+  </section>
+
+</main>
+<script>
+window.addEventListener('load', () => {
+  if (window.lucide) window.lucide.createIcons();
+});
+</script>
+</body>
+</html>

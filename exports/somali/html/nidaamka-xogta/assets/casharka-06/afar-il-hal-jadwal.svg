@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
+  <title id="title">Afar il oo xog ah oo isku keena hal jadwal xogeed oo nadiif ah</title>
+  <desc id="desc">Data Engineer-ku wuxuu dhisaa data pipelines isku keena afarta ilood, mideeya magacyada alaabta, isla markaana subax kasta diyaariya hal jadwal xogeed oo nadiif ah oo falanqeeyuhu isticmaali karo.</desc>
+  <defs>
+    <marker id="arrow-de" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#6E7676"/>
+    </marker>
+    <marker id="arrow-de-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#1A733A"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="460" rx="26" fill="#F6F8F8"/>
+
+  <text x="34" y="34" font-family="Geist Mono, monospace" font-size="15" letter-spacing=".05em" fill="#6E7676">AFAR IL</text>
+
+  <g transform="translate(34 50)">
+    <rect width="270" height="82" rx="12" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="22" y="38" font-family="Geist, Arial, sans-serif" font-size="19" fill="#343838">Nidaamka iibka</text>
+    <text x="22" y="62" font-family="Geist, Arial, sans-serif" font-size="16" fill="#6E7676">dukaan kasta</text>
+  </g>
+  <g transform="translate(34 144)">
+    <rect width="270" height="82" rx="12" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="22" y="38" font-family="Geist, Arial, sans-serif" font-size="19" fill="#343838">Darawallada</text>
+    <text x="22" y="62" font-family="Geist, Arial, sans-serif" font-size="16" fill="#6E7676">gaarsiinta alaabta</text>
+  </g>
+  <g transform="translate(34 238)">
+    <rect width="270" height="82" rx="12" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="22" y="38" font-family="Geist, Arial, sans-serif" font-size="19" fill="#343838">Biilasha PDF</text>
+    <text x="22" y="62" font-family="Geist, Arial, sans-serif" font-size="16" fill="#6E7676">alaab-qeybiyeyaasha</text>
+  </g>
+  <g transform="translate(34 332)">
+    <rect width="270" height="82" rx="12" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="2.5"/>
+    <text x="22" y="38" font-family="Geist, Arial, sans-serif" font-size="19" fill="#343838">Dalabaadka</text>
+    <text x="22" y="62" font-family="Geist, Arial, sans-serif" font-size="16" fill="#6E7676">telefoonka</text>
+  </g>
+
+  <path d="M304 91 C360 91 380 210 436 218" fill="none" stroke="#6E7676" stroke-width="2.5" marker-end="url(#arrow-de)"/>
+  <path d="M304 185 C360 185 380 215 436 222" fill="none" stroke="#6E7676" stroke-width="2.5" marker-end="url(#arrow-de)"/>
+  <path d="M304 279 C360 279 380 245 436 238" fill="none" stroke="#6E7676" stroke-width="2.5" marker-end="url(#arrow-de)"/>
+  <path d="M304 373 C360 373 380 250 436 234" fill="none" stroke="#6E7676" stroke-width="2.5" marker-end="url(#arrow-de)"/>
+
+  <g transform="translate(447 145)">
+    <rect width="200" height="150" rx="18" fill="#121212"/>
+    <g transform="translate(66 32)" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="17" cy="17" r="17"/>
+      <path d="M17 7 v6 M17 21 v6 M7 17 h6 M21 17 h6 M9.9 9.9 l3 3 M21.1 21.1 l-3 -3 M9.9 24.1 l3 -3 M21.1 12.9 l-3 3"/>
+    </g>
+    <text x="100" y="120" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">Data</text>
+    <text x="100" y="142" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">Engineer</text>
+  </g>
+
+  <path d="M647 220 C680 220 690 220 720 220" fill="none" stroke="#1A733A" stroke-width="3" marker-end="url(#arrow-de-green)"/>
+
+  <g transform="translate(731 120)">
+    <rect width="235" height="200" rx="18" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="3"/>
+    <text x="24" y="40" font-family="Geist Mono, monospace" font-size="14" letter-spacing=".04em" fill="#1A733A">SUBAX KASTA</text>
+    <text x="24" y="76" font-family="Geist, Arial, sans-serif" font-size="21" font-weight="600" fill="#121212">Hal jadwal</text>
+    <text x="24" y="102" font-family="Geist, Arial, sans-serif" font-size="21" font-weight="600" fill="#121212">xogeed oo</text>
+    <text x="24" y="128" font-family="Geist, Arial, sans-serif" font-size="21" font-weight="600" fill="#121212">nadiif ah</text>
+    <rect x="24" y="152" width="187" height="14" rx="4" fill="#FFFFFF" stroke="#AEEBC5" stroke-width="2"/>
+    <rect x="24" y="174" width="140" height="14" rx="4" fill="#FFFFFF" stroke="#AEEBC5" stroke-width="2"/>
+  </g>
+</svg>

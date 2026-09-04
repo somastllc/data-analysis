@@ -6,7 +6,7 @@
 
 ## Dulmar
 
-Sanduuqa farriimaha (Inbox) ayaa saaka farriin ugu wareejiyey qaybta spam-ka. Qofna ma qorin xeer si gaar ah u tilmaamaya qofka farriinta soo diray. Nidaamku wuxuu waxa spam-ka u eg ka bartay malaayiin farriimood oo ay dadku hore u kala saareen. Taasi waa **Machine Learning**.
+Sanduuqa farriimaha (Inbox) ayaa saaka farriin u wareejiyey qaybta spam-ka. Qofna ma qorin xeer si gaar ah u tilmaamaya qofka farriinta soo diray. Nidaamku wuxuu wax spam-ka u eg ka bartay malaayiin farriimood oo ay dadku hore u kala saareen. Taasi waa **Machine Learning**.
 
 ### Waa maxay Machine Learning?
 
@@ -62,4 +62,4 @@ Data Scientist-kii casharkii hore wuxuu baaray sababta hoos u dhaca cusboonaysii
 
 Macaamiishii hore ayaa ah tusaalooyinka tababarka (training examples). Inta jeer ee ay lacag ku shubteen, xirmooyinka ay doorteen, iyo taariikhda adeeggooda waxay noqdaan xogta la geliyo (inputs). Inay markii dambe baxeen iyo in kale waxay noqotaa natiijada la yaqaan (known outcome). Model-ku wuxuu bartaa xiriirka ka dhexeeya xogta la geliyey iyo natiijadaas, kadibna macaamiisha hadda jooga wuxuu siiyaa saadaal muujinaysa halista bixitaanka.
 
-Saadaashaasi iskeed uma sharxayso sababta macmiilku u bixi karo, mana goʼamiso tallaabada ay shirkaddu qaadayso. Waxay bixisaa qayb caddaynta ka mid ah oo ay dadku qiimayn karaan, tallaabana ku salayn karaan.
+Saadaashaasi iskeed ma sharxayso sababta macmiilku u bixi karo, mana goʼamiso tallaabada ay shirkaddu qaadayso. Waxay bixisaa qayb caddaynta ka mid ah oo ay dadku qiimayn karaan, tallaabana ku salayn karaan.

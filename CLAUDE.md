@@ -109,12 +109,21 @@ exports/
 │   └── Lesson 05 - Why Data Matters.pdf
 └── somali/
     ├── html/
-    │   ├── Casharka 01 - Waa Maxay Data.html
-    │   └── assets/casharka-01/
-    │       ├── iibka-afarta-maalmood.svg
-    │       └── tusaalaha-cunto-karinta.svg
+    │   ├── waa-maxay-xog/
+    │   │   ├── Casharka 01 - Waa Maxay Data.html
+    │   │   ├── Casharka 02 - Noocyada Xogta.html
+    │   │   ├── ...
+    │   │   └── assets/casharka-01/, assets/casharka-02/, ...
+    │   └── nidaamka-xogta/
+    │       ├── Casharka 01 - Noocyada Falanqaynta.html
+    │       └── assets/casharka-01/
+    │           ├── afarta-marxaladood.svg
+    │           └── afarta-nooc-isku-xirnaan.svg
     └── pdf/
-        └── Casharka 01 - Waa Maxay Data.pdf
+        ├── waa-maxay-xog/
+        │   └── Casharka 01 - Waa Maxay Data.pdf, ...
+        └── nidaamka-xogta/
+            └── Casharka 01 - Noocyada Falanqaynta.pdf
 
 references/
 └── Data Fundamentals Lesson.pdf
@@ -123,6 +132,8 @@ references/
 Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual sources and rendered SVGs belong under a lesson-specific assets folder. Final PDFs belong in `exports/pdf/`. User-supplied examples belong in `references/` and should not be overwritten when regenerating an export.
 
 Somali source lessons are governed by [`somali.md`](somali.md). Read that guide before creating, auditing, or editing Somali curriculum content. The required workflow is rewrite first, user review, Markdown lock-in, and only then visual production. Do not treat Somali work as sentence-by-sentence translation, and do not update its export while the Markdown is still under review unless the user explicitly requests it. Somali HTML, lesson assets, and PDFs live under `exports/somali/` so they remain separate from the earlier English packages. The Lesson 1 wording `Xogtu badanaa sheekadoo dhan ma sheegto` is intentional and must remain unchanged in its export.
+
+Somali exports are nested one level deeper than the English packages: `exports/somali/html/<chapter-slug>/` and `exports/somali/pdf/<chapter-slug>/`, where `<chapter-slug>` is the source chapter folder name with its numeric prefix stripped (`01-waa-maxay-xog` to `waa-maxay-xog`, `02-nidaamka-xogta` to `nidaamka-xogta`). Casharka numbering restarts at 01 within each chapter subfolder, matching the source Markdown's per-chapter file numbering. The `assets/casharka-NN/` folder for each lesson lives inside that same chapter subfolder, alongside its HTML file.
 
 `PRODUCTION.md` remains the recording plan. It describes shot order and required teaching visuals. The supplied PDF and completed Lesson 1.1 export now provide the practical visual baseline.
 
@@ -143,10 +154,24 @@ Somali source lessons are governed by [`somali.md`](somali.md). Read that guide 
 
 ### Somali visual production progress
 
-- Somali Casharka 1, "Waa maxay Data?", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations.
-- The Somali PDF uses the same 16:9 page size of 720 x 404.88 points.
-- Both Somali SVG exports pass the SVG validator and XML parsing. All sixteen SVGs across the English and Somali export packages currently pass.
-- The earlier English exports remain available as references. New production should begin from the reviewed Somali Markdown, not by translating the English slides.
+- Casharka 1, "Waa maxay xog?", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations.
+- Casharka 2, "Noocyada xogta", is complete as a seven-slide HTML presentation and a seven-page PDF with five standalone Somali SVG illustrations.
+- Casharka 3, "Ilaha iyo Qaababka Xogta", is complete as a seven-slide HTML presentation and a seven-page PDF with three standalone Somali SVG illustrations.
+- Casharka 4, "Tayada Xogta", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone Somali SVG illustrations.
+- Casharka 5, "Maxay Xogtu Muhiim u Tahay?", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone Somali SVG illustrations.
+- All five Somali PDFs use the same 16:9 page size of 720 x 404.88 points.
+- All fourteen Somali SVG exports pass the SVG validator and XML parsing.
+- Every sentence quoted on a Somali slide is checked verbatim against its source Markdown, including the modifier-letter apostrophe (U+02BC, `ʼ`) used throughout for words like `suʼaal` and `goʼaan`. Do not substitute a straight apostrophe or the wrong Unicode lookalike (U+02BB is wrong).
+- The earlier English exports remain available as references for layout and CSS conventions only. Wording on Somali slides must come from the reviewed Somali Markdown, never translated fresh from the English slide text.
+- All five Chapter 1 Somali lessons are converted (Casharka 1 through 5), under `exports/somali/html/waa-maxay-xog/`.
+- Casharka 2.1, "Noocyada Falanqaynta", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone Somali SVG illustrations, under `exports/somali/html/nidaamka-xogta/`.
+- Casharka 2.2, "Data Analysis iyo Business Intelligence", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
+- Casharka 2.3, "Data Science", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
+- Casharka 2.4, "Machine Learning", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone Somali SVG illustrations, under the same folder.
+- Casharka 2.5, "Halka Xogtu Ku Kaydsan Tahay iyo Data Pipeline-ka", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
+- Casharka 2.6, "Data Engineering", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone Somali SVG illustrations, under the same folder.
+- Casharka 2.7, "Sida ay Doorarka Xogtu u Wada Shaqeeyaan", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
+- All seven Chapter 2 Somali lessons are converted (Casharka 1 through 7).
 
 ### HTML and PDF conventions
 

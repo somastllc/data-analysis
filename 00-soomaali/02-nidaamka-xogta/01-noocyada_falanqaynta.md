@@ -1,8 +1,8 @@
-# Noocyada Analytics-ka (Types of Analytics)
+# Noocyada Falanqaynta
 
 **Cutubka:** 2aad - Nidaamka Xogta 
 **Casharka:** 1aad ee 7-da cashar  
-**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad kala saarto afarta nooc ee analytics-ka iyo suʼaasha uu nooc walba ka jawaabo.
+**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad kala saarto afarta nooc ee Falanqaynta (Analytics) iyo suʼaasha uu nooc walba ka jawaabo.
 
 ## Dulmar
 
@@ -15,9 +15,9 @@ Maamule ayaa eegaya warbixinta iibka bishii hore, wuxuuna qabaa afar suʼaalood:
 
 Suʼaal kasta waxay u baahan tahay nooc falanqayn ah oo ka duwan kuwa kale.
 
-### Waa maxay Analytics?
+### Waa maxay Falanqayn (Analytics)?
 
-**Analytics** waa adeegsiga xogta si loo fahmo waxa dhacay, sababta ay u dhacday, waxa dhici kara marka xigta, ama tallaabada la qaadayo.
+**Falanqayn (Analytics)** waa adeegsiga xogta si loo fahmo waxa dhacay, sababta ay u dhacday, waxa dhici kara marka xigta, ama tallaabada la qaadayo.
 
 ```mermaid
 flowchart LR
@@ -26,7 +26,7 @@ flowchart LR
     predictive --> prescriptive["Maxaan samaynaa?<br/>Prescriptive"]
 ```
 
-### Afarta Nooc ee Analytics-ka
+### Afarta Nooc ee Falanqaynta
 
 | Nooca | Suʼaasha | Tusaalaha |
 |---|---|---|

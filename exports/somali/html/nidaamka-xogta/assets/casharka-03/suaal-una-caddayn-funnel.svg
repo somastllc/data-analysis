@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" role="img" aria-labelledby="title desc">
+  <title id="title">Suʼaal ballaaran oo ku soo cidhiidhiyanaysa caddayn</title>
+  <desc id="desc">Data Scientist-ku wuxuu suʼaal ballaaran ka bilaabaa, xogta isku daraa, tijaabiyaa sababaha, kadibna soo bandhigaa caddayn iyo tallaabooyin la qaadi karo.</desc>
+
+  <rect width="700" height="560" rx="26" fill="#F6F8F8"/>
+
+  <g transform="translate(0 30)">
+    <path d="M50 0 L650 0 L560 100 L140 100 z" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <text x="350" y="58" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="27" font-weight="600" fill="#121212">Su&#700;aal</text>
+
+    <path d="M140 112 L560 112 L470 202 L230 202 z" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <text x="350" y="164" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="25" font-weight="600" fill="#121212">Xog</text>
+
+    <path d="M230 214 L470 214 L400 304 L300 304 z" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <text x="350" y="266" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="23" font-weight="600" fill="#121212">Tijaabo</text>
+
+    <path d="M300 316 L400 316 L370 380 L330 380 z" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="3"/>
+
+    <rect x="200" y="392" width="300" height="86" rx="16" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="3"/>
+    <text x="350" y="440" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="25" font-weight="600" fill="#1A733A">Caddayn</text>
+  </g>
+</svg>

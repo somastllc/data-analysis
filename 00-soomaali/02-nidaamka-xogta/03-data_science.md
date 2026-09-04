@@ -18,12 +18,12 @@ Qayb walba waxay keentaa wax gaar ah:
 
 | Qaybta | Waxa ay ku kordhiso |
 |---|---|
-| **Tirakoob (statistics)** | Habab lagu cabbiro qaababka soo noqnoqda, hubanti laʼaanta, iyo caddaynta |
+| **Tirakoob (statistics)** | Habab lagu cabbiro qaababka soo noqnoqda (patterns), hubanti laʼaanta (uncertainty), iyo caddaynta |
 | **Barnaamij-samaynta (programming)** | Hab xog badan ama adag loogu shaqayn karo si la isku halayn karo |
 | **Aqoonta goobta (domain knowledge)** | Fahamka dhibaatada dhabta ah iyo xaddidaadaha jira |
 | **Falanqaynta xogta** | Habab xogta lagu baaro laguna sharxo waxa ay muujinayso |
 
-Fahamka ganacsiga iyo fahamka tirooyinku si isku mid ah ayay muhiim u yihiin. Qaab (pattern) ka dhex muuqda xogta mobile-ka (mobile data) macne badan ma leh haddii qofka baaraya aanu fahmin xirmooyinka, qiimahooda, hab-dhaqanka macaamiisha, ama sida diiwaannada loo sameeyey.
+Fahamka ganacsiga iyo fahamka tirooyinku si isku mid ah ayay muhiim u yihiin. Qaab (pattern) ka dhex muuqda mobile data macne badan ma leh haddii qofka baaraya aanu fahmin xirmooyinka, qiimahooda, ama hab-dhaqanka macaamiisha.
 
 ### Waxa uu Qabto Data Scientist-ku
 
@@ -38,9 +38,9 @@ Shaqadu badanaa waxay ka bilaabataa suʼaal, kama bilaabato model. Data Scientis
 
 ### Mashruuc Kasta oo Data Science ah uma Baahna Machine Learning
 
-Data Science wuxuu isticmaali karaa Machine Learning, laakiin wuxuu sidoo kale adeegsan karaa falanqayn tirakoob, tijaabooyin, tijaabooyin la matalay (simulations), ama baaritaan taxaddar leh.
+Data Science wuxuu isticmaali karaa Machine Learning, laakiin wuxuu sidoo kale adeegsan karaa falanqayn tirakoob, tijaabooyin, ama baaritaan taxaddar leh.
 
-Ka soo qaad in shirkadda isgaarsiintu ay qiimaha xirmooyinka ka beddeshay saddex magaalo xilliyo kala duwan. Data Scientist-ku wuxuu isbarbar dhigi karaa heerka cusboonaysiinta xirmooyinka ka hor iyo ka dib isbeddel kasta, wuxuu baari karaa sababo kale, wuxuuna hubin karaa in caddayntu muujinayso xiriir. Shaqadaasi waa Data Science xitaa haddii aan la dhisin model Machine Learning ah.
+Ka soo qaad in shirkadda isgaarsiintu ay qiimaha xirmooyinka ka beddeshay saddex magaalo xilliyo kala duwan. Data Scientist-ku wuxuu isbarbar dhigi karaa heerka cusboonaysiinta xirmooyinka ka hor iyo ka dib isbeddel kasta, wuxuu baari karaa sababo, wuxuuna hubin karaa in caddayntu muujinayso xiriir. Shaqadaasi waa Data Science xitaa haddii aan la dhisin model Machine Learning ah.
 
 Natiijadu waxay noqon kartaa sharaxaad, tijaabo, saadaal, talo-bixin, ama model. Machine Learning waa hal hab oo la isticmaali karo, laakiin ma aha waxa qeexaya Data Science.
 
@@ -48,7 +48,7 @@ Natiijadu waxay noqon kartaa sharaxaad, tijaabo, saadaal, talo-bixin, ama model.
 
 Si loo baaro hoos u dhaca cusboonaysiinta xirmooyinka, Data Scientist-ku wuxuu:
 
-1. Weedha “macaamiishu way baxayaan” u beddeli karaa suʼaal la cabbiri karo
+1. Weedha “macaamiishu way baxooyaan” u beddeli karaa suʼaal la cabbiri karo
 2. Isku dari karaa xogta cusboonaysiinta, qiimaha, iyo adeegga macaamiisha
 3. Raadin karaa goorta iyo halka hoos u dhacu ka bilowday
 4. Tijaabin karaa waxa sida ugu fiican u sharxaya hoos u dhaca: qiimaha, tayada adeegga, ama arrin kale
