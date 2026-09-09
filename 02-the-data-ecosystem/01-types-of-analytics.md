@@ -1,7 +1,5 @@
 # Types of Analytics
 
-**Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 1 of 7  
 **By the end:** You can tell descriptive, diagnostic, predictive, and prescriptive questions apart.
 
 ## Overview
@@ -24,9 +22,9 @@ flowchart LR
 | Type | Question | Example |
 |---|---|---|
 | **Descriptive analytics** | What happened? | Rice sales rose 12% last month |
-| **Diagnostic analytics** | Why did it happen? | They rose because the Hargeisa shop stayed open through Ramadan |
+| **Diagnostic analytics** | Why did it happen? | They rose because the Springfield shop stayed open longer |
 | **Predictive analytics** | What might happen next? | Sales may stay high next month if the longer hours continue |
-| **Prescriptive analytics** | What should we do? | Keep the longer hours in Hargeisa, and try them in Muqdisho |
+| **Prescriptive analytics** | What should we do? | Keep the longer hours in Springfield, and try them in Riverton |
 
 ### Simple way to remember them
 

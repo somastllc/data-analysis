@@ -1,12 +1,10 @@
 # Where Data Lives and the Data Pipeline
 
-**Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 5 of 7  
 **By the end:** You can name the stages a dataset passes through, and where it is stored at each one.
 
 ## Overview
 
-The sales figure on a manager's dashboard this morning began three weeks ago as a mobile money payment for a sack of rice. Between those two moments it was moved, stored, cleaned, reshaped, and summarized, usually by systems nobody in that meeting has ever seen. Data does not exist in one single place. It moves through systems and stages before it becomes useful.
+The sales figure on a manager's dashboard this morning began three weeks ago as a digital wallet payment for a sack of rice. Between those two moments it was moved, stored, cleaned, reshaped, and summarized, usually by systems nobody in that meeting has ever seen. Data does not exist in one single place. It moves through systems and stages before it becomes useful.
 
 ### Where data lives
 
@@ -47,7 +45,7 @@ Each stage has a purpose:
 
 Follow the payment from the top of the lesson.
 
-1. The mobile money system **collects** the payment - amount, time, shop
+1. The digital wallet system **collects** the payment - amount, time, shop
 2. It is **stored** in the payment provider's database, alongside millions of others
 3. A pipeline **cleans** the records, dropping the reversed and duplicated ones
 4. The data is **transformed** into daily totals per shop

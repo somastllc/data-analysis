@@ -1,7 +1,5 @@
 # Cleaning Data
 
-**Chapter:** 3 - The Data Process  
-**Lesson:** 3 of 6  
 **By the end:** You can decide what to do about duplicates, blanks, and impossible values, not just spot them.
 
 ## Overview
@@ -25,7 +23,7 @@ A **missing value** is a blank or unavailable data entry.
 | **Removing duplicates** | Same customer listed twice |
 | **Handling missing values** | Blank age or email fields |
 | **Fixing formats** | Dates written in different styles |
-| **Standardizing categories** | `HG`, `Hargeisa`, and `hargeisa` |
+| **Standardizing categories** | `SP`, `Springfield`, and `springfield` |
 | **Correcting invalid values** | Age = `-3` or `999` |
 
 ### How much cleaning is enough?

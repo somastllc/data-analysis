@@ -1,7 +1,5 @@
 # Responsible and Ethical Use of Data
 
-**Chapter:** 5 - Data Ethics and Privacy  
-**Lesson:** 1 of 4  
 **By the end:** You can name the principles of responsible data use, and spot a chart that misleads without stating anything false.
 
 ## Overview
@@ -10,11 +8,11 @@ The most damaging data projects are rarely built by bad people. They are built b
 
 **Data ethics** means applying principles that help us use data responsibly and fairly.
 
-This chapter follows one project, a mobile money company building an automatic loan product, through four lessons: responsible use, privacy, bias, and governance.
+This chapter follows one project, a digital wallet company building an automatic loan product, through four lessons: responsible use, privacy, bias, and governance.
 
 ### Case study: the loan scoring project
 
-A mobile money company has millions of customers who send and store money on their phones. It decides to launch **small business loans**, approved automatically in minutes.
+A digital wallet company has millions of customers who send and store money on their phones. It decides to launch **small business loans**, approved automatically in minutes.
 
 To decide who gets a loan, the team scores each customer using data the company already holds:
 

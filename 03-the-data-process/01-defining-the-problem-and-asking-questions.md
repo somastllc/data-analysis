@@ -1,7 +1,5 @@
 # Defining the Problem and Asking Questions
 
-**Chapter:** 3 - The Data Process  
-**Lesson:** 1 of 6  
 **By the end:** You can turn a vague request into a specific analytical question.
 
 ## Overview
@@ -33,7 +31,7 @@ Always begin by asking:
 Example:
 
 - Weak question: "Let's analyze the sales data."
-- Strong question: "Why did sales drop in Burco last quarter, when Hargeisa and Muqdisho held steady?"
+- Strong question: "Why did sales drop in Lakeview last quarter, when Springfield and Riverton held steady?"
 
 For a local shop, the same idea applies:
 
@@ -79,7 +77,7 @@ A question no decision depends on is not worth answering, however impressive the
 
 ### Example
 
-A training centre in Hargeisa notices that fewer students are enrolling.
+A training centre in Springfield notices that fewer students are enrolling.
 
 Stakeholders: the centre manager and the person who runs recruitment  
 Problem: enrolment is falling  

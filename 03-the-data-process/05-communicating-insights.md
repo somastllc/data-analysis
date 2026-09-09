@@ -1,7 +1,5 @@
 # Communicating Insights
 
-**Chapter:** 3 - The Data Process  
-**Lesson:** 5 of 6  
 **By the end:** You can present the same finding at the right level of detail for different audiences.
 
 ## Overview

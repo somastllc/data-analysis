@@ -1,7 +1,5 @@
 # Data Governance and Regulations
 
-**Chapter:** 5 - Data Ethics and Privacy  
-**Lesson:** 4 of 4  
 **By the end:** You can name a governance rule that would have prevented a given data failure.
 
 ## Overview

@@ -1,7 +1,5 @@
 # Course Recap: From Data to Decision
 
-**Chapter:** 6 - Conclusion  
-**Lesson:** 1 of 2  
 **By the end:** You can describe the full path from problem to decision, and name where each stage came from.
 
 ## Overview

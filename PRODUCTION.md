@@ -12,7 +12,7 @@
 
 **2. Say the objective at ~0:15.** Every lesson has a `**By the end:**` line. Say it right after the cold open, before the first section. This is the only signpost the video gets. The "This lesson covers…" sentences were removed from all 16 lessons that had them, precisely so this one lands alone.
 
-**3. The metadata block is the title card, not narration.** `**Chapter:** N - Name` / `**Lesson:** N of TOTAL` goes on screen. Never read aloud.
+**3. The title card is production text, not lesson narration.** Show the lesson title and its course position on screen when needed, but do not add chapter or lesson metadata lines to the lesson Markdown.
 
 **4. Close on lesson content, not repeated vocabulary.** No lesson has a Key Terms end card. Hold the final meaningful teaching slide while you close: one sentence calling back to the lesson's main idea and, where the script provides it, one sentence teasing the next lesson. On the final lesson, land the written closing line and stop.
 
@@ -24,7 +24,7 @@
 
 **7. Diagrams build, never appear complete.** All 11 mermaid diagrams are sequences. Reveal one node per beat, speaking each as it lands. A completed flowchart dropped on screen is read in one second and then ignored for the remaining 40.
 
-**8. Numbers and places are spoken exactly as written.** `$2.50 per kg`, `32°C`, `91.4%`, Hargeisa, Burco, Muqdisho. The examples are deliberately Somali and grounded, so don't round the numbers off, and don't substitute a city or a name for one you find easier to say.
+**8. Numbers and places are spoken exactly as written.** `$2.50 per kg`, `32°C`, `91.4%`, and any named cities or locations. The examples are deliberately grounded, so don't round the numbers off, and don't substitute a city or a name for one you find easier to say.
 
 ---
 
@@ -61,7 +61,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 | 5 - Data Ethics and Privacy | When should we *not* do the thing we can do? | 4 |
 | 6 - Conclusion | Can I do all of it in one pass? | 2 |
 
-**Chapter 5's opener is mandatory, not optional.** Its four lessons are one continuous case: a mobile money company building automatic small-business loans. A viewer landing on lesson 5.3 without the opener has no idea a loan company has been running for two lessons. State the case up front: the company, the product, and that it will go wrong four different ways.
+**Chapter 5's opener is mandatory, not optional.** Its four lessons are one continuous case: a digital wallet company building automatic small-business loans. A viewer landing on lesson 5.3 without the opener has no idea a loan company has been running for two lessons. State the case up front: the company, the product, and that it will go wrong four different ways.
 
 ---
 
@@ -71,7 +71,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 ### 1.1 · What Is Data? - 5.5 min
 
-**Cold open:** *You check your phone and see a mobile money transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance.*
+**Cold open:** *You check your phone and see a digital wallet transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance.*
 
 **Shots:** cold open → title → objective → *Data: raw facts about the world* → *Data vs information vs insight* → **table** Term / Meaning / Example → **diagram build (3)** → *Where you see data every day*
 
@@ -113,7 +113,7 @@ Reveal the three that break the average one at a time: impossible age, blank age
 
 Then land the two numbers on screen together: **72** as the table stands, **30.5** cleaned. That pays off the cold open's "three separate reasons the answer would be wrong", and it is the number the viewer will remember.
 
-Then the fourth fault, separately, because it is the opposite point: `Hargeisa` / `hargeisa` is a real fault that does not affect this question at all. That last beat is the whole lesson. Do not merge it into the list of three.
+Then the fourth fault, separately, because it is the opposite point: `Springfield` / `springfield` is a real fault that does not affect this question at all. That last beat is the whole lesson. Do not merge it into the list of three.
 
 ---
 
@@ -123,7 +123,7 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 **Shots:** cold open → title → objective → *Data helps organizations make better decisions* → *Data creates competitive advantage* → *Data skills are widely valuable* → *Data also comes with responsibility*
 
-**Note:** Four short sections and no diagram, which makes it the flattest-shaped lesson in chapter 1. Carry it on delivery, and let the two-shop-owners story run through all four sections rather than dropping it after the cold open. Last section is the setup for chapter 5; point forward.
+**Note:** Four short sections and no diagram, which makes it the flattest-shaped lesson in chapter 1. Carry it on delivery, and let the two-shop-owners story run through all four sections rather than dropping it after the cold open. In *Data creates competitive advantage*, land "What separates them is that somebody looked" first, then give the quote a beat: "Without data, you are just another person with an opinion." Last section is the setup for chapter 5; point forward.
 
 ---
 
@@ -179,11 +179,11 @@ Then the fourth fault, separately, because it is the opposite point: `Hargeisa` 
 
 ### 2.5 · Where Data Lives and the Data Pipeline - 5.5 min
 
-**Cold open:** *The sales figure on a manager's dashboard this morning began three weeks ago as a mobile money payment for a sack of rice.*
+**Cold open:** *The sales figure on a manager's dashboard this morning began three weeks ago as a digital wallet payment for a sack of rice.*
 
 **Shots:** cold open → title → objective → *Where data lives* → **table** System / Purpose → *What is a data pipeline?* → **diagram build (6)** → *Example*
 
-**Diagram build:** `Collect` → `Store` → `Clean` → `Transform` → `Analyze` → `Share`. Six beats, the longest build in chapter 2. Consider running it in reverse first, from the dashboard back to the mobile money payment, matching the cold open, then forward.
+**Diagram build:** `Collect` → `Store` → `Clean` → `Transform` → `Analyze` → `Share`. Six beats, the longest build in chapter 2. Consider running it in reverse first, from the dashboard back to the digital wallet payment, matching the cold open, then forward.
 
 ---
 
@@ -335,7 +335,7 @@ Each of the three closes on what a *wrong* answer costs: an unfinished treatment
 
 *4 lessons · 29 min*
 
-> **One continuous case.** All four lessons follow a mobile money company building automatic small-business loans. Shoot them in one session so the delivery stays consistent, and shoot them in order, since lesson 5.4 resolves a decision set up in 5.1. The chapter opener must establish the case before 5.1 starts.
+> **One continuous case.** All four lessons follow a digital wallet company building automatic small-business loans. Shoot them in one session so the delivery stays consistent, and shoot them in order, since lesson 5.4 resolves a decision set up in 5.1. The chapter opener must establish the case before 5.1 starts.
 
 ### 5.1 · Responsible and Ethical Use of Data - 8 min
 

@@ -1,7 +1,5 @@
 # From Analysis to Decisions
 
-**Chapter:** 3 - The Data Process  
-**Lesson:** 6 of 6  
 **By the end:** You can state the assumptions and limitations behind an analysis, and connect a finding to a decision.
 
 ## Overview
@@ -14,7 +12,7 @@ Analysis should lead to a decision or next step.
 
 Examples:
 
-- Insight: "Customers who pay by mobile money abandon the order form more often than those who pay on delivery."
+- Insight: "Customers who pay by digital wallet abandon the order form more often than those who pay on delivery."
   - Decision: Shorten the payment step
 
 - Insight: "How long support takes to reply predicts whether a customer leaves."

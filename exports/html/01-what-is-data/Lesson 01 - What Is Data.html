@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; background: #F6F8F8; }
+  a { color: #1A733A; text-decoration: none; }
+  a:hover { color: #14522A; text-decoration: underline; text-underline-offset: 3px; }
+  [data-lucide] { width: 40px; height: 40px; stroke-width: 2; }
+  .lesson-sketch { width: 100%; height: 100%; display: block; object-fit: contain; }
+  @page { size: 10in 5.625in; margin: 0; }
+  @media print {
+    html, body { width: 960px; background: #F6F8F8; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    x-dc, x-import { display: block; }
+    x-import > section {
+      width: 1920px !important;
+      height: 1080px !important;
+      box-sizing: border-box;
+      overflow: hidden;
+      zoom: .5;
+      break-after: page;
+      page-break-after: always;
+    }
+    x-import > section:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <section data-label="Title" data-screen-label="01" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:100px 110px 80px;display:flex;flex-direction:column;justify-content:center">
+    <div style="display:flex;flex-direction:column;gap:36px;max-width:1300px">
+      <h1 style="margin:0;font-size:132px;font-weight:600;letter-spacing:-.03em;line-height:1;color:#121212">What Is Data?</h1>
+    </div>
+  </section>
+
+  <section data-label="Objective" data-screen-label="02" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:100px 110px 80px;display:flex;flex-direction:column;gap:56px;justify-content:center">
+    <div style="font-family:'Geist Mono',monospace;font-size:24px;letter-spacing:.09em;text-transform:uppercase;color:#1A733A">By the end</div>
+    <h2 style="margin:0;font-size:92px;font-weight:600;letter-spacing:-.025em;line-height:1.12;color:#121212;max-width:1500px;text-wrap:pretty">You can explain what data is, and tell data, information, and insight apart.</h2>
+  </section>
+
+  <section data-label="Overview" data-screen-label="03" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:80px 110px 72px;display:flex;flex-direction:column;gap:36px;justify-content:center">
+    <h2 style="margin:0;font-size:64px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212;max-width:1350px">Overview</h2>
+    <p style="margin:0;font-size:36px;line-height:1.5;color:#121212;max-width:1560px;text-wrap:pretty">You check your phone and see a digital wallet transfer of <span style="font-family:'Geist Mono',monospace">$25</span>, a weather app showing <span style="font-family:'Geist Mono',monospace">32°C</span>, and a message from school about your attendance.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px">
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px">
+        <div style="color:#1A733A"><i data-lucide="smartphone"></i></div>
+        <div style="font-family:'Geist Mono',monospace;font-size:64px;font-weight:500;color:#121212;letter-spacing:-.02em">$25</div>
+        <div style="font-size:30px;line-height:1.45;color:#4D5353">a digital wallet transfer of <span style="font-family:'Geist Mono',monospace">$25</span></div>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px">
+        <div style="color:#1A733A"><i data-lucide="sun"></i></div>
+        <div style="font-family:'Geist Mono',monospace;font-size:64px;font-weight:500;color:#121212;letter-spacing:-.02em">32°C</div>
+        <div style="font-size:30px;line-height:1.45;color:#4D5353">a weather app showing <span style="font-family:'Geist Mono',monospace">32°C</span></div>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px">
+        <div style="color:#1A733A"><i data-lucide="clipboard-check"></i></div>
+        <div style="font-family:'Geist Mono',monospace;font-size:64px;font-weight:500;color:#121212;letter-spacing:-.02em">attendance</div>
+        <div style="font-size:30px;line-height:1.45;color:#4D5353">a message from school about your attendance</div>
+      </div>
+    </div>
+    <p style="margin:0;font-size:34px;line-height:1.55;color:#343838;max-width:1250px;text-wrap:pretty">Each of those is a piece of data, a small fact about something that happened. Before you analyze data, build dashboards, or choose a career in data, you need a clear answer to a simple question: what is data?</p>
+  </section>
+
+  <section data-label="Definition" data-screen-label="04" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:72px 100px 64px;display:grid;grid-template-columns:.82fr 1.18fr;gap:76px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:38px">
+      <h2 style="margin:0;font-size:70px;font-weight:600;letter-spacing:-.025em;line-height:1.1;color:#121212;text-wrap:pretty">Raw facts about the world</h2>
+      <p style="margin:0;font-size:33px;line-height:1.55;color:#4D5353;text-wrap:pretty"><strong style="color:#121212;font-weight:600">Data</strong> is a collection of facts, measurements, or observations about the world. On its own, data usually does not tell a full story. It is the raw material we use to understand what is happening.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:2px 4px 8px">
+        <div style="font-family:'Geist Mono',monospace;font-size:20px;letter-spacing:.09em;text-transform:uppercase;color:#1A733A">A collection</div>
+        <div style="font-family:'Patrick Hand',cursive;font-size:30px;color:#6E7676;transform:rotate(-2deg)">small facts about the world</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div style="background:#F6F8F8;border:1px solid #DDE2E2;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:18px;min-height:185px;justify-content:center;transform:rotate(-.6deg)">
+          <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.08em;color:#6E7676">FACT</span><span style="color:#1A733A;display:flex"><i data-lucide="receipt-text"></i></span></div>
+          <div style="font-family:'Geist Mono',monospace;font-size:48px;font-weight:600;color:#121212">$25</div>
+          <div style="font-size:24px;color:#4D5353">digital wallet transfer</div>
+        </div>
+        <div style="background:#F6F8F8;border:1px solid #DDE2E2;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:18px;min-height:185px;justify-content:center;transform:rotate(.6deg)">
+          <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.08em;color:#6E7676">MEASUREMENT</span><span style="color:#1A733A;display:flex"><i data-lucide="thermometer-sun"></i></span></div>
+          <div style="font-family:'Geist Mono',monospace;font-size:48px;font-weight:600;color:#121212">32°C</div>
+          <div style="font-size:24px;color:#4D5353">temperature reading</div>
+        </div>
+        <div style="grid-column:1 / -1;background:#EDFBF2;border:1px solid #AEEBC5;border-radius:14px;padding:28px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;min-height:155px">
+          <div style="display:flex;flex-direction:column;gap:13px"><span style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.08em;color:#1A733A">OBSERVATION</span><span style="font-family:'Geist Mono',monospace;font-size:44px;font-weight:600;color:#121212">present</span></div>
+          <span style="width:68px;height:68px;border-radius:17px;background:#FFFFFF;color:#1A733A;display:flex;align-items:center;justify-content:center"><i data-lucide="clipboard-check"></i></span>
+        </div>
+      </div>
+      <div style="font-family:'Patrick Hand',cursive;font-size:31px;color:#1A733A;text-align:center">raw material, not the full story</div>
+    </div>
+  </section>
+
+  <section data-label="Examples of data" data-screen-label="05" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:100px 110px;display:flex;flex-direction:column;gap:52px;justify-content:center">
+    <h2 style="margin:0;font-size:64px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Examples of data:</h2>
+    <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:stretch;min-height:680px">
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;justify-content:center">
+      <div style="display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:28px;padding:40px 48px;border-top:1px solid #EDF0F0">
+        <div style="color:#1A733A;display:flex"><i data-lucide="credit-card"></i></div>
+        <span style="font-size:30px;color:#4D5353">A digital wallet transfer amount</span>
+        <span style="font-family:'Geist Mono',monospace;font-size:30px;font-weight:500;color:#121212;white-space:nowrap">$25</span>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:28px;padding:40px 48px;border-top:1px solid #EDF0F0">
+        <div style="color:#1A733A;display:flex"><i data-lucide="wheat"></i></div>
+        <span style="font-size:30px;color:#4D5353">A market price for rice</span>
+        <span style="font-family:'Geist Mono',monospace;font-size:30px;font-weight:500;color:#121212;white-space:nowrap">$2.50 per kg</span>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:28px;padding:40px 48px;border-top:1px solid #EDF0F0">
+        <div style="color:#1A733A;display:flex"><i data-lucide="clipboard-check"></i></div>
+        <span style="font-size:30px;color:#4D5353">A student's attendance record</span>
+        <span style="font-family:'Geist Mono',monospace;font-size:30px;font-weight:500;color:#121212;white-space:nowrap">present</span>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:28px;padding:40px 48px;border-top:1px solid #EDF0F0">
+        <div style="color:#1A733A;display:flex"><i data-lucide="tag"></i></div>
+        <span style="font-size:30px;color:#4D5353">A product price</span>
+        <span style="font-family:'Geist Mono',monospace;font-size:30px;font-weight:500;color:#121212;white-space:nowrap">$49.99</span>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:28px;padding:40px 48px;border-top:1px solid #EDF0F0">
+        <div style="color:#1A733A;display:flex"><i data-lucide="thermometer"></i></div>
+        <span style="font-size:30px;color:#4D5353">A temperature reading</span>
+        <span style="font-family:'Geist Mono',monospace;font-size:30px;font-weight:500;color:#121212;white-space:nowrap">32°C</span>
+      </div>
+      </div>
+      <div style="background:#EDFBF2;border:1px solid #AEEBC5;border-radius:14px;padding:56px;display:flex;flex-direction:column;gap:44px;justify-content:center">
+        <div style="font-size:42px;font-weight:600;line-height:1.3;color:#121212;letter-spacing:-.015em;text-wrap:pretty">Each example is a single fact. Collect enough of them and patterns start to appear.</div>
+        <img class="lesson-sketch" src="../assets/01-what-is-data/lesson-01/patterns-emerge.svg" alt="Hand-drawn chart where individual facts reveal an upward pattern" style="height:300px">
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Three terms" data-screen-label="06" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:100px 110px 80px;display:flex;flex-direction:column;gap:48px">
+    <h2 style="margin:0;font-size:64px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Data vs information vs insight</h2>
+    <p style="margin:0;font-size:34px;line-height:1.5;color:#4D5353">These three terms are related, but they are not the same.</p>
+    <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;overflow:hidden">
+      <div style="display:grid;grid-template-columns:.7fr 1fr 1.4fr;gap:0;background:#EDF0F0;font-family:'Geist Mono',monospace;font-size:24px;letter-spacing:.09em;text-transform:uppercase;color:#4D5353">
+        <div style="padding:28px 40px">Term</div>
+        <div style="padding:28px 40px">Meaning</div>
+        <div style="padding:28px 40px">Example</div>
+      </div>
+      <div style="display:grid;grid-template-columns:.7fr 1fr 1.4fr;border-top:1px solid #DDE2E2">
+        <div style="padding:38px 40px;font-size:34px;font-weight:600;color:#121212">Data</div>
+        <div style="padding:38px 40px;font-size:32px;color:#4D5353;line-height:1.45">Raw facts</div>
+        <div style="padding:38px 40px;font-size:30px;color:#343838;line-height:1.45">Sales were <span style="font-family:'Geist Mono',monospace">$1,200</span>, <span style="font-family:'Geist Mono',monospace">$980</span>, and <span style="font-family:'Geist Mono',monospace">$1,450</span> on three days</div>
+      </div>
+      <div style="display:grid;grid-template-columns:.7fr 1fr 1.4fr;border-top:1px solid #DDE2E2">
+        <div style="padding:38px 40px;font-size:34px;font-weight:600;color:#121212">Information</div>
+        <div style="padding:38px 40px;font-size:32px;color:#4D5353;line-height:1.45">Data organized to answer a basic question</div>
+        <div style="padding:38px 40px;font-size:30px;color:#343838;line-height:1.45">Sales increased from Monday to Wednesday</div>
+      </div>
+      <div style="display:grid;grid-template-columns:.7fr 1fr 1.4fr;border-top:1px solid #DDE2E2;background:#EDFBF2">
+        <div style="padding:38px 40px;font-size:34px;font-weight:600;color:#121212">Insight</div>
+        <div style="padding:38px 40px;font-size:32px;color:#4D5353;line-height:1.45">A useful conclusion that can guide action</div>
+        <div style="padding:38px 40px;font-size:30px;color:#343838;line-height:1.45">Promotions on Wednesday may be driving higher sales</div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Flow" data-screen-label="07" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:54px 92px 48px;display:flex;flex-direction:column;gap:20px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:50px">
+      <h2 style="margin:0;font-size:60px;font-weight:600;letter-spacing:-.02em;color:#121212">Data → Information → Insight</h2>
+      <p style="margin:0;font-size:30px;line-height:1.5;color:#4D5353">Think of it like cooking:</p>
+    </div>
+    <div style="height:500px;display:flex;align-items:center;justify-content:center">
+      <img class="lesson-sketch" src="../assets/01-what-is-data/lesson-01/cooking-analogy.svg" alt="Raw ingredients becoming a prepared meal, then guiding what to cook next based on what people liked" style="width:100%;height:auto;max-height:500px">
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:34px">
+      <div style="border-top:3px solid #121212;padding:20px 8px 0;font-size:27px;line-height:1.4;color:#4D5353"><strong style="color:#121212">Data</strong> = ingredients</div>
+      <div style="border-top:3px solid #1A733A;padding:20px 8px 0;font-size:27px;line-height:1.4;color:#4D5353"><strong style="color:#121212">Information</strong> = a prepared meal you can understand</div>
+      <div style="border-top:3px solid #1A733A;padding:20px 8px 0;font-size:27px;line-height:1.4;color:#4D5353"><strong style="color:#121212">Insight</strong> = knowing what to cook next time based on what people liked</div>
+    </div>
+  </section>
+
+  <section data-label="Everyday data" data-screen-label="08" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:100px 110px 80px;display:flex;flex-direction:column;gap:48px">
+    <h2 style="margin:0;font-size:64px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Where you see data every day</h2>
+    <p style="margin:0;font-size:32px;line-height:1.5;color:#4D5353;max-width:1400px">Data is not only found in spreadsheets or databases. You create and use data constantly:</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:28px;flex:1">
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+        <div style="color:#1A733A"><i data-lucide="wallet"></i></div>
+        <div style="font-size:34px;font-weight:600;color:#121212;line-height:1.3">Digital wallet transactions and bank transfers</div>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+        <div style="color:#1A733A"><i data-lucide="graduation-cap"></i></div>
+        <div style="font-size:34px;font-weight:600;color:#121212;line-height:1.3">School grades and attendance records</div>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+        <div style="color:#1A733A"><i data-lucide="store"></i></div>
+        <div style="font-size:34px;font-weight:600;color:#121212;line-height:1.3">Market prices at a local shop</div>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+        <div style="color:#1A733A"><i data-lucide="message-circle"></i></div>
+        <div style="font-size:34px;font-weight:600;color:#121212;line-height:1.3">Likes and comments on social media</div>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+        <div style="color:#1A733A"><i data-lucide="footprints"></i></div>
+        <div style="font-size:34px;font-weight:600;color:#121212;line-height:1.3">Steps tracked by a fitness app</div>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:40px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+        <div style="color:#1A733A"><i data-lucide="cloud-sun"></i></div>
+        <div style="font-size:34px;font-weight:600;color:#121212;line-height:1.3">Weather forecasts</div>
+      </div>
+    </div>
+    <p style="margin:0;font-size:32px;line-height:1.5;color:#4D5353;max-width:1300px">Businesses, schools, hospitals, and governments all rely on data to make decisions.</p>
+  </section>
+
+</x-import>
+</x-dc>
+<script>
+window.addEventListener('load', () => {
+  if (window.lucide) window.lucide.createIcons();
+});
+</script>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const draw = () => { if (window.lucide) window.lucide.createIcons(); };
+    draw();
+    this._t = setInterval(draw, 500);
+    setTimeout(() => clearInterval(this._t), 6000);
+  }
+  componentWillUnmount() { clearInterval(this._t); }
+}
+</script>
+</body>
+</html>

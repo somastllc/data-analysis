@@ -1,7 +1,5 @@
 # Machine Learning
 
-**Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 4 of 7  
 **By the end:** You can explain how machine learning learns from examples, how it relates to data science, and when a project actually needs it.
 
 ## Overview

@@ -1,7 +1,5 @@
 # Data Analysis and Business Intelligence
 
-**Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 2 of 7  
 **By the end:** You can explain what data analysis and business intelligence each do, and where they overlap.
 
 ## Overview
@@ -49,9 +47,9 @@ The practical difference is how often the work runs. Analysis is usually a quest
 
 ### Example
 
-A wholesaler supplies shops in Hargeisa, Burco, and Muqdisho, and wants to know how each is doing.
+A wholesaler supplies shops in Springfield, Riverton, and Lakeview, and wants to know how each is doing.
 
-- A **data analyst** digs into six months of orders and finds that the Burco shops order the same volume as the others but return far more unsold stock
+- A **data analyst** digs into six months of orders and finds that the Lakeview shops order the same volume as the others but return far more unsold stock
 - A **BI dashboard** shows each city's weekly orders, returns, and top products, so the manager can see next month's version without asking anyone
 
 The analyst answered a question. The dashboard made sure nobody has to ask it again.

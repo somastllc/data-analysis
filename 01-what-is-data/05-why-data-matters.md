@@ -1,7 +1,5 @@
 # Why Data Matters
 
-**Chapter:** 1 - What Is Data?  
-**Lesson:** 5 of 5  
 **By the end:** You can explain why data skills are valuable across many industries and roles.
 
 ## Overview
@@ -31,6 +29,8 @@ Examples:
 Two shops on the same street sell the same goods at the same prices. One knows which items earn most per shelf and reorders on that; the other reorders on memory. Neither has better data than the other. The transactions happened either way.
 
 What separates them is that somebody looked.
+
+Without data, you are just another person with an opinion.
 
 ### Data skills are widely valuable
 

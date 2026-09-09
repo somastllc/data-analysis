@@ -1,7 +1,5 @@
 # Collecting Data
 
-**Chapter:** 3 - The Data Process  
-**Lesson:** 2 of 6  
 **By the end:** You can decide which data would answer a question, and which data would quietly mislead you.
 
 ## Overview

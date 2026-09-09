@@ -1,7 +1,5 @@
 # Putting It All Together - An End-to-End Scenario
 
-**Chapter:** 6 - Conclusion  
-**Lesson:** 2 of 2  
 **By the end:** You can walk a real business problem through every stage covered in this course.
 
 ## Overview

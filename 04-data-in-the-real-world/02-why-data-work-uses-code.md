@@ -1,7 +1,5 @@
 # Why Data Work Uses Code
 
-**Chapter:** 4 - Data in the Real World  
-**Lesson:** 2 of 4  
 **By the end:** You can explain why data work moves to code instead of staying in spreadsheets.
 
 ## Overview

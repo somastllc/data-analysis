@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;family=Patrick+Hand&amp;display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; background: #F6F8F8; }
+  a { color: #1A733A; text-decoration: none; }
+  a:hover { color: #14522A; text-decoration: underline; text-underline-offset: 3px; }
+  [data-lucide] { width: 40px; height: 40px; stroke-width: 2; }
+  .lesson-sketch { width: 100%; height: 100%; display: block; object-fit: contain; }
+  @page { size: 10in 5.625in; margin: 0; }
+  @media print {
+    html, body { width: 960px; background: #F6F8F8; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    x-dc, x-import { display: block; }
+    x-import > section {
+      width: 1920px !important;
+      height: 1080px !important;
+      box-sizing: border-box;
+      overflow: hidden;
+      zoom: .5;
+      break-after: page;
+      page-break-after: always;
+    }
+    x-import > section:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <section data-label="Title" data-screen-label="01" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:100px 110px 80px;display:flex;flex-direction:column;justify-content:center">
+    <div style="display:flex;flex-direction:column;gap:36px;max-width:1550px">
+      <h1 style="margin:0;font-size:124px;font-weight:600;letter-spacing:-.03em;line-height:1.02;color:#121212">Data Quality Basics</h1>
+    </div>
+  </section>
+
+  <section data-label="Objective" data-screen-label="02" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:100px 110px 80px;display:flex;flex-direction:column;gap:56px;justify-content:center">
+    <div style="font-family:'Geist Mono',monospace;font-size:24px;letter-spacing:.09em;text-transform:uppercase;color:#1A733A">By the end</div>
+    <h2 style="margin:0;font-size:88px;font-weight:600;letter-spacing:-.025em;line-height:1.12;color:#121212;max-width:1600px;text-wrap:pretty">You can inspect a table and name the quality problems in it.</h2>
+  </section>
+
+  <section data-label="Overview" data-screen-label="03" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:72px 104px 66px;display:grid;grid-template-columns:.92fr 1.08fr;gap:78px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:64px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Overview</h2>
+      <p style="margin:0;font-size:34px;line-height:1.5;color:#121212;text-wrap:pretty">A manager forwards you a customer list and asks for the average age. Two minutes in, you have found three separate reasons the answer would be wrong.</p>
+      <p style="margin:0;font-size:31px;line-height:1.5;color:#4D5353;text-wrap:pretty">Almost every analysis you will ever run begins with a moment like this. Bad data leads to bad decisions. Even simple analysis can fail if the data is incomplete, incorrect, or inconsistent.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:18px;overflow:hidden">
+      <div style="background:#EDF0F0;border-bottom:1px solid #DDE2E2;padding:22px 30px;display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:16px"><span style="color:#1A733A;display:flex"><i data-lucide="forward"></i></span><span style="font-size:25px;font-weight:600;color:#121212">Forwarded by manager</span></div>
+        <span style="font-family:'Geist Mono',monospace;font-size:19px;color:#6E7676">customers.xlsx</span>
+      </div>
+      <div style="padding:34px;display:flex;flex-direction:column;gap:27px">
+        <div style="background:#EDFBF2;border:1px solid #AEEBC5;border-radius:14px;padding:30px;display:flex;align-items:center;justify-content:space-between">
+          <div><div style="font-family:'Geist Mono',monospace;font-size:19px;letter-spacing:.07em;text-transform:uppercase;color:#1A733A">Manager asks</div><div style="font-size:39px;font-weight:600;color:#121212;margin-top:8px">What is the average age?</div></div>
+          <div style="font-family:'Patrick Hand',cursive;font-size:74px;color:#1A733A">?</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px">
+          <div style="height:150px;border:1px solid #E8CCCC;border-radius:13px;background:#FCEBEC;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:15px"><span style="color:#A33A3A;display:flex"><i data-lucide="circle-help"></i></span><span style="font-size:25px;font-weight:600;color:#121212">Reason one</span></div>
+          <div style="height:150px;border:1px solid #E8CCCC;border-radius:13px;background:#FCEBEC;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:15px"><span style="color:#A33A3A;display:flex"><i data-lucide="circle-help"></i></span><span style="font-size:25px;font-weight:600;color:#121212">Reason two</span></div>
+          <div style="height:150px;border:1px solid #E8CCCC;border-radius:13px;background:#FCEBEC;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:15px"><span style="color:#A33A3A;display:flex"><i data-lucide="circle-help"></i></span><span style="font-size:25px;font-weight:600;color:#121212">Reason three</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Why quality matters" data-screen-label="04" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:76px 104px 66px;display:grid;grid-template-columns:.83fr 1.17fr;gap:82px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:35px">
+      <h2 style="margin:0;font-size:62px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Why data quality matters</h2>
+      <p style="margin:0;font-size:32px;line-height:1.52;color:#4D5353;text-wrap:pretty"><strong style="color:#121212">Data quality</strong> tells you whether a dataset is fit for the job you need it to do. A decision built on missing, duplicated, or mistyped numbers can look completely logical and still be wrong, because nothing in the reasoning shows the fault.</p>
+      <div style="background:#FCEBEC;border:1px solid #E8CCCC;border-radius:14px;padding:23px 28px;display:grid;grid-template-columns:48px 1fr;gap:18px;align-items:center">
+        <span style="color:#A33A3A;display:flex"><i data-lucide="arrow-left-to-line"></i></span>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <div style="font-size:27px;font-weight:600;line-height:1.35;color:#121212">It is in the inputs.</div>
+          <div style="font-size:24px;line-height:1.4;color:#343838">This idea is often summarized as <strong style="color:#121212">garbage in, garbage out (GIGO)</strong>: poor input data produces poor output, even when the calculation or tool works correctly.</div>
+        </div>
+      </div>
+      <p style="margin:0;font-size:30px;line-height:1.5;color:#343838;text-wrap:pretty">That is why data professionals spend significant time checking data before analyzing it.</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center">
+      <img class="lesson-sketch" src="../assets/01-what-is-data/lesson-04/garbage-in-garbage-out.svg" alt="Hand-drawn generic poor data entering a correctly working analysis machine and producing a poor result" style="width:100%;height:auto">
+    </div>
+  </section>
+
+  <section data-label="Common problems" data-screen-label="05" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:58px 96px 52px;display:flex;flex-direction:column;gap:24px">
+    <h2 style="margin:0;font-size:60px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Common data quality problems</h2>
+    <p style="margin:0;font-size:29px;line-height:1.42;color:#4D5353">Some of the most common issues include:</p>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:1fr 1fr;gap:22px;flex:1">
+      <div style="grid-column:span 2;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:28px 30px;display:flex;flex-direction:column;gap:17px;justify-content:center">
+        <span style="color:#A33A3A;display:flex"><i data-lucide="circle-minus"></i></span><div style="font-size:31px;font-weight:600;color:#121212">Missing values</div><div style="font-size:24px;line-height:1.38;color:#4D5353">blank cells or empty fields</div>
+      </div>
+      <div style="grid-column:span 2;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:28px 30px;display:flex;flex-direction:column;gap:17px;justify-content:center">
+        <span style="color:#A33A3A;display:flex"><i data-lucide="copy"></i></span><div style="font-size:31px;font-weight:600;color:#121212">Duplicates</div><div style="font-size:24px;line-height:1.38;color:#4D5353">the same record appearing more than once</div>
+      </div>
+      <div style="grid-column:span 2;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:28px 30px;display:flex;flex-direction:column;gap:17px;justify-content:center">
+        <span style="color:#A33A3A;display:flex"><i data-lucide="triangle-alert"></i></span><div style="font-size:31px;font-weight:600;color:#121212">Incorrect values</div><div style="font-size:24px;line-height:1.38;color:#4D5353">typos, wrong units, or impossible numbers</div>
+      </div>
+      <div style="grid-column:2 / span 2;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:28px 30px;display:flex;flex-direction:column;gap:17px;justify-content:center">
+        <span style="color:#A33A3A;display:flex"><i data-lucide="calendar-range"></i></span><div style="font-size:31px;font-weight:600;color:#121212">Inconsistent formatting</div><div style="font-size:23px;line-height:1.4;color:#4D5353">dates written as <span style="font-family:'Geist Mono',monospace;color:#121212">01/05/2024</span> and <span style="font-family:'Geist Mono',monospace;color:#121212">2024-05-01</span> in the same dataset</div>
+      </div>
+      <div style="grid-column:4 / span 2;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;padding:28px 30px;display:flex;flex-direction:column;gap:17px;justify-content:center">
+        <span style="color:#A33A3A;display:flex"><i data-lucide="clock-3"></i></span><div style="font-size:31px;font-weight:600;color:#121212">Outdated data</div><div style="font-size:24px;line-height:1.38;color:#4D5353">information that no longer reflects the current situation</div>
+      </div>
+    </div>
+    <div style="background:#EDFBF2;border:1px solid #AEEBC5;border-radius:14px;padding:22px 30px;display:flex;align-items:center;gap:22px">
+      <span style="color:#1A733A;display:flex"><i data-lucide="search"></i></span><p style="margin:0;font-size:26px;line-height:1.4;color:#343838">None of this is unusual. Expect to find several of them in any dataset you are handed.</p>
+    </div>
+  </section>
+
+  <section data-label="Quality dimensions" data-screen-label="06" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:58px 100px 52px;display:flex;flex-direction:column;gap:24px">
+    <h2 style="margin:0;font-size:60px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Key quality dimensions</h2>
+    <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;overflow:hidden;flex:1">
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr;background:#EDF0F0;font-family:'Geist Mono',monospace;font-size:21px;letter-spacing:.08em;text-transform:uppercase;color:#4D5353">
+        <div style="padding:20px 34px">Dimension</div><div style="padding:20px 34px">Question it answers</div>
+      </div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 34px;display:flex;align-items:center;gap:20px"><span style="color:#1A733A;display:flex"><i data-lucide="badge-check"></i></span><strong style="font-size:30px;color:#121212">Accuracy</strong></div><div style="padding:22px 34px;font-size:29px;color:#343838">Is the data correct?</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 34px;display:flex;align-items:center;gap:20px"><span style="color:#1A733A;display:flex"><i data-lucide="list-checks"></i></span><strong style="font-size:30px;color:#121212">Completeness</strong></div><div style="padding:22px 34px;font-size:29px;color:#343838">Is anything missing?</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center;background:#EDFBF2"><div style="padding:22px 34px;display:flex;align-items:center;gap:20px"><span style="color:#1A733A;display:flex"><i data-lucide="repeat-2"></i></span><strong style="font-size:30px;color:#121212">Consistency</strong></div><div style="padding:22px 34px;font-size:29px;color:#343838">Is the data formatted the same way throughout?</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 34px;display:flex;align-items:center;gap:20px"><span style="color:#1A733A;display:flex"><i data-lucide="clock"></i></span><strong style="font-size:30px;color:#121212">Timeliness</strong></div><div style="padding:22px 34px;font-size:29px;color:#343838">Is the data up to date?</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 34px;display:flex;align-items:center;gap:20px"><span style="color:#1A733A;display:flex"><i data-lucide="target"></i></span><strong style="font-size:30px;color:#121212">Relevance</strong></div><div style="padding:22px 34px;font-size:29px;color:#343838">Does the data actually help answer the question?</div></div>
+    </div>
+    <div style="background:#EDFBF2;border:1px solid #AEEBC5;border-radius:14px;padding:21px 29px;display:flex;align-items:center;gap:22px"><span style="color:#1A733A;display:flex"><i data-lucide="scan-search"></i></span><p style="margin:0;font-size:25px;line-height:1.4;color:#343838">You do not need advanced tools to start checking quality. Sometimes a simple review of a table can reveal missing values, strange entries, or duplicate rows.</p></div>
+  </section>
+
+  <section data-label="Customer table" data-screen-label="07" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:58px 90px 52px;display:flex;flex-direction:column;gap:25px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px">
+      <div><div style="font-family:'Geist Mono',monospace;font-size:20px;letter-spacing:.08em;text-transform:uppercase;color:#1A733A;margin-bottom:12px">Example</div><h2 style="margin:0;font-size:58px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Find the four problems</h2></div>
+      <div style="font-family:'Patrick Hand',cursive;font-size:42px;color:#1A733A;transform:rotate(-2deg)">read before going on</div>
+    </div>
+    <p style="margin:0;font-size:28px;line-height:1.42;color:#4D5353">This is the customer list from the top of the lesson. The manager wants the average age. Read it before going on. There are four problems in it.</p>
+    <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:14px;overflow:hidden;flex:1">
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr .55fr .85fr 1.55fr;background:#EDF0F0;font-family:'Geist Mono',monospace;font-size:20px;letter-spacing:.07em;text-transform:uppercase;color:#4D5353">
+        <div style="padding:20px 26px">Customer ID</div><div style="padding:20px 26px">Name</div><div style="padding:20px 26px">Age</div><div style="padding:20px 26px">City</div><div style="padding:20px 26px">Email</div>
+      </div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr .55fr .85fr 1.55fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">C-101</div><div style="padding:22px 26px;font-size:27px">Maya Chen</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">34</div><div style="padding:22px 26px;font-size:26px">Springfield</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:22px">maya@example.com</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr .55fr .85fr 1.55fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">C-102</div><div style="padding:22px 26px;font-size:27px">Noah Reed</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">27</div><div style="padding:22px 26px;font-size:26px">Riverton</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:22px">noah@example.com</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr .55fr .85fr 1.55fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">C-103</div><div style="padding:22px 26px;font-size:27px">Elena Cruz</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">&nbsp;</div><div style="padding:22px 26px;font-size:26px">springfield</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:22px">elena@example.com</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr .55fr .85fr 1.55fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">C-104</div><div style="padding:22px 26px;font-size:27px">Liam Brown</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">200</div><div style="padding:22px 26px;font-size:26px">Riverton</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:22px">liam@example.com</div></div>
+      <div style="display:grid;grid-template-columns:.72fr 1.28fr .55fr .85fr 1.55fr;border-top:1px solid #DDE2E2;min-height:112px;align-items:center"><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">C-102</div><div style="padding:22px 26px;font-size:27px">Noah Reed</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:25px">27</div><div style="padding:22px 26px;font-size:26px">Riverton</div><div style="padding:22px 26px;font-family:'Geist Mono',monospace;font-size:22px">noah@example.com</div></div>
+    </div>
+  </section>
+
+  <section data-label="Three average problems" data-screen-label="08" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:58px 90px 54px;display:flex;flex-direction:column;gap:26px">
+    <h2 style="margin:0;font-size:58px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Three problems break the average</h2>
+    <p style="margin:0;font-size:28px;line-height:1.42;color:#4D5353">Three of the four break the average age, and each one breaks it differently:</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;flex:1">
+      <div style="background:#FFFFFF;border:1px solid #E8CCCC;border-radius:16px;padding:32px 34px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="width:54px;height:54px;border-radius:14px;background:#FCEBEC;color:#A33A3A;display:flex;align-items:center;justify-content:center"><i data-lucide="triangle-alert"></i></span><span style="font-family:'Geist Mono',monospace;font-size:20px;color:#A33A3A;letter-spacing:.07em;text-transform:uppercase">Incorrect</span></div>
+        <div style="background:#F6F8F8;border:1px solid #DDE2E2;border-radius:12px;padding:25px;display:flex;align-items:center;justify-content:space-between"><span style="font-size:27px;font-weight:600;color:#121212">Liam Brown</span><span style="font-family:'Geist Mono',monospace;font-size:42px;font-weight:600;color:#A33A3A">200</span></div>
+        <p style="margin:0;font-size:27px;line-height:1.5;color:#343838">Liam's age is <span style="font-family:'Geist Mono',monospace">200</span>. It is <strong style="color:#121212">inaccurate</strong>, and a single impossible value drags the average up on its own.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #E8CCCC;border-radius:16px;padding:32px 34px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="width:54px;height:54px;border-radius:14px;background:#FCEBEC;color:#A33A3A;display:flex;align-items:center;justify-content:center"><i data-lucide="circle-minus"></i></span><span style="font-family:'Geist Mono',monospace;font-size:20px;color:#A33A3A;letter-spacing:.07em;text-transform:uppercase">Incomplete</span></div>
+        <div style="background:#F6F8F8;border:1px solid #DDE2E2;border-radius:12px;padding:25px;display:flex;align-items:center;justify-content:space-between"><span style="font-size:27px;font-weight:600;color:#121212">Elena Cruz</span><span style="font-family:'Geist Mono',monospace;font-size:32px;font-weight:600;color:#A33A3A">blank</span></div>
+        <p style="margin:0;font-size:27px;line-height:1.5;color:#343838">Elena's age is blank. That is <strong style="color:#121212">incomplete</strong> - and you must decide whether she is left out of the average or counted as zero, which give very different answers.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #E8CCCC;border-radius:16px;padding:32px 34px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="width:54px;height:54px;border-radius:14px;background:#FCEBEC;color:#A33A3A;display:flex;align-items:center;justify-content:center"><i data-lucide="copy"></i></span><span style="font-family:'Geist Mono',monospace;font-size:20px;color:#A33A3A;letter-spacing:.07em;text-transform:uppercase">Duplicate</span></div>
+        <div style="background:#F6F8F8;border:1px solid #DDE2E2;border-radius:12px;padding:20px 25px;display:flex;flex-direction:column;gap:9px"><div style="display:flex;justify-content:space-between"><span style="font-size:25px;font-weight:600;color:#121212">C-102 · Noah</span><span style="font-family:'Geist Mono',monospace;font-size:25px">27</span></div><div style="display:flex;justify-content:space-between;color:#A33A3A"><span style="font-size:25px;font-weight:600">C-102 · Noah</span><span style="font-family:'Geist Mono',monospace;font-size:25px">27</span></div></div>
+        <p style="margin:0;font-size:26px;line-height:1.48;color:#343838"><span style="font-family:'Geist Mono',monospace">C-102</span> appears twice, and every value in it is correct. That is the point: nothing in either row is wrong, but Noah is counted as two customers, so his age carries double the weight of anyone else's.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Same data, different answer" data-screen-label="09" style="background:#F6F8F8;color:#343838;font-family:Geist,system-ui,sans-serif;padding:54px 88px 48px;display:flex;flex-direction:column;gap:22px">
+    <h2 style="margin:0;font-size:57px;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#121212">Same file, different answer</h2>
+    <div style="display:grid;grid-template-columns:.82fr 1.18fr;gap:42px;align-items:center">
+      <p style="margin:0;font-size:29px;line-height:1.48;color:#343838;text-wrap:pretty">Average the ages exactly as the table gives them and you get <strong style="color:#A33A3A">72</strong>. Remove the impossible value, count Noah once, and set Elena's blank aside, and you get <strong style="color:#1A733A">30.5</strong>. Same file, same question, same arithmetic, and an answer that would have sent the manager looking for a customer base that does not exist.</p>
+      <div style="height:370px;display:flex;align-items:center;justify-content:center"><img class="lesson-sketch" src="../assets/01-what-is-data/lesson-04/same-data-different-average.svg" alt="Hand-drawn comparison of the unchecked average 72 and reviewed average 30.5" style="height:370px;width:auto;max-width:100%"></div>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #DDE2E2;border-radius:16px;padding:28px 32px;display:grid;grid-template-columns:245px 1fr;gap:34px;align-items:center;flex:1">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;align-items:center;gap:14px;background:#EDFBF2;border:1px solid #AEEBC5;border-radius:12px;padding:17px 20px"><span style="color:#1A733A;display:flex"><i data-lucide="map-pin"></i></span><span style="font-family:'Geist Mono',monospace;font-size:24px;color:#121212">Springfield</span></div>
+        <div style="display:flex;align-items:center;gap:14px;background:#FCEBEC;border:1px solid #E8CCCC;border-radius:12px;padding:17px 20px"><span style="color:#A33A3A;display:flex"><i data-lucide="map-pin"></i></span><span style="font-family:'Geist Mono',monospace;font-size:24px;color:#121212">springfield</span></div>
+      </div>
+      <p style="margin:0;font-size:27px;line-height:1.48;color:#343838;text-wrap:pretty">The fourth does not touch the average at all. <span style="font-family:'Geist Mono',monospace;color:#121212">Springfield</span> and <span style="font-family:'Geist Mono',monospace;color:#121212">springfield</span> are <strong style="color:#121212">inconsistent</strong>, and it would matter enormously if the question were about cities. But the manager asked about age. Which faults matter depends on the question you were asked.</p>
+    </div>
+  </section>
+
+</x-import>
+</x-dc>
+<script>
+window.addEventListener('load', () => {
+  if (window.lucide) window.lucide.createIcons();
+});
+</script>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const draw = () => { if (window.lucide) window.lucide.createIcons(); };
+    draw();
+    this._t = setInterval(draw, 500);
+    setTimeout(() => clearInterval(this._t), 6000);
+  }
+  componentWillUnmount() { clearInterval(this._t); }
+}
+</script>
+</body>
+</html>

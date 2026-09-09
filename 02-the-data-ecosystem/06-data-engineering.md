@@ -1,7 +1,5 @@
 # Data Engineering
 
-**Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 6 of 7  
 **By the end:** You can describe what data engineers build, and why every other data role depends on it.
 
 ## Overview

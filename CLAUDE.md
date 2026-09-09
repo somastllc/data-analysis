@@ -26,8 +26,6 @@ Learners have **no tools yet**. Python, Git, and SQL all come later. Nothing in 
 ```
 NN-chapter-slug/00-opener.md         video opener script (production only, not a lesson)
 NN-chapter-slug/NN-lesson-slug.md    lessons
-00-soomaali/NN-chapter-slug/NN-lesson.md  reviewed Somali source lessons
-somali.md                            Somali rewriting and language guide
 exports/html/                        self-contained visual lesson HTML packages
 exports/pdf/                         final print-ready lesson PDFs
 references/                          user-supplied visual references
@@ -39,7 +37,7 @@ A chapter folder reads top to bottom in shooting order: opener, then lessons. Th
 
 Chapter order and lesson counts are declared in `README.md`'s Chapters table. Update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
 
-**Renaming a chapter means renaming four things, not one.** Change the folder slug, the `**Chapter:**` line in every lesson plus the opener, the `Ch N - Name` column in `GLOSSARY.md`, and the chapter link in `README.md`. Chapter 3 was renamed this way in full; use it as the worked example.
+**Renaming a chapter means renaming three things, not one.** Change the folder slug, the `Ch N - Name` column in `GLOSSARY.md`, and the chapter link in `README.md`. If the opener names the chapter, update that wording too. Chapter 3 was renamed this way in full; use it as the worked example.
 
 ## Lesson file convention
 
@@ -47,9 +45,6 @@ Every lesson file begins with this shape:
 
 ```markdown
 # Lesson Title
-
-**Chapter:** N - Chapter Name
-**Lesson:** N of TOTAL
 
 ## Overview
 
@@ -61,12 +56,12 @@ Every lesson file begins with this shape:
 - `## Overview` is mandatory on every lesson. All learner-facing `## Key Terms` tables have been removed: vocabulary is defined at the point of teaching and collected once in `GLOSSARY.md`. Lesson 4.2 already followed this pattern because it demonstrates previously defined vocabulary.
 - Vocabulary must still be taught before it appears in the glossary. Removing a table is not permission to leave a term defined only in `GLOSSARY.md`.
 - A Key Term may still be a *label* for a concept the lesson teaches without naming - "Misleading visualization" and "Feedback loop" both qualify. The test is whether the concept is taught, not whether the exact phrase appears.
-- `**Chapter:**` / `**Lesson:**` header block must match the lesson's actual position and the README's per-chapter lesson count.
+- Lesson files do not include `**Chapter:**` or `**Lesson:**` metadata. The folder name and numeric file prefix carry that structure.
 - Some lessons include a `mermaid` `flowchart` block (fenced ` ```mermaid `) to visualize a process (e.g. data → information → insight). Use this sparingly, only where a diagram clarifies a flow better than prose.
 - Tables are used heavily for term definitions and comparisons - keep that style rather than switching to bullet lists.
-- **There are no em dashes in this repo, anywhere.** Not in prose, not in the `**Chapter:** N - Name` metadata block, not in the `Ch N - Name` column of `GLOSSARY.md`, and not in `- **Term** - definition rows. Use a **comma** where the aside is light, a **full stop** where it is a separate thought, a **colon** where the second half specifies the first, and a plain **hyphen** where a template needs a separator. A pair of em dashes around a phrase is rewritten, not swapped: "differ in what they produce - a report, a dashboard - not in how they start" is worse than the dashes were, so recast the sentence instead. `grep -r "\u2014" .` must return nothing.
+- **There are no em dashes in this repo, anywhere.** Not in prose, not in the `Ch N - Name` column of `GLOSSARY.md`, and not in `- **Term** - definition rows. Use a **comma** where the aside is light, a **full stop** where it is a separate thought, a **colon** where the second half specifies the first, and a plain **hyphen** where a template needs a separator. A pair of em dashes around a phrase is rewritten, not swapped: "differ in what they produce - a report, a dashboard - not in how they start" is worse than the dashes were, so recast the sentence instead. `grep -r "\u2014" .` must return nothing.
 - **Other tells to stay clear of**, all currently at zero: the adverb tricolon ("accurately, responsibly, and fairly"), `Note that` / `It is worth noting` / `It is important to`, and the vocabulary set *delve, leverage, robust, seamless, ever-growing, in today's world*. A closing sentence that only restates the paragraph above it is the same failure in a different costume.
-- **Examples are Somali.** Scenarios are grounded and everyday - mobile money transfers, market prices in $/kg, school attendance. Where a person is named, the name is Somali (Hodan Warsame, Farah Guled, Sagal Ibrahim); where a place is named, it is Somali (Hargeisa, Muqdisho). This is a Somali course and a generically "international" example is still the wrong example. Note that most lessons name nobody at all - "a shop owner", "a market trader", "a manager" - so prefer an unnamed actor and reach for a name only when the example genuinely needs one, as a table of customer records does.
+- **Examples are grounded and everyday.** Use familiar scenarios such as digital wallet activity, market prices in $/kg, school attendance, shop sales, and customer records. Most lessons name nobody at all - "a shop owner", "a market trader", "a manager" - so prefer an unnamed actor and reach for a name only when the example genuinely needs one, as a table of customer records does.
 
 ## Visual lesson exports
 
@@ -107,33 +102,11 @@ exports/
 │   ├── Lesson 03 - Sources and Formats of Data.pdf
 │   ├── Lesson 04 - Data Quality Basics.pdf
 │   └── Lesson 05 - Why Data Matters.pdf
-└── somali/
-    ├── html/
-    │   ├── waa-maxay-xog/
-    │   │   ├── Casharka 01 - Waa Maxay Data.html
-    │   │   ├── Casharka 02 - Noocyada Xogta.html
-    │   │   ├── ...
-    │   │   └── assets/casharka-01/, assets/casharka-02/, ...
-    │   └── nidaamka-xogta/
-    │       ├── Casharka 01 - Noocyada Falanqaynta.html
-    │       └── assets/casharka-01/
-    │           ├── afarta-marxaladood.svg
-    │           └── afarta-nooc-isku-xirnaan.svg
-    └── pdf/
-        ├── waa-maxay-xog/
-        │   └── Casharka 01 - Waa Maxay Data.pdf, ...
-        └── nidaamka-xogta/
-            └── Casharka 01 - Noocyada Falanqaynta.pdf
-
 references/
 └── Data Fundamentals Lesson.pdf
 ```
 
 Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual sources and rendered SVGs belong under a lesson-specific assets folder. Final PDFs belong in `exports/pdf/`. User-supplied examples belong in `references/` and should not be overwritten when regenerating an export.
-
-Somali source lessons are governed by [`somali.md`](somali.md). Read that guide before creating, auditing, or editing Somali curriculum content. The required workflow is rewrite first, user review, Markdown lock-in, and only then visual production. Do not treat Somali work as sentence-by-sentence translation, and do not update its export while the Markdown is still under review unless the user explicitly requests it. Somali HTML, lesson assets, and PDFs live under `exports/somali/` so they remain separate from the earlier English packages. The Lesson 1 wording `Xogtu badanaa sheekadoo dhan ma sheegto` is intentional and must remain unchanged in its export.
-
-Somali exports are nested one level deeper than the English packages: `exports/somali/html/<chapter-slug>/` and `exports/somali/pdf/<chapter-slug>/`, where `<chapter-slug>` is the source chapter folder name with its numeric prefix stripped (`01-waa-maxay-xog` to `waa-maxay-xog`, `02-nidaamka-xogta` to `nidaamka-xogta`). Casharka numbering restarts at 01 within each chapter subfolder, matching the source Markdown's per-chapter file numbering. The `assets/casharka-NN/` folder for each lesson lives inside that same chapter subfolder, alongside its HTML file.
 
 `PRODUCTION.md` remains the recording plan. It describes shot order and required teaching visuals. The supplied PDF and completed Lesson 1.1 export now provide the practical visual baseline.
 
@@ -152,33 +125,12 @@ Somali exports are nested one level deeper than the English packages: `exports/s
 - All fourteen SVG exports across the five completed lessons pass the SVG validator and XML parsing.
 - All five Chapter 1 lessons are converted. No Chapter 2 lesson has been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
 
-### Somali visual production progress
-
-- Casharka 1, "Waa maxay xog?", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations.
-- Casharka 2, "Noocyada xogta", is complete as a seven-slide HTML presentation and a seven-page PDF with five standalone Somali SVG illustrations.
-- Casharka 3, "Ilaha iyo Qaababka Xogta", is complete as a seven-slide HTML presentation and a seven-page PDF with three standalone Somali SVG illustrations.
-- Casharka 4, "Tayada Xogta", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone Somali SVG illustrations.
-- Casharka 5, "Maxay Xogtu Muhiim u Tahay?", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone Somali SVG illustrations.
-- All five Somali PDFs use the same 16:9 page size of 720 x 404.88 points.
-- All fourteen Somali SVG exports pass the SVG validator and XML parsing.
-- Every sentence quoted on a Somali slide is checked verbatim against its source Markdown, including the modifier-letter apostrophe (U+02BC, `ʼ`) used throughout for words like `suʼaal` and `goʼaan`. Do not substitute a straight apostrophe or the wrong Unicode lookalike (U+02BB is wrong).
-- The earlier English exports remain available as references for layout and CSS conventions only. Wording on Somali slides must come from the reviewed Somali Markdown, never translated fresh from the English slide text.
-- All five Chapter 1 Somali lessons are converted (Casharka 1 through 5), under `exports/somali/html/waa-maxay-xog/`.
-- Casharka 2.1, "Noocyada Falanqaynta", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone Somali SVG illustrations, under `exports/somali/html/nidaamka-xogta/`.
-- Casharka 2.2, "Data Analysis iyo Business Intelligence", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
-- Casharka 2.3, "Data Science", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
-- Casharka 2.4, "Machine Learning", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone Somali SVG illustrations, under the same folder.
-- Casharka 2.5, "Halka Xogtu Ku Kaydsan Tahay iyo Data Pipeline-ka", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
-- Casharka 2.6, "Data Engineering", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone Somali SVG illustrations, under the same folder.
-- Casharka 2.7, "Sida ay Doorarka Xogtu u Wada Shaqeeyaan", is complete as a five-slide HTML presentation and a five-page PDF with one standalone Somali SVG illustration, under the same folder.
-- All seven Chapter 2 Somali lessons are converted (Casharka 1 through 7).
-
 ### HTML and PDF conventions
 
-- Each English slide is a direct `section` child of `x-import` and is designed at 1920 x 1080. Somali exports may use direct `section.slide` children of `main` without the retired deck runtime, while keeping the same dimensions and print behavior.
+- Each English slide is a direct `section` child of `x-import` and is designed at 1920 x 1080.
 - Print CSS sets `@page` to `10in 5.625in`, scales each slide with `zoom: .5`, and forces one section per page.
 - The normal browser deck and printed PDF share the same HTML. Do not maintain a second hand-edited PDF-only document.
-- HTML asset paths are relative to their HTML package. English Lesson 1.1 uses `assets/lesson-01/...`; Somali Casharka 1 uses `assets/casharka-01/...`.
+- HTML asset paths are relative to their HTML package. English Lesson 1.1 uses `assets/lesson-01/...`.
 - Keep informative `alt` text on every SVG image.
 - Excalidraw SVG backgrounds should be transparent unless the illustration genuinely needs a filled panel.
 - Avoid fixed tall wrappers around wide diagrams. They create large empty blocks when a shallow SVG uses `object-fit: contain`.
@@ -242,11 +194,11 @@ Seven videos have no lesson file behind them, so these files hold the spoken scr
 
 ## Chapter 5 is a serial case
 
-The four ethics lessons follow one continuous scenario - a mobile money company building automatic small-business loans - under `### Case study: ...` headings, ending with a decision in `04-data-governance-and-regulations.md`. Edits to any one of those lessons must keep the thread consistent with the other three.
+The four ethics lessons follow one continuous scenario - a digital wallet company building automatic small-business loans - under `### Case study: ...` headings, ending with a decision in `04-data-governance-and-regulations.md`. Edits to any one of those lessons must keep the thread consistent with the other three.
 
 ## Making changes
 
-- Adding/removing/reordering a lesson: renumber the file prefix, fix the in-file `**Lesson:** N of TOTAL` for every lesson in that chapter, and update `README.md`'s table (lesson count and the total of 28).
+- Adding/removing/reordering a lesson: renumber the file prefix and update `README.md`'s table (lesson count and the total of 28).
 - Duration in the README is derived from actual length - recheck it after substantial additions rather than leaving a stale claim.
 - Markdown has no build, lint, or test command. Validate it by reading the rendered files and checking that code fences are balanced.
 - For visual exports, inspect the rendered PDF pages in addition to running the SVG and PDF checks documented above. A successful command is not enough if text is clipped, icons are missing, arrows cross labels, or a diagram leaves excessive empty space.

@@ -1,7 +1,5 @@
 # Privacy, Consent, and Security
 
-**Chapter:** 5 - Data Ethics and Privacy  
-**Lesson:** 2 of 4  
 **By the end:** You can tell meaningful consent from merely legal consent.
 
 ## Overview
@@ -12,7 +10,7 @@ Everyone clicked "agree". Almost nobody read it. That is the starting condition 
 
 ### Case study: consent in the loan project
 
-The mobile money customers agreed to something when they signed up: to have their money moved and stored.
+The digital wallet customers agreed to something when they signed up: to have their money moved and stored.
 
 None of them agreed to have their transaction history scored to decide whether they deserve credit.
 

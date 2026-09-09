@@ -1,7 +1,5 @@
 # Analyzing and Visualizing Data
 
-**Chapter:** 3 - The Data Process  
-**Lesson:** 4 of 6  
 **By the end:** You can choose a chart that matches your question, and say what analysis can and cannot prove.
 
 ## Overview
@@ -78,7 +76,7 @@ Analysis findings:
 
 - Orders rose 25% in March
 - Rice and oil account for most of the increase
-- The Burco shops order later in the week than the others
+- The Lakeview shops order later in the week than the others
 
 Visualizations:
 
@@ -86,4 +84,4 @@ Visualizations:
 - Bar chart of orders by product
 - Table of average order day by city
 
-The chart shows Burco ordering late. It does not show why, and the lesson above is the reason you should not guess.
+The chart shows Lakeview ordering late. It does not show why, and the lesson above is the reason you should not guess.

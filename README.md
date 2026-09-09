@@ -19,8 +19,6 @@ A foundation course in what data is, how the data field is organized, and how an
 | 5 | [Data Ethics and Privacy](05-data-ethics-and-privacy/) | 4 |
 | 6 | [Conclusion](06-conclusion/) | 2 |
 
-The counts above describe the English course. In the Somali edition, [Chapter 4](00-soomaali/04-xogta-dunida-dhabta-ah/) has 3 lessons; its essential careers content is included in [Chapter 2, Lesson 7](00-soomaali/02-nidaamka-xogta/07-sida_ay_doorarka_xogtu_u_wada_shaqeeyaan.md).
-
 All 86 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
 
 ## Outcomes

@@ -1,20 +1,18 @@
 # What Is Data?
 
-**Chapter:** 1 - What Is Data?  
-**Lesson:** 1 of 5  
 **By the end:** You can explain what data is, and tell data, information, and insight apart.
 
 ## Overview
 
-You check your phone and see a mobile money transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance. Each of those is a piece of data, a small fact about something that happened. Before you analyze data, build dashboards, or choose a career in data, you need a clear answer to a simple question: what is data?
+You check your phone and see a digital wallet transfer of `$25`, a weather app showing `32°C`, and a message from school about your attendance. Each of those is a piece of data, a small fact about something that happened. Before you analyze data, build dashboards, or choose a career in data, you need a clear answer to a simple question: what is data?
 
-### Data: raw facts about the world
+### Raw facts about the world
 
 **Data** is a collection of facts, measurements, or observations about the world. On its own, data usually does not tell a full story. It is the raw material we use to understand what is happening.
 
 Examples of data:
 
-- A mobile money transfer amount: `$25`
+- A digital wallet transfer amount: `$25`
 - A market price for rice: `$2.50 per kg`
 - A student's attendance record: `present`
 - A product price: `$49.99`
@@ -48,7 +46,7 @@ Think of it like cooking:
 
 Data is not only found in spreadsheets or databases. You create and use data constantly:
 
-- Mobile money transactions and bank transfers
+- Digital wallet transactions and bank transfers
 - School grades and attendance records
 - Market prices at a local shop
 - Likes and comments on social media

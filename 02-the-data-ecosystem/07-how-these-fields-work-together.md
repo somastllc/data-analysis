@@ -1,7 +1,5 @@
 # How These Fields Work Together
 
-**Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 7 of 7  
 **By the end:** You can describe how the data roles depend on each other within a single project.
 
 ## Overview

@@ -1,7 +1,5 @@
 # Data Science
 
-**Chapter:** 2 - The Data Ecosystem  
-**Lesson:** 3 of 7  
 **By the end:** You can explain what data science does, what it can produce, and why it does not always require machine learning.
 
 ## Overview

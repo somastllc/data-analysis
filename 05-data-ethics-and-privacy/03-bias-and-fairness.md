@@ -1,7 +1,5 @@
 # Bias and Fairness
 
-**Chapter:** 5 - Data Ethics and Privacy  
-**Lesson:** 3 of 4  
 **By the end:** You can find proxy variables in a dataset, and explain how a biased system makes itself worse over time.
 
 ## Overview
