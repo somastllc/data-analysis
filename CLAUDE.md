@@ -170,7 +170,7 @@ Somali exports are nested one level deeper than the English packages: `exports/s
 - Casharka 2.4, "Machine Learning", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone Somali SVG illustrations, under the same folder.
 - Casharka 2.5, "Halka Xogtu Ku Kaydsan Tahay iyo Data Pipeline-ka", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
 - Casharka 2.6, "Data Engineering", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone Somali SVG illustrations, under the same folder.
-- Casharka 2.7, "Sida ay Doorarka Xogtu u Wada Shaqeeyaan", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone Somali SVG illustrations, under the same folder.
+- Casharka 2.7, "Sida ay Doorarka Xogtu u Wada Shaqeeyaan", is complete as a five-slide HTML presentation and a five-page PDF with one standalone Somali SVG illustration, under the same folder.
 - All seven Chapter 2 Somali lessons are converted (Casharka 1 through 7).
 
 ### HTML and PDF conventions

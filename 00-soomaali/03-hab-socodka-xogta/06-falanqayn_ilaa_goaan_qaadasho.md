@@ -1,70 +1,66 @@
 # Falanqayn ilaa Goʼaan Qaadasho
 
-**Cutubka:** 3aad - Hab-socodka Xogta  
-**Casharka:** 6aad ee 6-da cashar  
-**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad sheegto waxyaabaha falanqayntu u qaadatay inay sax yihiin (assumptions) iyo xaddidaadaheeda (limitations), kadibna natiijada ku xiriiriso goʼaan.
+**Cutubka:** 3aad - Hab-socodka Xogta
+**Casharka:** 6aad ee 6-da cashar
+**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad natiijada falanqaynta ku xiriiriso tallaabo ku habboon, caddeyso waxa aan weli la hubin, oo sheegto sida tallaabada loo dabagalayo.
 
 ## Dulmar
 
-Falanqayn kasta waxay ku tiirsan tahay waxyaabo aan si buuxda loo hubin. In si cad loo sheego waxyaabahaas ma aha daciifnimo. Waa farqiga u dhexeeya natiijo dadku ku dhaqaaqaan iyo mid aanay si buuxda ugu kalsoonaan.
+Tusaalaheenna, iibka bariisku wuxuu Agoosto yaraaday 400 kg marka loo eego Luulyo. Laanta Hodan ayaa lahayd 300 kg oo hoos u dhacaas ah, natiijadiina waan gudbinnay.
 
-Tallaabada ugu dambaysa ee hab-socodka xogtu (data process) waa in fahamka muhiimka ah (insights) loo beddelo tallaabo ama goʼaan.
+Hadda suʼaashu waa: **“Maxaan samayn karnaa iyadoo sababta hoos u dhacu aanay weli caddayn?”**
 
-### Fahamka ilaa tallaabo-qaadashada
+Falanqayntu waxay taageeri kartaa goʼaan, waxayna mararka qaar kordhisaa fahamka oo keliya. Tallaabada xigta waxay noqon kartaa in isbeddel la sameeyo, baaritaan dheeraad ah, ama sii wadidda la socodka xaaladda.
 
-Falanqayntu waa inay horseeddo goʼaan ama tallaabo xigta.
+### Kala Caddee Waxa La Ogyahay iyo Waxa Maqan
 
-Tusaalooyin:
+Ka hor doorashada tallaabada, eeg waxa natiijadu taageerayso:
 
-- **Faham muhiim ah:** Macaamiisha mobile money ku bixisa lacagta ayaa form-ka dalabka ka baxa in ka badan kuwa lacagta bixiya marka alaabta loo geeyo
-  - **Goʼaan:** Soo gaabi tallaabada lacag-bixinta
+| Waxa la ogyahay | Waxa aan weli la ogayn |
+|---|---|
+| Hodan ayaa lahayd hoos u dhaca ugu badan marka kg lagu cabbiro | Waxa sababay hoos u dhacaas |
+| Iibka Agoosto ayaa ka yaraa kii Luulyo | In hoos u dhacu sii socon doono bilaha xiga |
 
-- **Faham muhiim ah:** Macaamiisha aan helin dalabkooda waqtigii loogu talagalay waxay u badan tahay inaanay mar kale wax dalban.
-  - **Goʼaan:** Hagaaji nidaamka gaarsiinta (delivery) oo mudnaan sii dalabaadka halista ugu jira inay dib u dhacaan.
+**Xaddidaad (limitation)** waa arrin xaddidaysa waxa xogta ama habka falanqayntu ka jawaabi karaan. Halkan, laba bilood oo keliya ayaa la eegay, xogta iibkuna ma caddaynayso sababta hoos u dhaca.
 
-Natiijadu waxay tilmaami kartaa tallaabo la qaadi karo, laakiin kama dhigna in go’aanka si toos ah loo qaato iyadoo aan qofku ka fiirsan.
+**Wax loo qaatay inuu sax yahay (assumption)** waa arrin goʼaanka ama falanqayntu ku tiirsan yihiin oo aan weli si buuxda loo xaqiijin. In qiimo-dhimis lagu bilaabo iyadoo loo qaadanayo in qiimuhu macaamiisha ka fogeeyey waa tusaale u baahan hubin.
 
-### Mala-awaallada iyo Xaddidaadaha (Assumptions and Limitations)
+### Isbarbardhig Doorashooyinka
 
-Falanqayn kasta waxay ku tiirsan tahay waxyaabo loo qaatay inay sax yihiin (assumptions).
+Natiijada Hodan waxay tilmaamaysaa halka baaritaanka laga bilaabi karo. Doorashooyin kala duwan ayaa jira:
 
-**Mala-awaal (assumption)** waa arrin ay falanqayntu ku tiirsan tahay, inkastoo aan si buuxda loo hubin.
+| Doorashada | Waxa la tixgelinayo |
+|---|---|
+| Baar helitaanka bariiska, qiimaha, iyo xaaladda laanta | Waxay caawinaysaa fahamka sababta; waxay u baahan tahay waqti iyo xog dheeraad ah |
+| Samee qiimo-dhimis | Waxay yareyn kartaa faaʼiidada, mana hayno caddayn ah in qiimuhu yahay dhibaatada |
+| Sii wad la socodka iibka | Waxay muujin kartaa in hoos u dhacu sii socdo, laakiin sugitaanku wuxuu dib u dhigi karaa wax ka qabashada dhibaatada |
 
-Tusaalooyin:
+Tusaalahan, tallaabo ku habboon waa in maamulaha Hodan iyo qofka maamula kaydku dib u eegaan diiwaannada helitaanka bariiska iyo wixii isbeddel qiime ah ee labada bilood.
 
-- Xogtu waa sax, waana lagu kalsoonaan karaa
-- Muunadda (sample) la baaray waxay matalaysaa kooxda oo dhan (population)
-- Qaababkii (patterns) hore loo arkay waxay sii socon doonaan mustaqbalka
-- Ma jiro doorsoome (variable) muhiim ah oo laga tagay
+Xogtu waxay hagaysaa doorashada; qofka goʼaanka qaadanaya wuxuu sidoo kale tixgeliyaa kharashka, waqtiga, khayraadka, iyo saamaynta macaamiisha iyo shaqaalaha.
 
-**Xaddidaad (limitation)** waa daciifnimo ku jirta xogta ama habka falanqaynta.
+### Tallaabada Ku Salee Wixii La Xaqiijiyey
 
-Xaddidaadaha caamka ah waxaa ka mid ah:
+Ka soo qaad in baaritaankii dheeraadka ahaa xaqiijiyey in bariisku ka dhammaan jiray Hodan maalmo ka mid ah Agoosto. Tani waa xog cusub oo tusaalaha lagu daray.
 
-- Xog maqan
-- Muunad yar
-- Muddo gaaban
-- Xog laga helay hal il oo keliya
+Waxaa markaas la goʼaamin karaa in jadwalka keenista bariiska la hagaajiyo. Xogta cusubi waxay taageeraysaa wax ka qabashada alaab yaraanta, laakiin weli ma caddaynayso inay sababtay dhammaan 300-ka kg ee hoos u dhaca.
 
-### Maxay Goʼaannadu Ugu Baahan Yihiin Ka Fiirsasho?
+Qeex qofka fulinaya iyo muddada: qofka maamula kaydka ayaa la shaqaynaya maamulaha Hodan si loo hagaajiyo keenista, natiijadana dib ayaa loo eegayaa afar toddobaad kadib.
 
-Xogtu waxay taageertaa goʼaannada, laakiin ma beddesho ka fiirsashada qofka.
+### La Soco Waxa Ka Dhasha Tallaabada
 
-Maamulayaashu waa inay tixgeliyaan:
+Ka hor fulinta, caddee waxa lagu ogaanayo in tallaabadu caawisay:
 
-- Xaaladda ganacsiga
-- Kharashka iyo khayraadka (resources)
-- Anshaxa iyo caddaaladda
-- Khataraha aan xogta lagu darin
+- **Helitaanka:** Immisa maalmood ayuu bariisku laanta ka maqnaa ka hor iyo kadib isbeddelka?
+- **Iibka:** Sidee ayuu isu beddelay celceliska kg ee la iibiyo maalintii?
+- **Kharashka:** Kharashka keenista ama kaydintu ma kordhay?
 
-### Tusaale
+Isbarbardhig muddooyin dherer isku mid ah, kuna xisaabtan isbeddello kale sida qiimaha ama baahida macaamiisha. Iib korodhay kadib tallaabada keliya ma caddaynayo in tallaabadu sababtay kororka oo dhan.
 
-Falanqayn ayaa muujisay in qiimo-dhimistu (discount) kordhiso iibka, laakiin ay yareyso faaʼidada.
+Haddii alaab yaraantu yaraato laakiin iibku soo kaban waayo, suʼaasha dib u eeg oo baar arrimaha kale ee saamayn kara iibka.
 
-Goʼaannada suurtagalka ah:
+### Qodobka Muhiimka ah
 
-- Sii wad qiimo-dhimista si suuqa qayb weyn looga helo
-- Yaree qiimo-dhimista si faaʼidada loo ilaaliyo
-- Tijaabi qiimo-dhimis yar, kadibna cabbir natiijada
+**Natiijada faham → caddee waxa aan la hubin → dooro tallaabo ku habboon → fulin iyo dabagal samee.**
 
-Falanqayntu waxay caddeysay faaʼiidada iyo khasaaraha doorasho kasta. Laakiin kala doorashada kobcinta suuqa iyo ilaalinta faaʼidada ma aha suʼaal ay xogtu keligeed ka jawaabi karto. Qofka goʼaanka qaadanaya ayaa masʼuul ka ah doorashada ugu dambaysa.
+Hab-socodka xogtu wuu soo noqon karaa: natiijada tallaabadu waxay dhalin kartaa suʼaal cusub, xog ururin cusub, iyo falanqayn kale.

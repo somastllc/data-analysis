@@ -1,93 +1,56 @@
 # Qeex Dhibaatada oo La Imow Suʼaalo
 
-**Cutubka:** 3aad - Hab-socodka Xogta  
-**Casharka:** 1aad ee 6-da cashar  
-**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad codsi aan caddayn u beddesho suʼaal falanqayn oo gaar ah.
+**Cutubka:** 3aad - Hab-socodka Xogta
+**Casharka:** 1aad ee 6-da cashar
+**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad qeexdo dhibaatada oo aad la timaaddo su’aal ku habboon.
 
 ## Dulmar
 
-“Ma eegi kartaa xogta iibka?” waa mid ka mid ah codsiyada ugu badan ee uu helo falanqeeye, welina ma aha suʼaal cad. Haddii codsigaas sida uu yahay lagu bilaabo, toddobaad ayaa lumi kara.
+“Ma eegi kartaa xogta iibka?” waa codsi guud: ma sheegayo dhibaatada la baarayo ama waxa gaar ahaan la doonayo in la ogaado.
 
-Falanqaynta wanaagsani waxay bilaabataa ka hor inta aan xog la ururin. Marka hore waa inaad fahantaa dhibaatada oo ay suʼaashu cadaataa. Haddii tallaabadan laga boodo, xitaa qalab horumarsan wuxuu soo saari karaa natiijo aan waxtar lahayn.
+Falanqaynta wanaagsani waxay ka bilaabataa fahamka dhibaatada iyo samaynta suʼaalo cad, ka hor inta aan xog la ururin. Tani waxay kaa ilaalinaysaa inaad waqti ku bixiso xog aan ka jawaabayn baahida dhabta ah.
 
-```mermaid
-flowchart LR
-    problemNode["Qeex dhibaatada<br/>(Define problem)"] --> questionNode["La imow suʼaalo<br/>(Ask questions)"]
-    questionNode --> collectNode["Ururi xogta<br/>(Collect data)"]
-    collectNode --> cleanNode["Nadiifi xogta<br/>(Clean data)"]
-    cleanNode --> analyzeNode["Falanqee oo jaantus samee<br/>(Analyze and visualize)"]
-    analyzeNode --> shareNode["Gudbi fahamka muhiimka ah<br/>(Communicate insights)"]
-    shareNode --> decideNode["Goʼaan qaado<br/>(Make decisions)"]
-```
+### Qeex Dhibaatada Ganacsiga
 
-### Ka Bilow Dhibaatada Ganacsiga
+**Dhibaatada ganacsiga (business problem)** waa arrin ay shirkad ama hayʼad rabto inay fahamto, hagaajiso, ama goʼaan ka gaarto. Tusaale ahaan:
 
-**Dhibaatada ganacsiga (business problem)** waa arrinta ama goʼaanka ay falanqayntu taageerayso.
+* Iibka ayaa hoos u dhacaya.
+* Macaamiil badan ayaa adeegga joojinaya.
 
-Khalad caam ah ayaa ah in si toos ah xogta loogu boodo iyada oo aan la garanayn waxa la xallinayo.
+Kuwani waxay tilmaamayaan dhibaatada.
 
-Mar walba ku bilow suʼaalahan:
+Haddii aad qof ama koox u samaynayso falanqaynta, weydii waxa ay rabaan inay ka ogaadaan dhibaatada.
 
-- Dhibaato noocee ah ayaan xallinaynaa?
-- Yaa ay jawaabtu muhiim u tahay?
-- Goʼaankee ayay falanqayntani taageeraysaa?
-
-Tusaale:
-
-- Suʼaal aan caddayn: “Aan eegno jadwalka iibka.”
-- Suʼaal cad: “Muxuu iibka bariisku labadii toddobaad ee u dambeeyey hoos ugu dhacay marka la barbar dhigo bishii ka horreysay?”
-
-### Garashada Dadka ay Natiijadu Khusayso
-
-**Qof ama koox ay natiijadu khusayso (stakeholder)** waa qof ama koox ay natiijada falanqayntu saamayso ama dan ka leh natiijada.
-
-Tusaalooyin:
-
-- Maamule goʼaan ka gaaraya kharashka suuqgeynta (marketing spend)
-- Kooxda product-ga oo hagaajinaysa qayb (feature) ka mid ah app-ka
-- Kooxda maaliyadda oo dib u eegaysa sida miisaaniyadda loo isticmaalay
-
-Garashada dadka ay natiijadu khusayso waxay kaa caawinaysaa inaad:
-
-- La timaaddo suʼaalaha saxda ah
-- Doorato cabbirrada (metrics) ku habboon
-- Natiijooyinka u soo bandhigto hab waxtar leh
-
-### Sida Loola Yimaaddo Suʼaalo Falanqayn oo Wanaagsan
+### Samee Suʼaal Falanqayn oo Cad
 
 **Suʼaal falanqayn (analytical question)** waa suʼaal cad oo xogtu kaa caawin karto inaad ka jawaabto.
 
-Suʼaalaha falanqaynta ee wanaagsan waa:
+Codsigii guud ee xogta iibka waxaa laga dhigi karaa:
 
-- **Gaar ah (specific):** waxay diiradda saartaa hal arrin
-- **La cabbiri karo (measurable):** xog ayaa lagaga jawaabi karaa
-- **Khusaysa (relevant):** waxay xiriir la leedahay goʼaan dhab ah
-- **Cad (clear):** dadka kale si fudud ayay u fahmi karaan
+**“Immisa ayuu iibka bariisku hoos u dhacay bishii Agoosto marka la barbar dhigo Luulyo, laantee ayaana hoos u dhaca ugu badan lahayd?”**
 
-Tusaalooyin:
+Suʼaal wanaagsan waa:
 
-- Alaabtee lahayd heerka soo-celinta (return rate) ugu sarreeya bishii hore?
-- Macaamiisha cusub ma u badan yihiin inay joojiyaan dalabaadka bishooda koowaad?
-- Saddexda magaalo, tee ayaa ugu gaabisa bixinta biilasha (invoices)?
+* **Gaar ah (specific):** waxay qeexaysaa waxa la baarayo iyo muddada la eegayo.
+* **La cabbiri karo (measurable):** xog ayaa lagaga jawaabi karaa.
+* **Khusaysa (relevant):** waxay xiriir la leedahay dhibaatada la baarayo.
+* **Cad (clear):** dadka kale si fudud ayay u fahmi karaan.
 
-### Bilowgu Waa Isku Mid, Wax Kasta oo La Dhisayo
+Suʼaasha kore waxay tilmaamaysaa xogta loo baahan yahay: iibka bariiska ee labada bilood, iyadoo laan kasta loo kala saarayo.
 
-Qaybihii Cutubka 2aad waxay ku kala duwan yihiin waxa ay soo saaraan: warbixin, dashboard, ama model la tababaray. Waxa aanay ku kala duwanayn waa sida ay ku bilowdaan.
+### Tusaale: Xarun Tababar oo Muqdisho ku Taal
 
-Data Scientist-ka goʼaaminaya in model la dhiso iyo in kale wuxuu la yimaaddaa isla saddexda suʼaalood ee kore.
+**Dhibaatada:** Tirada ardayda isdiiwaangelinaysa ayaa hoos u dhacday saddexdii bilood ee u dambeeyey.
 
-Suʼaal aan goʼaan lagu salaynayn ma mudna in waqti lagu bixiyo, si kasta oo habka loo adeegsaday u horumarsan yahay.
+**Suʼaalaha falanqaynta:**
 
-### Tusaale
+* Saddexdii bilood ee u dambeeyey, koorsooyinkee ayay isdiiwaangelintu ugu yaraatay marka la barbar dhigo saddexdii bilood ee ka horreeyey?
+* Tirada dadka xiisaynaya koorsooyinka ma yaraatay, mise saamiga dadka xiisaynaya ee dhammaystira isdiiwaangelinta ayaa hoos u dhacay?
 
-Xarun tababar oo Muqdisho ku taal ayaa ogaatay in tirada ardayda isdiiwaangelinaysa ay yaraanayso.
+Si looga jawaabo, xaruntu waxay u baahan tahay tirada dadka xiisaynaya iyo kuwa isdiiwaangeliyey, iyadoo loo kala saarayo bil iyo koorso.
 
-**Dadka ay natiijadu khusayso:** maamulaha xarunta iyo qofka qaabilsan soo jiidashada ardayda cusub (recruitment)  
-**Dhibaatada:** isdiiwaangelinta ardayda ayaa hoos u dhacaysa  
-**Suʼaalaha:**
+### Qodobka Muhiimka ah
 
-- Goormay isdiiwaangelintu bilowday inay hoos u dhacdo?
-- Isdiiwaangelintu koorsooyinka oo dhan ma ku yaraatay, mise qaar keliya?
-- Tirada dadka raadinaya koorsooyinka ma yaraatay, mise tiradu waa isku mid laakiin dadku ma isdiiwaangelinayaan?
+Haddii aad samaynayso warbixin, dashboard, ama model, ku bilow:
 
-Suʼaalahan ayaa hagaya tallaabo kasta oo ka dambaysa.
+**Dhibaatada faham → suʼaal cad samee.**

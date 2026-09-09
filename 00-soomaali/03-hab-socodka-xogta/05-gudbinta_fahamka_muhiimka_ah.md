@@ -1,61 +1,64 @@
 # Gudbinta Fahamka Muhiimka ah
 
-**Cutubka:** 3aad - Hab-socodka Xogta  
-**Casharka:** 5aad ee 6-da cashar  
+**Cutubka:** 3aad - Hab-socodka Xogta
+**Casharka:** 5aad ee 6-da cashar
 **Dhammaadka casharkan:** Waxaad awoodi doontaa inaad isla natiijada ugu gudbiso dad kala duwan heerka faahfaahineed ee ay u baahan yihiin.
 
 ## Dulmar
 
-Falanqeeye (analyst) ayaa saddex toddobaad ku qaatay baaritaan, wuxuuna soo bandhigay 12 bog (slide), laakiin wax tallaabo ah lama qaadin. Natiijadii uu helay way saxnayd, balse waxay ahayd qodobka afraad ee lagu sheegay slide-ka 9aad.
+Tusaalihii casharka hore, iibka bariisku wuxuu Agoosto yaraaday 400 kg marka loo eego Luulyo. Laanta Hodan ayaa lahayd 300 kg oo hoos u dhacaas ah.
 
-Helidda fahamka muhiimka ahi kaliya waa kala bar shaqada. Waa inaad sidoo kale si cad u gudbisaa si ay dadka kale u fahmaan oo tallaabo uga qaadaan.
+**Gudbinta fahamka muhiimka ah (communicating insights)** waa sharaxidda waxa xogtu muujisay iyo muhiimadda ay u leedahay suʼaashii la baarayey, si dadka kale u fahmaan.
 
-### Falanqayn Aan Si Cad Loo Gudbin Faaʼiidadeedu Way Xaddidan Tahay
+Halkan, fahamka muhiimka ahi waa in inta badan hoos u dhaca iibku ku ururtay Hodan. Fariintaas ayaa qofka dhegaysanaya ka caawinaysa inuu ogaado halka isbeddelka ugu weyn ka dhacay.
 
-Gudbinta wanaagsan waxay kaa caawinaysaa inaad:
+### Ku Bilow Fariinta Ugu Muhiimsan
 
-- Sharaxdo waxa aad heshay
-- Muujiso sababta ay muhiim u tahay
-- Soo jeediso tallaabada xigta
-- Dhisto kalsoonida lagu qabo falanqayntaada
+Qofka akhrinaya warbixinta ha ka dhex raadin jawaabta jadwallo iyo faahfaahin badan. Marka hore sheeg waxa aad heshay:
 
-Xirfadlayaasha xogtu waa inay si cad u fikiraan, si cadna wax u gudbiyaan.
+- **Fariin aan dhammaystirnayn:** “Iibku wuu yaraaday.”
+- **Fariin cad:** “Iibka bariisku wuxuu Agoosto yaraaday 400 kg marka loo eego Luulyo; Hodan ayaa lahayd 300 kg oo hoos u dhacaas ah.”
 
-Arrintani reports oo keliya ma khusayso. Model aan la sharxi karin sida uu u shaqeeyo waxaa diidi kara qofka ay tahay inuu ansixiyo. Si la mid ah, report sax ah lama akhriyo haddii fariintiisu aanay caddayn.
+Fariinta labaad waxay caddeynaysaa alaabta, muddada la isbarbardhigay, inta iibku yaraaday, iyo laanta hoos u dhacu ku badan yahay.
 
-### Waxyaabaha Lagu Darayo Warbixinta Xogta (Data Report)
+### Fariinta Ku Taageer Caddayn
 
-Warbixin fudud waxaa badanaa lagu daraa:
+Warbixinta kooban ku dar waxa qofku u baahan yahay si uu natiijada u fahmo oo u hubiyo:
 
-1. **Macnaha guud (context):** dhibaatada aad baartay
-2. **Habka (method):** xogta aad adeegsatay iyo sida aad u baartay
-3. **Natiijooyinka (findings):** waxa xogtu muujisay
-4. **Jaantusyada (visuals):** charts-ka taageeraya fariinta
-5. **Talo-bixinta (recommendation):** tallaabada aad ku talinayso in la qaado
+| Qaybta | Waxa tusaalaheenna lagu sheegayo |
+|---|---|
+| Natiijada ugu muhiimsan | Iibku wuxuu yaraaday 400 kg; Hodan ayaa lahayd 300 kg oo hoos u dhacaas ah |
+| Xogta iyo habka | Diiwaannada iibka Luulyo iyo Agoosto ayaa la nadiifiyey, kadibna kg ayaa la isugu geeyey laan kasta |
+| Caddaynta | Jadwalka ama bar chart-ka isbarbardhigaya iibka labada bilood |
+| Xaddidaadda | Xogtan iibka ahi ma caddaynayso sababta hoos u dhaca |
 
-Fariinta diiradda ku saar waxa muhiimka ah. Dadka ay natiijadu khusayso badankoodu uma baahna faahfaahin kasta oo ku saabsan habka aad u shaqaysay.
+Jaantuska sii cinwaan sheegaya waxa la eegayo, sida **“Iibka bariiska ee laamaha: Luulyo iyo Agoosto (kg)”**. Qoraalka la socda ha tilmaamo natiijada ugu muhiimsan ee laga arko.
 
-### Sida Natiijada Si Cad Loogu Gudbiyo
+### Isla Natiijada, Dad Kala Duwan
 
-- Ku bilow qodobka ugu muhiimsan
-- Adeegso erayo fudud, kana fogow erayo aan loo baahnayn
-- Muuji tirooyinka ugu muhiimsan
-- Dooro jaantus (charts) taageeraya fariintaada
-- Si daacad ah u sheeg xaddidaadaha falanqaynta
+Garashada qofka aad la hadlayso waxay kaa caawinaysaa doorashada faahfaahinta. Maamuluhu wuxuu u baahan karaa dulmar, halka falanqeeyuhu u baahan karo inuu dib u hubiyo xisaabta.
 
-Tusaale:
+**Maamulaha:**
 
-- **Fariin daciif ah:** “Regression output-ku wuxuu muujinayaa negative coefficient.”
-- **Fariin cad:** “Macaamiisha jawaabta suga in ka badan 3 maalmood waxay laba jeer u dhow yihiin inay adeegga joojiyaan.”
+> Iibka bariisku wuxuu Agoosto yaraaday 400 kg marka loo eego Luulyo. Hodan ayaa lahayd 300 kg oo hoos u dhacaas ah, sidaas darteed halkaas ayuu hoos u dhacu ugu badan yahay. Sababta weli lama xaqiijin.
 
-Weedha koowaad waxay sharxaysaa habka farsamo ee la adeegsaday. Weedha labaad waxay sheegaysaa waxa qofka dhegaysanaya muhiimka u ah, waana mid tallaabo laga qaadi karo.
+**Falanqeeyaha:**
 
-### Garashada Dadka Aad La Hadlayso
+> Waxaan isbarbardhignay wadarta kg ee Luulyo iyo Agoosto, annagoo laan kasta gooni u xisaabinnay. Wadartu waxay ka soo dhacday 2,400 kg ilaa 2,000 kg; isbeddelkuna waa −400 kg, ama hoos u dhac qiyaastii 16.7% ah. Sababta weli lama xaqiijin.
 
-Dad kala duwan waxay u baahan yihiin heerar faahfaahin oo kala duwan:
+Falanqeeyaha waxaa sidoo kale la siin karaa jadwalka uu xisaabta ka hubinayo:
 
-- **Maamulka sare (executives):** waxay u baahan karaan soo koobid gaaban iyo talo-bixin
-- **Falanqeeyayaasha:** waxay u baahan karaan habka, xogta, iyo faahfaahinta falanqaynta
-- **Kooxda product-ga:** waxay u baahan kartaa faham gaar ah oo ku saabsan habdhaqanka isticmaalaha
+| Laanta | Luulyo (kg) | Agoosto (kg) | Isbeddelka (kg) |
+|---|---:|---:|---:|
+| Hodan | 1,000 | 700 | −300 |
+| Wadajir | 800 | 700 | −100 |
+| Yaaqshiid | 600 | 600 | 0 |
+| **Wadarta** | **2,400** | **2,000** | **−400** |
 
-Isla natiijada ayaa loo gudbin karaa saddexda kooxood, laakiin faahfaahinta iyo erayada la adeegsanayo waa in lagu saleeyaa qofka goʼaanka qaadanaya.
+Xaqiiqada iyo xaddidaaddu waa isku mid labada fariimood; waxa kala duwan waa heerka faahfaahinta.
+
+### Qodobka Muhiimka ah
+
+**Sheeg natiijada → ku taageer caddayn → caddee waxa aan la hubin → faahfaahinta ku salee qofka aad la hadlayso.**
+
+Warbixin kasta uma baahna talo-bixin. Casharka xiga waxaan ku eegi doonnaa sida natiijada loogu xiriiriyo goʼaan ama tallaabo xigta.

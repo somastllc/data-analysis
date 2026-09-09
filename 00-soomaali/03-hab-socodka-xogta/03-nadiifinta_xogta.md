@@ -1,59 +1,64 @@
 # Nadiifinta Xogta
 
-**Cutubka:** 3aad - Hab-socodka Xogta  
-**Casharka:** 3aad ee 6-da cashar  
-**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad goʼaamiso waxa laga qabanayo xogta soo noqnoqotay, qiimeyaasha maqan, iyo qiimeyaasha aan saxda ahayn.
+**Cutubka:** 3aad - Hab-socodka Xogta
+**Casharka:** 3aad ee 6-da cashar
+**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad doorato tallaabo ku habboon xogta soo noqnoqotay, qiimeyaasha maqan, iyo qaababka ama qiimeyaasha khaldan.
 
 ## Dulmar
 
-Marka falanqeeyayaasha la weydiiyo waxa waqtigooda ugu badan qaata, jawaabtu badanaa ma aha falanqaynta. Waqti badan waxay ku bixiyaan diyaarinta xogta si falanqayntu u suurtowdo.
+Casharkii hore waxaan soo ururinnay xogta iibka bariiska ee Luulyo iyo Agoosto. Hadda waxaan diyaarinaynaa xogtaas si laamaha si sax ah loogu barbar dhigo.
 
-Xogta dhabta ahi mar walba ma aha mid diyaarsan. Ka hor inta aan la falanqayn, badanaa waa in la nadiifiyaa. **Nadiifinta xogta (data cleaning)** waxay hagaajisaa tayada xogta iyada oo khaladaadka la saxayo, qiimeyaasha maqan wax laga qabanayo, qaababkana la mideynayo.
+**Nadiifinta xogta (data cleaning)** waa saxidda khaladaadka, wax ka qabashada qiimeyaasha maqan, iyo midaynta qaababka xogta.
 
-### Maxaa Xogta Loo Nadiifiyaa?
+Casharkii tayada xogta waxaad ku baratay aqoonsiga dhibaatooyinka; halkan waxaad ku baranaysaa waxa laga qabanayo.
 
-Falanqaynta xog aan nadiif ahayn waxay keeni kartaa natiijo khaldan.
+### Dhibaatada Hubi, Kadibna Tallaabo Qaad
 
-Cutubka 1aad waxaan ku soo aragnay dhibaatooyinka tayada xogta, sida qiimeyaasha maqan, iyo xogta soo noqnoqotay. Nadiifinta xogtu waa waxa laga qabanayo dhibaatooyinkaas.
+Kaydi xogtii asalka ahayd, ku shaqee nuqul, kuna qor isbeddellada aad samaysay iyo sababtooda.
 
-In dhibaatada la arko waa bilowga. Goʼaaminta waxa laga qabanayo ayaa u baahan taxaddar, laba falanqeeyana waxay si macquul ah xalal kala duwan ugu dooran karaan isla tiir (column) xogeed oo khaldan.
+| Dhibaatada | Waxa la hubinayo | Tallaabada |
+|---|---|---|
+| Safaf soo noqnoqda | Ma isla diiwaankii baa laba jeer la geliyey, mise waa iibyo kala duwan? | Ka saar nuqulka dheeraadka ah marka soo noqnoqoshada la xaqiijiyo |
+| Qiime maqan | Ma laga heli karaa diiwaankii asalka ahaa? | Ku buuxi xog la xaqiijiyey; haddii aan la helin, calaamadee inuu maqan yahay |
+| Magacyo kala qoran | Ma isla laantii baa magacyo kala duwan loo qoray? | U qor hal magac oo la isla oggol yahay |
+| Taariikho qaabab kala duwan leh | Ma caddahay maalinta, bisha, iyo sannadku? | U beddel hal qaab marka macnaha taariikhda la xaqiijiyo |
+| Halbeegyo kala duwan | Ma la yaqaan sida loogu beddelo halbeeg isku mid ah? | U beddel kg marka miisaanka la xaqiijiyo |
+| Qiime laga shakiyo | Ma khalad gelin baa, mise wuxuu leeyahay sharaxaad sax ah? | Ka hubi isha oo sax haddii khalad la xaqiijiyo |
 
-### Hawlaha Caamka ah ee Nadiifinta Xogta
+Isla macmiilka oo laba jeer wax iibsaday ma aha xog si khaldan u soo noqnoqotay. Sidoo kale, tiro aad u weyn keliya ma caddaynayso khalad.
 
-| Hawsha | Tusaale |
-|---|---|
-| **Ka saarista xogta soo noqnoqotay** | Isla macmiilka oo laba jeer ku jira |
-| **Wax ka qabashada qiimeyaasha maqan** | Daʼ ama email bannaan |
-| **Saxidda qaababka** | Taariikho siyaabo kala duwan loo qoray |
-| **Midaynta qaybaha (Standardizing categories)** | `Hargeysa`, `Hargeisa`, iyo `hargeysa` |
-| **Saxidda qiimeyaasha aan saxda ahayn** | Daʼda oo ah `-3` ama `999` |
+### Tusaale: Nadiifinta Diiwaanka Iibka Bariiska
 
-### Nadiifin Intee Leʼeg Ayaa Ku Filan?
+Qayb ka mid ah xogtii la soo ururiyey ayaa sidan u qoran. Tusaalahan, saf kasta waxaa loogu talagalay hal iib oo bariis ah, iib kastana wuxuu leeyahay aqoonsi u gaar ah.
 
-Dhibaato kasta xal isku mid ah uma baahna.
+| Aqoonsiga iibka | Taariikhda | Laanta | Tirada | Halbeegga |
+|---|---|---|---|---|
+| B-101 | 2026-07-05 | Hodan | 50 | kg |
+| B-101 | 2026-07-05 | Hodan | 50 | kg |
+| B-102 | 2026-07-06 | hodan | 2 | jawaan |
+| B-103 | 2026-08-03 | | 25 | kg |
 
-Tusaalooyin:
+Ka hor isbarbardhigga laamaha:
 
-- Jawaabaha survey-ga qaarkood oo maqan mararka qaarkood waa la aqbali karaa
-- Diiwaannada maaliyadeed ee soo noqnoqday badanaa waa in laga saaraa
-- Khalad ku jira magaca qayb waa in lagu saxo **midayn (standardization)**, si magac kasta oo magaalo ama alaab loogu qoro hal qaab
+1. **Hubi B-101:** Haddii diiwaanka asalka ahi xaqiijiyo inuu yahay hal iib oo laba jeer la geliyey, hal saf ka saar. Haddii labadaba la tiriyo, iibkaas wuxuu noqonayaa 100 kg halkii uu ka ahaan lahaa 50 kg.
+2. **Midee magaca laanta:** Marka la xaqiijiyo in `hodan` iyo `Hodan` yihiin isla laanta, labadaba u qor `Hodan`.
+3. **Xaqiiji miisaanka jawaanka:** Haddii jawaan kasta oo iibka B-102 ahi yahay 50 kg, labada jawaan u beddel 100 kg. Ha qiyaasin miisaanka adigoon hubin.
+4. **Raadi laanta B-103:** Ka hubi diiwaanka asalka ah ama qofka xogta geliyey; magaca laanta ha iska qiyaasin.
 
-Xalka saxda ahi wuxuu ku xiran yahay suʼaasha xogta laga rabo inay ka jawaabto. Taasi waa sababta nadiifintu uga dambayso qeexidda suʼaasha.
+### Haddii Xogta Maqan Aan La Helin
 
-### Tusaale
+Qiime maqan si toos ah eber ha uga dhigin. Tirada iibka oo maqan iyo iib eber ahi isku macne ma aha.
 
-Liiska shaqaalaha ee ganacsi jumlo iibiya waxaa ku jira:
+Haddii laanta B-103 la waayo, ku calaamadee “Laan aan la garanayn”. 25-ka kg waxaa lagu dari karaa wadarta guud ee iibka, laakiin looma nisbayn karo laan gaar ah.
 
-- Laba saf oo leh isla Employee ID
-- Shaqaale qaarkood oo aan la diiwaangelin laanta (branch) ay ka shaqeeyaan
-- Mushaharro loo kala qoray `$500`, `500`, iyo `500 USD`
+Marka natiijada la gudbinayo, sheeg in iib aan laantiisa la garanayn uu jiro, taasina ay xaddidayso isbarbardhigga laamaha.
 
-Kahor intaadan isbarbar dhigin mushaharka laamaha oo dhan, waa inaad:
+### Hubi Natiijada Nadiifinta
 
-1. Ka saartaa safafka soo noqnoqday
-2. Goʼaamisaa waxa laga qabanayo xogta laanta ee maqan
-3. Mushaharrada u qortaa hal qaab
+Dib u eeg in nuqulladii la xaqiijiyey laga saaray, magacyadu isku qaab yihiin, iyo tirooyinka la isu geynayo ay isku halbeeg yihiin. Isbarbar dhig xogtii hore iyo tan la nadiifiyey si aad u sharxi karto wixii isbeddelay.
 
-Haddii tallaabooyinkan laga boodo, waxaa soo bixi kara celcelis iyo kala-sarrayn khaldan.
+### Qodobka Muhiimka ah
 
-Nadiifinta xogtu waa mawduuc ballaaran. Hadda waxa muhiimka ahi waa inaad garato in tallaabadani jirto iyo in ka boodisteedu ay natiijooyinka ka dambeeya ka dhigto kuwo aan lagu kalsoonaan karin.
+**Hubi dhibaatada → ku sax xog la xaqiijiyey → diiwaangeli isbeddelka → dib u hubi.**
+
+Xogta aan la sixi karin xaddidaaddeeda caddee ka hor intaadan u gudbin falanqaynta.

@@ -1,62 +1,62 @@
 # Ururinta Xogta
 
-**Cutubka:** 3aad - Hab-socodka Xogta  
-**Casharka:** 2aad ee 6-da cashar  
-**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad goʼaamiso xogta ka jawaabi karta suʼaashaada iyo xogta keeni karta natiijo khaldan.
+**Cutubka:** 3aad - Hab-socodka Xogta
+**Casharka:** 2aad ee 6-da cashar
+**Dhammaadka casharkan:** Waxaad awoodi doontaa inaad suʼaal falanqayn u beddesho qorshe xog ururin oo qeexaya xogta loo baahan yahay, halka laga helayo, iyo waxa la hubinayo.
 
 ## Dulmar
 
-Xogta ugu fudud ee la heli karo mar walba ma aha xogta ka jawaabi karta suʼaashaada. Badanaa waa xog uu qof hore ugu diyaariyey ujeeddo kale.
-
-Marka aad qeexdo suʼaasha, waxaad u baahan tahay xog si dhab ah uga jawaabi karta. Sidaas darteed waa muhiim inaad garato xogta loo baahan yahay iyo halka laga heli karo.
-
-### Waa Maxay Ururinta Xogtu?
+Casharkii hore waxaad ku baratay sida dhibaatada looga sameeyo suʼaal cad. Tallaabada xigta waa inaad hesho xogta ka jawaabaysa suʼaashaas.
 
 **Ururinta xogta (data collection)** waa soo ururinta xogta loo baahan yahay si looga jawaabo suʼaalaha falanqaynta.
 
-Tani waxay noqon kartaa:
+Casharkan waxaan ku sii wadaynaa tusaalihii iibka bariiska, annagoo iibka ku cabbirayna kiiloogaraam (kg):
 
-- Xog ayaa laga soo saari karaa database
-- Fayl CSV ah ayaa la soo dejisan karaa
-- Sahanno (surveys) ama foom ayaa la adeegsan karaa
-- Waxaa la adeegsan karaa **API**, oo ah hab u oggolaanaya nidaamyo kala duwan inay xog si toos ah isu dhaafsadaan
-- In la isku geeyo xog laga keenay nidaamyo kala duwan
+**“Immisa ayuu iibka bariisku hoos u dhacay bishii Agoosto marka la barbar dhigo Luulyo, laantee ayaana hoos u dhaca ugu badan lahayd?”**
 
-### Hababka Caamka ah ee Xogta Loo Ururiyo
+### Qeex Xogta Loo Baahan Yahay
 
-| Habka | Tusaale |
+Suʼaasha ka soo saar xogta ay tahay inaad hesho. Tusaalaheenna, diiwaan kasta oo iib ah wuxuu u baahan yahay:
+
+| Xogta | Sababta loo baahan yahay |
 |---|---|
-| **Diiwaannada ganacsiga** | Iibka iyo diiwaangelinta macaamiisha cusub |
-| **Sahanno (surveys)** | Fooms lagu cabbiro qanacsanaanta macaamiisha |
-| **Raadraaca website-ka (web tracking)** | booqashada, iyo clicks |
-| **Xog-gelin gacanta ah (manual entry)** | Diiwaanno ay shaqaaluhu gacanta ku geliyaan jadwal (spreadsheet) |
-| **Xogta dadweynaha (public datasets)** | Xog ay soo saaraan dowladdaha ama hayʼadaha cilmi-baarista |
+| Taariikhda iibka | Si loo kala saaro iibka Luulyo iyo Agoosto |
+| Magaca laanta | Si laamaha loo barbar dhigo |
+| Magaca alaabta | Si iibka bariiska looga sooco alaabta kale |
+| Tirada bariiska la iibiyey, oo kg ah | Si loo xisaabiyo iibka loona cabbiro isbeddelkiisa |
 
-Habka ugu habboon wuxuu ku xiran yahay suʼaashaada. Haddii aad rabto inaad ogaato qanacsanaanta macaamiisha, sahanno (surveys) ayaa ku caawin kara. Haddii aad rabto inaad falanqayso iibka, diiwaannada lacag-bixinnada ayaa ku habboon.
+Xogta la ururinayo ha ku koobnaato waxa suʼaashu u baahan tahay. Magacyada iyo lambarrada telefoonka macaamiisha looma baahna isbarbardhiggan.
 
-### Inta Xog ee Ku Filan Waxay Ku Xiran Tahay Waxa La Dhisayo
+### Xaddid Waxa La Ururinayo
 
-Dukaanle doonaya inuu ogaado alaabtii ugu iibka badnayd bishii hore wuxuu u baahan karaa diiwaannada hal bil oo nadiif ah.
+Caddee muddada, meelaha, iyo waxa xogtu daboolayso:
 
-Laakiin model loo tababarayo inuu saadaaliyo macaamiisha ganacsiga ka tagi karta wuxuu u baahan karaa kumannaan kiis oo hore. Kiis walba waa inuu muujiyo wixii macaamilkaasi ugu dambayn sameeyey.
+- **Muddada:** Luulyo iyo Agoosto oo dhammaystiran, isla sannadkaas.
+- **Meelaha:** Dhammaan laamaha ganacsiga la baarayo.
+- **Alaabta:** Bariiska lagu iibiyey laamahaas.
 
-Labaduba waa ururinta xogta, laakiin tirada iyo nooca xogta loo baahan yahay aad ayay u kala duwan yihiin.
+Xogta Agoosto oo keliya kama jawaabi karto suʼaal isbarbardhigaysa laba bilood. Sidoo kale, xogta hal laan kuma filna in la ogaado laanta hoos u dhaca ugu badan lahayd.
 
-### Waxyaabaha La Hubiyo Ka Hor Isticmaalka Xogta
+### Hel oo Soo Ururi Xogta
 
-- Xogtani ma la xiriirtaa dhibaatada la xallinayo?
-- Xogtu ma ku filan tahay in natiijo laga soo saaro?
-- Goorma ayaa xogta la ururiyey?
-- Isha xogta ma lagu kalsoonaan karaa?
-- Ma jiraan arrimo la xiriira asturnaanta (privacy) ama oggolaanshaha (permission)?
+Xogtan waxaa laga heli karaa diiwaannada iibka ee ganacsiga. Ka codso qofka maamula nidaamka inuu soo saaro xogta labada bilood, iyadoo ay ku jiraan tiirarka aan qeexnay.
 
-### Tusaale
+Haddii laamuhu diiwaanno kala gaar ah leeyihiin, laan kasta ka soo ururi xogta isla muddadaas.
 
-Si loo fahmo sababta ay macaamiishu u joojiyaan cusboonaysiinta xirmada internet-ka, waxaa la ururin karaa:
+La socodsii xogta meesha laga soo saaray iyo taariikhda la soo saaray, si dib loogu hubin karo haddii suʼaal ka timaaddo.
 
-- Goorta xirmo kasta la iibsaday iyo goorta ay dhammaatay
-- Inta internet ah ee macaamilku isticmaalay ka hor inta aanu joojin
-- Cabashooyinka uu u gudbiyey call centre-ka
-- Jawaabaha sahanno (surveys) kooban oo loo diray macaamiisha ka tagtay
+### Hubi In Xogtu Ka Jawaabi Karto Suʼaasha
 
-Labada xogood ee hore waxay sheegayaan waxa dhacay. Cabashooyinka iyo jawaabaha survey-gu waxay gacan ka geysanayaan fahamka sababta ay u dhacday, waana xogta ay u badan tahay inay maqnaato.
+Ka hor intaadan u gudbin nadiifinta, hubi:
+
+- Ma ku jiraan dhammaan tiirarkii loo baahnaa?
+- Labada bilood iyo dhammaan laamuhu ma ku jiraan?
+- Tirada bariiska ma lagu wada cabbiray kg, mise laamaha qaar waxay isticmaaleen bac ama jawaan?
+
+Tusaale ahaan, haddii xogta Agoosto ee laan ay ka maqan tahay, xogtaas maqan looma qaadan karo in laantu waxba iibin. Taasi waxay keeni kartaa in si khaldan loogu sheego laanta hoos u dhaca ugu badan leh.
+
+Haddii qayb xogta ka mid ahi maqan tahay, dib uga dalbo isha xogta. Haddii aan la heli karin, caddee waxa maqan iyo sida ay u xaddidayso jawaabta aad bixin karto.
+
+**Suʼaasha → xogta loo baahan yahay → muddada iyo meelaha → soo ururinta → hubinta.**
+
+Marka xogta loo baahan yahay la helo, tallaabada xigta waa nadiifinteeda.
