@@ -6,9 +6,9 @@
 
 Two shop owners sell the same products at the same prices. One records every sale, the other records nothing. After a year, only one of them knows which product earns the most and which has been sitting unsold since March. Data is not just numbers in a spreadsheet. It shapes decisions in business, healthcare, education, government, and everyday life.
 
-### Data helps organizations make better decisions
+### Data helps companies make better decisions
 
-Instead of relying only on guesswork or intuition, organizations use data to:
+Instead of relying only on guesswork or intuition, companies use data to:
 
 - Understand customer behavior
 - Improve products and services
@@ -18,7 +18,7 @@ Instead of relying only on guesswork or intuition, organizations use data to:
 
 For example, a neighborhood shop can track which products sell fastest, when stock runs low, and which items earn the most profit, then reorder on the evidence. An online store uses the same approach at larger scale to find which marketing campaigns work and where customers abandon their carts.
 
-An organization that works this way is often described as **data-driven**.
+A company that works this way is often described as **data-driven**.
 
 ### Data creates competitive advantage
 

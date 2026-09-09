@@ -121,7 +121,7 @@ Then the fourth fault, separately, because it is the opposite point: `Springfiel
 
 **Cold open:** *Two shop owners sell the same products at the same prices.*
 
-**Shots:** cold open → title → objective → *Data helps organizations make better decisions* → *Data creates competitive advantage* → *Data skills are widely valuable* → *Data also comes with responsibility*
+**Shots:** cold open → title → objective → *Data helps companies make better decisions* → *Data creates competitive advantage* → *Data skills are widely valuable* → *Data also comes with responsibility*
 
 **Note:** Four short sections and no diagram, which makes it the flattest-shaped lesson in chapter 1. Carry it on delivery, and let the two-shop-owners story run through all four sections rather than dropping it after the cold open. In *Data creates competitive advantage*, land "What separates them is that somebody looked" first, then give the quote a beat: "Without data, you are just another person with an opinion." Last section is the setup for chapter 5; point forward.
 
