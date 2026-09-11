@@ -36,11 +36,13 @@ flowchart LR
     infoNode --> insightNode["Insight"]
 ```
 
-Think of it like cooking:
+A simple example: Facebook
 
-- **Data** = ingredients
-- **Information** = a prepared meal you can understand
-- **Insight** = knowing what to cook next time based on what people liked
+You posted a photo, a text post, and a video on Facebook. They received `20`, `45`, and `90` likes.
+
+- Those like counts are **data**.
+- Knowing that the video received the most likes is **information**.
+- The people who follow your page seem to prefer video over photos and text posts. So next time, you might create another video. That is an important **insight**.
 
 ### Where you see data every day
 

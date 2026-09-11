@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 470" role="img" aria-labelledby="title desc">
+  <title id="title">Facebook post types compared by likes</title>
+  <desc id="desc">A photo post has 20 likes, a text post has 45 likes, and a video post has 90 likes. The video has the most likes.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#D7DDDD"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#1A733A"/>
+    </marker>
+  </defs>
+
+  <rect width="1500" height="470" rx="24" fill="#F6F8F8"/>
+  <rect width="1500" height="470" rx="24" fill="url(#dots)" opacity=".45"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M462 232 C486 220 511 220 538 230" stroke="#1A733A" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M963 232 C987 220 1012 220 1039 230" stroke="#1A733A" stroke-width="5" marker-end="url(#arrow)"/>
+  </g>
+
+  <g transform="translate(38 32)">
+    <path d="M12 5 C133 -3 304 -1 414 7 C425 117 424 292 413 400 C287 408 133 407 11 399 C-1 279 -2 130 12 5z" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <rect x="30" y="26" width="118" height="42" rx="12" fill="#EDF0F0"/>
+    <text x="89" y="54" text-anchor="middle" font-family="Geist Mono, monospace" font-size="18" letter-spacing="1.2" fill="#4D5353">PHOTO</text>
+
+    <g transform="translate(55 88)" stroke="#121212" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 18 C75 9 217 11 297 19 C303 82 303 158 296 218 C212 226 78 226 15 217 C5 152 6 79 14 18z" fill="#F6F8F8"/>
+      <path d="M43 179 L101 121 L141 158 L191 99 L266 181" fill="#D9F5E3"/>
+      <circle cx="228" cy="64" r="24" fill="#FFF0B8"/>
+      <path d="M44 179 C100 188 209 189 266 181" stroke="#1A733A" stroke-width="3"/>
+    </g>
+
+    <g transform="translate(50 330)">
+      <path d="M0 16 C51 2 150 2 205 15" fill="none" stroke="#1A733A" stroke-width="4" stroke-linecap="round"/>
+      <text x="0" y="57" font-family="Geist Mono, monospace" font-size="64" font-weight="700" fill="#121212">20</text>
+      <text x="97" y="52" font-family="Patrick Hand, cursive" font-size="32" fill="#1A733A">likes</text>
+    </g>
+  </g>
+
+  <g transform="translate(539 32)">
+    <path d="M12 5 C133 -3 304 -1 414 7 C425 117 424 292 413 400 C287 408 133 407 11 399 C-1 279 -2 130 12 5z" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+    <rect x="30" y="26" width="156" height="42" rx="12" fill="#EDF0F0"/>
+    <text x="108" y="54" text-anchor="middle" font-family="Geist Mono, monospace" font-size="18" letter-spacing="1.2" fill="#4D5353">TEXT POST</text>
+
+    <g transform="translate(57 93)" stroke="#121212" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 3 C88 -3 213 -2 295 5 C303 71 302 151 293 211 C217 219 89 219 17 211 C6 151 6 67 15 3z" fill="#F6F8F8"/>
+      <path d="M49 50 C103 43 184 43 249 51 M49 86 C121 78 191 81 252 88 M49 122 C108 116 173 116 229 122 M49 158 C94 154 141 154 190 159" stroke="#6E7676" stroke-width="5"/>
+      <path d="M50 191 C105 199 193 199 251 190" stroke="#1A733A" stroke-width="3"/>
+    </g>
+
+    <g transform="translate(50 330)">
+      <path d="M0 16 C64 2 170 2 234 15" fill="none" stroke="#1A733A" stroke-width="4" stroke-linecap="round"/>
+      <text x="0" y="57" font-family="Geist Mono, monospace" font-size="64" font-weight="700" fill="#121212">45</text>
+      <text x="100" y="52" font-family="Patrick Hand, cursive" font-size="32" fill="#1A733A">likes</text>
+    </g>
+  </g>
+
+  <g transform="translate(1040 32)">
+    <path d="M12 5 C133 -3 304 -1 414 7 C425 117 424 292 413 400 C287 408 133 407 11 399 C-1 279 -2 130 12 5z" fill="#EDFBF2" stroke="#AEEBC5" stroke-width="3"/>
+    <rect x="30" y="26" width="118" height="42" rx="12" fill="#D9F5E3"/>
+    <text x="89" y="54" text-anchor="middle" font-family="Geist Mono, monospace" font-size="18" letter-spacing="1.2" fill="#1A733A">VIDEO</text>
+
+    <g transform="translate(55 88)" stroke="#121212" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 16 C91 7 217 8 299 17 C306 82 305 159 297 221 C219 229 88 229 15 219 C5 150 6 79 13 16z" fill="#FFFFFF"/>
+      <path d="M127 67 L127 176 L217 122z" fill="#3ACC69" stroke="#1A733A"/>
+      <path d="M41 199 C103 211 218 211 269 197" stroke="#1A733A" stroke-width="3"/>
+      <path d="M41 42 H270 M71 42 L45 83 M125 42 L99 83 M179 42 L153 83 M233 42 L207 83" stroke="#6E7676" stroke-width="4"/>
+    </g>
+
+    <g transform="translate(50 330)">
+      <path d="M0 16 C73 0 185 0 252 16" fill="none" stroke="#1A733A" stroke-width="4" stroke-linecap="round"/>
+      <text x="0" y="57" font-family="Geist Mono, monospace" font-size="64" font-weight="700" fill="#121212">90</text>
+      <text x="104" y="52" font-family="Patrick Hand, cursive" font-size="32" fill="#1A733A">likes</text>
+      <text x="220" y="53" font-family="Patrick Hand, cursive" font-size="31" fill="#1A733A">most</text>
+    </g>
+  </g>
+
+  <g font-family="Patrick Hand, cursive" font-size="30" fill="#1A733A">
+    <text x="635" y="448" text-anchor="middle">same question, more engagement</text>
+    <path d="M841 427 C890 407 948 406 1004 423" fill="none" stroke="#1A733A" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  </g>
+</svg>
