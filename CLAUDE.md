@@ -75,11 +75,11 @@ exports/
 │   ├── Lesson 01 - What Is Data.html
 │   ├── Lesson 02 - Types of Data.html
 │   ├── Lesson 03 - Sources and Formats of Data.html
-│   ├── Lesson 04 - Data Quality Basics.html
+│   ├── Lesson 04 - Data Quality.html
 │   ├── Lesson 05 - Why Data Matters.html
 │   ├── assets/lesson-01/
 │   │   ├── patterns-emerge.svg
-│   │   └── cooking-analogy.svg
+│   │   └── facebook-post-likes.svg
 │   ├── assets/lesson-02/
 │   │   ├── structured-table.svg
 │   │   ├── unstructured-media.svg
@@ -100,7 +100,7 @@ exports/
 │   ├── Lesson 01 - What Is Data.pdf
 │   ├── Lesson 02 - Types of Data.pdf
 │   ├── Lesson 03 - Sources and Formats of Data.pdf
-│   ├── Lesson 04 - Data Quality Basics.pdf
+│   ├── Lesson 04 - Data Quality.pdf
 │   └── Lesson 05 - Why Data Matters.pdf
 references/
 └── Data Fundamentals Lesson.pdf
@@ -117,7 +117,7 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - Lesson 1.1, "What Is Data?", is complete as an eight-slide HTML presentation and an eight-page PDF with two standalone SVG illustrations.
 - Lesson 1.2, "Types of Data", is complete as a seven-slide HTML presentation and a seven-page PDF with five standalone SVG illustrations.
 - Lesson 1.3, "Sources and Formats of Data", is complete as a seven-slide HTML presentation and a seven-page PDF with three standalone SVG illustrations.
-- Lesson 1.4, "Data Quality Basics", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone SVG illustrations.
+- Lesson 1.4, "Data Quality", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone SVG illustrations.
 - Lesson 1.5, "Why Data Matters", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone SVG illustrations.
 - All five PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.

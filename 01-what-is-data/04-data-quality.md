@@ -1,4 +1,4 @@
-# Data Quality Basics
+# Data Quality
 
 **By the end:** You can inspect a table and name the quality problems in it.
 
@@ -40,18 +40,18 @@ This is the customer list from the top of the lesson. The manager wants the aver
 
 | Customer ID | Name | Age | City | Email |
 |---|---|---|---|---|
-| `C-101` | Maya Chen | `34` | `Springfield` | `maya@example.com` |
-| `C-102` | Noah Reed | `27` | `Riverton` | `noah@example.com` |
-| `C-103` | Elena Cruz | | `springfield` | `elena@example.com` |
-| `C-104` | Liam Brown | `200` | `Riverton` | `liam@example.com` |
-| `C-102` | Noah Reed | `27` | `Riverton` | `noah@example.com` |
+| `C-101` | Mohamed Ali | `34` | `Mogadishu` | `mohamed@example.com` |
+| `C-102` | Amina Hassan | `27` | `Hargeisa` | `amina@example.com` |
+| `C-103` | Fatima Yusuf | | `mogadishu` | `fatima@example.com` |
+| `C-104` | Abdi Warsame | `200` | `Kismayo` | `abdi@example.com` |
+| `C-102` | Amina Hassan | `27` | `Hargeisa` | `amina@example.com` |
 
 Three of the four break the average age, and each one breaks it differently:
 
-- Liam's age is `200`. It is **inaccurate**, and a single impossible value drags the average up on its own.
-- Elena's age is blank. That is **incomplete** - and you must decide whether she is left out of the average or counted as zero, which give very different answers.
-- `C-102` appears twice, and every value in it is correct. That is the point: nothing in either row is wrong, but Noah is counted as two customers, so his age carries double the weight of anyone else's.
+- Abdi's age is `200`. It is **inaccurate**, and a single impossible value drags the average up on its own.
+- Fatima's age is blank. That is **incomplete** - and you must decide whether she is left out of the average or counted as zero, which give very different answers.
+- `C-102` appears twice, and every value in it is correct. That is the point: nothing in either row is wrong, but Amina is counted as two customers, so her age carries double the weight of anyone else's.
 
-Average the ages exactly as the table gives them and you get **72**. Remove the impossible value, count Noah once, and set Elena's blank aside, and you get **30.5**. Same file, same question, same arithmetic, and an answer that would have sent the manager looking for a customer base that does not exist.
+Average the ages exactly as the table gives them and you get **72**. Remove the impossible value, count Amina once, and set Fatima's blank aside, and you get **30.5**. Same file, same question, same arithmetic, and an answer that would have sent the manager looking for a customer base that does not exist.
 
-The fourth does not touch the average at all. `Springfield` and `springfield` are **inconsistent**, and it would matter enormously if the question were about cities. But the manager asked about age. Which faults matter depends on the question you were asked.
+The fourth does not touch the average at all. `Mogadishu` and `mogadishu` are **inconsistent**, and it would matter enormously if the question were about cities. But the manager asked about age. Which faults matter depends on the question you were asked.

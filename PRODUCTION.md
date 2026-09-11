@@ -101,7 +101,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 
 ---
 
-### 1.4 · Data Quality Basics - 6.5 min
+### 1.4 · Data Quality - 6.5 min
 
 **Cold open:** *A manager forwards you a customer list and asks for the average age.*
 
@@ -113,7 +113,7 @@ Reveal the three that break the average one at a time: impossible age, blank age
 
 Then land the two numbers on screen together: **72** as the table stands, **30.5** cleaned. That pays off the cold open's "three separate reasons the answer would be wrong", and it is the number the viewer will remember.
 
-Then the fourth fault, separately, because it is the opposite point: `Springfield` / `springfield` is a real fault that does not affect this question at all. That last beat is the whole lesson. Do not merge it into the list of three.
+Then the fourth fault, separately, because it is the opposite point: `Mogadishu` / `mogadishu` is a real fault that does not affect this question at all. That last beat is the whole lesson. Do not merge it into the list of three.
 
 ---
 
