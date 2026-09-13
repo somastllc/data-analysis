@@ -1,6 +1,6 @@
 # Machine Learning
 
-**By the end:** You can explain how machine learning learns from examples, how it relates to data science, and when a project actually needs it.
+**By the end:** You can explain how machine learning learns from examples and when a project actually needs it.
 
 ## Overview
 
@@ -9,6 +9,8 @@ Your inbox quietly moved a message to spam this morning. Nobody wrote a rule nam
 ### What is machine learning?
 
 **Machine learning (ML)** is a branch of artificial intelligence in which computers learn patterns from data instead of being explicitly programmed for every rule.
+
+Machine learning is a method that data science may use, not another name for data science.
 
 Examples include:
 
@@ -27,16 +29,6 @@ flowchart LR
     modelNode --> newNode["Apply to new data"]
     newNode --> predictionNode["Prediction"]
 ```
-
-### How machine learning relates to data science
-
-Data scientists sometimes use machine learning when a project needs prediction or automated pattern recognition. But the two are not the same:
-
-- Data science can produce useful work without machine learning
-- Machine learning can be used in data science and in software products
-- A model still depends on statistics, programming, reliable data, and knowledge of the real-world problem
-
-Machine learning is a method that data science may use, not another name for data science.
 
 ### When a project actually needs machine learning
 

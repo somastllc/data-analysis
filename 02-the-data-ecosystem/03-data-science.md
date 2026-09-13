@@ -1,6 +1,6 @@
 # Data Science
 
-**By the end:** You can explain what data science does, what it can produce, and why it does not always require machine learning.
+**By the end:** You can explain what data science is and what data scientists do.
 
 ## Overview
 
@@ -9,6 +9,8 @@ A mobile network sees that thousands of customers have stopped renewing their mo
 ### What is data science?
 
 **Data science** combines statistics, programming, domain knowledge, and data analysis to extract insights and build data-driven solutions.
+
+Data science may use statistical analysis, experiments, simulations, careful exploration, or machine learning.
 
 Each part contributes something different:
 
@@ -32,14 +34,6 @@ Data scientists often work on problems such as:
 - Building data products or predictive models
 
 The work usually begins with a question, not a model. A data scientist decides what evidence is needed, checks whether suitable data exists, chooses an appropriate method, tests the result, and explains its limitations.
-
-### Not every data science project uses machine learning
-
-Data science may use machine learning, but it can also use statistical analysis, experiments, simulations, or careful exploration.
-
-Suppose the mobile network changed its bundle prices in three cities at different times. A data scientist could compare renewal rates before and after each change, examine other possible causes, and test whether the evidence supports a connection. That is data science even if no machine-learning model is built.
-
-The output might be an explanation, an experiment, a forecast, a recommendation, or a model. Machine learning is one possible method, not the definition of the field.
 
 ### Example
 

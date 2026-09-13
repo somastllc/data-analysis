@@ -1,6 +1,6 @@
 # Data Engineering
 
-**By the end:** You can describe what data engineers build, and why every other data role depends on it.
+**By the end:** You can describe what data engineers build and how they prepare data for others to use.
 
 ## Overview
 
@@ -21,17 +21,6 @@ Common responsibilities include:
 - Working with cloud platforms and automation tools
 
 If data analysis is about finding insights, data engineering is about making those insights possible.
-
-### Why data engineering matters
-
-Without strong data infrastructure:
-
-- Data may be scattered across systems
-- Reports may use outdated numbers
-- Analysts may spend too much time searching for data
-- Large-scale machine learning becomes difficult
-
-Every item on that list is somebody else's problem to suffer. Data engineering is the only role in this chapter whose work is invisible when it is done well and obvious to everyone the moment it is not.
 
 ### Example
 

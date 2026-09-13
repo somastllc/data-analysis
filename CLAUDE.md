@@ -119,11 +119,12 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - Lesson 1.3, "Sources and Formats of Data", is complete as a seven-slide HTML presentation and a seven-page PDF with three standalone SVG illustrations.
 - Lesson 1.4, "Data Quality", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone SVG illustrations.
 - Lesson 1.5, "Why Data Matters", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone SVG illustrations.
-- All five PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
+- Chapter 2 lessons 2.1 through 2.6 are complete as HTML presentations and PDFs: 7, 8, 8, 9, 9, and 7 pages respectively, with 11 standalone SVG illustrations across the six lessons.
+- All eleven PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
 - Lesson 1.1 uses a focused pattern chart and one combined Facebook likes comparison rather than separate assets for every stage of data, information, and insight.
-- All fourteen SVG exports across the five completed lessons pass the SVG validator and XML parsing.
-- All five Chapter 1 lessons are converted. No Chapter 2 lesson has been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
+- All 25 SVG exports across the eleven completed lessons pass the SVG validator and XML parsing.
+- All five Chapter 1 lessons and the first six Chapter 2 lessons are converted. Chapter 2 lesson 2.7 has not been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
 
 ### HTML and PDF conventions
 

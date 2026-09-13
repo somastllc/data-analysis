@@ -129,9 +129,9 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 # Chapter 2 - The Data Ecosystem
 
-*7 lessons · 36 min*
+*7 lessons · 33.5 min*
 
-> **Watch the density here.** This is the course's most vocabulary-heavy chapter. Lessons 2.3 and 2.4 deliberately separate data science from machine learning; keep their examples connected, but do not let either lesson borrow the other's definition. Shoot 2.2 and 2.6 in different sittings because both are prose-led role explanations with similar pacing.
+> **Watch the density here.** This is the course's most vocabulary-heavy chapter. Lessons 2.3 and 2.4 deliberately separate data science from machine learning; keep their examples connected, but do not let either lesson borrow the other's definition. Shoot 2.2 and 2.6 in different sittings because both are prose-led field explanations with similar pacing.
 
 ### 2.1 · Types of Analytics - 4.5 min
 
@@ -145,31 +145,31 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 ---
 
-### 2.2 · Data Analysis and Business Intelligence - 4.5 min
+### 2.2 · Data Analysis - 4.5 min
 
 **Cold open:** *A shop owner notices that one product sells out every week while another sits on the shelf.*
 
-**Shots:** cold open → title → objective → *What is data analysis?* → *What is business intelligence?* → *How they relate* → *Example*
+**Shots:** cold open → title → objective → *What is data analysis?* → *Questions data analysis answers* → *What data analysis can produce* → *Example*
 
-**Note:** The shop owner wants two different things: to understand *why*, and to check it monthly without digging. That is the analysis/BI split in one sentence. Hold on it.
+**Note:** Keep the lesson centered on the activity, not job titles. Business intelligence appears once as a common name for recurring dashboards and performance reports; it is not presented as a second field learners must compare.
 
 ---
 
-### 2.3 · Data Science - 5.5 min
+### 2.3 · Data Science - 4.5 min
 
 **Cold open:** *A mobile network sees that thousands of customers have stopped renewing their monthly bundles.*
 
-**Shots:** cold open → title → objective → *What is data science?* → **table** Part / What it contributes → *What data scientists do* → *Not every data science project uses machine learning* → *Example*
+**Shots:** cold open → title → objective → *What is data science?* → **table** Part / What it contributes → *What data scientists do* → *Example*
 
-**Note:** The important correction to the usual beginner explanation is that data science does not mean machine learning. Keep the falling-renewals example focused on framing, investigation, hypothesis testing, and evidence. Land the final change of question—from *why did customers leave?* to *which customers may leave next?*—as the handoff to 2.4.
+**Note:** Mention once that data science may use statistical analysis, experiments, simulations, careful exploration, or machine learning. Keep the falling-renewals example focused on framing, investigation, hypothesis testing, and evidence. Land the final change of question—from *why did customers leave?* to *which customers may leave next?*—as the handoff to 2.4.
 
 ---
 
-### 2.4 · Machine Learning - 6 min
+### 2.4 · Machine Learning - 5 min
 
 **Cold open:** *Your inbox quietly moved a message to spam this morning.*
 
-**Shots:** cold open → title → objective → *What is machine learning?* → **diagram build (5)** → *How machine learning relates to data science* → *When a project actually needs machine learning* → **table** Question / What it needs → *Example*
+**Shots:** cold open → title → objective → *What is machine learning?* → **diagram build (5)** → *When a project actually needs machine learning* → **table** Question / What it needs → *Example*
 
 **Diagram build:** `Past examples` → `Training` → `Trained model` → `Apply to new data` → `Prediction`. The transition from the training side to the use side is the conceptual hinge; pause on the trained model before introducing new data.
 
@@ -187,11 +187,11 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 ---
 
-### 2.6 · Data Engineering - 4.5 min
+### 2.6 · Data Engineering - 4 min
 
 **Cold open:** *An analyst opens a report and finds three different versions of the same sales numbers - one outdated, one incomplete, one in the wrong format.*
 
-**Shots:** cold open → title → objective → *What is data engineering?* → *What data engineers do* → *Why data engineering matters* → *Example*
+**Shots:** cold open → title → objective → *What is data engineering?* → *What data engineers do* → *Example*
 
 **Note:** Three conflicting numbers is a screen graphic, not a spoken list. Show the three versions side by side during the cold open.
 
