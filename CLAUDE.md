@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Beginner course "Data Fundamentals for Beginners": 28 Markdown lessons across 6 chapters. The Markdown files remain the curriculum source. Visual lesson exports are now being added as self-contained HTML presentations with SVG assets and print-ready PDFs. There is no conventional application build, lint, or test suite.
+Beginner course "Data Fundamentals for Beginners": 27 Markdown lessons across 6 chapters. The Markdown files remain the curriculum source. Visual lesson exports are now being added as self-contained HTML presentations with SVG assets and print-ready PDFs. There is no conventional application build, lint, or test suite.
 
 ## Position in the curriculum
 
@@ -33,7 +33,7 @@ references/                          user-supplied visual references
 
 A chapter folder reads top to bottom in shooting order: opener, then lessons. The numeric prefix carries that order, with `00-` before the lessons.
 
-**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons or checks `**By the end:**` **must exclude `00-*`**, or it will report 34 files instead of 28 lessons. A Key Terms audit must also account for all 28 lessons, which intentionally have no closing tables.
+**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons or checks `**By the end:**` **must exclude `00-*`**, or it will report 33 files instead of 27 lessons. A Key Terms audit must also account for all 27 lessons, which intentionally have no closing tables.
 
 Chapter order and lesson counts are declared in `README.md`'s Chapters table. Update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
 
@@ -198,7 +198,7 @@ The four ethics lessons follow one continuous scenario - a digital wallet compan
 
 ## Making changes
 
-- Adding/removing/reordering a lesson: renumber the file prefix and update `README.md`'s table (lesson count and the total of 28).
+- Adding/removing/reordering a lesson: renumber the file prefix and update `README.md`'s table (lesson count and the total of 27).
 - Duration in the README is derived from actual length - recheck it after substantial additions rather than leaving a stale claim.
 - Markdown has no build, lint, or test command. Validate it by reading the rendered files and checking that code fences are balanced.
 - For visual exports, inspect the rendered PDF pages in addition to running the SVG and PDF checks documented above. A successful command is not enough if text is clipped, icons are missing, arrows cross labels, or a diagram leaves excessive empty space.

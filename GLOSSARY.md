@@ -11,12 +11,10 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Accuracy** | Whether data values are correct | Ch 1 - What Is Data? |
 | **Analytical question** | A clear question that data can help answer | Ch 3 - The Data Process |
 | **Analytics** | The use of data to find patterns and support decisions | Ch 2 - The Data Ecosystem |
-| **Analytics Engineer** | A professional who prepares clean, analysis-ready data for reporting teams | Ch 4 - Data in the Real World |
 | **Anonymization** | Removing details that could identify a specific person | Ch 5 - Data Ethics and Privacy |
 | **API** | A way for systems to share data automatically | Ch 3 - The Data Process |
 | **Assumption** | Something believed to be true for the analysis to hold | Ch 3 - The Data Process |
 | **Bias** | Systematic unfairness in data or analysis | Ch 5 - Data Ethics and Privacy |
-| **Business Analyst** | A professional who works out what an organization needs and how data can help | Ch 4 - Data in the Real World |
 | **Business intelligence (BI)** | Tools and practices for reporting and monitoring business performance | Ch 2 - The Data Ecosystem |
 | **Business problem** | The issue or decision the analysis is meant to support | Ch 3 - The Data Process |
 | **Categorical data** | Data that groups items into labels or categories | Ch 1 - What Is Data? |
@@ -30,13 +28,13 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Dashboard** | A visual display of key metrics and charts | Ch 4 - Data in the Real World |
 | **Data** | Raw facts, measurements, or observations | Ch 1 - What Is Data? |
 | **Data analysis** | The process of examining data to find patterns and answer questions | Ch 2 - The Data Ecosystem |
-| **Data Analyst** | A professional who analyzes data to answer business questions | Ch 4 - Data in the Real World |
+| **Data Analyst** | A professional who analyzes data to answer business questions | Ch 2 - The Data Ecosystem |
 | **Database** | A structured system for storing and retrieving data | Ch 2 - The Data Ecosystem |
 | **Data cleaning** | The process of fixing errors and improving data quality | Ch 3 - The Data Process |
 | **Data collection** | The process of gathering data for analysis | Ch 3 - The Data Process |
 | **Data-driven** | Using data to guide actions and decisions | Ch 1 - What Is Data? |
 | **Data ecosystem** | The connected roles, tools, and processes around data | Ch 2 - The Data Ecosystem |
-| **Data Engineer** | A professional who builds data systems and pipelines | Ch 4 - Data in the Real World |
+| **Data Engineer** | A professional who builds data systems and pipelines | Ch 2 - The Data Ecosystem |
 | **Data engineering** | Building systems to collect, store, and prepare data | Ch 2 - The Data Ecosystem |
 | **Data ethics** | Principles for using data responsibly and fairly | Ch 5 - Data Ethics and Privacy |
 | **Data format** | The way data is stored or shared | Ch 1 - What Is Data? |
@@ -47,7 +45,7 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Data quality** | How fit data is for its intended use | Ch 1 - What Is Data? |
 | **Data retention** | How long data is kept before it is deleted | Ch 5 - Data Ethics and Privacy |
 | **Data science** | A field that uses data, statistics, and programming to solve complex problems | Ch 2 - The Data Ecosystem |
-| **Data Scientist** | A professional who uses advanced methods to extract insights and build models | Ch 4 - Data in the Real World |
+| **Data Scientist** | A professional who uses advanced methods to extract insights and build models | Ch 2 - The Data Ecosystem |
 | **Data security** | Protecting data from unauthorized access or loss | Ch 5 - Data Ethics and Privacy |
 | **Data source** | Where data originally comes from | Ch 1 - What Is Data? |
 | **Data visualization** | Presenting data using charts and graphs | Ch 3 - The Data Process |
@@ -62,7 +60,7 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **KPI** | A key performance indicator used to measure success | Ch 2 - The Data Ecosystem |
 | **Limitation** | A weakness or boundary in the data or method | Ch 3 - The Data Process |
 | **Machine learning** | A method where systems learn patterns from data | Ch 2 - The Data Ecosystem |
-| **Machine Learning Engineer** | A professional who puts models into production and keeps them running | Ch 4 - Data in the Real World |
+| **Machine Learning Engineer** | A professional who puts models into production and keeps them running | Ch 2 - The Data Ecosystem |
 | **Misleading visualization** | A chart that is factually correct but creates a false impression | Ch 5 - Data Ethics and Privacy |
 | **Missing value** | A blank or unavailable data entry | Ch 3 - The Data Process |
 | **Model** | A system trained to make predictions or decisions from data | Ch 2 - The Data Ecosystem |

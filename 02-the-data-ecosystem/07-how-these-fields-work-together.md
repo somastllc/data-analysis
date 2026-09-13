@@ -1,29 +1,14 @@
 # How These Fields Work Together
 
-**By the end:** You can describe how the data roles depend on each other within a single project.
+**By the end:** You can explain how different data fields work together on one project.
 
 ## Overview
 
-One customer cancels a subscription. Six different contributors end up touching that single event, and not one of them could have handled it alone. Data analysis, business intelligence, data science, machine learning, and data engineering are separate but connected fields. Together with the people who use their results, they form a **data ecosystem**.
-
-### One ecosystem, many roles
-
-In a modern organization, data work is rarely done by one person alone. Instead, teams with different specialties collaborate.
-
-Typical roles include:
-
-- **Data engineer** - builds pipelines and storage
-- **Data analyst** - explores data and answers questions
-- **BI professional** - builds dashboards and KPI tracking
-- **Data scientist** - investigates complex problems and tests possible solutions
-- **Machine learning engineer** - puts predictive models into products and keeps them working
-- **Business stakeholder** - asks questions and uses the results
-
-The exact job titles vary. In a small organization, one person may perform several of these roles. What matters is the kind of contribution, not the title printed on a business card.
+A telecom company sees that customers are not renewing their monthly data bundles. No single data field handles the whole problem. Data engineering, data analysis, business intelligence, data science, and machine learning each contribute a different part. Together with the people who use their results, they form a **data ecosystem**.
 
 ### How they work together
 
-One customer stops renewing their monthly data bundle. Follow the event:
+Here is one way the fields can work together:
 
 ```mermaid
 flowchart LR
@@ -38,10 +23,10 @@ flowchart LR
 2. A **data analyst** confirms that renewals fell and identifies when and where the decline began
 3. A **BI professional** builds a dashboard that keeps the renewal rate visible every week
 4. A **data scientist** investigates possible causes and tests whether the evidence supports them
-5. If prediction would help, an **ML engineer** puts a model into use to flag customers likely to leave
+5. If prediction would help, a **machine learning engineer** puts a model into use to flag customers likely to leave and makes sure it keeps working
 6. The **business team** decides whether to change the price, offer a smaller bundle, or take another action
 
-The model in step five is not automatic or inevitable. It is added only if predicting individual customers supports the business decision. It also depends on the reliable records from step one and the clearly defined problem investigated in the other steps.
+Each field receives something from the field before it and adds something useful for the next. Not every project needs every step. For example, the business team may be able to act on the analysis without building a machine learning model.
 
 ### Where analytics types fit
 
@@ -50,10 +35,8 @@ The model in step five is not automatic or inevitable. It is added only if predi
 - **Predictive analytics** estimates which customers may leave next
 - **Prescriptive analytics** compares possible actions and recommends what to do
 
-These are not four separate jobs, and they do not always happen in a perfect line. They are four kinds of questions that different people across the ecosystem may help answer.
+These are not four separate jobs or four rigid stages. They are questions that people across the data ecosystem help answer.
 
 ### Key takeaway
 
-Nobody in that chain did the whole thing, and nobody needed to. Each participant needed to know what came before their work, what their own contribution added, and how somebody else would use it afterward.
-
-That is the practical value of knowing the ecosystem: not that you will work in all of it, but that you will be handed something by someone and expected to know what it is.
+The fields fit together by passing reliable data, findings, tools, and decisions from one part of the project to another. One person may perform several of these roles in a small organization, but the contributions remain connected.

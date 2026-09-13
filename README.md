@@ -2,9 +2,9 @@
 
 **Category:** Data Science  
 **Level:** Beginner  
-**Lessons:** 28  
+**Lessons:** 27  
 **Duration:** ~1.5–2 hours reading  
-**Video:** ~2h 50m across 35 videos  
+**Video:** ~2h 42m across 34 videos  
 
 A foundation course in what data is, how the data field is organized, and how an analysis moves from a question to a decision. No prior experience required, and nothing to install - this course is read-and-think.
 
@@ -15,11 +15,11 @@ A foundation course in what data is, how the data field is organized, and how an
 | 1 | [What Is Data?](01-what-is-data/) | 5 |
 | 2 | [The Data Ecosystem](02-the-data-ecosystem/) | 7 |
 | 3 | [The Data Process](03-the-data-process/) | 6 |
-| 4 | [Data in the Real World](04-data-in-the-real-world/) | 4 |
+| 4 | [Data in the Real World](04-data-in-the-real-world/) | 3 |
 | 5 | [Data Ethics and Privacy](05-data-ethics-and-privacy/) | 4 |
 | 6 | [Conclusion](06-conclusion/) | 2 |
 
-All 86 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
+All 84 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
 
 ## Outcomes
 

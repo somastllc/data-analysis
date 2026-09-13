@@ -1,7 +1,7 @@
 # Production Notes - Recording This Course
 
-**Format:** 28 lesson videos, 6 chapter openers, 1 welcome
-**Estimated finished runtime:** ~2h 50m
+**Format:** 27 lesson videos, 6 chapter openers, 1 welcome
+**Estimated finished runtime:** ~2h 42m
 **Source of truth:** the lesson Markdown files. This document tells you how to shoot them, not what to say. The words are already in the lessons.
 
 ---
@@ -129,7 +129,7 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 # Chapter 2 - The Data Ecosystem
 
-*7 lessons · 37 min*
+*7 lessons · 36 min*
 
 > **Watch the density here.** This is the course's most vocabulary-heavy chapter. Lessons 2.3 and 2.4 deliberately separate data science from machine learning; keep their examples connected, but do not let either lesson borrow the other's definition. Shoot 2.2 and 2.6 in different sittings because both are prose-led role explanations with similar pacing.
 
@@ -197,15 +197,15 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 ---
 
-### 2.7 · How These Fields Work Together - 6.5 min
+### 2.7 · How These Fields Work Together - 5.5 min
 
-**Cold open:** *One customer cancels a subscription.*
+**Cold open:** *A telecom company sees that customers are not renewing their monthly data bundles.*
 
-**Shots:** cold open → title → objective → *One ecosystem, many roles* → *How they work together* → **diagram build (6)** → *Where analytics types fit* → *Key takeaway*
+**Shots:** cold open → title → objective → *How they work together* → **diagram build (6)** → *Where analytics types fit* → *Key takeaway*
 
 **Diagram build:** `Data engineer` → `Data analyst` → `BI professional` → `Data scientist` → `ML engineer` → `Business team`, one per numbered step as you read it. This is the chapter's payoff and the only frame that holds all six contributors at once.
 
-**Note:** The fifth step is conditional: a model enters only if individual prediction helps the decision. The callback to the four analytics types from 2.1 now presents them as kinds of questions shared across the ecosystem, not four rigid stages or four job descriptions. Land the close on the completed diagram.
+**Note:** The fifth step is conditional: a model enters only if individual prediction helps the decision. The callback to the four analytics types from 2.1 presents them as kinds of questions shared across the ecosystem, not four rigid stages or four job descriptions. Land the close on the completed diagram.
 
 ---
 
@@ -281,9 +281,9 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 # Chapter 4 - Data in the Real World
 
-*4 lessons · 21.5 min*
+*3 lessons · 16 min*
 
-> **This chapter names no destination.** The rule already stated for 4.3 applies to all four lessons: the course trains for no single role, so the delivery must not imply one. The cold opens of 4.1 and 4.4 were rewritten to drop "analyst", and 4.2 was retitled for the same reason: the tooling and the industries belong to the whole field, not to one job title in it.
+> **This chapter names no destination.** The course trains for no single role, so the delivery must not imply one. The cold opens of 4.1 and 4.3 avoid "analyst", and 4.2 was retitled for the same reason: the tooling and the industries belong to the whole field, not to one job title in it. Career titles and movement between roles are covered in 2.7.
 
 ### 4.1 · The Modern Data Toolkit - 5.5 min
 
@@ -309,17 +309,7 @@ The model section is the chapter's last field-neutral beat and the setup for cha
 
 ---
 
-### 4.3 · Careers in Data - 5.5 min
-
-**Cold open:** *Six job titles, heavily overlapping skills, and no agreement between companies about what any of them actually mean. Here is the map.*
-
-**Shots:** cold open → title → objective → *How people move between roles* → **diagram build (6)** → *Shared skills across data roles* → *Common data careers* → **table** Role / The question they answer → *The title is not the job*
-
-**Diagram build:** start with `Data Analyst` alone and hold. It is the most common way into the field, and the pause makes the point. Then branch: `Business Analyst`, `Analytics Engineer`, `Data Scientist`, then `Data Engineer` and `ML Engineer` on the outside. Say the caption as the last two land: very few people enter the field at the right-hand end. Do not let the delivery imply the course trains for one specific role. It names no destination. **The lesson used to end with a five-branch "which role fits you" quiz, which did exactly that; it has been replaced.** The closing section now delivers the cold open's actual claim, that titles are inconsistent between companies, and sends the viewer to the job description instead.
-
----
-
-### 4.4 · Data Across Industries - 4.5 min
+### 4.3 · Data Across Industries - 4.5 min
 
 **Cold open:** *A clinic, a money transfer service, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.*
 
@@ -442,10 +432,10 @@ Not lesson order. Group by setup and by what has to exist first.
 
 | Component | Count | Runtime |
 |---|---|---|
-| Lesson videos | 28 | ~157.5 min |
+| Lesson videos | 27 | ~151 min |
 | Chapter openers | 6 | ~8 min |
 | Welcome | 1 | ~3 min |
-| **Total** | **35 videos** | **≈ 2h 49m** |
+| **Total** | **34 videos** | **≈ 2h 42m** |
 
 Estimates come from measured prose words at 130–150 wpm with a 1.4–1.9× spoken expansion, plus dwell time per table row, diagram, and code block. Every lesson holds its final teaching slide during the close; no Key Terms cards remain. The closing narration is unchanged, so this does not materially change the estimates.
 
