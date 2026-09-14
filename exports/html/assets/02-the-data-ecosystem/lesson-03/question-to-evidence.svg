@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 700" role="img" aria-labelledby="g-title g-desc">
-  <title id="g-title">From question to evidence</title><desc id="g-desc">Five clear stages show how the falling-renewals example moves from a measurable question to evidence, uncertainty, and possible actions.</desc>
+  <title id="g-title">From question to evidence</title><desc id="g-desc">Five clear stages show how the falling-renewals example moves from a measurable question to evidence, what is uncertain, and what the company can do.</desc>
   <defs><pattern id="g-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#D7DDDD"/></pattern><marker id="g-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="2"/></marker></defs>
   <rect width="620" height="700" rx="24" fill="url(#g-dots)"/>
   <path d="M310 126 V158 M310 256 V288 M310 386 V418 M310 516 V548" fill="none" stroke="#1A733A" stroke-width="5" marker-end="url(#g-arrow)"/>
@@ -9,6 +9,6 @@
     <g transform="translate(60 166)"><rect width="500" height="90" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="250" y="42" font-size="23" font-weight="600">renewal, pricing, and</text><text x="250" y="69" font-size="23" font-weight="600">customer-support data</text></g>
     <g transform="translate(60 296)"><rect width="500" height="90" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="250" y="56" font-size="24" font-weight="600">when and where the decline began</text></g>
     <g transform="translate(60 426)"><rect width="500" height="90" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="250" y="42" font-size="22" font-weight="600">price, service quality,</text><text x="250" y="69" font-size="22" font-weight="600">or another factor</text></g>
-    <g transform="translate(60 556)"><rect width="500" height="108" rx="22" fill="#EDFBF2" stroke="#1A733A" stroke-width="5"/><text x="250" y="49" font-size="23" font-weight="600">evidence, uncertainty,</text><text x="250" y="78" font-size="23" font-weight="600">and possible actions</text></g>
+    <g transform="translate(60 556)"><rect width="500" height="108" rx="22" fill="#EDFBF2" stroke="#1A733A" stroke-width="5"/><text x="250" y="36" font-size="21" font-weight="600">evidence</text><text x="250" y="65" font-size="21" font-weight="600">what is uncertain</text><text x="250" y="94" font-size="21" font-weight="600">what the company can do</text></g>
   </g>
 </svg>
