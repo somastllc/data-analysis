@@ -135,13 +135,13 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 ### 2.1 · Types of Analytics - 4 min
 
-**Cold open:** *A manager looks at last month's sales report and asks three questions in one meeting: "What happened? Why did it happen? What should we do next?"*
+**Cold open:** *A manager looks at last month's sales report and asks four questions: "What happened? Why did it happen? What might happen next? What should we do?"*
 
 **Shots:** cold open → title → objective → *What is analytics?* → **diagram build (4)** → *The four types of analytics* → **table** Type / Question / Example → *Why this matters*
 
 **Diagram build:** `Descriptive` → `Diagnostic` → `Predictive` → `Prescriptive`. Build one per type as you introduce it, so the diagram completes exactly as the section ends.
 
-**Note:** The manager's three questions in the cold open map onto the first three types. Say so. It turns the hook into the structure.
+**Note:** The manager's four questions in the cold open map directly onto the four types. Use that connection as the lesson's structure.
 
 ---
 

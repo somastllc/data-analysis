@@ -1,14 +1,14 @@
 # Types of Analytics
 
-**By the end:** You can tell descriptive, diagnostic, predictive, and prescriptive questions apart.
+**By the end:** You can explain the difference between descriptive, diagnostic, predictive, and prescriptive analytics.
 
 ## Overview
 
-A manager looks at last month's sales report and asks three questions in one meeting: "What happened? Why did it happen? What should we do next?" Each question needs a different kind of analysis.
+A manager looks at last month's sales report and asks four questions: "What happened? Why did it happen? What might happen next? What should we do?" Each question needs a different type of analysis.
 
 ### What is analytics?
 
-**Analytics** means using data to understand what happened, why it happened, what may happen next, or what action to take.
+**Analytics** means using data to understand what happened, why it happened, what might happen next, and what to do.
 
 ```mermaid
 flowchart LR
@@ -21,13 +21,13 @@ flowchart LR
 
 | Type | Question | Example |
 |---|---|---|
-| **Descriptive analytics** | What happened? | Rice sales rose 12% last month |
-| **Diagnostic analytics** | Why did it happen? | They rose because the Mogadishu shop stayed open longer |
-| **Predictive analytics** | What might happen next? | Sales may stay high next month if the longer hours continue |
-| **Prescriptive analytics** | What should we do? | Keep the longer hours in Mogadishu, and try them in Hargeisa |
+| **Descriptive analytics** | What happened? | The Mogadishu shop sold 12% more rice last month |
+| **Diagnostic analytics** | Why did it happen? | The Mogadishu shop sold more rice because it stayed open longer |
+| **Predictive analytics** | What might happen next? | The Mogadishu shop may keep selling more rice if it stays open longer |
+| **Prescriptive analytics** | What should we do? | Keep the longer opening hours in Mogadishu and try them in Hargeisa |
 
 ### Why this matters
 
-The four often build on one another, and that is the useful part. You cannot explain why rice sales rose until you know that they rose. Understanding what drove last month can strengthen a forecast of next month. And a recommendation is more trustworthy when the earlier questions have supplied evidence for it.
+These four types often work together. First, you learn what happened. Then you ask why it happened. That answer can help you predict what might happen next. Finally, all this information can help you decide what to do.
 
-So when an organization says it wants prediction, the honest first question is whether it can yet describe what already happened.
+If a company wants to predict what will happen next, it should first understand what has already happened.
