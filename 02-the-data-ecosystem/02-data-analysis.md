@@ -38,10 +38,10 @@ Regular dashboards and performance reports are often called **business intellige
 
 ### Example
 
-A wholesaler supplies shops in Springfield, Riverton, and Lakeview, and wants to know how each is doing.
+A wholesaler supplies shops in Mogadishu, Hargeisa, and Kismayo, and wants to know how each is doing.
 
 - The analysis compares six months of orders and returns
-- It finds that the Lakeview shops order the same volume as the others but return far more unsold stock
+- It finds that the Kismayo shops order the same volume as the others but return far more unsold stock
 - The result is shared in a report and a dashboard showing each city's weekly orders, returns, and top products
 
 The analysis answered the manager's question and gave her evidence for the next ordering decision.

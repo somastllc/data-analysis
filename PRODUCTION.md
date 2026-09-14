@@ -129,15 +129,15 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 # Chapter 2 - The Data Ecosystem
 
-*7 lessons · 33.5 min*
+*7 lessons · 33 min*
 
 > **Watch the density here.** This is the course's most vocabulary-heavy chapter. Lessons 2.3 and 2.4 deliberately separate data science from machine learning; keep their examples connected, but do not let either lesson borrow the other's definition. Shoot 2.2 and 2.6 in different sittings because both are prose-led field explanations with similar pacing.
 
-### 2.1 · Types of Analytics - 4.5 min
+### 2.1 · Types of Analytics - 4 min
 
 **Cold open:** *A manager looks at last month's sales report and asks three questions in one meeting: "What happened? Why did it happen? What should we do next?"*
 
-**Shots:** cold open → title → objective → *What is analytics?* → **diagram build (4)** → *The four types of analytics* → **table** Type / Question / Example → *Simple way to remember them* → *Why this matters*
+**Shots:** cold open → title → objective → *What is analytics?* → **diagram build (4)** → *The four types of analytics* → **table** Type / Question / Example → *Why this matters*
 
 **Diagram build:** `Descriptive` → `Diagnostic` → `Predictive` → `Prescriptive`. Build one per type as you introduce it, so the diagram completes exactly as the section ends.
 

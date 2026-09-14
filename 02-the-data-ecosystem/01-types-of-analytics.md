@@ -22,18 +22,9 @@ flowchart LR
 | Type | Question | Example |
 |---|---|---|
 | **Descriptive analytics** | What happened? | Rice sales rose 12% last month |
-| **Diagnostic analytics** | Why did it happen? | They rose because the Springfield shop stayed open longer |
+| **Diagnostic analytics** | Why did it happen? | They rose because the Mogadishu shop stayed open longer |
 | **Predictive analytics** | What might happen next? | Sales may stay high next month if the longer hours continue |
-| **Prescriptive analytics** | What should we do? | Keep the longer hours in Springfield, and try them in Riverton |
-
-### Simple way to remember them
-
-- **Descriptive** = report the past
-- **Diagnostic** = explain the past
-- **Predictive** = forecast the future
-- **Prescriptive** = recommend action
-
-Most beginners start with descriptive analytics, such as summaries, totals, and charts. More advanced work adds prediction and recommendation.
+| **Prescriptive analytics** | What should we do? | Keep the longer hours in Mogadishu, and try them in Hargeisa |
 
 ### Why this matters
 
