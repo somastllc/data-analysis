@@ -32,8 +32,6 @@ The result depends on the question. Data analysis can produce:
 - A metric that tracks something important
 - A dashboard that keeps results visible over time
 
-A **KPI (key performance indicator)** is a metric used to measure progress toward a goal.
-
 ### Example
 
 A wholesaler supplies shops in Mogadishu, Hargeisa, and Kismayo, and wants to know how each is doing.
