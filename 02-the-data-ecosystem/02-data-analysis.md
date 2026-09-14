@@ -4,7 +4,7 @@
 
 ## Overview
 
-A shop owner notices that one product sells out every week while another sits on the shelf. She wants to understand why and decide what to order next. This is where **data analysis** becomes useful.
+A wholesaler supplies shops in Mogadishu, Hargeisa, and Kismayo. The manager sees that some shops keep ordering products, while other shops send many products back unsold. She wants to understand what is happening and decide what to order next. This is where **data analysis** becomes useful.
 
 ### What is data analysis?
 
@@ -19,9 +19,9 @@ Data analysis may involve:
 
 Data analysis often answers questions like:
 
-- Which products sold the most?
-- Why did the money earned go down in March?
-- Which customer group makes the most profit?
+- Which products were ordered the most?
+- Which city sent back the most unsold stock?
+- What should the manager order next?
 
 ### What data analysis can produce
 
@@ -33,8 +33,6 @@ The result depends on the question. Data analysis can produce:
 - A dashboard that keeps results visible over time
 
 A **KPI (key performance indicator)** is a metric used to measure progress toward a goal.
-
-Regular dashboards and reports are often called **business intelligence (BI)**. Companies may use different names for this work, but the goal is the same: help people see useful information and make decisions.
 
 ### Example
 

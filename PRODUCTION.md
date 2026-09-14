@@ -129,7 +129,7 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 # Chapter 2 - The Data Ecosystem
 
-*7 lessons · 33 min*
+*7 lessons · 32.5 min*
 
 > **Watch the density here.** This is the course's most vocabulary-heavy chapter. Lessons 2.3 and 2.4 deliberately separate data science from machine learning; keep their examples connected, but do not let either lesson borrow the other's definition. Shoot 2.2 and 2.6 in different sittings because both are prose-led field explanations with similar pacing.
 
@@ -145,13 +145,13 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 ---
 
-### 2.2 · Data Analysis - 4.5 min
+### 2.2 · Data Analysis - 4 min
 
-**Cold open:** *A shop owner notices that one product sells out every week while another sits on the shelf.*
+**Cold open:** *A wholesaler supplies shops in Mogadishu, Hargeisa, and Kismayo. Some shops keep ordering products, while other shops send many products back unsold.*
 
 **Shots:** cold open → title → objective → *What is data analysis?* → *Questions data analysis answers* → *What data analysis can produce* → *Example*
 
-**Note:** Keep the lesson centered on the activity, not job titles. Business intelligence appears once as a common name for recurring dashboards and performance reports; it is not presented as a second field learners must compare.
+**Note:** Keep the lesson centered on the activity, not job titles. The wholesaler story should carry the overview, question examples, and final example.
 
 ---
 
