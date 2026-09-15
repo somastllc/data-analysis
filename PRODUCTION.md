@@ -129,7 +129,7 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 # Chapter 2 - The Data Ecosystem
 
-*7 lessons · 32.5 min*
+*7 lessons · 29 min*
 
 > **Watch the density here.** This is the course's most vocabulary-heavy chapter. Lessons 2.3 and 2.4 deliberately separate data science from machine learning; keep their examples connected, but do not let either lesson borrow the other's definition. Shoot 2.2 and 2.6 in different sittings because both are prose-led field explanations with similar pacing.
 
@@ -165,19 +165,19 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 ---
 
-### 2.4 · Machine Learning - 5 min
+### 2.4 · Machine Learning - 3.5 min
 
 **Cold open:** *Your inbox quietly moved a message to spam this morning.*
 
-**Shots:** cold open → title → objective → *What is machine learning?* → **diagram build (5)** → *When a project actually needs machine learning* → **table** Question / What it needs → *Example*
+**Shots:** cold open → title → objective → *What is machine learning?* with **diagram build (5)** → *When a project actually needs machine learning* with **table** Question / What it needs → *Example*
 
 **Diagram build:** `Past examples` → `Training` → `Trained model` → `Apply to new data` → `Prediction`. The transition from the training side to the use side is the conceptual hinge; pause on the trained model before introducing new data.
 
-**Note:** **The line to land is "no examples, no model".** It is the constraint every beginner meets first, and it reframes machine learning as a data problem rather than a clever-algorithm problem. The final paragraph also limits the model correctly: it predicts, but does not automatically explain or decide.
+**Note:** **The line to land is "no examples, no model".** It is the constraint every beginner meets first, and it reframes machine learning as a data problem rather than a clever-algorithm problem.
 
 ---
 
-### 2.5 · Where Data Lives and the Data Pipeline - 5.5 min
+### 2.5 · Where Data Lives and the Data Pipeline - 4 min
 
 **Cold open:** *The sales figure on a manager's dashboard this morning began three weeks ago as a digital wallet payment for a sack of rice.*
 
@@ -187,7 +187,7 @@ Then the fourth fault, separately, because it is the opposite point: `Mogadishu`
 
 ---
 
-### 2.6 · Data Engineering - 4 min
+### 2.6 · Data Engineering - 3.5 min
 
 **Cold open:** *An analyst opens a report and finds three different versions of the same sales numbers - one outdated, one incomplete, one in the wrong format.*
 
