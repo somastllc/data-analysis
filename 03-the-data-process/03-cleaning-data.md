@@ -1,57 +1,64 @@
 # Cleaning Data
 
-**By the end:** You can decide what to do about duplicates, blanks, and impossible values, not just spot them.
+**By the end:** You can choose what to do about duplicate rows, missing values, and wrong formats or values.
 
 ## Overview
 
-Ask working analysts what takes up most of their time and the answer is rarely "analysis". It is getting the data into a state where analysis is possible at all. Real-world data is rarely perfect. Before analyzing it, you usually need to **clean** it. Data cleaning improves quality by fixing errors, handling missing values, and making formats consistent.
+In the previous lesson, we collected rice sales data for July and August. Now we prepare that data so branches can be compared correctly.
 
-### Why clean data?
+### What is data cleaning?
 
-If you analyze messy data, your results may be misleading.
+**Data cleaning** means fixing errors, handling missing values, and making data formats consistent.
 
-Chapter 1 covered *what* poor quality looks like: missing values, duplicates, wrong entries, inconsistent formats. Cleaning is what you do about it.
+In the data quality lesson, you learned how to recognize problems. Here, you learn what to do about them.
 
-That difference matters more than it sounds. Spotting a problem takes a few minutes. Deciding what to do about it is where the judgment lives, and two analysts looking at the same flawed column can reasonably make different choices.
+### Check the problem, then take action
 
-### Common cleaning tasks
+Keep the original data, work on a copy, and write down the changes you make and why you made them.
 
-A **missing value** is a blank or unavailable data entry.
+| Problem | What to check | Action |
+|---|---|---|
+| Duplicate rows | Is the same record entered twice, or are they different sales? | Remove the extra copy after the duplicate is confirmed |
+| Missing value | Can it be found in the original record? | Fill it with verified data; if not, mark it as missing |
+| Different spellings | Are different names referring to the same branch? | Use one agreed name |
+| Different date formats | Are the day, month, and year clear? | Convert to one format after the date meaning is confirmed |
+| Different units | Do you know how to convert them to one unit? | Convert to kg after the weight is verified |
+| Suspicious value | Is it an entry mistake, or does it have a real explanation? | Check the source and correct it if an error is confirmed |
 
-| Task | Example |
-|---|---|
-| **Removing duplicates** | Same customer listed twice |
-| **Handling missing values** | Blank age or email fields |
-| **Fixing formats** | Dates written in different styles |
-| **Standardizing categories** | `SP`, `Springfield`, and `springfield` |
-| **Correcting invalid values** | Age = `-3` or `999` |
+The same customer buying twice is not a duplicate error. A very large number also does not prove there is an error by itself.
 
-### How much cleaning is enough?
+### Example: Cleaning rice sales records
 
-Not every issue needs the same treatment.
+Part of the collected data looks like this. In this example, each row should be one rice sale, and each sale has its own sale ID.
 
-Examples:
+| Sale ID | Date | Branch | Amount | Unit |
+|---|---|---|---|---|
+| B-101 | 2026-07-05 | Hodan | 50 | kg |
+| B-101 | 2026-07-05 | Hodan | 50 | kg |
+| B-102 | 2026-07-06 | hodan | 2 | sacks |
+| B-103 | 2026-08-03 | | 25 | kg |
 
-- A few missing survey answers may be acceptable
-- Duplicate financial records must usually be removed
-- A typo in a category name should be corrected through **standardization**, so every spelling of a city or product becomes one
+Before comparing branches:
 
-The right treatment depends on what the data will be asked to answer, which is why this step comes after the question and not before it.
+1. **Check B-101:** If the original record confirms it is one sale entered twice, remove one row. If both rows are counted, that sale becomes 100 kg instead of 50 kg.
+2. **Standardize the branch name:** After confirming that `hodan` and `Hodan` are the same branch, write both as `Hodan`.
+3. **Verify the sack weight:** If each sack in sale B-102 is 50 kg, convert two sacks to 100 kg. Do not guess the weight without checking.
+4. **Find the branch for B-103:** Check the original record or the person who entered the data. Do not guess the branch name.
 
-### Example
+### If missing data cannot be found
 
-A staff list from a wholesaler contains:
+Do not automatically turn a missing value into zero. A missing sales amount and zero sales are not the same thing.
 
-- Two rows for the same employee ID
-- Missing branch values
-- Salaries entered as `$500`, `500`, and `500 USD`
+If the branch for B-103 cannot be found, mark it as "Unknown branch". The 25 kg can be included in total sales, but it cannot be assigned to a specific branch.
 
-Before comparing pay across branches, you would:
+When sharing the result, explain that one sale has an unknown branch, and that this limits the branch comparison.
 
-1. Remove duplicate rows
-2. Decide how to handle the missing branches
-3. Standardize salary format
+### Check the cleaned result
 
-Skipping these steps could produce incorrect averages and rankings.
+Review that confirmed duplicates were removed, names use one format, and numbers being added together use the same unit.
 
-Cleaning is a large subject in its own right. What matters now is recognizing that the step exists, and that skipping it invalidates everything after it.
+Compare the original data with the cleaned data so you can explain what changed.
+
+**Check the problem → fix it with verified data → record the change → check again.**
+
+If data cannot be fixed, explain the limitation before moving to analysis.

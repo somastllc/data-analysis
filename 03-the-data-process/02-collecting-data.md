@@ -1,56 +1,62 @@
 # Collecting Data
 
-**By the end:** You can decide which data would answer a question, and which data would quietly mislead you.
+**By the end:** You can turn an analytical question into a data collection plan that says what data is needed, where to get it, and what to check.
 
 ## Overview
 
-The easiest data to obtain is rarely the data that answers your question. It is usually just the data somebody already exported for a different reason. Once you know the question, you need data that can actually answer it. **Data collection** is the process of gathering the right information from the right sources.
+In the previous lesson, you learned how to turn a problem into a clear question. The next step is to get the data that can answer that question.
 
 ### What is data collection?
 
-**Data collection** means gathering the information needed to answer your analytical questions.
+**Data collection** is gathering the data needed to answer analytical questions.
 
-This may involve:
+In this lesson, we will continue with the rice sales example, measuring rice sales in kilograms (kg):
 
-- Exporting data from a database
-- Downloading a CSV file
-- Using a survey or form
-- Connecting to an **API**, which lets systems share data automatically
-- Combining data from multiple systems
+**"How much did rice sales drop in August compared to July, and which branch had the biggest drop?"**
 
-### Common collection methods
+### Define the data you need
 
-| Method | Example |
+Start from the question and list the data you need. In our example, each sales record needs:
+
+| Data | Why it is needed |
 |---|---|
-| **Existing business records** | Sales transactions, user sign-ups |
-| **Surveys** | Customer satisfaction forms |
-| **Web tracking** | Page views, clicks, conversions |
-| **Manual entry** | Spreadsheet records entered by staff |
-| **Public datasets** | Government or research data |
+| Sale date | To separate July sales from August sales |
+| Branch name | To compare branches |
+| Product name | To separate rice from other products |
+| Amount of rice sold, in kg | To calculate sales and measure the change |
 
-The best method depends on your question. If you want to understand customer satisfaction, survey data may help. If you want to analyze sales, transaction records are better.
+Only collect what the question needs. Customer names and phone numbers are not needed for this comparison.
 
-### How much is enough depends on what gets built
+### Limit what you collect
 
-A shop owner asking which product sold best last month needs one clean month of records. A model trained to predict which customers will leave needs thousands of past cases, each one recording what that customer actually went on to do.
+Be clear about the time period, places, and product the data should cover:
 
-Same step, very different bar.
+- **Time period:** all of July and all of August, in the same year
+- **Places:** all branches being studied
+- **Product:** rice sold in those branches
 
-### Questions to ask before using data
+August data alone cannot answer a question that compares two months. Data from one branch cannot show which branch had the biggest drop.
 
-- Does this data actually relate to the problem?
-- Is there enough data to draw conclusions?
-- When was the data collected?
-- Is the source trustworthy?
-- Are there privacy or permission issues?
+### Find and collect the data
 
-### Example
+This data may come from the business sales records. Ask the person who manages the system to export the two months of data with the columns you defined.
 
-To understand why customers stop renewing their data bundle, you might collect:
+If each branch keeps separate records, collect the same time period from every branch.
 
-- When each bundle was bought, and when it lapsed
-- How much the customer used before they stopped
-- Any complaints they made to the call centre
-- Answers from a short survey sent to people who left
+Write down where the data came from and the date it was exported. This makes it easier to check later if a question comes up.
 
-The first two say what happened. The last two are the only ones that can say why, and they are also the two most likely to be missing.
+### Check that the data can answer the question
+
+Before cleaning the data, check:
+
+- Are all needed columns included?
+- Are both months and all branches included?
+- Is rice measured in kg everywhere, or did some branches use bags or sacks?
+
+For example, if August data from one branch is missing, you should not treat that as zero sales. That could make the branch look like it had the biggest drop when the real problem is missing data.
+
+If some data is missing, ask for it again from the source. If it cannot be found, explain what is missing and how it limits the answer.
+
+**Question → needed data → what the data should cover → collect → check.**
+
+Once the needed data is collected, the next step is cleaning it.

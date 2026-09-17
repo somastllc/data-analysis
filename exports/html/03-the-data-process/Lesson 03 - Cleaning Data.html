@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F6F8F8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    html,body{margin:0;background:#F6F8F8}
+    .slide{width:1920px;height:1080px;box-sizing:border-box;overflow:hidden;background:#F6F8F8;color:#343838;font-family:Geist,Arial,sans-serif;padding:62px 94px 56px;display:flex;flex-direction:column;gap:25px}
+    .center{justify-content:center}
+    .title{font-size:126px;line-height:1.02;letter-spacing:-.035em;margin:0;color:#121212;font-weight:600;text-wrap:balance}
+    .objective{font-size:78px;line-height:1.12;letter-spacing:-.025em;margin:0;color:#121212;max-width:1700px;text-wrap:balance}
+    .eyebrow{font:500 23px 'Geist Mono',monospace;letter-spacing:.09em;text-transform:uppercase;color:#1A733A}
+    .slide h2{font-size:61px;line-height:1.13;letter-spacing:-.02em;margin:0;color:#121212;text-wrap:balance}
+    .slide h3{font-size:43px;line-height:1.15;letter-spacing:-.015em;margin:0;color:#121212;text-wrap:balance}
+    .slide p,.slide li{font-size:29px;line-height:1.42}
+    .slide p{margin:0}
+    .strong{font-weight:600;color:#121212}
+    .muted{color:#4D5353}
+    .cards{display:grid;gap:18px}
+    .card{background:#FFFFFF;border:1px solid #DDE2E2;border-radius:18px;padding:26px}
+    .mint{background:#EDFBF2;border-color:#AEEBC5}
+    .table-wrap{background:#FFFFFF;border:1px solid #DDE2E2;border-radius:16px;overflow:hidden}
+    table{width:100%;border-collapse:collapse;table-layout:fixed}
+    th,td{padding:13px 18px;text-align:left;border-top:1px solid #DDE2E2;font-size:22px;line-height:1.25;vertical-align:middle}
+    th{border-top:0;background:#EDF0F0;font:500 17px 'Geist Mono',monospace;letter-spacing:.07em;text-transform:uppercase;color:#4D5353}
+    .decision-table th:nth-child(1),.decision-table td:nth-child(1){width:18%;font-weight:600;color:#121212}
+    .decision-table th:nth-child(2),.decision-table td:nth-child(2){width:38%}
+    .decision-table th:nth-child(3),.decision-table td:nth-child(3){width:44%}
+    .decision-table th,.decision-table td{padding:17px 19px;font-size:25px}
+    .records-table th,.records-table td{padding:20px 22px;font-size:25px;font-variant-numeric:tabular-nums}
+    .records-table th:nth-child(1),.records-table td:nth-child(1){width:18%;font-weight:600;color:#121212}
+    .records-table th:nth-child(2),.records-table td:nth-child(2){width:24%}
+    .records-table th:nth-child(3),.records-table td:nth-child(3){width:23%}
+    .records-table th:nth-child(4),.records-table td:nth-child(4){width:18%}
+    .records-table th:nth-child(5),.records-table td:nth-child(5){width:17%}
+    .action-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .action{display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:start;background:#FFFFFF;border:1px solid #DDE2E2;border-radius:18px;padding:24px}
+    .number{width:46px;height:46px;border-radius:999px;background:#EDFBF2;border:2px solid #1A733A;color:#1A733A;display:grid;place-items:center;font:600 23px 'Geist Mono',monospace}
+    .action p{font-size:25px;line-height:1.38}
+    code{font:500 .92em 'Geist Mono',monospace;background:#EDF0F0;border-radius:6px;padding:2px 7px;color:#121212}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+    .sketch{width:100%;height:auto;max-height:390px;object-fit:contain;display:block}
+    @page{size:10in 5.625in;margin:0}
+    @media print{
+      html,body{width:960px}
+      x-import{display:block}
+      x-import>.slide{width:1920px!important;height:1080px!important;zoom:.5;break-after:page;page-break-after:always}
+      x-import>.slide:last-child{break-after:auto;page-break-after:auto}
+    }
+  </style>
+</head>
+<body>
+<x-import>
+  <section class="slide center" data-label="Title" data-screen-label="01">
+    <h1 class="title">Cleaning Data</h1>
+  </section>
+
+  <section class="slide center" data-label="Objective" data-screen-label="02">
+    <div class="eyebrow">By the end:</div>
+    <h2 class="objective">You can choose what to do about duplicate rows, missing values, and wrong formats or values.</h2>
+  </section>
+
+  <section class="slide center" data-label="Overview and definition" data-screen-label="03">
+    <h2>Overview</h2>
+    <p style="font-size:36px;max-width:1660px;color:#121212">In the previous lesson, we collected rice sales data for July and August. Now we prepare that data so branches can be compared correctly.</p>
+    <div style="height:1px;background:#DDE2E2;width:100%;margin:7px 0"></div>
+    <h3>What is data cleaning?</h3>
+    <p class="muted" style="font-size:33px"><strong class="strong">Data cleaning</strong> means fixing errors, handling missing values, and making data formats consistent.</p>
+    <div class="card mint"><p style="font-size:31px;color:#121212">In the data quality lesson, you learned how to recognize problems. Here, you learn what to do about them.</p></div>
+  </section>
+
+  <section class="slide center" data-label="Cleaning decisions" data-screen-label="04">
+    <h2>Check the problem, then take action</h2>
+    <p>Keep the original data, work on a copy, and write down the changes you make and why you made them.</p>
+    <div class="table-wrap">
+      <table class="decision-table">
+        <thead><tr><th>Problem</th><th>What to check</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>Duplicate rows</td><td>Is the same record entered twice, or are they different sales?</td><td>Remove the extra copy after the duplicate is confirmed</td></tr>
+          <tr><td>Missing value</td><td>Can it be found in the original record?</td><td>Fill it with verified data; if not, mark it as missing</td></tr>
+          <tr><td>Different spellings</td><td>Are different names referring to the same branch?</td><td>Use one agreed name</td></tr>
+          <tr><td>Different date formats</td><td>Are the day, month, and year clear?</td><td>Convert to one format after the date meaning is confirmed</td></tr>
+          <tr><td>Different units</td><td>Do you know how to convert them to one unit?</td><td>Convert to kg after the weight is verified</td></tr>
+          <tr><td>Suspicious value</td><td>Is it an entry mistake, or does it have a real explanation?</td><td>Check the source and correct it if an error is confirmed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card mint" style="padding:20px 25px"><p style="font-size:26px;color:#121212">The same customer buying twice is not a duplicate error. A very large number also does not prove there is an error by itself.</p></div>
+  </section>
+
+  <section class="slide center" data-label="Rice sales records" data-screen-label="05">
+    <h2>Example: Cleaning rice sales records</h2>
+    <p>Part of the collected data looks like this. In this example, each row should be one rice sale, and each sale has its own sale ID.</p>
+    <div class="table-wrap">
+      <table class="records-table">
+        <thead><tr><th>Sale ID</th><th>Date</th><th>Branch</th><th>Amount</th><th>Unit</th></tr></thead>
+        <tbody>
+          <tr><td>B-101</td><td>2026-07-05</td><td>Hodan</td><td>50</td><td>kg</td></tr>
+          <tr><td>B-101</td><td>2026-07-05</td><td>Hodan</td><td>50</td><td>kg</td></tr>
+          <tr><td>B-102</td><td>2026-07-06</td><td>hodan</td><td>2</td><td>sacks</td></tr>
+          <tr><td>B-103</td><td>2026-08-03</td><td></td><td>25</td><td>kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="slide center" data-label="Cleaning actions" data-screen-label="06">
+    <h2>Before comparing branches:</h2>
+    <div class="action-grid">
+      <div class="action"><span class="number">1</span><p><strong class="strong">Check B-101:</strong> If the original record confirms it is one sale entered twice, remove one row. If both rows are counted, that sale becomes 100 kg instead of 50 kg.</p></div>
+      <div class="action"><span class="number">2</span><p><strong class="strong">Standardize the branch name:</strong> After confirming that <code>hodan</code> and <code>Hodan</code> are the same branch, write both as <code>Hodan</code>.</p></div>
+      <div class="action"><span class="number">3</span><p><strong class="strong">Verify the sack weight:</strong> If each sack in sale B-102 is 50 kg, convert two sacks to 100 kg. Do not guess the weight without checking.</p></div>
+      <div class="action"><span class="number">4</span><p><strong class="strong">Find the branch for B-103:</strong> Check the original record or the person who entered the data. Do not guess the branch name.</p></div>
+    </div>
+  </section>
+
+  <section class="slide center" data-label="Missing data" data-screen-label="07">
+    <h2>If missing data cannot be found</h2>
+    <div class="card mint"><p style="font-size:37px;color:#121212">Do not automatically turn a missing value into zero. A missing sales amount and zero sales are not the same thing.</p></div>
+    <div class="cols">
+      <div class="card"><p style="font-size:31px;color:#121212">If the branch for B-103 cannot be found, mark it as “Unknown branch”. The 25 kg can be included in total sales, but it cannot be assigned to a specific branch.</p></div>
+      <div class="card"><p style="font-size:31px;color:#121212">When sharing the result, explain that one sale has an unknown branch, and that this limits the branch comparison.</p></div>
+    </div>
+  </section>
+
+  <section class="slide center" data-label="Check the result" data-screen-label="08">
+    <h2>Check the cleaned result</h2>
+    <p style="font-size:31px;color:#121212">Review that confirmed duplicates were removed, names use one format, and numbers being added together use the same unit.</p>
+    <p style="font-size:31px;color:#121212">Compare the original data with the cleaned data so you can explain what changed.</p>
+    <img class="sketch" src="../assets/03-the-data-process/lesson-03/data-cleaning-flow.svg" width="1500" height="330" alt="Check the problem, fix it with verified data, record the change, and check again">
+    <div class="card mint" style="padding:22px 26px"><p style="font-size:30px;color:#121212">If data cannot be fixed, explain the limitation before moving to analysis.</p></div>
+  </section>
+</x-import>
+</body>
+</html>

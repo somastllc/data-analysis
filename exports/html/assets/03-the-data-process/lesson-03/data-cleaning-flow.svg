@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 330" role="img" aria-labelledby="cleaning-title cleaning-desc">
+  <title id="cleaning-title">Data cleaning flow</title>
+  <desc id="cleaning-desc">Check the problem, fix it with verified data, record the change, and check again.</desc>
+  <defs>
+    <pattern id="cleaning-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#D7DDDD"/>
+    </pattern>
+    <marker id="cleaning-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#1A733A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1500" height="330" rx="28" fill="url(#cleaning-dots)"/>
+
+  <g fill="none" stroke="#1A733A" stroke-width="6" stroke-linecap="round" marker-end="url(#cleaning-arrow)">
+    <path d="M340 165 H405"/>
+    <path d="M770 165 H835"/>
+    <path d="M1160 165 H1225"/>
+  </g>
+
+  <g font-family="Geist, Arial, sans-serif" text-anchor="middle" fill="#121212">
+    <g transform="translate(45 88)">
+      <rect width="295" height="154" rx="24" fill="#FFFFFF" stroke="#121212" stroke-width="4"/>
+      <text x="147" y="82" font-size="29" font-weight="600">
+        <tspan x="147" dy="0">Check the</tspan>
+        <tspan x="147" dy="40">problem</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(415 70)">
+      <rect width="355" height="190" rx="27" fill="#EDFBF2" stroke="#1A733A" stroke-width="5"/>
+      <text x="177" y="83" font-size="28" font-weight="600">
+        <tspan x="177" dy="0">fix it with</tspan>
+        <tspan x="177" dy="40">verified data</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(845 88)">
+      <rect width="315" height="154" rx="24" fill="#FFFFFF" stroke="#121212" stroke-width="4"/>
+      <text x="157" y="82" font-size="29" font-weight="600">
+        <tspan x="157" dy="0">record the</tspan>
+        <tspan x="157" dy="40">change</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(1235 88)">
+      <rect width="220" height="154" rx="24" fill="#EDFBF2" stroke="#1A733A" stroke-width="5"/>
+      <path d="M69 65 L94 90 L145 39" fill="none" stroke="#1A733A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="110" y="125" font-size="27" font-weight="600">check again</text>
+    </g>
+  </g>
+</svg>

@@ -4,87 +4,49 @@
 
 ## Overview
 
-"Can you look into the sales data?" is one of the most common requests an analyst receives, and it is not yet a question. Answering it exactly as written is how a week disappears. Good analysis starts before any data is collected. You must understand the problem and ask clear questions. Without this step, even advanced tools can produce useless results.
+"Can you look into the sales data?" is a general request. It does not say what problem should be studied or what we want to know.
 
-```mermaid
-flowchart LR
-    problemNode["Define problem"] --> questionNode["Ask questions"]
-    questionNode --> collectNode["Collect data"]
-    collectNode --> cleanNode["Clean data"]
-    cleanNode --> analyzeNode["Analyze and visualize"]
-    analyzeNode --> shareNode["Communicate insights"]
-    shareNode --> decideNode["Make decisions"]
-```
+Good analysis starts with understanding the problem and asking clear questions before collecting data. This helps you avoid spending time on data that does not answer the real need.
 
-### Start with the business problem
+### What is a business problem?
 
-A **business problem** is the issue or decision the analysis is meant to support.
+A **business problem** is an issue a business or organization wants to understand, improve, or make a decision about. For example:
 
-A common mistake is jumping straight into data without knowing what you are trying to solve.
+- Sales are going down.
+- Many customers are leaving.
 
-Always begin by asking:
+These describe the problem.
 
-- What problem are we trying to solve?
-- Who cares about the answer?
-- What decision will this analysis support?
+If you are doing analysis for a person or team, ask what they want to understand about the problem.
 
-Example:
+### Create a clear analytical question
 
-- Weak question: "Let's analyze the sales data."
-- Strong question: "Why did sales drop in Lakeview last quarter, when Springfield and Riverton held steady?"
+An **analytical question** is a clear question that data can help answer.
 
-For a local shop, the same idea applies:
+The question "Can you look into the sales data?" can become:
 
-- Weak question: "Let's look at the sales spreadsheet."
-- Strong question: "Why did rice sales drop in the last two weeks compared to the month before?"
+**"How much did rice sales drop in August compared to July, and which branch had the biggest drop?"**
 
-### Know your stakeholders
+A good question is:
 
-A **stakeholder** is a person or group affected by, or interested in, the results of your analysis.
+- **Specific** - it says what is being studied and what time period is being compared
+- **Measurable** - data can answer it
+- **Relevant** - it connects to the problem
+- **Clear** - other people can understand it easily
 
-Examples:
+The question above shows what data is needed: rice sales for the two months, separated by branch.
 
-- A manager deciding on marketing spend
-- A product team improving an app feature
-- A finance team reviewing budget performance
+### Example: A training centre in Mogadishu
 
-Understanding stakeholders helps you:
+**Problem:** The number of students enrolling has dropped over the last three months.
 
-- Ask the right questions
-- Choose relevant metrics
-- Present results in a useful way
+**Analytical questions:**
 
-### How to ask good analytical questions
+- In the last three months, which courses had fewer enrollments compared to the three months before?
+- Did fewer people ask about the courses, or did fewer interested people finish enrollment?
 
-An **analytical question** is a clear question that data can help answer. Good analytical questions are:
+To answer this, the centre needs the number of people who asked about courses and the number of people who enrolled, grouped by month and course.
 
-- **Specific** - focused on one issue
-- **Measurable** - answerable with data
-- **Relevant** - connected to a real decision
-- **Clear** - easy for others to understand
+If you are making a report, dashboard, or model, start with:
 
-Examples:
-
-- Which product had the highest return rate last month?
-- Are new customers more likely to stop ordering within their first month?
-- Which of our three cities is slowest to pay its invoices?
-
-### The same first step, whatever gets built
-
-The fields in Chapter 2 differ in what they produce. A report, a dashboard, a trained model: what they do not differ in is how they start. A data scientist deciding whether a model is worth building asks the same three questions above.
-
-A question no decision depends on is not worth answering, however impressive the method.
-
-### Example
-
-A training centre in Springfield notices that fewer students are enrolling.
-
-Stakeholders: the centre manager and the person who runs recruitment  
-Problem: enrolment is falling  
-Questions:
-
-- When did enrolment start dropping?
-- Did it drop across every course, or only some?
-- Are fewer people asking about courses, or are the same people asking and not signing up?
-
-These questions guide every step that follows.
+**Understand the problem → ask a clear question.**
