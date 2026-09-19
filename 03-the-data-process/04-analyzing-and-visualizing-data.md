@@ -1,87 +1,69 @@
 # Analyzing and Visualizing Data
 
-**By the end:** You can choose a chart that matches your question, and say what analysis can and cannot prove.
+**By the end:** You can calculate the change in sales, choose a suitable chart, and separate what the result shows from what is still unknown.
 
 ## Overview
 
-The same table of numbers can hide a trend completely or make it obvious in one second. The numbers do not change. The picture does. After cleaning, you explore the data to find patterns, comparisons, and trends. **Analysis** uncovers what the data shows; **visualization** helps you see and communicate it clearly.
+After data is cleaned, it can be used to answer the question we defined. We will continue with the July and August rice sales question:
 
-### What happens during analysis?
+**"How much did rice sales drop in August compared to July, and which branch had the biggest drop?"**
 
-Analysis means examining data to answer your questions.
+### What are data analysis and data visualization?
 
-Common activities include:
+**Data analysis** means examining and summarizing data to answer a question.
 
-- Calculating totals and averages
-- Comparing groups
-- Finding a **trend**, or general direction of change over time
-- Identifying top or bottom performers
-- Looking for relationships between variables
+**Data visualization** means using charts to make comparisons and changes easier to see.
 
-Example questions:
+### Summarize the cleaned data
 
-- Which city had the highest sales?
-- Did orders rise after the price change?
-- Do customers who buy in bulk return more often than those who do not?
+First, add the kilograms of rice sold by each branch in each month. The separate sales records then become a summary table.
 
-### When the output is a model instead of a chart
+These numbers are for learning. We assume that the data for both months is complete and that the branches have been checked, including the branch that was missing in the cleaning example.
 
-An analyst asks what the data shows. A data scientist asks what the data predicts, and builds a model to answer it. Both start from the same cleaned data, both answer a question set in step one, and both fail the same way, by producing something correct that nobody asked for.
+| Branch | July (kg) | August (kg) |
+|---|---:|---:|
+| Hodan | 1,000 | 700 |
+| Wadajir | 800 | 700 |
+| Yaaqshiid | 600 | 600 |
+| **Total** | **2,400** | **2,000** |
 
-The rest of this lesson uses charts, because charts are the version you can read without software.
+### Calculate and compare
 
-### Why visualize data?
+To find the change, subtract July sales from August sales:
 
-**Data visualization** turns numbers into charts and graphs that are easier to understand.
+**Change = August sales - July sales.**
 
-Visuals help you:
+A negative number means sales went down. A positive number means sales went up.
 
-- Spot patterns quickly
-- Compare categories
-- Show change over time
-- Explain results to non-technical audiences
+- **Hodan:** 700 - 1,000 = **-300 kg**
+- **Wadajir:** 700 - 800 = **-100 kg**
+- **Yaaqshiid:** 600 - 600 = **0 kg**; sales did not change
+- **Overall:** 2,000 - 2,400 = **-400 kg**
 
-### Common chart types
+The overall percentage decrease is **400 ÷ 2,400 × 100 ≈ 16.7%**. We divide by July sales because July is the month we are comparing August with.
 
-| Question type | Chart type |
+The answer is: rice sales dropped by **400 kg**, and **Hodan** had the biggest drop, at **300 kg**.
+
+### Choose a chart that matches the question
+
+| What you want to show | Suitable chart |
 |---|---|
-| Compare categories | Bar chart |
-| Show change over time | Line chart |
-| Show parts of a whole | Pie chart |
-| Compare two numeric variables | Scatter plot |
+| Compare branches or products | Bar chart |
+| Show sales changing over several months | Line chart |
+| Show the relationship between two numbers | Scatter plot |
 
-Choose the chart that best matches your question. For example, use a line chart for monthly trends and a bar chart to compare product categories.
+For our question, a bar chart with two bars next to each other for every branch can compare July and August sales. The difference between the bars makes it easier to see where sales dropped the most.
 
-### What analysis cannot prove
+Label the branches, months, and the unit in kg. Start the bars at zero so their heights show the sales amounts correctly.
 
-Analysis finds patterns. On its own, it does not explain them.
+### What the result shows and does not prove
 
-Suppose the shops that stay open latest also sell the most rice. Three explanations fit that pattern equally well:
+The table shows that Hodan sales dropped by 300 kg. It does not prove that the drop was caused by the price, a shortage of rice, or customers leaving.
 
-- The longer hours cause the extra sales
-- Selling well is what lets a shop afford the staff to stay open longer
-- Shops on the busiest streets do both, and the street is the real cause
+Even if the price increased during the same period that sales dropped, the two changes happening together do not prove that one caused the other.
 
-The data cannot tell you which. All three produce exactly the same table and exactly the same chart.
+To understand the cause, you may need more data about prices, rice availability, and what happened at the branch. Two months of data also do not show that the decline continued throughout the year.
 
-Two things moving together like this is called **correlation**. It is a real finding and worth reporting, but it is not the same as one thing causing the other, and acting on the wrong one is expensive. A shop that extends its hours because of this chart, when the real cause was its location, has added a wage bill and gained nothing.
+**Summarize the data → calculate and compare → show it with a chart → separate the result from the cause that is still unknown.**
 
-So when you find a pattern, call it a pattern. Whether it is a cause is a separate question, and it is usually answered by deliberately changing one thing and measuring what happens.
-
-### Example
-
-A wholesaler looks at the orders coming in from its shops.
-
-Analysis findings:
-
-- Orders rose 25% in March
-- Rice and oil account for most of the increase
-- The Lakeview shops order later in the week than the others
-
-Visualizations:
-
-- Line chart of orders by month
-- Bar chart of orders by product
-- Table of average order day by city
-
-The chart shows Lakeview ordering late. It does not show why, and the lesson above is the reason you should not guess.
+The next lesson explains how to share this result clearly with the people who need it.
