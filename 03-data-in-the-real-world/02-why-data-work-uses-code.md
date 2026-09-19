@@ -41,6 +41,6 @@ average_by_city = orders.groupby("city")["sales"].mean()
 print(average_by_city)
 ```
 
-Both examples do something you could also do by hand in a spreadsheet. The difference is that they run in seconds on a million rows, and they run the same way every time.
+This code loads the `orders.csv` file, groups the orders by city, calculates the average sales for each city, and prints the result.
 
-Most people learn the Python language itself first, then come back to SQL and to the data-specific Python libraries built on top of it.
+Both examples do something you could also do by hand in a spreadsheet. The difference is that they run in seconds on a million rows, and they run the same way every time.

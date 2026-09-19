@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F8F8">
+  <title>Why Data Work Uses Code</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--paper:#F6F8F8;--ink:#121212;--body:#343838;--muted:#4D5353;--line:#DDE2E2;--mint:#EDFBF2;--mint-line:#AEEBC5;--green:#1A733A;--code-text:#F6F8F8;--code-muted:#AAB4B4;--code-green:#80E0A1;--code-string:#D2F5DF}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--paper)}
+    body{overflow-x:hidden}
+    .slide{width:1920px;height:1080px;overflow:hidden;background:var(--paper);color:var(--body);font-family:Geist,Arial,sans-serif;padding:64px 96px 58px;display:flex;flex-direction:column;gap:28px}
+    .center{justify-content:center}
+    .title{max-width:1680px;margin:0;color:var(--ink);font-size:118px;font-weight:600;letter-spacing:-.035em;line-height:1.03;text-wrap:balance}
+    .objective{max-width:1680px;margin:0;color:var(--ink);font-size:84px;font-weight:600;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}
+    .eyebrow{color:var(--green);font:500 24px 'Geist Mono',monospace;letter-spacing:.09em;text-transform:uppercase}
+    .slide h2{margin:0;color:var(--ink);font-size:62px;letter-spacing:-.02em;line-height:1.12;text-wrap:balance}
+    .slide p{margin:0;font-size:30px;line-height:1.46}
+    .strong{color:var(--ink);font-weight:600}
+    .muted{color:var(--muted)}
+    .card{border:1px solid var(--line);border-radius:16px;background:#FFFFFF;padding:30px 32px}
+    .mint{border-color:var(--mint-line);background:var(--mint)}
+    .code-solves{display:grid;grid-template-columns:1fr 1fr;gap:26px 34px;align-content:center;flex:1}
+    .code-solves .card{display:flex;align-items:center;min-height:182px}
+    .code-solves p{font-size:29px;line-height:1.45}
+    .code-panel{overflow:hidden;border:1px solid #252B2B;border-radius:18px;background:var(--ink);box-shadow:0 12px 28px rgba(18,18,18,.08)}
+    .code-top{display:flex;align-items:center;justify-content:flex-end;border-bottom:1px solid #303737;padding:18px 26px}
+    .dots{display:flex;gap:10px}
+    .dots span{width:12px;height:12px;border-radius:50%;background:#596161}
+    pre{margin:0;padding:38px 42px 42px;white-space:pre;overflow:hidden}
+    code{color:var(--code-text);font:500 35px/1.62 'Geist Mono',monospace;font-variant-ligatures:none}
+    .kw{color:var(--code-green)}
+    .fn{color:#FFFFFF}
+    .str{color:var(--code-string)}
+    .sql-layout{display:grid;grid-template-rows:auto 1fr auto;gap:24px;min-height:0;flex:1}
+    .sql-layout .code-panel{align-self:stretch}
+    .sql-layout pre{display:flex;height:100%;align-items:center}
+    .sql-layout code{font-size:39px;line-height:1.65}
+    .python-layout{display:flex;min-height:0;flex:1;flex-direction:column;gap:18px}
+    .python-layout .code-panel{display:flex;min-height:0;flex:1;flex-direction:column}
+    .python-layout pre{display:flex;align-items:center;flex:1;padding:30px 40px}
+    .python-layout code{font-size:34px;line-height:1.62}
+    .python-notes{display:flex;flex-direction:column;gap:12px}
+    .python-notes .card{padding:16px 24px}
+    .python-notes p{font-size:25px;line-height:1.36}
+    @page{size:10in 5.625in;margin:0}
+    @media print{
+      html,body{width:960px}
+      x-import{display:block}
+      x-import>.slide{width:1920px!important;height:1080px!important;zoom:.5;break-after:page;page-break-after:always}
+      x-import>.slide:last-child{break-after:auto;page-break-after:auto}
+    }
+  </style>
+</head>
+<body>
+<x-import>
+  <section class="slide center" data-label="Title" data-screen-label="01">
+    <h1 class="title">Why Data Work Uses Code</h1>
+  </section>
+
+  <section class="slide center" data-label="Objective" data-screen-label="02">
+    <div class="eyebrow">By the end:</div>
+    <h2 class="objective">You can explain why data work moves to code instead of staying in spreadsheets.</h2>
+  </section>
+
+  <section class="slide center" data-label="Overview" data-screen-label="03">
+    <h2>Overview</h2>
+    <p style="max-width:1610px;color:var(--ink);font-size:39px;line-height:1.48">Spreadsheets work well until three things happen: the data grows too large, the same report is needed every week, or someone asks you to prove how a number was produced.</p>
+  </section>
+
+  <section class="slide" data-label="What code solves" data-screen-label="04">
+    <h2>What code solves</h2>
+    <div class="code-solves">
+      <div class="card mint"><p>Code solves all three. It handles large datasets, it can be re-run on demand, and it leaves a written record of every step you took.</p></div>
+      <div class="card"><p>That last one matters more than beginners expect. A spreadsheet shows you a number. Code shows you how the number was made, which is the difference between a result someone trusts and one they merely accept.</p></div>
+      <div class="card"><p>This gets less optional the further you go. An analyst can do useful work with no code at all. Training a model, or building the pipeline that feeds one, cannot be done any other way.</p></div>
+      <div class="card mint"><p class="strong">You are not expected to understand the examples coming up. The goal is to see what the work looks like.</p></div>
+    </div>
+  </section>
+
+  <section class="slide" data-label="Asking a database a question" data-screen-label="05">
+    <h2>Asking a database a question</h2>
+    <div class="sql-layout">
+      <p><strong class="strong">SQL</strong> asks a database a question:</p>
+      <div class="code-panel">
+        <div class="code-top"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+        <pre><code><span class="kw">SELECT</span> city, <span class="fn">SUM</span>(sales) <span class="kw">AS</span> total_sales
+<span class="kw">FROM</span> orders
+<span class="kw">WHERE</span> order_date &gt;= <span class="str">'2024-01-01'</span>
+<span class="kw">GROUP BY</span> city;</code></pre>
+      </div>
+      <div class="card mint" style="padding:23px 28px"><p style="font-size:31px">That is one question, "how much did each city sell this year?", answered in four lines.</p></div>
+    </div>
+  </section>
+
+  <section class="slide" data-label="Working through data step by step" data-screen-label="06">
+    <h2>Working through data step by step</h2>
+    <p><strong class="strong">Python</strong> loads data and works with it step by step:</p>
+    <div class="python-layout">
+      <div class="code-panel">
+        <div class="code-top"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+        <pre><code><span class="kw">import</span> pandas <span class="kw">as</span> pd
+
+orders = pd.<span class="fn">read_csv</span>(<span class="str">"orders.csv"</span>)
+average_by_city = orders.<span class="fn">groupby</span>(<span class="str">"city"</span>)[<span class="str">"sales"</span>].<span class="fn">mean</span>()
+<span class="fn">print</span>(average_by_city)</code></pre>
+      </div>
+      <div class="python-notes">
+        <div class="card mint"><p>This code loads the <span style="font-family:'Geist Mono',monospace;color:var(--ink)">orders.csv</span> file, groups the orders by city, calculates the average sales for each city, and prints the result.</p></div>
+        <div class="card"><p>Both examples do something you could also do by hand in a spreadsheet. The difference is that they run in seconds on a million rows, and they run the same way every time.</p></div>
+      </div>
+    </div>
+  </section>
+</x-import>
+</body>
+</html>

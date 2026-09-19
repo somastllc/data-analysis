@@ -46,6 +46,7 @@ The vocabulary here is what the rest of data work assumes you already have.
 | **Database** | A structured system for storing and retrieving data | Ch 2 - The Data Ecosystem |
 | **Descriptive analytics** | Summarizes what already happened | Ch 2 - The Data Ecosystem |
 | **Diagnostic analytics** | Explains why something happened | Ch 2 - The Data Ecosystem |
+| **Domain knowledge** | Understanding how a particular industry or area works | Ch 2 - The Data Ecosystem |
 | **Fairness** | Avoiding unjust harm in data-driven decisions | Ch 4 - Data Ethics and Privacy |
 | **Feedback loop** | When a system's own decisions become the data that trains its future decisions | Ch 4 - Data Ethics and Privacy |
 | **Garbage in, garbage out (GIGO)** | Poor input data produces poor output, even when the calculation or tool works correctly | Ch 1 - What Is Data? |

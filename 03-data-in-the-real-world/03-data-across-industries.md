@@ -1,35 +1,36 @@
 # Data Across Industries
 
-**By the end:** You can explain how the same data skills transfer across very different industries.
+**By the end:** You can explain how data skills are used in different industries and why domain knowledge matters.
 
 ## Overview
 
-A clinic, a money transfer service, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.
+A clinic, a money transfer service, and a school can use the same data skills. The tools may be similar, but each place has different questions and different data.
 
-### The methods travel; the questions do not
+### Same skills, different questions
 
-Data goes through the same life everywhere: created, collected, stored, processed, analyzed, and eventually deleted. What changes between one employer and the next is the question you are pointed at, and how much it costs to get it wrong.
+Across industries, people collect, clean, analyze, and explain data. The steps are similar. What changes is the problem they need to solve.
 
-### The three from the cold open
+These are **transferable skills**: skills you can use in different jobs and industries.
 
-**The clinic** wants to know which patients do not come back for a follow-up visit, so it can send a reminder to the right ones. A wrong answer here means somebody's treatment goes unfinished.
+### Why domain knowledge matters
 
-**The money transfer service** wants to know which transfers are worth a second look before they complete. A wrong answer costs a customer their money, or costs the company a customer it wrongly blocked.
+**Domain knowledge** means understanding how an industry works. It helps you ask useful questions, understand what the data means, and notice when a result does not make sense.
 
-**The school** wants to know which students are drifting out of attendance early enough to do something about it. A wrong answer means a child is missed.
+Data skills alone are not enough. An analyst working in a clinic needs to understand appointments and patient visits. In a money transfer service, the analyst needs to understand how transfers work and which rules the company follows.
 
-Same lifecycle, same skills, three completely different definitions of a serious mistake.
+### Examples from different industries
 
-### More of the same
+| Industry | Example question | Domain knowledge needed |
+|---|---|---|
+| **Clinic** | Which patients missed a follow-up visit? | Understanding appointments and patient visits |
+| **Money transfer** | Which transfers should staff review? | Understanding normal transfers and review rules |
+| **School** | Which students have started missing more classes? | Understanding attendance records and school days |
+| **Livestock and export** | Why were some livestock shipments rejected during inspection? | Understanding inspection and export rules |
+| **Telecom** | Which customers stopped buying airtime or data bundles? | Understanding airtime, data bundles, and customer activity |
+| **Water and electricity** | Where is water or electricity being used but not correctly recorded? | Understanding meters and usage records |
+| **Wholesale and retail** | Which products sell quickly, and which remain unsold? | Understanding sales and stock |
+| **Aid and public services** | Which areas need more support? | Understanding local needs and available services |
 
-| Where | What they ask data |
-|---|---|
-| **Livestock and export** | Which shipments are rejected at inspection, and what they had in common |
-| **Telecom** | Which customers stop topping up, and how early that becomes visible |
-| **Water and power utilities** | Where losses occur between what is supplied and what is billed |
-| **Wholesale and retail** | Which products earn most per shelf-metre, and which tie up cash |
-| **Aid and public services** | Which districts are underserved, and whether last year's spending changed anything |
+### Key point
 
-### Key takeaway
-
-The methods are **transferable skills**: learn to ask a question, work with the data, and explain the answer, and the industry becomes a matter of learning what its people care about. That last part is not a small job. It is why analysts who move sector often say the first three months were the hardest.
+Data skills can be used in many industries. Domain knowledge helps you use those skills to ask the right questions and understand the answers.

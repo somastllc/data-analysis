@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F8F8">
+  <title>Data Across Industries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--paper:#F6F8F8;--ink:#121212;--body:#343838;--muted:#4D5353;--line:#DDE2E2;--soft:#EDF0F0;--mint:#EDFBF2;--mint-line:#AEEBC5;--green:#1A733A}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--paper)}
+    body{overflow-x:hidden}
+    .slide{width:1920px;height:1080px;overflow:hidden;background:var(--paper);color:var(--body);font-family:Geist,Arial,sans-serif;padding:64px 96px 58px;display:flex;flex-direction:column;gap:28px}
+    .center{justify-content:center}
+    .title{max-width:1680px;margin:0;color:var(--ink);font-size:122px;font-weight:600;letter-spacing:-.035em;line-height:1.03;text-wrap:balance}
+    .objective{max-width:1680px;margin:0;color:var(--ink);font-size:84px;font-weight:600;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}
+    .eyebrow{color:var(--green);font:500 24px 'Geist Mono',monospace;letter-spacing:.09em;text-transform:uppercase}
+    .slide h2{margin:0;color:var(--ink);font-size:62px;letter-spacing:-.02em;line-height:1.12;text-wrap:balance}
+    .slide h3{margin:0;color:var(--ink);font-size:40px;letter-spacing:-.015em;line-height:1.18;text-wrap:balance}
+    .slide p{margin:0;font-size:30px;line-height:1.46}
+    .strong{color:var(--ink);font-weight:600}
+    .card{border:1px solid var(--line);border-radius:16px;background:#FFFFFF;padding:28px 30px}
+    .mint{border-color:var(--mint-line);background:var(--mint)}
+    .reading-block{display:flex;max-width:1580px;flex-direction:column;gap:30px}
+    .lesson-stack{display:flex;min-height:0;flex:1;flex-direction:column;justify-content:center;gap:34px}
+    .section-block{display:flex;flex-direction:column;gap:22px}
+    .section-block+.section-block{border-top:2px solid var(--line);padding-top:34px}
+    .section-block p{font-size:31px;line-height:1.46}
+    .table-wrap{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#FFFFFF}
+    table{width:100%;border-collapse:collapse;table-layout:fixed}
+    th,td{border-top:1px solid var(--line);padding:20px 28px;text-align:left;vertical-align:middle;overflow-wrap:anywhere}
+    th{border-top:0;background:var(--soft);color:var(--muted);font:500 18px 'Geist Mono',monospace;letter-spacing:.075em;text-transform:uppercase}
+    td{font-size:27px;line-height:1.34}
+    td:first-child{color:var(--ink);font-weight:600}
+    .three-table col.industry{width:22%}.three-table col.example{width:39%}.three-table col.knowledge{width:39%}
+    .three-table th{padding:13px 22px;font-size:16px}
+    .three-table td{padding:14px 22px;font-size:23px;line-height:1.26}
+    .key-content{display:flex;min-height:0;flex:1;flex-direction:column;justify-content:center;gap:26px}
+    .key-content .card{padding:28px 34px}
+    .key-content p{font-size:36px;line-height:1.44}
+    .key-content img{display:block;width:100%;height:430px;object-fit:contain}
+    @page{size:10in 5.625in;margin:0}
+    @media print{
+      html,body{width:960px}
+      x-import{display:block}
+      x-import>.slide{width:1920px!important;height:1080px!important;zoom:.5;break-after:page;page-break-after:always}
+      x-import>.slide:last-child{break-after:auto;page-break-after:auto}
+    }
+  </style>
+</head>
+<body>
+<x-import>
+  <section class="slide center" data-label="Title" data-screen-label="01">
+    <h1 class="title">Data Across Industries</h1>
+  </section>
+
+  <section class="slide center" data-label="Objective" data-screen-label="02">
+    <div class="eyebrow">By the end:</div>
+    <h2 class="objective">You can explain how data skills are used in different industries and why domain knowledge matters.</h2>
+  </section>
+
+  <section class="slide center" data-label="Overview" data-screen-label="03">
+    <div class="reading-block">
+      <h2>Overview</h2>
+      <p style="font-size:40px;color:var(--ink)">A clinic, a money transfer service, and a school can use the same data skills. The tools may be similar, but each place has different questions and different data.</p>
+    </div>
+  </section>
+
+  <section class="slide" data-label="Skills and domain knowledge" data-screen-label="04">
+    <div class="lesson-stack">
+      <section class="section-block" aria-labelledby="same-skills-heading">
+        <h2 id="same-skills-heading">Same skills, different questions</h2>
+        <p>Across industries, people collect, clean, analyze, and explain data. The steps are similar. What changes is the problem they need to solve.</p>
+        <div class="card mint"><p>These are <strong class="strong">transferable skills</strong>: skills you can use in different jobs and industries.</p></div>
+      </section>
+      <section class="section-block" aria-labelledby="domain-heading">
+        <h3 id="domain-heading">Why domain knowledge matters</h3>
+        <p><strong class="strong">Domain knowledge</strong> means understanding how an industry works. It helps you ask useful questions, understand what the data means, and notice when a result does not make sense.</p>
+        <p>Data skills alone are not enough. An analyst working in a clinic needs to understand appointments and patient visits. In a money transfer service, the analyst needs to understand how transfers work and which rules the company follows.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="slide" data-label="Examples from different industries" data-screen-label="05">
+    <h2>Examples from different industries</h2>
+    <div class="table-wrap">
+      <table class="three-table">
+        <colgroup><col class="industry"><col class="example"><col class="knowledge"></colgroup>
+        <thead><tr><th scope="col">Industry</th><th scope="col">Example question</th><th scope="col">Domain knowledge needed</th></tr></thead>
+        <tbody>
+          <tr><td>Clinic</td><td>Which patients missed a follow-up visit?</td><td>Understanding appointments and patient visits</td></tr>
+          <tr><td>Money transfer</td><td>Which transfers should staff review?</td><td>Understanding normal transfers and review rules</td></tr>
+          <tr><td>School</td><td>Which students have started missing more classes?</td><td>Understanding attendance records and school days</td></tr>
+          <tr><td>Livestock and export</td><td>Why were some livestock shipments rejected during inspection?</td><td>Understanding inspection and export rules</td></tr>
+          <tr><td>Telecom</td><td>Which customers stopped buying airtime or data bundles?</td><td>Understanding airtime, data bundles, and customer activity</td></tr>
+          <tr><td>Water and electricity</td><td>Where is water or electricity being used but not correctly recorded?</td><td>Understanding meters and usage records</td></tr>
+          <tr><td>Wholesale and retail</td><td>Which products sell quickly, and which remain unsold?</td><td>Understanding sales and stock</td></tr>
+          <tr><td>Aid and public services</td><td>Which areas need more support?</td><td>Understanding local needs and available services</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="slide" data-label="Key point" data-screen-label="06">
+    <h2>Key point</h2>
+    <div class="key-content">
+      <div class="card mint"><p>Data skills can be used in many industries. Domain knowledge helps you use those skills to ask the right questions and understand the answers.</p></div>
+      <img src="../assets/03-data-in-the-real-world/lesson-03/three-industries.svg" width="1080" height="520" alt="A clinic, a money transfer service, and a school using data skills">
+    </div>
+  </section>
+</x-import>
+</body>
+</html>

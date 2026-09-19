@@ -254,9 +254,9 @@ The other thing 1.5 does not have is the storage table, and the fact that a pipe
 
 > **This chapter names no destination.** The course trains for no single role, so the delivery must not imply one. The cold opens of 3.1 and 3.3 avoid "analyst", and 3.2 was retitled for the same reason: the tooling and the industries belong to the whole field, not to one job title in it. Career titles and movement between roles are covered in 2.7.
 
-### 3.1 · The Modern Data Toolkit - 5.5 min
+### 3.1 · Modern Data Tools - 5.5 min
 
-**Cold open:** *Everyone new to data asks which tool to learn first.*
+**Cold open:** *Everyone new to data asks which tool they should learn first.*
 
 **Shots:** cold open → title → objective → *Why there are many tools* → *Core tools in data work* → **table** Tool / What it is / When you reach for it → *Example workflow* → **diagram build (4)**
 
@@ -280,13 +280,13 @@ The other thing 1.5 does not have is the storage table, and the fact that a pipe
 
 ### 3.3 · Data Across Industries - 4.5 min
 
-**Cold open:** *A clinic, a money transfer service, and a school each hire someone with the same data skills. Within a month, all three are asking completely different questions.*
+**Cold open:** *A clinic, a money transfer service, and a school can use the same data skills. The tools may be similar, but each place has different questions and different data.*
 
-**Shots:** cold open → title → objective → *The methods travel; the questions do not* → *The three from the cold open* → *More of the same* → **table** Where / What they ask data → *Key takeaway*
+**Shots:** cold open → title → objective → *Same skills, different questions* → *Why domain knowledge matters* → *Examples from different industries* → **table** Industry / Example question / Domain knowledge needed → *Key point*
 
-**Note:** Three-panel visual for the cold open - clinic, money transfer, school - held through the lesson and returned to at the takeaway. The lesson used to name six industries in a table and then narrate the same six again; it now delivers the three the cold open promises, in depth, and lists the rest once.
+**Note:** Use the three-panel clinic, money transfer, and school visual for the overview and return to it at the key point. The main idea is that data skills transfer between industries, but domain knowledge helps an analyst ask useful questions and understand the answers.
 
-Each of the three closes on what a *wrong* answer costs: an unfinished treatment, a blocked customer, a missed child. That is the beat, not the industry list.
+Keep the examples simple. The table shows how the questions and domain knowledge change across eight industries.
 
 ---
 

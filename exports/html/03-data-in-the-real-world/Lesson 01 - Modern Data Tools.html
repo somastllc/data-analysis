@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F8F8">
+  <title>Modern Data Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--paper:#F6F8F8;--ink:#121212;--body:#343838;--muted:#4D5353;--line:#DDE2E2;--soft:#EDF0F0;--mint:#EDFBF2;--mint-line:#AEEBC5;--green:#1A733A}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--paper)}
+    body{overflow-x:hidden}
+    .slide{width:1920px;height:1080px;overflow:hidden;background:var(--paper);color:var(--body);font-family:Geist,Arial,sans-serif;padding:64px 96px 58px;display:flex;flex-direction:column;gap:28px}
+    .center{justify-content:center}
+    .title{max-width:1640px;margin:0;color:var(--ink);font-size:126px;font-weight:600;letter-spacing:-.035em;line-height:1.02;text-wrap:balance}
+    .objective{max-width:1660px;margin:0;color:var(--ink);font-size:84px;font-weight:600;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}
+    .eyebrow{color:var(--green);font:500 24px 'Geist Mono',monospace;letter-spacing:.09em;text-transform:uppercase}
+    .slide h2{margin:0;color:var(--ink);font-size:62px;letter-spacing:-.02em;line-height:1.12;text-wrap:balance}
+    .slide h3{margin:0;color:var(--ink);font-size:42px;letter-spacing:-.015em;line-height:1.18;text-wrap:balance}
+    .slide p{margin:0;font-size:30px;line-height:1.46}
+    .strong{color:var(--ink);font-weight:600}
+    .card{border:1px solid var(--line);border-radius:16px;background:#FFFFFF;padding:28px 30px}
+    .mint{border-color:var(--mint-line);background:var(--mint)}
+    .reading-block{display:flex;max-width:1580px;flex-direction:column;gap:30px}
+    .table-wrap{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#FFFFFF}
+    table{width:100%;border-collapse:collapse;table-layout:fixed}
+    col.tool{width:25%}col.what{width:38%}col.when{width:37%}
+    th,td{border-top:1px solid var(--line);padding:15px 22px;text-align:left;vertical-align:middle;overflow-wrap:anywhere}
+    th{border-top:0;background:var(--soft);color:var(--muted);font:500 17px 'Geist Mono',monospace;letter-spacing:.075em;text-transform:uppercase}
+    td{color:var(--body);font-size:23px;line-height:1.28}
+    td:first-child{color:var(--ink);font-weight:600}
+    .workflow{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center;min-height:0;flex:1}
+    .workflow-visual{display:block;width:100%;height:545px;object-fit:contain}
+    .workflow-notes{display:flex;min-width:0;flex-direction:column;gap:18px}
+    .workflow-notes .card{padding:23px 26px}
+    .workflow-notes p{font-size:27px;line-height:1.4}
+    @page{size:10in 5.625in;margin:0}
+    @media print{
+      html,body{width:960px}
+      x-import{display:block}
+      x-import>.slide{width:1920px!important;height:1080px!important;zoom:.5;break-after:page;page-break-after:always}
+      x-import>.slide:last-child{break-after:auto;page-break-after:auto}
+    }
+  </style>
+</head>
+<body>
+<x-import>
+  <section class="slide center" data-label="Title" data-screen-label="01">
+    <h1 class="title">Modern Data Tools</h1>
+  </section>
+
+  <section class="slide center" data-label="Objective" data-screen-label="02">
+    <div class="eyebrow">By the end:</div>
+    <h2 class="objective">You can choose the right tool for a task and explain how different tools work together in one project.</h2>
+  </section>
+
+  <section class="slide center" data-label="Overview" data-screen-label="03">
+    <div class="reading-block">
+      <h2>Overview</h2>
+      <p style="font-size:38px;color:var(--ink)">Everyone new to data asks which tool they should learn first. Before choosing a tool, first understand the task.</p>
+      <div class="card mint"><p class="strong" style="font-size:37px">The right tool is usually the simplest tool that can do the job well.</p></div>
+    </div>
+  </section>
+
+  <section class="slide center" data-label="Why there are many tools" data-screen-label="04">
+    <div class="reading-block">
+      <h2>Why there are many tools</h2>
+      <p style="font-size:37px;color:var(--ink)">No single tool does everything well. Some are made for small datasets. Others work with large databases, dashboards, or code. Because projects have different tasks, teams often use several tools together.</p>
+      <p style="font-size:34px">You do not need to master all of them. You only need to understand what each tool is used for.</p>
+    </div>
+  </section>
+
+  <section class="slide" data-label="Core tools in data work" data-screen-label="05">
+    <h2>Core tools in data work</h2>
+    <div class="table-wrap">
+      <table>
+        <colgroup><col class="tool"><col class="what"><col class="when"></colgroup>
+        <thead><tr><th scope="col">Tool</th><th scope="col">What it is</th><th scope="col">When you reach for it</th></tr></thead>
+        <tbody>
+          <tr><td>Excel / Google Sheets</td><td>A <strong class="strong">spreadsheet</strong>, a grid used to organize and calculate data</td><td>Quick analysis, small datasets, and business reports</td></tr>
+          <tr><td>SQL</td><td>A language used to send a <strong class="strong">query</strong>, a request for data, to a database</td><td>Getting and summarizing data from databases</td></tr>
+          <tr><td>Python</td><td>A general programming language</td><td>Data analysis and cleaning</td></tr>
+          <tr><td>Jupyter Notebook</td><td>A place to write and share code with notes</td><td>Exploring data step by step</td></tr>
+          <tr><td>Power BI</td><td>A tool for building and sharing a <strong class="strong">dashboard</strong>, a visual display of important numbers and charts</td><td>Sharing interactive dashboards with business teams</td></tr>
+          <tr><td>Git and GitHub</td><td>Git tracks changes to files, and GitHub helps people share and review them</td><td>Tracking changes and reviewing work</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card mint" style="padding:20px 26px"><p class="strong" style="font-size:27px">Many projects use several tools together.</p></div>
+  </section>
+
+  <section class="slide" data-label="Example workflow" data-screen-label="06">
+    <h2>Example workflow</h2>
+    <p style="max-width:1710px;font-size:31px">A typical project pulls sales data out of a database with SQL, cleans and analyzes it in Python, then sends the results two ways: a quick summary in Excel, and a dashboard in Power BI for managers.</p>
+    <div class="workflow">
+      <img class="workflow-visual" src="../assets/03-data-in-the-real-world/lesson-01/sql-python-two-outputs.svg" width="920" height="520" alt="SQL sends data to Python, which sends results to an Excel report and a Power BI dashboard">
+      <div class="workflow-notes">
+        <div class="card"><p>One project may need several tools. There is no fixed tool or fixed sequence for every project. Choose the right tool for each task.</p></div>
+        <div class="card mint"><p><strong class="strong">Git and GitHub</strong> can track the changes made throughout the project.</p></div>
+        <p style="padding:2px 6px;color:var(--muted)">SQL and Python both involve writing code. The next lesson explains why data work uses code.</p>
+      </div>
+    </div>
+  </section>
+</x-import>
+</body>
+</html>

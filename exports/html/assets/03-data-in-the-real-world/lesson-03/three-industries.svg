@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" role="img" aria-labelledby="title desc">
+  <title id="title">A clinic, a money transfer service, and a school</title>
+  <desc id="desc">Three simple panels show a clinic building, a phone used for money transfers, and a school building.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#D9DFDF"/>
+    </pattern>
+  </defs>
+
+  <rect width="1080" height="520" rx="26" fill="#F6F8F8"/>
+  <rect x="18" y="18" width="1044" height="484" rx="22" fill="url(#dots)"/>
+
+  <g font-family="Geist, Arial, sans-serif" fill="#121212" text-anchor="middle">
+    <g id="clinic">
+      <rect x="28" y="34" width="316" height="452" rx="22" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+      <text x="186" y="92" font-size="32" font-weight="650">Clinic</text>
+      <path d="M 88 232 L 186 160 L 284 232" fill="#EDFBF2" stroke="#121212" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="92" y="230" width="188" height="156" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="5"/>
+      <rect x="155" y="282" width="62" height="104" rx="5" fill="#EDFBF2" stroke="#121212" stroke-width="4"/>
+      <path d="M 186 190 V 224 M 169 207 H 203" fill="none" stroke="#1A733A" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="115" cy="414" r="20" fill="#EDFBF2" stroke="#121212" stroke-width="4"/>
+      <path d="M 82 466 Q 115 425 148 466" fill="#EDFBF2" stroke="#121212" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 244 420 H 296 M 244 444 H 284 M 244 468 H 272" fill="none" stroke="#1A733A" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <g id="money-transfer">
+      <rect x="382" y="34" width="316" height="452" rx="22" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+      <text x="540" y="92" font-size="32" font-weight="650">Money transfer</text>
+      <rect x="454" y="132" width="172" height="294" rx="26" fill="#FFFFFF" stroke="#121212" stroke-width="6"/>
+      <path d="M 512 159 H 568" stroke="#121212" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="540" cy="398" r="8" fill="#1A733A"/>
+      <circle cx="500" cy="228" r="25" fill="#EDFBF2" stroke="#121212" stroke-width="4"/>
+      <circle cx="580" cy="330" r="25" fill="#EDFBF2" stroke="#121212" stroke-width="4"/>
+      <path d="M 506 276 C 534 258 566 260 584 282" fill="none" stroke="#1A733A" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 576 267 L 586 283 L 567 287" fill="none" stroke="#1A733A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 574 282 C 546 300 516 300 497 278" fill="none" stroke="#121212" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 505 294 L 495 277 L 514 273" fill="none" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g id="school">
+      <rect x="736" y="34" width="316" height="452" rx="22" fill="#FFFFFF" stroke="#DDE2E2" stroke-width="3"/>
+      <text x="894" y="92" font-size="32" font-weight="650">School</text>
+      <path d="M 788 226 L 894 152 L 1000 226" fill="#EDFBF2" stroke="#121212" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="794" y="224" width="200" height="164" rx="8" fill="#FFFFFF" stroke="#121212" stroke-width="5"/>
+      <rect x="861" y="290" width="66" height="98" rx="5" fill="#EDFBF2" stroke="#121212" stroke-width="4"/>
+      <rect x="820" y="254" width="34" height="34" rx="4" fill="#EDFBF2" stroke="#1A733A" stroke-width="4"/>
+      <rect x="934" y="254" width="34" height="34" rx="4" fill="#EDFBF2" stroke="#1A733A" stroke-width="4"/>
+      <path d="M 816 432 Q 852 410 888 432 V 470 Q 852 448 816 470 Z" fill="#FFFFFF" stroke="#121212" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 888 432 Q 924 410 960 432 V 470 Q 924 448 888 470 Z" fill="#EDFBF2" stroke="#121212" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 888 432 V 470" stroke="#1A733A" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

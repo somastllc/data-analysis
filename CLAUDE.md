@@ -74,15 +74,19 @@ Current structure:
 exports/
 ├── html/
 │   ├── 01-what-is-data/
-│   │   └── Lesson 01 - What Is Data.html  ... Lesson 06 - The Data Lifecycle.html
+│   │   └── Lesson 01 - What Is Data.html  ... Lesson 07 - Why Data Matters.html
 │   ├── 02-the-data-ecosystem/
 │   │   └── Lesson 01 - Types of Analytics.html  ... Lesson 06 - Data Engineering.html
+│   ├── 03-data-in-the-real-world/
+│   │   └── Lesson 01 - Modern Data Tools.html  ... Lesson 03 - Data Across Industries.html
 │   └── assets/
-│       ├── 01-what-is-data/lesson-01/ ... lesson-06/
-│       └── 02-the-data-ecosystem/lesson-01/ ... lesson-06/
+│       ├── 01-what-is-data/lesson-01/ ... lesson-07/
+│       ├── 02-the-data-ecosystem/lesson-01/ ... lesson-06/
+│       └── 03-data-in-the-real-world/lesson-01/ ... lesson-03/
 └── pdf/
     ├── 01-what-is-data/
-    └── 02-the-data-ecosystem/
+    ├── 02-the-data-ecosystem/
+    └── 03-data-in-the-real-world/
 references/
 └── Data Fundamentals Lesson.pdf
 ```
@@ -105,11 +109,14 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - Lesson 1.6, "Big Data", is complete as an eight-slide HTML presentation and an eight-page PDF with one standalone SVG illustration.
 - Lesson 1.7, "Why Data Matters", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone SVG illustrations.
 - Chapter 2 lessons 2.1 through 2.6 are complete as HTML presentations and PDFs: 6, 7, 8, 6, 6, and 6 pages respectively, with 10 standalone SVG illustrations across the six lessons.
-- All thirteen PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
+- Lesson 3.1, "Modern Data Tools", is complete as a six-slide HTML presentation and a six-page PDF with one standalone SVG illustration.
+- Lesson 3.2, "Why Data Work Uses Code", is complete as a six-slide HTML presentation and a six-page PDF with no standalone SVG illustrations; its two code examples are the teaching visuals.
+- Lesson 3.3, "Data Across Industries", is complete as a six-slide HTML presentation and a six-page PDF with one standalone SVG illustration.
+- All sixteen PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
 - Lesson 1.1 uses a focused pattern chart and one combined Facebook likes comparison rather than separate assets for every stage of data, information, and insight.
-- All 27 SVG exports across the thirteen completed lessons pass the SVG validator and XML parsing.
-- All seven Chapter 1 lessons and Chapter 2 lessons 2.1 through 2.6 are converted. Chapter 2 lesson 2.7 and all of chapters 3, 4 and 5 have not been converted. Do not mark later lessons complete merely because their Markdown content exists.
+- All 29 SVG exports across the sixteen completed lessons pass the SVG validator and XML parsing.
+- All seven Chapter 1 lessons, Chapter 2 lessons 2.1 through 2.6, and all three Chapter 3 lessons are converted. Chapter 2 lesson 2.7 and all of chapters 4 and 5 have not been converted. Do not mark later lessons complete merely because their Markdown content exists.
 
 ### HTML and PDF conventions
 
