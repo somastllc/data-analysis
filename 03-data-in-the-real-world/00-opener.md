@@ -1,6 +1,6 @@
-# Chapter 4 Opener - Data in the Real World
+# Chapter 3 Opener - Data in the Real World
 
-**Chapter:** 4 - Data in the Real World  
+**Chapter:** 3 - Data in the Real World  
 **Type:** Video opener - ~80s, no lesson file behind it  
 
 Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply - open cold, no greeting.

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Beginner course "Data Fundamentals for Beginners": 27 Markdown lessons across 6 chapters. The Markdown files remain the curriculum source. Visual lesson exports are now being added as self-contained HTML presentations with SVG assets and print-ready PDFs. There is no conventional application build, lint, or test suite.
+Beginner course "Data Fundamentals for Beginners": 23 Markdown lessons across 5 chapters. The Markdown files remain the curriculum source. Visual lesson exports are now being added as self-contained HTML presentations with SVG assets and print-ready PDFs. There is no conventional application build, lint, or test suite.
 
 ## Position in the curriculum
 
@@ -14,8 +14,9 @@ This course is a **self-contained foundation**. It is used ahead of several diff
 
 That self-contained position still constrains the content in two ways:
 
-- **This course is the only place** the material it owns gets taught: ethics/privacy/bias/governance, roles and careers, the analytics-type taxonomy, problem framing, and the data landscape. Go deep here.
-- **Everything else is preview.** Cleaning, chart choice, statistics, and the tools get named and handed off as subjects, then dropped. Do not grow them.
+- **This course is the only place** the material it owns gets taught: ethics/privacy/bias/governance, roles and careers, the analytics-type taxonomy, the data lifecycle, and the data landscape. Go deep here.
+- **Everything else is preview.** Problem framing, cleaning, chart choice, statistics, and the tools get named and handed off as subjects, then dropped. Do not grow them.
+- **The project process is out of scope.** The course teaches the lifecycle of *data*, creation to deletion, not the workflow of an *analyst*. Question framing, communicating findings, and turning analysis into a decision are named in passing and nowhere taught. Do not reintroduce them as a chapter.
 
 One track that uses this course is `../../data-analyst.md`, where it appears as "Introduction to Data and Data Science". That file is useful background for judging what is preview versus owned material, but nothing in this repo may reference it, or any other track, in learner-facing text.
 
@@ -33,11 +34,11 @@ references/                          user-supplied visual references
 
 A chapter folder reads top to bottom in shooting order: opener, then lessons. The numeric prefix carries that order, with `00-` before the lessons.
 
-**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons or checks `**By the end:**` **must exclude `00-*`**, or it will report 33 files instead of 27 lessons. A Key Terms audit must also account for all 27 lessons, which intentionally have no closing tables.
+**Counting gotcha:** `00-opener.md` matches the same glob as lesson files (`0*/0*.md`). Any script that counts lessons or checks `**By the end:**` **must exclude `00-*`**, or it will report 28 files instead of 23 lessons. A Key Terms audit must also account for all 23 lessons, which intentionally have no closing tables.
 
 Chapter order and lesson counts are declared in `README.md`'s Chapters table. Update that table whenever any file is added, removed, or renamed. Openers are production material and do not appear in that table.
 
-**Renaming a chapter means renaming three things, not one.** Change the folder slug, the `Ch N - Name` column in `GLOSSARY.md`, and the chapter link in `README.md`. If the opener names the chapter, update that wording too. Chapter 3 was renamed this way in full; use it as the worked example.
+**Renaming a chapter means renaming three things, not one.** Change the folder slug, the `Ch N - Name` column in `GLOSSARY.md`, and the chapter link in `README.md`. If the opener names the chapter, update that wording too. Chapter 3 was removed and chapters 4 to 6 were renumbered down this way in full; use that change as the worked example.
 
 ## Lesson file convention
 
@@ -72,39 +73,21 @@ Current structure:
 ```text
 exports/
 ├── html/
-│   ├── Lesson 01 - What Is Data.html
-│   ├── Lesson 02 - Types of Data.html
-│   ├── Lesson 03 - Sources and Formats of Data.html
-│   ├── Lesson 04 - Data Quality.html
-│   ├── Lesson 05 - Why Data Matters.html
-│   ├── assets/lesson-01/
-│   │   ├── patterns-emerge.svg
-│   │   └── facebook-post-likes.svg
-│   ├── assets/lesson-02/
-│   │   ├── structured-table.svg
-│   │   ├── unstructured-media.svg
-│   │   ├── semi-structured-json.svg
-│   │   ├── quantitative-measures.svg
-│   │   └── qualitative-categories.svg
-│   ├── assets/lesson-03/
-│   │   ├── primary-firsthand.svg
-│   │   ├── secondary-reused.svg
-│   │   └── source-format-checks.svg
-│   ├── assets/lesson-04/
-│   │   ├── garbage-in-garbage-out.svg
-│   │   └── same-data-different-average.svg
-│   └── assets/lesson-05/
-│       ├── evidence-vs-memory.svg
-│       └── data-responsibility.svg
-├── pdf/
-│   ├── Lesson 01 - What Is Data.pdf
-│   ├── Lesson 02 - Types of Data.pdf
-│   ├── Lesson 03 - Sources and Formats of Data.pdf
-│   ├── Lesson 04 - Data Quality.pdf
-│   └── Lesson 05 - Why Data Matters.pdf
+│   ├── 01-what-is-data/
+│   │   └── Lesson 01 - What Is Data.html  ... Lesson 06 - The Data Lifecycle.html
+│   ├── 02-the-data-ecosystem/
+│   │   └── Lesson 01 - Types of Analytics.html  ... Lesson 06 - Data Engineering.html
+│   └── assets/
+│       ├── 01-what-is-data/lesson-01/ ... lesson-06/
+│       └── 02-the-data-ecosystem/lesson-01/ ... lesson-06/
+└── pdf/
+    ├── 01-what-is-data/
+    └── 02-the-data-ecosystem/
 references/
 └── Data Fundamentals Lesson.pdf
 ```
+
+**Export numbering is per chapter, not global.** Each chapter folder restarts at `Lesson 01`, so adding or removing a lesson in one chapter never renumbers another. The HTML file, its PDF, and its assets folder all carry the same chapter slug.
 
 Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual sources and rendered SVGs belong under a lesson-specific assets folder. Final PDFs belong in `exports/pdf/`. User-supplied examples belong in `references/` and should not be overwritten when regenerating an export.
 
@@ -118,21 +101,22 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - Lesson 1.2, "Types of Data", is complete as a seven-slide HTML presentation and a seven-page PDF with five standalone SVG illustrations.
 - Lesson 1.3, "Sources and Formats of Data", is complete as a seven-slide HTML presentation and a seven-page PDF with three standalone SVG illustrations.
 - Lesson 1.4, "Data Quality", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone SVG illustrations.
-- Lesson 1.5, "Why Data Matters", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone SVG illustrations.
+- Lesson 1.5, "The Data Lifecycle", is complete as a nine-slide HTML presentation and a nine-page PDF with two standalone SVG illustrations.
+- Lesson 1.6, "Big Data", is complete as an eight-slide HTML presentation and an eight-page PDF with one standalone SVG illustration.
+- Lesson 1.7, "Why Data Matters", is complete as a seven-slide HTML presentation and a seven-page PDF with two standalone SVG illustrations.
 - Chapter 2 lessons 2.1 through 2.6 are complete as HTML presentations and PDFs: 6, 7, 8, 6, 6, and 6 pages respectively, with 10 standalone SVG illustrations across the six lessons.
-- Chapter 3 lessons 3.1 through 3.3 are complete as HTML presentations and PDFs with 7, 8, and 8 pages respectively, and one standalone SVG illustration per lesson.
-- All fourteen PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
+- All thirteen PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
 - Lesson 1.1 uses a focused pattern chart and one combined Facebook likes comparison rather than separate assets for every stage of data, information, and insight.
-- All 27 SVG exports across the fourteen completed lessons pass the SVG validator and XML parsing.
-- All five Chapter 1 lessons and the first six Chapter 2 lessons are converted. Chapter 2 lesson 2.7 has not been converted yet. Do not mark later lessons complete merely because their Markdown content exists.
+- All 27 SVG exports across the thirteen completed lessons pass the SVG validator and XML parsing.
+- All seven Chapter 1 lessons and Chapter 2 lessons 2.1 through 2.6 are converted. Chapter 2 lesson 2.7 and all of chapters 3, 4 and 5 have not been converted. Do not mark later lessons complete merely because their Markdown content exists.
 
 ### HTML and PDF conventions
 
 - Each English slide is a direct `section` child of `x-import` and is designed at 1920 x 1080.
 - Print CSS sets `@page` to `10in 5.625in`, scales each slide with `zoom: .5`, and forces one section per page.
 - The normal browser deck and printed PDF share the same HTML. Do not maintain a second hand-edited PDF-only document.
-- HTML asset paths are relative to their HTML package. English Lesson 1.1 uses `assets/lesson-01/...`.
+- HTML asset paths are relative to their HTML package. Lesson 1.1 uses `../assets/01-what-is-data/lesson-01/...`. The assets folder number tracks the lesson number, so renumbering a lesson renames its assets folder and rewrites the `src` paths in its deck.
 - Keep informative `alt` text on every SVG image.
 - Excalidraw SVG backgrounds should be transparent unless the illustration genuinely needs a filled panel.
 - Avoid fixed tall wrappers around wide diagrams. They create large empty blocks when a shallow SVG uses `object-fit: contain`.
@@ -152,14 +136,14 @@ google-chrome-stable \
   --virtual-time-budget=10000 \
   --no-pdf-header-footer \
   --print-to-pdf-no-header \
-  --print-to-pdf="$(pwd)/exports/pdf/Lesson 01 - What Is Data.pdf" \
-  "file://$(pwd)/exports/html/Lesson%2001%20-%20What%20Is%20Data.html"
+  --print-to-pdf="$(pwd)/exports/pdf/01-what-is-data/Lesson 01 - What Is Data.pdf" \
+  "file://$(pwd)/exports/html/01-what-is-data/Lesson%2001%20-%20What%20Is%20Data.html"
 ```
 
 After export, verify the page count and dimensions:
 
 ```bash
-pdfinfo "exports/pdf/Lesson 01 - What Is Data.pdf"
+pdfinfo "exports/pdf/01-what-is-data/Lesson 01 - What Is Data.pdf"
 ```
 
 Expected result for Lesson 1.1: 8 pages at 720 x 404.88 points.
@@ -167,8 +151,8 @@ Expected result for Lesson 1.1: 8 pages at 720 x 404.88 points.
 Validate SVG assets with:
 
 ```bash
-bash /home/sharafdin/.agents/skills/svg-skill/scripts/validate.sh exports/html/assets/lesson-01
-xmllint --noout exports/html/assets/lesson-01/*.svg
+bash /home/sharafdin/.agents/skills/svg-skill/scripts/validate.sh exports/html/assets/01-what-is-data/lesson-01
+xmllint --noout exports/html/assets/01-what-is-data/lesson-01/*.svg
 ```
 
 ## Opener and welcome convention
@@ -192,15 +176,15 @@ Seven videos have no lesson file behind them, so these files hold the spoken scr
 
 - They obey the standing rules in `PRODUCTION.md`, including **no greeting** - open cold, same as every lesson.
 - Each opener states how many lessons its chapter runs. **Adding or removing a lesson means editing that chapter's `00-opener.md` too** - this is exactly the drift the per-chapter layout exists to prevent, so it is one folder away rather than in a separate root file.
-- Chapter 5's opener is load-bearing: its four lessons are one continuous case, and a viewer arriving mid-chapter needs the setup.
+- Chapter 4's opener is load-bearing: its four lessons are one continuous case, and a viewer arriving mid-chapter needs the setup.
 
-## Chapter 5 is a serial case
+## Chapter 4 is a serial case
 
 The four ethics lessons follow one continuous scenario - a digital wallet company building automatic small-business loans - under `### Case study: ...` headings, ending with a decision in `04-data-governance-and-regulations.md`. Edits to any one of those lessons must keep the thread consistent with the other three.
 
 ## Making changes
 
-- Adding/removing/reordering a lesson: renumber the file prefix and update `README.md`'s table (lesson count and the total of 27).
+- Adding/removing/reordering a lesson: renumber the file prefix and update `README.md`'s table (lesson count and the total of 23).
 - Duration in the README is derived from actual length - recheck it after substantial additions rather than leaving a stale claim.
 - Markdown has no build, lint, or test command. Validate it by reading the rendered files and checking that code fences are balanced.
 - For visual exports, inspect the rendered PDF pages in addition to running the SVG and PDF checks documented above. A successful command is not enough if text is clipped, icons are missing, arrows cross labels, or a diagram leaves excessive empty space.

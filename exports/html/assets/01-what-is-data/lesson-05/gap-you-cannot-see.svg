@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 470" role="img" aria-labelledby="gap-title gap-desc">
+  <title id="gap-title">A missing value against data that was never collected</title>
+  <desc id="gap-desc">On the left, a sales table with one visibly blank cell. On the right, the same table with a sale that was never recorded, leaving no row and nothing to notice.</desc>
+  <defs>
+    <pattern id="gap-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#D7DDDD"/></pattern>
+    <marker id="gap-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="2"/></marker>
+  </defs>
+  <rect width="1180" height="470" rx="24" fill="url(#gap-dots)"/>
+
+  <g font-family="Geist,Arial,sans-serif">
+    <text x="48" y="58" font-size="26" font-weight="600" fill="#121212">A missing value</text>
+    <text x="638" y="58" font-size="26" font-weight="600" fill="#121212">A sale never recorded</text>
+
+    <g transform="translate(48 86)">
+      <rect width="480" height="228" rx="16" fill="#fff" stroke="#DDE2E2" stroke-width="2"/>
+      <rect width="480" height="52" rx="16" fill="#EDF0F0"/>
+      <rect y="36" width="480" height="16" fill="#EDF0F0"/>
+      <path d="M0 52 H480 M0 111 H480 M0 170 H480 M240 0 V228" fill="none" stroke="#DDE2E2" stroke-width="2"/>
+      <text x="24" y="34" font-size="19" font-weight="500" fill="#4D5353">BRANCH</text>
+      <text x="264" y="34" font-size="19" font-weight="500" fill="#4D5353">RICE SOLD</text>
+      <text x="24" y="90" font-size="23" fill="#121212">Hodan</text><text x="264" y="90" font-size="23" fill="#121212">50 kg</text>
+      <text x="24" y="149" font-size="23" fill="#121212">Wadajir</text>
+      <rect x="248" y="122" width="120" height="36" rx="8" fill="#fff" stroke="#1A733A" stroke-width="3" stroke-dasharray="8 7"/>
+      <text x="24" y="208" font-size="23" fill="#121212">Yaaqshiid</text><text x="264" y="208" font-size="23" fill="#121212">25 kg</text>
+    </g>
+
+    <g transform="translate(638 86)">
+      <rect width="480" height="228" rx="16" fill="#fff" stroke="#DDE2E2" stroke-width="2"/>
+      <rect width="480" height="52" rx="16" fill="#EDF0F0"/>
+      <rect y="36" width="480" height="16" fill="#EDF0F0"/>
+      <path d="M0 52 H480 M0 111 H480 M240 0 V228" fill="none" stroke="#DDE2E2" stroke-width="2"/>
+      <text x="24" y="34" font-size="19" font-weight="500" fill="#4D5353">BRANCH</text>
+      <text x="264" y="34" font-size="19" font-weight="500" fill="#4D5353">RICE SOLD</text>
+      <text x="24" y="90" font-size="23" fill="#121212">Hodan</text><text x="264" y="90" font-size="23" fill="#121212">50 kg</text>
+      <text x="24" y="149" font-size="23" fill="#121212">Yaaqshiid</text><text x="264" y="149" font-size="23" fill="#121212">25 kg</text>
+    </g>
+  </g>
+
+  <path d="M300 372 C300 344 300 330 300 318" fill="none" stroke="#1A733A" stroke-width="4" marker-end="url(#gap-arrow)"/>
+  <path d="M880 372 C880 344 880 330 880 318" fill="none" stroke="#8B9494" stroke-width="4" stroke-dasharray="9 8"/>
+
+  <g font-family="'Patrick Hand',cursive" text-anchor="middle">
+    <text x="300" y="404" font-size="31" fill="#1A733A">a blank cell you can see</text>
+    <text x="880" y="404" font-size="31" fill="#4D5353">no row, no blank, nothing to notice</text>
+  </g>
+</svg>

@@ -8,7 +8,7 @@ A clinic, a money transfer service, and a school each hire someone with the same
 
 ### The methods travel; the questions do not
 
-The steps are the same everywhere. Define the problem, collect, clean, analyse, communicate, decide. What changes between one employer and the next is the question you are pointed at, and how much it costs to get it wrong.
+Data goes through the same life everywhere: created, collected, stored, processed, analyzed, and eventually deleted. What changes between one employer and the next is the question you are pointed at, and how much it costs to get it wrong.
 
 ### The three from the cold open
 
@@ -18,7 +18,7 @@ The steps are the same everywhere. Define the problem, collect, clean, analyse, 
 
 **The school** wants to know which students are drifting out of attendance early enough to do something about it. A wrong answer means a child is missed.
 
-Same six steps, three completely different definitions of a serious mistake.
+Same lifecycle, same skills, three completely different definitions of a serious mistake.
 
 ### More of the same
 

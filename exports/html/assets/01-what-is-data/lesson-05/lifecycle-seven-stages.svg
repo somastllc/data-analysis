@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 410" role="img" aria-labelledby="lc-title lc-desc">
+  <title id="lc-title">The seven stages of the data lifecycle</title>
+  <desc id="lc-desc">Create leads to collect, store, process, analyze, and visualize, and ends with delete, drawn as a faded box.</desc>
+  <defs>
+    <pattern id="lc-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#D7DDDD"/></pattern>
+    <marker id="lc-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#1A733A" stroke-width="2"/></marker>
+  </defs>
+  <rect width="1400" height="410" rx="24" fill="url(#lc-dots)"/>
+  <path d="M183 203 H214 M383 203 H414 M583 203 H614 M783 203 H814 M983 203 H1014 M1183 203 H1214" fill="none" stroke="#1A733A" stroke-width="5" marker-end="url(#lc-arrow)"/>
+  <g font-family="Geist,Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(18 125)"><rect width="165" height="156" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="82" y="90" font-size="23" font-weight="600" fill="#121212">Create</text></g>
+    <g transform="translate(218 125)"><rect width="165" height="156" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="82" y="90" font-size="23" font-weight="600" fill="#121212">Collect</text></g>
+    <g transform="translate(418 125)"><rect width="165" height="156" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="82" y="90" font-size="23" font-weight="600" fill="#121212">Store</text></g>
+    <g transform="translate(618 125)"><rect width="165" height="156" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="82" y="90" font-size="23" font-weight="600" fill="#121212">Process</text></g>
+    <g transform="translate(818 125)"><rect width="165" height="156" rx="20" fill="#fff" stroke="#121212" stroke-width="4"/><text x="82" y="90" font-size="23" font-weight="600" fill="#121212">Analyze</text></g>
+    <g transform="translate(1018 125)"><rect width="165" height="156" rx="20" fill="#EDFBF2" stroke="#1A733A" stroke-width="4"/><text x="82" y="90" font-size="23" font-weight="600" fill="#121212">Visualize</text></g>
+    <g transform="translate(1218 125)"><rect width="165" height="156" rx="20" fill="#F1F4F4" stroke="#8B9494" stroke-width="4" stroke-dasharray="11 9"/><text x="82" y="90" font-size="23" font-weight="600" fill="#4D5353">Delete</text></g>
+  </g>
+  <text x="1383" y="330" font-family="'Patrick Hand',cursive" font-size="30" fill="#4D5353" text-anchor="end">the stage people forget</text>
+</svg>

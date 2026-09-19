@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 470" role="img" aria-labelledby="bd-title bd-desc">
+  <title id="bd-title">A trader's sales book beside a digital wallet's records</title>
+  <desc id="bd-desc">Four hundred rows in one notebook sit beside billions of payment records spread across many machines. Same kind of data, different scale.</desc>
+  <defs>
+    <pattern id="bd-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#D7DDDD"/></pattern>
+  </defs>
+  <rect width="1180" height="470" rx="24" fill="url(#bd-dots)"/>
+
+  <g font-family="Geist,Arial,sans-serif">
+    <text x="48" y="56" font-size="26" font-weight="600" fill="#121212">A market trader</text>
+    <text x="638" y="56" font-size="26" font-weight="600" fill="#121212">A digital wallet</text>
+
+    <g transform="translate(48 84)">
+      <rect width="300" height="230" rx="14" fill="#fff" stroke="#121212" stroke-width="4"/>
+      <path d="M0 52 H300 M0 96 H300 M0 140 H300 M0 184 H300" fill="none" stroke="#DDE2E2" stroke-width="2"/>
+      <rect width="300" height="52" rx="14" fill="#EDF0F0"/>
+      <rect y="36" width="300" height="16" fill="#EDF0F0"/>
+      <text x="22" y="34" font-size="18" font-weight="500" fill="#4D5353">SALES BOOK</text>
+      <text x="22" y="80" font-size="21" fill="#121212">Rice, 50 kg</text>
+      <text x="22" y="124" font-size="21" fill="#121212">Rice, 25 kg</text>
+      <text x="22" y="168" font-size="21" fill="#121212">Sugar, 10 kg</text>
+      <text x="22" y="212" font-size="21" fill="#4D5353">...</text>
+    </g>
+    <text x="198" y="356" font-size="23" fill="#121212" text-anchor="middle">400 rows, one table</text>
+    <text x="198" y="390" font-size="23" fill="#121212" text-anchor="middle">a few sales an hour</text>
+
+    <g transform="translate(638 84)">
+      <g fill="#fff" stroke="#121212" stroke-width="3">
+        <rect x="0" y="0" width="128" height="96" rx="11"/>
+        <rect x="148" y="0" width="128" height="96" rx="11"/>
+        <rect x="296" y="0" width="128" height="96" rx="11"/>
+        <rect x="0" y="118" width="128" height="96" rx="11"/>
+        <rect x="148" y="118" width="128" height="96" rx="11"/>
+        <rect x="296" y="118" width="128" height="96" rx="11"/>
+      </g>
+      <g fill="#8B9494" font-size="17" text-anchor="middle">
+        <text x="64" y="54">payments</text>
+        <text x="212" y="54">app logs</text>
+        <text x="360" y="54">chats</text>
+        <text x="64" y="172">receipts</text>
+        <text x="212" y="172">payments</text>
+        <text x="360" y="172">payments</text>
+      </g>
+      <rect x="-16" y="-16" width="456" height="246" rx="18" fill="none" stroke="#1A733A" stroke-width="4" stroke-dasharray="12 9"/>
+    </g>
+    <text x="850" y="356" font-size="23" fill="#121212" text-anchor="middle">billions of records, many shapes</text>
+    <text x="850" y="390" font-size="23" fill="#121212" text-anchor="middle">thousands a second</text>
+  </g>
+
+  <text x="590" y="440" font-family="'Patrick Hand',cursive" font-size="31" fill="#1A733A" text-anchor="middle">same kind of fact, different problem</text>
+</svg>

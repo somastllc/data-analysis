@@ -2,29 +2,29 @@
 
 **Category:** Data Science  
 **Level:** Beginner  
-**Lessons:** 27  
-**Duration:** ~1.5–2 hours reading  
-**Video:** ~2h 42m across 34 videos  
+**Lessons:** 23  
+**Duration:** ~1–1.5 hours reading  
+**Video:** ~2h 19m across 29 videos  
 
-A foundation course in what data is, how the data field is organized, and how an analysis moves from a question to a decision. No prior experience required, and nothing to install - this course is read-and-think.
+A foundation course in what data is, the life a dataset goes through, and how the data field is organized around it. No prior experience required, and nothing to install - this course is read-and-think.
 
 ## Chapters
 
 | # | Chapter | Lessons |
 |---|---|---|
-| 1 | [What Is Data?](01-what-is-data/) | 5 |
+| 1 | [What Is Data?](01-what-is-data/) | 7 |
 | 2 | [The Data Ecosystem](02-the-data-ecosystem/) | 7 |
-| 3 | [The Data Process](03-the-data-process/) | 6 |
-| 4 | [Data in the Real World](04-data-in-the-real-world/) | 3 |
-| 5 | [Data Ethics and Privacy](05-data-ethics-and-privacy/) | 4 |
-| 6 | [Conclusion](06-conclusion/) | 2 |
+| 3 | [Data in the Real World](03-data-in-the-real-world/) | 3 |
+| 4 | [Data Ethics and Privacy](04-data-ethics-and-privacy/) | 4 |
+| 5 | [Conclusion](05-conclusion/) | 2 |
 
-All 84 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
+All 74 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
 
 ## Outcomes
 
 - Explain what data is and distinguish common data types
+- Describe the stages data passes through, from creation to deletion
+- Judge whether a dataset is genuinely big data, and what changes when it is
 - Describe major data fields and how they relate to each other
-- Outline the end-to-end process from question to decision
 - Recognize common data tools, career paths, and industry applications
 - Understand core principles of data ethics and privacy

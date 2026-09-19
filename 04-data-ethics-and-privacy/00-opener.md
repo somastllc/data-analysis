@@ -1,6 +1,6 @@
-# Chapter 5 Opener - Data Ethics and Privacy
+# Chapter 4 Opener - Data Ethics and Privacy
 
-**Chapter:** 5 - Data Ethics and Privacy  
+**Chapter:** 4 - Data Ethics and Privacy  
 **Type:** Video opener - ~90s, no lesson file behind it  
 
 Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply - open cold, no greeting.
