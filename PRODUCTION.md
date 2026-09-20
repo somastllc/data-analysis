@@ -134,19 +134,17 @@ The next lesson asks what happens to all of this at enormous scale. Do not name 
 
 ### 1.6 · Big Data - 5.5 min
 
-**Cold open:** *A market trader's sales book holds four hundred rows and answers every question the trader has.*
+**Cold open:** *A market trader may keep 400 sales in one table, while a digital wallet may record millions of payments every day.*
 
-**Shots:** cold open → title → objective → *The trader and the wallet* → *What makes data big* → **table** The three Vs / The question it answers / The market trader / The digital wallet → *Big is a relationship, not a number* → *What changes when data really is big* → *Big is not the same as useful*
+**Shots:** cold open → title → objective → *What makes data big* → *The three Vs* → **table** Part / Simple question / Market trader / Digital wallet → *Big depends on the tools* → **comparison visual** market trader / digital wallet → *What changes when data is big* → **table** What changes / What it means → *More data is not always better*
 
-**Note:** The cold open is half a comparison. Deliver the trader's sales book and the digital wallet in one breath, over the two-panel sketch, and let the viewer see the four hundred rows next to the six machines before any definition arrives.
+**Note:** Use the trader and digital-wallet comparison to show the difference in scale. Keep the comparison simple: the same kind of record, but a very different amount and speed.
 
-The four-column table is the widest in the course. Read it **down the columns, not across the rows**: volume, velocity, variety for the trader, then the same three for the wallet. Reading it across turns three ideas into six.
+The four-column table introduces volume, velocity, and variety. Read one row at a time, comparing the trader with the digital wallet.
 
-**The beat that earns the lesson** is *Big is a relationship, not a number*. Put the question on screen on its own: **has the usual way of working broken?** This is the one lesson where the course pushes back on a term the viewer has already heard used loosely, so land the line about buying systems nobody needed and pause on it.
+The main test is whether the usual tools are still enough. A large file may be difficult for a spreadsheet but easy for a database.
 
-*What changes when data really is big* is four cards, and the fourth is the handoff: a field exists to move data at this scale. Chapter 2 is about to spend seven lessons on the people in it, so say that transition out loud.
-
-Close on the trader. Four hundred honest rows against four billion unchecked ones is the chapter's argument about quality, restated at scale.
+Close on the quality point: a small, clean dataset can be more useful than a large dataset with missing or incorrect values.
 
 ---
 

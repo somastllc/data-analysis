@@ -1,46 +1,46 @@
 # Big Data
 
-**By the end:** You can say what makes data "big", and judge whether a dataset actually is.
+**By the end:** You can explain what makes data big and know when ordinary tools are no longer enough.
 
 ## Overview
 
-A market trader's sales book holds four hundred rows and answers every question the trader has. A digital wallet serving millions of customers records four hundred payments while you read this sentence. Both are data, collected the same way, describing the same kind of event. Only one of them breaks an ordinary spreadsheet, and the difference is not what the data means. It is how much of it arrives, how fast, and in how many shapes.
+A market trader may keep 400 sales in one table, while a digital wallet may record millions of payments every day. Both store transaction data, but the digital wallet needs tools that can handle much more data arriving much faster.
 
 ### What makes data big
 
-**Big data** is data at a scale that ordinary tools and methods can no longer handle. There is no row count that makes the label true. What matters is whether the usual approach has stopped working.
+**Big data** is data that is too large, arrives too quickly, or comes in too many formats for ordinary tools to handle well.
 
-Three things push a dataset past that point, and they are usually named together.
+There is no single number that makes data big. What matters is whether the usual tools can still store and process it.
 
-| The three Vs | The question it answers | The market trader | The digital wallet |
+### The three Vs
+
+| Part | Simple question | Market trader | Digital wallet |
 |---|---|---|---|
-| **Volume** | How much is there? | 400 rows in a book | Billions of payment records |
-| **Velocity** | How fast does it arrive? | A few sales an hour | Thousands of payments a second |
-| **Variety** | How many shapes does it come in? | One table | Payments, app logs, support chats, photos of receipts |
+| **Volume** | How much data is there? | 400 sales records | Millions of payment records |
+| **Velocity** | How quickly does new data arrive? | A few sales per hour | Thousands of payments per second |
+| **Variety** | How many formats does it use? | One sales table | Payment records, app logs, messages, and receipt photos |
 
-Variety you have already met. It is the structured, semi-structured, and unstructured split from the types lesson, seen from a distance.
+A dataset can be difficult to handle because of one V or several at the same time.
 
-### Big is a relationship, not a number
+### Big depends on the tools
 
-The same dataset can be big for one organization and ordinary for another. A hospital that has always worked in spreadsheets meets big data at a few million rows. A payment company meets it much later, because it already owns the systems.
+Two organizations can use different tools for the same dataset. A file with 2 million rows may be too large for a spreadsheet but easy for a database.
 
-This is why the honest test is a question about the tools rather than the data: has the usual way of working broken? If a file still opens, a query still returns, and one machine still holds it, the dataset is not big, whatever its subject.
+Data becomes big when the tools normally used are no longer enough. Many small shops, schools, and clinics can answer their questions with ordinary tools. They do not need big data systems.
 
-Most data work is not big data work. A shop, a school, and a clinic each run on data that fits comfortably in ordinary tools, and the questions that matter to them are answered there. Calling a small dataset "big data" is how organizations end up buying systems they never needed, to solve a problem they did not have.
+### What changes when data is big
 
-### What changes when data really is big
+When one machine is not enough, the work is divided across several machines.
 
-Once one machine is not enough, the work changes shape rather than just getting slower.
+| What changes | What it means |
+|---|---|
+| **Storage** | Data may be stored across several machines |
+| **Processing** | Several machines may work on the data together |
+| **Quality** | Missing or incorrect values are harder to find among millions of records |
+| **Management** | Copies of data are harder to track, protect, and delete |
 
-- **Storage spreads out.** The data sits across many machines instead of one, which is what a data lake is for.
-- **Errors hide.** In four hundred rows you can see a bad value. In four billion you have to detect it, and anything you cannot detect you inherit.
-- **Deletion gets hard.** Finding every copy of one person's records across many systems is real work, which is why retention rules are written before the data piles up rather than after.
-- **Someone has to build the plumbing.** Moving data at this scale is a full-time job, and a field exists around it.
+### More data is not always better
 
-That last point is the reason this lesson sits here. Most of what the next chapter describes, the systems, the specialists, and the pipelines between them, exists because data outgrew the spreadsheet.
+More data is not always better. A small, clean dataset can be more useful than a large dataset with missing or incorrect values.
 
-### Big is not the same as useful
-
-A large dataset is not automatically a better one. Everything from the quality lesson still applies, and applies harder: billions of rows collected carelessly are billions of rows of careless data, and the scale makes the flaw more convincing rather than less.
-
-The trader with four hundred honest rows can answer the trader's question. That is worth more than four billion rows nobody checked.
+The market trader can answer a useful question with 400 accurate sales records. Millions of unreliable records may give the wrong answer.

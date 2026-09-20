@@ -1,13 +1,123 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;family=Patrick+Hand&amp;display=swap" rel="stylesheet"><style>
-html,body{margin:0;background:#F6F8F8}.slide{width:1920px;height:1080px;box-sizing:border-box;overflow:hidden;background:#F6F8F8;color:#343838;font-family:Geist,Arial,sans-serif;padding:62px 94px 56px;display:flex;flex-direction:column;gap:27px}.center{justify-content:center}.title{font-size:108px;line-height:1.03;letter-spacing:-.035em;margin:0;color:#121212;font-weight:600;max-width:1720px}.objective{font-size:83px;line-height:1.12;letter-spacing:-.025em;margin:0;color:#121212;max-width:1680px}.eyebrow{font:500 23px 'Geist Mono',monospace;letter-spacing:.09em;text-transform:uppercase;color:#1A733A}.slide h2{font-size:61px;line-height:1.13;letter-spacing:-.02em;margin:0;color:#121212}.slide p,.slide li{font-size:28px;line-height:1.45}.slide p{margin:0}.muted{color:#4D5353}.cards{display:grid;gap:20px}.card{background:#fff;border:1px solid #DDE2E2;border-radius:16px;padding:25px}.mint{background:#EDFBF2;border-color:#AEEBC5}.cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;flex:1}.sketch{width:100%;height:100%;object-fit:contain;display:block}.strong{font-weight:600;color:#121212}.hand{font:37px 'Patrick Hand',cursive;color:#1A733A}.list{margin:0;padding-left:30px;display:grid;gap:12px}.table{background:#fff;border:1px solid #DDE2E2;border-radius:15px;overflow:hidden}.tr{display:grid;grid-template-columns:.72fr 1.5fr;border-top:1px solid #DDE2E2}.tr:first-child{border-top:0;background:#EDF0F0}.tr>div{padding:24px 30px;font-size:26px;line-height:1.34}.tr:first-child>div{font:500 18px 'Geist Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#4D5353}.step{display:grid;grid-template-columns:70px 1fr;gap:20px;align-items:center}.num{width:58px;height:58px;border-radius:50%;background:#EDFBF2;border:2px solid #AEEBC5;color:#1A733A;display:flex;align-items:center;justify-content:center;font:600 21px 'Geist Mono',monospace}@page{size:10in 5.625in;margin:0}@media print{html,body{width:960px}x-import{display:block}x-import>.slide{width:1920px!important;height:1080px!important;zoom:.5;break-after:page;page-break-after:always}x-import>.slide:last-child{break-after:auto;page-break-after:auto}}
-</style></head><body><x-import>
-<section class="slide center" data-label="Title" data-screen-label="01"><h1 class="title">Big Data</h1></section>
-<section class="slide center" data-label="Objective" data-screen-label="02"><div class="eyebrow">By the end:</div><h2 class="objective">You can say what makes data "big", and judge whether a dataset actually is.</h2></section>
-<section class="slide center" data-label="Overview" data-screen-label="03"><h2>Overview</h2><p style="font-size:34px;max-width:1640px;color:#121212">A market trader's sales book holds four hundred rows and answers every question the trader has. A digital wallet serving millions of customers records four hundred payments while you read this sentence. Both are data, collected the same way, describing the same kind of event. Only one of them breaks an ordinary spreadsheet, and the difference is not what the data means. It is how much of it arrives, how fast, and in how many shapes.</p></section>
-<section class="slide" data-label="Two books" data-screen-label="04"><h2>The trader and the wallet</h2><img class="sketch" src="../assets/01-what-is-data/lesson-06/two-books-one-question.svg" alt="A trader's four hundred row sales book beside a digital wallet's billions of records across many machines" style="width:1620px;height:660px;min-height:0;align-self:center"><p style="font-size:31px;color:#121212">Both are data, collected the same way, describing the same kind of event. Only one of them breaks an ordinary spreadsheet.</p></section>
-<section class="slide" data-label="Three Vs" data-screen-label="05"><h2>What makes data big</h2><p style="font-size:31px"><strong class="strong">Big data</strong> is data at a scale that ordinary tools and methods can no longer handle. There is no row count that makes the label true. What matters is whether the usual approach has stopped working.</p><div class="table"><div class="tr" style="grid-template-columns:.5fr .95fr .8fr 1.2fr"><div style="padding:22px 28px">The three Vs</div><div style="padding:22px 28px">The question it answers</div><div style="padding:22px 28px">The market trader</div><div style="padding:22px 28px">The digital wallet</div></div><div class="tr" style="grid-template-columns:.5fr .95fr .8fr 1.2fr"><div style="padding:22px 28px"><span class="strong">Volume</span></div><div style="padding:22px 28px">How much is there?</div><div style="padding:22px 28px">400 rows in a book</div><div style="padding:22px 28px">Billions of payment records</div></div><div class="tr" style="grid-template-columns:.5fr .95fr .8fr 1.2fr"><div style="padding:22px 28px"><span class="strong">Velocity</span></div><div style="padding:22px 28px">How fast does it arrive?</div><div style="padding:22px 28px">A few sales an hour</div><div style="padding:22px 28px">Thousands of payments a second</div></div><div class="tr" style="grid-template-columns:.5fr .95fr .8fr 1.2fr"><div style="padding:22px 28px"><span class="strong">Variety</span></div><div style="padding:22px 28px">How many shapes does it come in?</div><div style="padding:22px 28px">One table</div><div style="padding:22px 28px">Payments, app logs, support chats, photos of receipts</div></div></div><p style="font-size:29px;color:#121212">Variety you have already met. It is the structured, semi-structured, and unstructured split from the types lesson, seen from a distance.</p></section>
-<section class="slide" data-label="Relationship" data-screen-label="06"><h2>Big is a relationship, not a number</h2><p style="font-size:31px">The same dataset can be big for one organization and ordinary for another. A hospital that has always worked in spreadsheets meets big data at a few million rows. A payment company meets it much later, because it already owns the systems.</p><div class="card mint"><p style="font-size:33px;color:#121212">The honest test is a question about the tools, not the data: <span class="strong">has the usual way of working broken?</span> If a file still opens, a query still returns, and one machine still holds it, the dataset is not big, whatever its subject.</p></div><p style="font-size:30px;color:#121212">Most data work is not big data work. Calling a small dataset "big data" is how organizations end up buying systems they never needed, to solve a problem they did not have.</p></section>
-<section class="slide" data-label="What changes" data-screen-label="07"><h2>What changes when data really is big</h2><div class="cards" style="grid-template-columns:1fr 1fr;gap:22px"><div class="card"><p style="font-size:28px"><span class="strong">Storage spreads out.</span> The data sits across many machines instead of one, which is what a data lake is for.</p></div><div class="card"><p style="font-size:28px"><span class="strong">Errors hide.</span> In four hundred rows you can see a bad value. In four billion you have to detect it, and anything you cannot detect you inherit.</p></div><div class="card"><p style="font-size:28px"><span class="strong">Deletion gets hard.</span> Finding every copy of one person's records across many systems is real work, which is why retention rules are written before the data piles up.</p></div><div class="card mint"><p style="font-size:28px"><span class="strong">Someone has to build the plumbing.</span> Moving data at this scale is a full-time job, and a field exists around it.</p></div></div></section>
-<section class="slide" data-label="Closing" data-screen-label="08"><h2>Big is not the same as useful</h2><p style="font-size:33px;color:#121212">A large dataset is not automatically a better one. Everything from the quality lesson still applies, and applies harder: billions of rows collected carelessly are billions of rows of careless data, and the scale makes the flaw more convincing rather than less.</p><div class="card" style="align-self:flex-start;max-width:1560px"><p style="font-size:35px;color:#121212">The trader with four hundred honest rows can answer the trader's question. <span class="strong">That is worth more than four billion rows nobody checked.</span></p></div></section>
-</x-import></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F8F8">
+  <title>Big Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;family=Patrick+Hand&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--paper:#F6F8F8;--ink:#121212;--body:#343838;--muted:#4D5353;--line:#DDE2E2;--soft:#EDF0F0;--mint:#EDFBF2;--mint-line:#AEEBC5;--green:#1A733A}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--paper)}
+    body{overflow-x:hidden}
+    .slide{width:1920px;height:1080px;overflow:hidden;background:var(--paper);color:var(--body);font-family:Geist,Arial,sans-serif;padding:64px 96px 58px;display:flex;flex-direction:column;gap:26px}
+    .center{justify-content:center}
+    .title{max-width:1680px;margin:0;color:var(--ink);font-size:126px;font-weight:600;letter-spacing:-.035em;line-height:1.02;text-wrap:balance}
+    .objective{max-width:1680px;margin:0;color:var(--ink);font-size:84px;font-weight:600;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}
+    .eyebrow{color:var(--green);font:500 24px 'Geist Mono',monospace;letter-spacing:.09em;text-transform:uppercase}
+    .slide h2{margin:0;color:var(--ink);font-size:62px;letter-spacing:-.02em;line-height:1.12;text-wrap:balance}
+    .slide h3{margin:0;color:var(--ink);font-size:38px;letter-spacing:-.015em;line-height:1.18;text-wrap:balance}
+    .slide p{margin:0;font-size:30px;line-height:1.45}
+    .strong{color:var(--ink);font-weight:600}
+    .card{border:1px solid var(--line);border-radius:16px;background:#FFFFFF;padding:25px 29px}
+    .mint{border-color:var(--mint-line);background:var(--mint)}
+    .reading-block{display:flex;max-width:1600px;flex-direction:column;gap:30px}
+    .table-wrap{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#FFFFFF}
+    table{width:100%;border-collapse:collapse;table-layout:fixed}
+    th,td{border-top:1px solid var(--line);padding:18px 23px;text-align:left;vertical-align:middle;overflow-wrap:anywhere}
+    th{border-top:0;background:var(--soft);color:var(--muted);font:500 16px 'Geist Mono',monospace;letter-spacing:.07em;text-transform:uppercase}
+    td{font-size:24px;line-height:1.3}
+    td:first-child{color:var(--ink);font-weight:600}
+    .vs-table col.part{width:14%}.vs-table col.question{width:26%}.vs-table col.trader{width:24%}.vs-table col.wallet{width:36%}
+    .vs-table th,.vs-table td{padding:15px 20px}
+    .comparison-content{display:flex;min-height:0;flex:1;flex-direction:column;gap:22px}
+    .comparison-content p{font-size:30px;line-height:1.42}
+    .comparison-content img{display:block;width:100%;height:470px;object-fit:contain}
+    .changes-table col.topic{width:28%}.changes-table col.meaning{width:72%}
+    .changes-table th,.changes-table td{padding:25px 30px}
+    .changes-table td{font-size:29px;line-height:1.35}
+    @page{size:10in 5.625in;margin:0}
+    @media print{
+      html,body{width:960px}
+      x-import{display:block}
+      x-import>.slide{width:1920px!important;height:1080px!important;zoom:.5;break-after:page;page-break-after:always}
+      x-import>.slide:last-child{break-after:auto;page-break-after:auto}
+    }
+  </style>
+</head>
+<body>
+<x-import>
+  <section class="slide center" data-label="Title" data-screen-label="01">
+    <h1 class="title">Big Data</h1>
+  </section>
+
+  <section class="slide center" data-label="Objective" data-screen-label="02">
+    <div class="eyebrow">By the end:</div>
+    <h2 class="objective">You can explain what makes data big and know when ordinary tools are no longer enough.</h2>
+  </section>
+
+  <section class="slide center" data-label="Overview" data-screen-label="03">
+    <div class="reading-block">
+      <h2>Overview</h2>
+      <p style="font-size:40px;color:var(--ink)">A market trader may keep 400 sales in one table, while a digital wallet may record millions of payments every day. Both store transaction data, but the digital wallet needs tools that can handle much more data arriving much faster.</p>
+    </div>
+  </section>
+
+  <section class="slide" data-label="What makes data big and the three Vs" data-screen-label="04" style="gap:20px">
+    <h2>What makes data big</h2>
+    <p style="font-size:29px"><strong class="strong">Big data</strong> is data that is too large, arrives too quickly, or comes in too many formats for ordinary tools to handle well.</p>
+    <p style="font-size:27px">There is no single number that makes data big. What matters is whether the usual tools can still store and process it.</p>
+    <h3>The three Vs</h3>
+    <div class="table-wrap">
+      <table class="vs-table">
+        <colgroup><col class="part"><col class="question"><col class="trader"><col class="wallet"></colgroup>
+        <thead><tr><th scope="col">Part</th><th scope="col">Simple question</th><th scope="col">Market trader</th><th scope="col">Digital wallet</th></tr></thead>
+        <tbody>
+          <tr><td>Volume</td><td>How much data is there?</td><td>400 sales records</td><td>Millions of payment records</td></tr>
+          <tr><td>Velocity</td><td>How quickly does new data arrive?</td><td>A few sales per hour</td><td>Thousands of payments per second</td></tr>
+          <tr><td>Variety</td><td>How many formats does it use?</td><td>One sales table</td><td>Payment records, app logs, messages, and receipt photos</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card mint" style="padding:17px 24px"><p style="font-size:26px">A dataset can be difficult to handle because of one V or several at the same time.</p></div>
+  </section>
+
+  <section class="slide" data-label="Big depends on the tools" data-screen-label="05">
+    <h2>Big depends on the tools</h2>
+    <div class="comparison-content">
+      <p>Two organizations can use different tools for the same dataset. A file with 2 million rows may be too large for a spreadsheet but easy for a database.</p>
+      <p>Data becomes big when the tools normally used are no longer enough. Many small shops, schools, and clinics can answer their questions with ordinary tools. They do not need big data systems.</p>
+      <img src="../assets/01-what-is-data/lesson-06/two-books-one-question.svg" width="1180" height="420" alt="A market trader's 400 sales records compared with millions of digital-wallet records in several formats">
+    </div>
+  </section>
+
+  <section class="slide" data-label="What changes when data is big" data-screen-label="06">
+    <h2>What changes when data is big</h2>
+    <p style="font-size:32px">When one machine is not enough, the work is divided across several machines.</p>
+    <div class="table-wrap">
+      <table class="changes-table">
+        <colgroup><col class="topic"><col class="meaning"></colgroup>
+        <thead><tr><th scope="col">What changes</th><th scope="col">What it means</th></tr></thead>
+        <tbody>
+          <tr><td>Storage</td><td>Data may be stored across several machines</td></tr>
+          <tr><td>Processing</td><td>Several machines may work on the data together</td></tr>
+          <tr><td>Quality</td><td>Missing or incorrect values are harder to find among millions of records</td></tr>
+          <tr><td>Management</td><td>Copies of data are harder to track, protect, and delete</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="slide center" data-label="More data is not always better" data-screen-label="07">
+    <div class="reading-block">
+      <h2>More data is not always better</h2>
+      <p style="font-size:38px;color:var(--ink)">More data is not always better. A small, clean dataset can be more useful than a large dataset with missing or incorrect values.</p>
+      <div class="card mint"><p style="font-size:36px;color:var(--ink)">The market trader can answer a useful question with 400 accurate sales records. Millions of unreliable records may give the wrong answer.</p></div>
+    </div>
+  </section>
+</x-import>
+</body>
+</html>
