@@ -134,13 +134,13 @@ The next lesson asks what happens to all of this at enormous scale. Do not name 
 
 ### 1.6 · Big Data - 5.5 min
 
-**Cold open:** *A market trader may keep 400 sales in one table, while a digital wallet may record millions of payments every day.*
+**Cold open:** *A small furniture shop may record about 20 sales per day in one table, while a digital wallet may record millions of payments per day.*
 
-**Shots:** cold open → title → objective → *What makes data big* → *The three Vs* → **table** Part / Simple question / Market trader / Digital wallet → *Big depends on the tools* → **comparison visual** market trader / digital wallet → *What changes when data is big* → **table** What changes / What it means → *More data is not always better*
+**Shots:** cold open → title → objective → *What makes data big* → *The three Vs* → **table** Part / Simple question / Small furniture shop / Digital wallet → *Big depends on the tools* → **comparison visual** small furniture shop / digital wallet → *What changes when data is big* → **table** What changes / What it means → *More data is not always better*
 
-**Note:** Use the trader and digital-wallet comparison to show the difference in scale. Keep the comparison simple: the same kind of record, but a very different amount and speed.
+**Note:** Use the furniture-shop and digital-wallet comparison to show the difference in scale. Keep the comparison simple: the same kind of record, but a very different amount and speed.
 
-The four-column table introduces volume, velocity, and variety. Read one row at a time, comparing the trader with the digital wallet.
+The four-column table introduces volume, velocity, and variety. Read one row at a time, comparing the furniture shop with the digital wallet.
 
 The main test is whether the usual tools are still enough. A large file may be difficult for a spreadsheet but easy for a database.
 
@@ -280,9 +280,9 @@ The other thing 1.5 does not have is the storage table, and the fact that a pipe
 
 **Cold open:** *A clinic, a money transfer service, and a school can use the same data skills. The tools may be similar, but each place has different questions and different data.*
 
-**Shots:** cold open → title → objective → *Same skills, different questions* → *Why domain knowledge matters* → *Examples from different industries* → **table** Industry / Example question / Domain knowledge needed → *Key point*
+**Shots:** cold open → title → objective → *Same skills, different questions* → *Why domain knowledge matters* → *Examples from different industries* → **table** Industry / Example question / Domain knowledge needed → final domain-knowledge line
 
-**Note:** Use the three-panel clinic, money transfer, and school visual for the overview and return to it at the key point. The main idea is that data skills transfer between industries, but domain knowledge helps an analyst ask useful questions and understand the answers.
+**Note:** Close beneath the examples table with the line that data skills transfer between industries, but domain knowledge helps people ask useful questions and understand the answers.
 
 Keep the examples simple. The table shows how the questions and domain knowledge change across eight industries.
 

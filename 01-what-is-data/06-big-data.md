@@ -4,7 +4,7 @@
 
 ## Overview
 
-A market trader may keep 400 sales in one table, while a digital wallet may record millions of payments every day. Both store transaction data, but the digital wallet needs tools that can handle much more data arriving much faster.
+A small furniture shop may record about 20 sales per day in one table, while a digital wallet may record millions of payments per day. Both store transaction data, but the digital wallet needs tools that can handle much more data arriving much faster.
 
 ### What makes data big
 
@@ -14,9 +14,9 @@ There is no single number that makes data big. What matters is whether the usual
 
 ### The three Vs
 
-| Part | Simple question | Market trader | Digital wallet |
+| Part | Simple question | Small furniture shop | Digital wallet |
 |---|---|---|---|
-| **Volume** | How much data is there? | 400 sales records | Millions of payment records |
+| **Volume** | How much data is there? | About 20 sales per day | Millions of payments per day |
 | **Velocity** | How quickly does new data arrive? | A few sales per hour | Thousands of payments per second |
 | **Variety** | How many formats does it use? | One sales table | Payment records, app logs, messages, and receipt photos |
 
@@ -43,4 +43,4 @@ When one machine is not enough, the work is divided across several machines.
 
 More data is not always better. A small, clean dataset can be more useful than a large dataset with missing or incorrect values.
 
-The market trader can answer a useful question with 400 accurate sales records. Millions of unreliable records may give the wrong answer.
+The furniture shop can answer a useful question with 20 accurate sales records. Millions of unreliable records may give the wrong answer.

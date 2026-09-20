@@ -31,7 +31,7 @@
     th{border-top:0;background:var(--soft);color:var(--muted);font:500 16px 'Geist Mono',monospace;letter-spacing:.07em;text-transform:uppercase}
     td{font-size:24px;line-height:1.3}
     td:first-child{color:var(--ink);font-weight:600}
-    .vs-table col.part{width:14%}.vs-table col.question{width:26%}.vs-table col.trader{width:24%}.vs-table col.wallet{width:36%}
+    .vs-table col.part{width:14%}.vs-table col.question{width:26%}.vs-table col.shop{width:24%}.vs-table col.wallet{width:36%}
     .vs-table th,.vs-table td{padding:15px 20px}
     .comparison-content{display:flex;min-height:0;flex:1;flex-direction:column;gap:22px}
     .comparison-content p{font-size:30px;line-height:1.42}
@@ -62,7 +62,7 @@
   <section class="slide center" data-label="Overview" data-screen-label="03">
     <div class="reading-block">
       <h2>Overview</h2>
-      <p style="font-size:40px;color:var(--ink)">A market trader may keep 400 sales in one table, while a digital wallet may record millions of payments every day. Both store transaction data, but the digital wallet needs tools that can handle much more data arriving much faster.</p>
+      <p style="font-size:40px;color:var(--ink)">A small furniture shop may record about 20 sales per day in one table, while a digital wallet may record millions of payments per day. Both store transaction data, but the digital wallet needs tools that can handle much more data arriving much faster.</p>
     </div>
   </section>
 
@@ -73,10 +73,10 @@
     <h3>The three Vs</h3>
     <div class="table-wrap">
       <table class="vs-table">
-        <colgroup><col class="part"><col class="question"><col class="trader"><col class="wallet"></colgroup>
-        <thead><tr><th scope="col">Part</th><th scope="col">Simple question</th><th scope="col">Market trader</th><th scope="col">Digital wallet</th></tr></thead>
+        <colgroup><col class="part"><col class="question"><col class="shop"><col class="wallet"></colgroup>
+        <thead><tr><th scope="col">Part</th><th scope="col">Simple question</th><th scope="col">Small furniture shop</th><th scope="col">Digital wallet</th></tr></thead>
         <tbody>
-          <tr><td>Volume</td><td>How much data is there?</td><td>400 sales records</td><td>Millions of payment records</td></tr>
+          <tr><td>Volume</td><td>How much data is there?</td><td>About 20 sales per day</td><td>Millions of payments per day</td></tr>
           <tr><td>Velocity</td><td>How quickly does new data arrive?</td><td>A few sales per hour</td><td>Thousands of payments per second</td></tr>
           <tr><td>Variety</td><td>How many formats does it use?</td><td>One sales table</td><td>Payment records, app logs, messages, and receipt photos</td></tr>
         </tbody>
@@ -90,7 +90,7 @@
     <div class="comparison-content">
       <p>Two organizations can use different tools for the same dataset. A file with 2 million rows may be too large for a spreadsheet but easy for a database.</p>
       <p>Data becomes big when the tools normally used are no longer enough. Many small shops, schools, and clinics can answer their questions with ordinary tools. They do not need big data systems.</p>
-      <img src="../assets/01-what-is-data/lesson-06/two-books-one-question.svg" width="1180" height="420" alt="A market trader's 400 sales records compared with millions of digital-wallet records in several formats">
+      <img src="../assets/01-what-is-data/lesson-06/two-books-one-question.svg" width="1180" height="420" alt="A small furniture shop's sales records compared with millions of digital-wallet records in several formats">
     </div>
   </section>
 
@@ -115,7 +115,7 @@
     <div class="reading-block">
       <h2>More data is not always better</h2>
       <p style="font-size:38px;color:var(--ink)">More data is not always better. A small, clean dataset can be more useful than a large dataset with missing or incorrect values.</p>
-      <div class="card mint"><p style="font-size:36px;color:var(--ink)">The market trader can answer a useful question with 400 accurate sales records. Millions of unreliable records may give the wrong answer.</p></div>
+      <div class="card mint"><p style="font-size:36px;color:var(--ink)">The furniture shop can answer a useful question with 20 accurate sales records. Millions of unreliable records may give the wrong answer.</p></div>
     </div>
   </section>
 </x-import>

@@ -111,11 +111,11 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - Chapter 2 lessons 2.1 through 2.6 are complete as HTML presentations and PDFs: 6, 7, 8, 6, 6, and 6 pages respectively, with 10 standalone SVG illustrations across the six lessons.
 - Lesson 3.1, "Modern Data Tools", is complete as a six-slide HTML presentation and a six-page PDF with one standalone SVG illustration.
 - Lesson 3.2, "Why Data Work Uses Code", is complete as a six-slide HTML presentation and a six-page PDF with no standalone SVG illustrations; its two code examples are the teaching visuals.
-- Lesson 3.3, "Data Across Industries", is complete as a six-slide HTML presentation and a six-page PDF with one standalone SVG illustration.
+- Lesson 3.3, "Data Across Industries", is complete as a five-slide HTML presentation and a five-page PDF with no standalone SVG illustrations.
 - All sixteen PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
 - Lesson 1.1 uses a focused pattern chart and one combined Facebook likes comparison rather than separate assets for every stage of data, information, and insight.
-- All 29 SVG exports across the sixteen completed lessons pass the SVG validator and XML parsing.
+- All 28 SVG exports across the sixteen completed lessons pass the SVG validator and XML parsing.
 - All seven Chapter 1 lessons, Chapter 2 lessons 2.1 through 2.6, and all three Chapter 3 lessons are converted. Chapter 2 lesson 2.7 and all of chapters 4 and 5 have not been converted. Do not mark later lessons complete merely because their Markdown content exists.
 
 ### HTML and PDF conventions

@@ -31,6 +31,4 @@ Data skills alone are not enough. An analyst working in a clinic needs to unders
 | **Wholesale and retail** | Which products sell quickly, and which remain unsold? | Understanding sales and stock |
 | **Aid and public services** | Which areas need more support? | Understanding local needs and available services |
 
-### Key point
-
 Data skills can be used in many industries. Domain knowledge helps you use those skills to ask the right questions and understand the answers.

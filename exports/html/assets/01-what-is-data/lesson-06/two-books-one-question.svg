@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 420" role="img" aria-labelledby="bd-title bd-desc">
-  <title id="bd-title">A market trader's sales records beside a digital wallet's records</title>
-  <desc id="bd-desc">Four hundred sales records sit beside millions of digital-wallet records in several formats. The records describe the same kind of event at a different scale.</desc>
+  <title id="bd-title">A small furniture shop's sales records beside a digital wallet's records</title>
+  <desc id="bd-desc">About twenty furniture-shop sales per day sit beside millions of digital-wallet payments per day.</desc>
   <defs>
     <pattern id="bd-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#D7DDDD"/></pattern>
   </defs>
   <rect width="1180" height="420" rx="24" fill="url(#bd-dots)"/>
 
   <g font-family="Geist,Arial,sans-serif">
-    <text x="48" y="56" font-size="26" font-weight="600" fill="#121212">A market trader</text>
+    <text x="48" y="56" font-size="26" font-weight="600" fill="#121212">A small furniture shop</text>
     <text x="638" y="56" font-size="26" font-weight="600" fill="#121212">A digital wallet</text>
 
     <g transform="translate(48 84)">
@@ -27,7 +27,7 @@
         <path d="M42 74 H258 M42 118 H232 M42 162 H270 M42 206 H218"/>
       </g>
     </g>
-    <text x="198" y="356" font-size="23" fill="#121212" text-anchor="middle">400 sales records</text>
+    <text x="198" y="356" font-size="23" fill="#121212" text-anchor="middle">about 20 sales per day</text>
     <text x="198" y="390" font-size="23" fill="#121212" text-anchor="middle">a few sales per hour</text>
 
     <g transform="translate(638 84)">
@@ -49,7 +49,7 @@
       </g>
       <rect x="-16" y="-16" width="456" height="246" rx="18" fill="none" stroke="#1A733A" stroke-width="4" stroke-dasharray="12 9"/>
     </g>
-    <text x="850" y="356" font-size="23" fill="#121212" text-anchor="middle">millions of payment records</text>
+    <text x="850" y="356" font-size="23" fill="#121212" text-anchor="middle">millions of payments per day</text>
     <text x="850" y="390" font-size="23" fill="#121212" text-anchor="middle">thousands of payments per second</text>
   </g>
 </svg>
