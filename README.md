@@ -18,7 +18,7 @@ A foundation course in what data is, the life a dataset goes through, and how th
 | 4 | [Data Ethics and Privacy](04-data-ethics-and-privacy/) | 4 |
 | 5 | [Conclusion](05-conclusion/) | 2 |
 
-All 74 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
+All 79 terms defined in the course are collected in [GLOSSARY.md](GLOSSARY.md).
 
 ## Outcomes
 

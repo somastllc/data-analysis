@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 270" role="img" aria-labelledby="privacy-title privacy-desc">
+  <title id="privacy-title">Protect data at every stage</title>
+  <desc id="privacy-desc">Ask for consent, collect only what is needed, limit access, and delete data when it is no longer needed.</desc>
+  <defs>
+    <marker id="privacy-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#1A733A"/>
+    </marker>
+    <pattern id="privacy-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.2" fill="#D7DDDD"/>
+    </pattern>
+  </defs>
+  <rect width="1500" height="270" rx="22" fill="url(#privacy-dots)"/>
+  <g fill="none" stroke="#1A733A" stroke-width="4" marker-end="url(#privacy-arrow)">
+    <path d="M350 135 H405"/>
+    <path d="M720 135 H775"/>
+    <path d="M1090 135 H1145"/>
+  </g>
+  <g font-family="Geist,Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(30 70)">
+      <rect width="320" height="130" rx="18" fill="#FFFFFF" stroke="#121212" stroke-width="3"/>
+      <text x="160" y="76" font-size="27" font-weight="600" fill="#121212">Ask for consent</text>
+    </g>
+    <g transform="translate(405 70)">
+      <rect width="315" height="130" rx="18" fill="#FFFFFF" stroke="#121212" stroke-width="3"/>
+      <text x="157.5" y="61" font-size="25" font-weight="600" fill="#121212"><tspan x="157.5">Collect only what</tspan><tspan x="157.5" dy="32">is needed</tspan></text>
+    </g>
+    <g transform="translate(775 70)">
+      <rect width="315" height="130" rx="18" fill="#FFFFFF" stroke="#121212" stroke-width="3"/>
+      <text x="157.5" y="76" font-size="27" font-weight="600" fill="#121212">Limit access</text>
+    </g>
+    <g transform="translate(1145 70)">
+      <rect width="325" height="130" rx="18" fill="#EDFBF2" stroke="#1A733A" stroke-width="3"/>
+      <text x="162.5" y="61" font-size="24" font-weight="600" fill="#121212"><tspan x="162.5">Delete when no</tspan><tspan x="162.5" dy="31">longer needed</tspan></text>
+    </g>
+  </g>
+</svg>

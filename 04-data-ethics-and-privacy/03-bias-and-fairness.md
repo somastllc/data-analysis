@@ -1,64 +1,49 @@
 # Bias and Fairness
 
-**By the end:** You can find proxy variables in a dataset, and explain how a biased system makes itself worse over time.
+**Chapter:** 4 - Data Ethics and Privacy
+
+**Lesson:** 3 of 4
+
+**By the end:** You can explain how data can create unfair results and name simple fairness checks.
 
 ## Overview
 
-A model can sort people by gender using data that contains no gender field anywhere in it. This is not a trick or a rare case. It is the normal outcome.
+Data may look neutral, but it can contain past human choices and inequalities.
 
-**Bias** means systematic unfairness that leads to unjust results. Data looks objective, but it usually reflects human choices and past inequalities.
+**Bias** is systematic unfairness that produces unjust results.
 
-| Source of bias | Example |
-|---|---|
-| **Sampling bias** | Data does not represent the full population fairly |
-| **Measurement bias** | Data is collected differently across groups |
-| **Historical bias** | Past discrimination is embedded in the data |
-| **Reporting bias** | Some events are recorded more than others |
+**Fairness** means checking that a decision does not unfairly harm some people or groups.
 
-### Case study: bias in the loan project
+### Example: Past Decisions in the Data
 
-The team trains the loan model on the company's own lending records: every loan issued by hand over the last three years, and whether it was repaid.
+A company trains a loan model using old loan records. Most previous loans went to people with registered businesses in the city.
 
-That is the most relevant data available. It is also the problem.
+Market traders, rural customers, and people running businesses from home received fewer loans. The data therefore contains less information about whether these customers would repay.
 
-Those manual loans went mostly to customers who walked into a branch with a registered business and a formal address. In practice that meant shop owners in the capital, and mostly men. Market traders, rural customers, and women running businesses from home rarely applied, and were rarely approved when they did.
+The model may repeat the old approval pattern instead of judging every customer fairly.
 
-The model learns from that history. It does not learn *who repays*. It learns *who the company used to approve*.
+### Fields Can Hide Other Information
 
-Now notice something important: the team never put gender in the dataset. They did not need to. The model uses:
+A field may indirectly reveal information that is not written in the dataset.
 
-- **District of phone registration** - which tracks urban versus rural
-- **Has received a business payment** - which tracks formal versus informal business
-- **Account age** - which tracks who could afford a phone three years ago
+For example, a customer’s district may also suggest whether the customer lives in an urban or rural area. This is called a **proxy variable**.
 
-Each of these is a **proxy variable**: a field that stands in for something you did not measure and did not intend to use. Remove gender from the dataset and the model can still sort by gender, straight through the proxies.
+Removing a gender field or another sensitive field does not automatically remove bias. The team must check what the remaining fields may represent.
 
-This is why "we did not collect sensitive attributes" is not a defense. It only means nobody checked.
-
-Notice which field is missing from that list. The scoring model also uses how much money moves through the account each month, and that one is not standing in for anything. It measures the business the loan is for. A trader with money moving through her account has a business whether or not she has a formal address, a registered company, or a three-year-old phone number.
-
-That distinction is the whole repair. A proxy answers your question by guessing at something else; a direct measure answers it. When you are handed a field list, the useful question about each field is not "is this allowed?" but "is this the thing, or a shadow of the thing?"
-
-### How bias repeats itself
+### How Bias Can Repeat
 
 ```mermaid
 flowchart LR
     pastNode["Past decisions"] --> dataNode["Training data"]
-    dataNode --> modelNode["Model"]
-    modelNode --> decisionNode["New decisions"]
-    decisionNode --> pastNode
+    dataNode --> decisionNode["New decisions"]
+    decisionNode --> futureNode["Future data"]
 ```
 
-This creates a **feedback loop**: the model's decisions become data that trains its future decisions. The model rejects market traders because the training data contains few approved market traders. Those rejections become next year's training data, which contains even fewer. The model grows more confident each cycle, and that confidence proves nothing except that it agrees with itself.
+If a group keeps being rejected, the company receives little new information about that group. Future decisions may then repeat the same problem.
 
-A biased system does not stay as wrong as it started. Left alone, it gets worse.
+Fairness checks:
 
-### What fairness means
-
-Fairness is not treating every case identically. It is avoiding unjust harm, and checking whether your outcomes affect some groups differently from others.
-
-- Ask whether the data represents all the groups it will affect
-- Compare outcomes across groups, not just overall accuracy
-- Test decisions on a small scale before applying them widely
-
-Not one of those requires a statistician. They require somebody whose job it is to look, which is what the next lesson is about.
+- Check whether the data represents all affected groups
+- Compare results across groups
+- Test the system with a small group before using it widely
+- Keep checking results after launch

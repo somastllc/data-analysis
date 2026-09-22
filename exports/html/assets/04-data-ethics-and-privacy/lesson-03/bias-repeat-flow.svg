@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" role="img" aria-labelledby="bias-title bias-desc">
+  <title id="bias-title">How bias can repeat</title>
+  <desc id="bias-desc">Past decisions become training data, which leads to new decisions and future data.</desc>
+  <defs>
+    <marker id="bias-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#1A733A"/>
+    </marker>
+    <pattern id="bias-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.2" fill="#D7DDDD"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="390" rx="22" fill="url(#bias-dots)"/>
+  <g fill="none" stroke="#1A733A" stroke-width="5" marker-end="url(#bias-arrow)">
+    <path d="M280 195 H335"/>
+    <path d="M570 195 H625"/>
+    <path d="M860 195 H915"/>
+  </g>
+  <g font-family="Geist,Arial,sans-serif" text-anchor="middle" font-size="27" font-weight="600" fill="#121212">
+    <g transform="translate(45 130)">
+      <rect width="235" height="130" rx="18" fill="#FFFFFF" stroke="#121212" stroke-width="3"/>
+      <text x="117.5" y="76">Past decisions</text>
+    </g>
+    <g transform="translate(335 130)">
+      <rect width="235" height="130" rx="18" fill="#FFFFFF" stroke="#121212" stroke-width="3"/>
+      <text x="117.5" y="76">Training data</text>
+    </g>
+    <g transform="translate(625 130)">
+      <rect width="235" height="130" rx="18" fill="#FFFFFF" stroke="#121212" stroke-width="3"/>
+      <text x="117.5" y="76">New decisions</text>
+    </g>
+    <g transform="translate(915 130)">
+      <rect width="240" height="130" rx="18" fill="#EDFBF2" stroke="#1A733A" stroke-width="3"/>
+      <text x="120" y="76">Future data</text>
+    </g>
+  </g>
+</svg>

@@ -1,25 +1,23 @@
 # Chapter 4 Opener - Data Ethics and Privacy
 
-**Chapter:** 4 - Data Ethics and Privacy  
-**Type:** Video opener - ~90s, no lesson file behind it  
+**Chapter:** 4 - Data Ethics and Privacy
+
+**Type:** Video opener - ~60s, no lesson file behind it
 
 Standing rules in [PRODUCTION.md](../PRODUCTION.md) apply - open cold, no greeting.
 Read close to as written; this is already at speaking length.
 
 ---
 
-*On screen: nothing on the first line. Then the case: a phone, a balance, a loan approval. This opener is mandatory. The four lessons are one continuous story and a viewer arriving mid-chapter has no idea a loan company has been running.*
+Data work affects people.
 
-Everything in this chapter is legal.
+A chart can create the wrong impression. Personal information can be exposed. Past decisions can create unfair results. Data can also be kept or shared without anyone taking responsibility.
 
-That is the point. Four lessons on data ethics, and almost nothing in them involves anybody breaking a law.
+This chapter asks four simple questions:
 
-They follow one story. A digital wallet company, with millions of customers sending and storing money on their phones, decides to offer small business loans, approved automatically, in minutes. The data already exists. The business case is strong. On paper it is an excellent project.
+- Are we using data honestly and responsibly?
+- Are we respecting and protecting personal information?
+- Could the data treat some people unfairly?
+- Who is responsible for the data and its rules?
 
-It goes wrong four separate ways, and you will watch each one.
-
-A chart that misleads without containing a single false number. Customers who consented to something they would never have agreed to if anybody had asked them plainly. A model that sorts people by a characteristic that appears nowhere in the data. And an organization where it was nobody's job to notice any of it.
-
-One more thing. Most data training skips this entirely, or leaves it to a policy document nobody reads. It is here, and it is early, because the habit is easier to build now, before you have the tools to do real damage.
-
-Four lessons. One case. Watch them in order.
+You do not need advanced tools to ask these questions. They are basic habits for anyone who works with data.

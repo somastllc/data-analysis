@@ -7,7 +7,7 @@
 | Lesson 3 - Sources and Formats of Data | - [x] |
 | Lesson 4 - Data Quality | - [x] |
 | Lesson 5 - The Data Lifecycle | - [ ] |
-| Lesson 6 - Big Data | - [ ] |
+| Lesson 6 - Big Data | - [x] |
 | Lesson 7 - Why Data Matters | - [x] |
 | Lesson 8 - Types of Analytics | - [x] |
 | Lesson 9 - Data Analysis | - [x] |
@@ -18,9 +18,9 @@
 | Lesson 14 - How These Fields Work Together | - [ ] |
 | Lesson 15 - Modern Data Tools | - [x] |
 | Lesson 16 - Why Data Work Uses Code | - [x] |
-| Lesson 17 - Data Across Industries | - [ ] |
+| Lesson 17 - Data Across Industries | - [x] |
 | Lesson 18 - Responsible and Ethical Use of Data | - [ ] |
-| Lesson 19 - Privacy, Consent, and Security | - [ ] |
+| Lesson 19 - Privacy, Consent, and Data Security | - [ ] |
 | Lesson 20 - Bias and Fairness | - [ ] |
 | Lesson 21 - Data Governance and Regulations | - [ ] |
 | Lesson 22 - Course Recap: The Life of One Record | - [ ] |

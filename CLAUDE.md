@@ -56,7 +56,7 @@ Every lesson file begins with this shape:
 
 - `## Overview` is mandatory on every lesson. All learner-facing `## Key Terms` tables have been removed: vocabulary is defined at the point of teaching and collected once in `GLOSSARY.md`. Lesson 4.2 already followed this pattern because it demonstrates previously defined vocabulary.
 - Vocabulary must still be taught before it appears in the glossary. Removing a table is not permission to leave a term defined only in `GLOSSARY.md`.
-- A Key Term may still be a *label* for a concept the lesson teaches without naming - "Misleading visualization" and "Feedback loop" both qualify. The test is whether the concept is taught, not whether the exact phrase appears.
+- A Key Term may still be a *label* for a concept the lesson teaches without naming. The test is whether the concept is taught, not whether the exact phrase appears.
 - Lesson files do not include `**Chapter:**` or `**Lesson:**` metadata. The folder name and numeric file prefix carry that structure.
 - Some lessons include a `mermaid` `flowchart` block (fenced ` ```mermaid `) to visualize a process (e.g. data → information → insight). Use this sparingly, only where a diagram clarifies a flow better than prose.
 - Tables are used heavily for term definitions and comparisons - keep that style rather than switching to bullet lists.
@@ -112,11 +112,15 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - Lesson 3.1, "Modern Data Tools", is complete as a six-slide HTML presentation and a six-page PDF with one standalone SVG illustration.
 - Lesson 3.2, "Why Data Work Uses Code", is complete as a six-slide HTML presentation and a six-page PDF with no standalone SVG illustrations; its two code examples are the teaching visuals.
 - Lesson 3.3, "Data Across Industries", is complete as a five-slide HTML presentation and a five-page PDF with no standalone SVG illustrations.
-- All sixteen PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
+- Lesson 4.1, "Responsible and Ethical Use of Data", is complete as a four-slide HTML presentation and a four-page PDF with no standalone SVG illustrations.
+- Lesson 4.2, "Privacy, Consent, and Data Security", is complete as a five-slide HTML presentation and a five-page PDF with one standalone SVG illustration.
+- Lesson 4.3, "Bias and Fairness", is complete as a six-slide HTML presentation and a six-page PDF with one standalone SVG illustration.
+- Lesson 4.4, "Data Governance and Regulations", is complete as a six-slide HTML presentation and a six-page PDF with no standalone SVG illustrations.
+- All twenty PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
 - Lesson 1.1 uses a focused pattern chart and one combined Facebook likes comparison rather than separate assets for every stage of data, information, and insight.
-- All 28 SVG exports across the sixteen completed lessons pass the SVG validator and XML parsing.
-- All seven Chapter 1 lessons, Chapter 2 lessons 2.1 through 2.6, and all three Chapter 3 lessons are converted. Chapter 2 lesson 2.7 and all of chapters 4 and 5 have not been converted. Do not mark later lessons complete merely because their Markdown content exists.
+- All 30 SVG exports across the twenty completed lessons pass the SVG validator and XML parsing.
+- All seven Chapter 1 lessons, Chapter 2 lessons 2.1 through 2.6, all three Chapter 3 lessons, and all four Chapter 4 lessons are converted. Chapter 2 lesson 2.7 and both Chapter 5 lessons have not been converted. Do not mark later lessons complete merely because their Markdown content exists.
 
 ### HTML and PDF conventions
 
@@ -183,11 +187,11 @@ Seven videos have no lesson file behind them, so these files hold the spoken scr
 
 - They obey the standing rules in `PRODUCTION.md`, including **no greeting** - open cold, same as every lesson.
 - Each opener states how many lessons its chapter runs. **Adding or removing a lesson means editing that chapter's `00-opener.md` too** - this is exactly the drift the per-chapter layout exists to prevent, so it is one folder away rather than in a separate root file.
-- Chapter 4's opener is load-bearing: its four lessons are one continuous case, and a viewer arriving mid-chapter needs the setup.
+- Chapter 4's opener previews the four questions that organize the chapter. Each lesson must still make sense on its own.
 
-## Chapter 4 is a serial case
+## Chapter 4 is concept-first
 
-The four ethics lessons follow one continuous scenario - a digital wallet company building automatic small-business loans - under `### Case study: ...` headings, ending with a decision in `04-data-governance-and-regulations.md`. Edits to any one of those lessons must keep the thread consistent with the other three.
+Each ethics lesson teaches one main concept, uses one short example, and ends with practical checks. Do not turn the examples into a continuous story, repeat definitions from earlier lessons, or use the governance lesson to recap the whole chapter.
 
 ## Making changes
 

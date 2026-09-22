@@ -35,8 +35,6 @@ This is a production checklist only. The repository contains no generated visual
 | Visual | Count | Notes |
 |---|---|---|
 | Animated diagram builds | 10 | One per mermaid block. Build order given per lesson below. |
-| Chart pair, truncated vs full axis | 2 | **4.1** - highest-value visual in the course. Currently ASCII in the Markdown. |
-| Repayment data table | 1 | **4.1** - must appear *before* either chart. |
 | Code slides with line highlighting | 2 | **3.2** - SQL and Python. Only code in the course. |
 | Content table slides | 15 | Teaching tables only; Key Terms cards have been removed from every lesson. |
 | Title card template | 1 | Lesson name + chapter/lesson position. |
@@ -60,7 +58,7 @@ Each answers three things: what question this chapter settles, why it comes afte
 | 4 - Data Ethics and Privacy | When should we *not* do the thing we can do? | 4 |
 | 5 - Conclusion | Can I do all of it in one pass? | 2 |
 
-**Chapter 4's opener is mandatory, not optional.** Its four lessons are one continuous case: a digital wallet company building automatic small-business loans. A viewer landing on lesson 4.3 without the opener has no idea a loan company has been running for two lessons. State the case up front: the company, the product, and that it will go wrong four different ways.
+Chapter 4's opener introduces the four questions that organize the chapter. Each lesson still stands alone and uses only the example needed to explain its own concept.
 
 ---
 
@@ -290,62 +288,45 @@ Keep the examples simple. The table shows how the questions and domain knowledge
 
 # Chapter 4 - Data Ethics and Privacy
 
-*4 lessons · 29 min*
+*4 lessons · 18 min*
 
-> **One continuous case.** All four lessons follow a digital wallet company building automatic small-business loans. Shoot them in one session so the delivery stays consistent, and shoot them in order, since lesson 4.4 resolves a decision set up in 4.1. The chapter opener must establish the case before 4.1 starts.
+> **Four simple questions.** Each lesson teaches one concept with one short example. Do not turn the examples into one long story or repeat definitions from earlier lessons.
 
-### 4.1 · Responsible and Ethical Use of Data - 8 min
+### 4.1 · Responsible and Ethical Use of Data - 4 min
 
-**Cold open:** *The most damaging data projects are rarely built by bad people. They are built by good teams who never stopped to ask whether they should.*
+**Cold open:** *Data can harm people even when the numbers are correct.*
 
-**Shots:** cold open → title → objective → **definition:** Data ethics → *Case study: the loan scoring project* → *When the numbers are true but the chart lies* → **table** Month / Repayment rate → **chart A (truncated axis)** → **chart B (full axis)** → *Principles of responsible data use*
-
-**The chart pair is the most important visual in the course.** Currently drawn in ASCII hash marks because Markdown has no graphics. Video does.
-
-Sequence it precisely:
-1. Show the four repayment numbers as a table. Hold. Let the viewer own them.
-2. Reveal Chart A - truncated 90–92% axis. Let it look like a success story. Say nothing about the axis.
-3. Ask: is this chart lying?
-4. **Animate the axis expanding from 90–92% to 0–100%.** Same bars, same data, morphing into four near-identical columns.
-5. Then the line: *"Chart A contains no false numbers."*
-
-Do not cut between two static charts. The morph is what makes it undeniable, and it is the moment students will quote back.
+**Shots:** cold open → title → objective → overview → **definition:** Data ethics + *Responsible Use* table + *Before Sharing Results*
 
 ---
 
-### 4.2 · Privacy, Consent, and Security - 5.5 min
+### 4.2 · Privacy, Consent, and Data Security - 4.5 min
 
-**Cold open:** *Everyone clicked "agree". Almost nobody read it.*
+**Cold open:** *Personal data needs careful protection.*
 
-**Shots:** cold open → title → objective → **definitions:** Privacy / Consent → *Case study: consent in the loan project* → *The life of a piece of personal data* → **diagram build (5)** → *Security in the loan project*
+**Shots:** cold open → title → objective → overview → **definitions:** Privacy / Consent + *Collect Only What Is Needed* + **definition:** Data minimization + mobile-money example → *Protect Data at Every Stage* + **definition:** Data security + **diagram build (4)** + *Simple Security Checks*
 
-**Diagram build:** `Ask consent` → `Collect only what is needed` → `Store securely` → `Use for the stated purpose` → `Delete when no longer needed`. Five beats. The last node is the one organizations skip. Hold on it.
-
-**Note:** the "would the customer be surprised?" test is the takeaway. Put it on screen as a single-line card.
+**Diagram build:** `Ask for consent` → `Collect only what is needed` → `Limit access` → `Delete when no longer needed`.
 
 ---
 
-### 4.3 · Bias and Fairness - 7.5 min
+### 4.3 · Bias and Fairness - 5 min
 
-**Cold open:** *A model can sort people by gender using data that contains no gender field anywhere in it.*
+**Cold open:** *Data may look neutral, but it can contain past human choices and inequalities.*
 
-**Shots:** cold open → title → objective → **definition:** Bias → **table** Source of bias / Example → *Case study: bias in the loan project* → *How bias repeats itself* → **diagram build (4, looping)** → *What fairness means*
+**Shots:** cold open → title → objective → **definitions:** Bias / Fairness → *Example: Past Decisions in the Data* → *Fields Can Hide Other Information* → **definition:** Proxy variable → *How Bias Can Repeat* → **diagram build (4)** → *Fairness Checks*
 
-**Diagram build:** `Past decisions` → `Training data` → `Model` → `New decisions` → **and back to `Past decisions`**. This is the only cyclic diagram in the course. Build the four nodes, pause, then draw the closing edge, and let it loop two or three times on screen while you explain that the system is now teaching itself its own history.
-
-**Note:** the proxy-variable passage is the hardest idea in the course. Slow down. The cold open promises it; do not resolve it in under a minute.
+**Diagram build:** `Past decisions` → `Training data` → `New decisions` → `Future data`.
 
 ---
 
-### 4.4 · Data Governance and Regulations - 8 min
+### 4.4 · Data Governance and Regulations - 4.5 min
 
-**Cold open:** *Every failure in this chapter had someone who could have raised a concern.*
+**Cold open:** *Protecting data should not depend on one person noticing a problem by chance.*
 
-**Shots:** cold open → title → objective → **definition:** Data governance → *Case study: governance in the loan project* → **table** Problem from earlier lessons / The rule that catches it → *Regulations* → *How the case ends*
+**Shots:** cold open → title → objective → **definition:** Data governance → *What Data Governance Decides* → *Simple Governance Rules* → **table** Question / Rule → *Regulations*
 
-**The 7-row table is the chapter's payoff.** Six of the seven rows are callbacks to something the viewer watched go wrong. Reveal those one at a time and name which lesson each came from. The seventh, retention, never happened in the case, and the lesson says so on purpose: the point is that rules are written from other people's failures, not only your own as it lands. This is the only place in the course where a table is a narrative rather than a reference. Shoot it that way, ~15s per row.
-
-**Note:** end on the case resolution, not the regulations. *"It is usually slower. It is not usually worse."* is the last line of chapter 4. Hold on that final line while you close the chapter.
+**Note:** Keep regulations general. Students need to know that laws exist and vary, not memorize legal details.
 
 ---
 
