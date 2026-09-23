@@ -4,31 +4,31 @@
 
 **Lesson:** 3 of 4
 
-**By the end:** You can explain how data can create unfair results and name simple fairness checks.
+**By the end:** You can explain how bias in data can lead to unfair results and name simple fairness checks.
 
 ## Overview
 
-Data may look neutral, but it can contain past human choices and inequalities.
+Data may look neutral, but it can carry old decisions and unfair patterns.
 
-**Bias** is systematic unfairness that produces unjust results.
+### Bias and Fairness
 
-**Fairness** means checking that a decision does not unfairly harm some people or groups.
+**Bias** is a repeated pattern that unfairly helps or harms some people.
 
-### Example: Past Decisions in the Data
+**Fairness** means checking that decisions do not unfairly harm a person or group.
 
-A company trains a loan model using old loan records. Most previous loans went to people with registered businesses in the city.
+### Past Decisions in the Data
 
-Market traders, rural customers, and people running businesses from home received fewer loans. The data therefore contains less information about whether these customers would repay.
+A company trains a loan model using old loan records. Most past loans went to registered businesses in the city. Market traders, rural customers, and people running businesses from home received fewer loans.
 
-The model may repeat the old approval pattern instead of judging every customer fairly.
+Because the records contain less information about those customers, the model may repeat the old approval pattern instead of judging everyone fairly.
 
 ### Fields Can Hide Other Information
 
-A field may indirectly reveal information that is not written in the dataset.
+A field can reveal information that is not written directly in the dataset.
 
-For example, a customer’s district may also suggest whether the customer lives in an urban or rural area. This is called a **proxy variable**.
+For example, a customer’s district may suggest whether they live in a city or rural area. Here, the district is a **proxy variable**: a field that indirectly stands in for other information.
 
-Removing a gender field or another sensitive field does not automatically remove bias. The team must check what the remaining fields may represent.
+Removing a sensitive field does not automatically remove bias. The team must still check what the remaining fields may represent.
 
 ### How Bias Can Repeat
 
@@ -39,7 +39,7 @@ flowchart LR
     decisionNode --> futureNode["Future data"]
 ```
 
-If a group keeps being rejected, the company receives little new information about that group. Future decisions may then repeat the same problem.
+If a group keeps being rejected, the company learns little about how that group would repay. Future decisions may then repeat the same problem.
 
 Fairness checks:
 

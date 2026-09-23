@@ -115,7 +115,7 @@ Keep each HTML lesson self-contained inside `exports/html/`. Its editable visual
 - Lesson 4.1, "Responsible and Ethical Use of Data", is complete as a four-slide HTML presentation and a four-page PDF with no standalone SVG illustrations.
 - Lesson 4.2, "Privacy, Consent, and Data Security", is complete as a five-slide HTML presentation and a five-page PDF with one standalone SVG illustration.
 - Lesson 4.3, "Bias and Fairness", is complete as a six-slide HTML presentation and a six-page PDF with one standalone SVG illustration.
-- Lesson 4.4, "Data Governance and Regulations", is complete as a six-slide HTML presentation and a six-page PDF with no standalone SVG illustrations.
+- Lesson 4.4, "Data Governance and Regulations", is complete as a five-slide HTML presentation and a five-page PDF with no standalone SVG illustrations.
 - All twenty PDFs use a 16:9 page size of 720 x 404.88 points, equivalent to a 10 x 5.625 inch page.
 - The visual language is off-white paper, dark ink, restrained green accents, rough hand-drawn lines, short annotations, and generous whitespace.
 - Lesson 1.1 uses a focused pattern chart and one combined Facebook likes comparison rather than separate assets for every stage of data, information, and insight.

@@ -288,7 +288,7 @@ Keep the examples simple. The table shows how the questions and domain knowledge
 
 # Chapter 4 - Data Ethics and Privacy
 
-*4 lessons · 18 min*
+*4 lessons · 17.5 min*
 
 > **Four simple questions.** Each lesson teaches one concept with one short example. Do not turn the examples into one long story or repeat definitions from earlier lessons.
 
@@ -312,19 +312,19 @@ Keep the examples simple. The table shows how the questions and domain knowledge
 
 ### 4.3 · Bias and Fairness - 5 min
 
-**Cold open:** *Data may look neutral, but it can contain past human choices and inequalities.*
+**Cold open:** *Data may look neutral, but it can carry old decisions and unfair patterns.*
 
-**Shots:** cold open → title → objective → **definitions:** Bias / Fairness → *Example: Past Decisions in the Data* → *Fields Can Hide Other Information* → **definition:** Proxy variable → *How Bias Can Repeat* → **diagram build (4)** → *Fairness Checks*
+**Shots:** cold open → title → objective → overview → **definitions:** Bias / Fairness + *Past Decisions in the Data* → *Fields Can Hide Other Information* → **definition:** Proxy variable → *How Bias Can Repeat* + **diagram build (4)** + fairness checks
 
 **Diagram build:** `Past decisions` → `Training data` → `New decisions` → `Future data`.
 
 ---
 
-### 4.4 · Data Governance and Regulations - 4.5 min
+### 4.4 · Data Governance and Regulations - 4 min
 
-**Cold open:** *Protecting data should not depend on one person noticing a problem by chance.*
+**Cold open:** *Protecting data should not depend on someone noticing a problem by chance.*
 
-**Shots:** cold open → title → objective → **definition:** Data governance → *What Data Governance Decides* → *Simple Governance Rules* → **table** Question / Rule → *Regulations*
+**Shots:** cold open → title → objective → overview → **definition:** Data governance + **table** Question / Rule → *Regulations* + *In your work*
 
 **Note:** Keep regulations general. Students need to know that laws exist and vary, not memorize legal details.
 

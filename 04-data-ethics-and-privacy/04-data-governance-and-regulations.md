@@ -4,25 +4,15 @@
 
 **Lesson:** 4 of 4
 
-**By the end:** You can explain how rules and responsibilities help an organization manage data.
+**By the end:** You can explain how data governance and regulations help an organization manage data.
 
 ## Overview
 
-Protecting data should not depend on one person noticing a problem by chance. Clear rules and responsibilities must be part of the work.
+Protecting data should not depend on someone noticing a problem by chance. Clear rules and responsibilities should be part of the work.
 
-**Data governance** is the rules and roles that help an organization manage data responsibly.
+### Data Governance
 
-### What Data Governance Decides
-
-Data governance answers questions such as:
-
-- Who is responsible for the data?
-- Who can access it?
-- Why is it being used?
-- How long will it be kept?
-- When will it be deleted?
-
-### Simple Governance Rules
+**Data governance** is the rules and roles an organization uses to manage data responsibly.
 
 | Question | Rule |
 |---|---|
@@ -35,7 +25,7 @@ These rules make responsibility clear before a problem occurs.
 
 ### Regulations
 
-A **regulation** is an official rule or law governing how data is collected, stored, and used.
+A **regulation** is an official rule or law about how data is collected, stored, and used.
 
 Data laws vary by place and by the type of data being used. As a beginner, you do not need to memorize every law.
 
